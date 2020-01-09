@@ -1,6 +1,6 @@
 Name:           baobab
 Version:        3.8.2
-Release:        1%{?dist}
+Release:        4%{?dist}
 Summary:        A graphical directory tree analyzer
 
 Group:          Applications/System
@@ -17,6 +17,8 @@ BuildRequires:  desktop-file-utils
 BuildRequires:  itstool
 BuildRequires:  vala-tools
 
+Patch0: baobab-3.8.2_translation_updates.patch
+
 Obsoletes: gnome-utils < 1:3.3
 Obsoletes: gnome-utils-devel < 1:3.3
 Obsoletes: gnome-utils-libs < 1:3.3
@@ -29,6 +31,7 @@ any change made to your home folder as far as any mounted/unmounted device.
 
 %prep
 %setup -q
+%patch0 -p2 -b .baobab-3.8.2_translation_updates
 
 
 %build
@@ -81,6 +84,15 @@ done
 %{_datadir}/icons/hicolor/scalable/actions/view-treemap-symbolic.svg
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 3.8.2-4
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 3.8.2-3
+- Mass rebuild 2013-12-27
+
+* Fri Dec 6 2013 Ondrej Holy <oholy@redhat.com> - 3.8.2-2
+- Translation updates (#1030317)
+
 * Mon May 13 2013 Richard Hughes <rhughes@redhat.com> - 3.8.2-1
 - Update to 3.8.2
 
