@@ -28,259 +28,244 @@
 # Kostas: 14Jan2006 update for 2.14
 # Simos Xenitellis <simos.lists@googlemail.com>, 2010.
 # Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>, 2012.
-# Efstathios Iosifidis <iosifidis@opensuse.org>, 2013, 2018.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.gnome-2-26\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=baobab&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-10-29 10:32+0000\n"
-"PO-Revision-Date: 2018-02-14 19:21+0200\n"
-"Last-Translator: Efstathios Iosifidis <iosifidis@opensuse.org>\n"
-"Language-Team: Ελληνικά <>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=baobab"
+"&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-10-27 22:11+0000\n"
+"PO-Revision-Date: 2012-12-23 18:31+0300\n"
+"Last-Translator: Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>\n"
+"Language-Team: team@gnome.gr\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 2.91.7\n"
+"X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: gnome\n"
 
-#: data/org.gnome.baobab.appdata.xml.in:6 data/org.gnome.baobab.desktop.in:3
-#: src/baobab-main-window.ui:106
+#: ../data/baobab.desktop.in.in.h:1 ../src/baobab-window.vala:188
 msgid "Disk Usage Analyzer"
 msgstr "Αναλυτής χρήσης δίσκου"
 
-#: data/org.gnome.baobab.appdata.xml.in:7 data/org.gnome.baobab.desktop.in:4
+#: ../data/baobab.desktop.in.in.h:2
 msgid "Check folder sizes and available disk space"
 msgstr "Έλεγχος μεγέθους φακέλων και διαθέσιμου χώρου στο δίσκο"
 
-#: data/org.gnome.baobab.appdata.xml.in:9
-msgid ""
-"A simple application to keep your disk usage and available space under "
-"control."
-msgstr ""
-"Μια απλή εφαρμογή που σας βοηθά να έχετε υπό έλεγχο τη χρήση και τον "
-"ελεύθερο χώρο του δίσκου σας."
-
-#: data/org.gnome.baobab.appdata.xml.in:12
-msgid ""
-"Disk Usage Analyzer can scan specific folders, storage devices and online "
-"accounts. It provides both a tree and a graphical representation showing the "
-"size of each folder, making it easy to identify where disk space is wasted."
-msgstr ""
-"Ο Αναλυτής χρήσης δίσκου μπορεί να σαρώσει συγκεκρμένους φακέλους, συσκευές "
-"αποθήκευσης και διαδικτυακούς λογαριασμούς. Παρέχει δενδροειδή και γραφικά "
-"διαγράμματα δείχνοντας το μέγεθος κάθε φακέλου,  καθιστώντας το εύκολο να "
-"εντοπιστεί ο χαμένος χώρος της συσκευής."
-
-#: data/org.gnome.baobab.appdata.xml.in:34
-msgid "The GNOME Project"
-msgstr "Το έργο του GNOME"
-
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.baobab.desktop.in:6
+#: ../data/baobab.desktop.in.in.h:3
 msgid "storage;space;cleanup;"
-msgstr "αποθήκευση;χώρος;καθαρισμός;storage;space;cleanup;"
+msgstr "αποθήκευση;χώρος;καθαρισμός;"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.baobab.desktop.in:10
-msgid "baobab"
-msgstr "baobab"
-
-#: data/org.gnome.baobab.gschema.xml.in:9
+#: ../data/org.gnome.baobab.gschema.xml.in.h:1
 msgid "Excluded partitions URIs"
 msgstr "URI κατατμήσεων που εξαιρούνται"
 
-#: data/org.gnome.baobab.gschema.xml.in:10
+#: ../data/org.gnome.baobab.gschema.xml.in.h:2
 msgid "A list of URIs for partitions to be excluded from scanning."
-msgstr ""
-"Μια λίστα από URI για τις κατατμήσεις που θα εξαιρούνται από τη σάρωση."
+msgstr "Μια λίστα από URI για κατατμήσεις που θα εξαιρούνται από τη σάρωση."
 
-#: data/org.gnome.baobab.gschema.xml.in:20
+#: ../data/org.gnome.baobab.gschema.xml.in.h:3
 msgid "Active Chart"
 msgstr "Ενεργό διάγραμμα"
 
-#: data/org.gnome.baobab.gschema.xml.in:21
+#: ../data/org.gnome.baobab.gschema.xml.in.h:4
 msgid "Which type of chart should be displayed."
 msgstr "Ποιος τύπος διαγράμματος θα εμφανιστεί."
 
-#: data/org.gnome.baobab.gschema.xml.in:25
+#: ../data/org.gnome.baobab.gschema.xml.in.h:5
+#| msgid "Windows share"
 msgid "Window size"
 msgstr "Μέγεθος παραθύρου"
 
-#: data/org.gnome.baobab.gschema.xml.in:26
+#: ../data/org.gnome.baobab.gschema.xml.in.h:6
 msgid "The initial size of the window"
 msgstr "Το αρχικό μέγεθος του παραθύρου"
 
-#: data/org.gnome.baobab.gschema.xml.in:30
+#: ../data/org.gnome.baobab.gschema.xml.in.h:7
+#| msgid "Windows share"
 msgid "Window state"
 msgstr "Κατάσταση παραθύρου"
 
-#: data/org.gnome.baobab.gschema.xml.in:31
+#: ../data/org.gnome.baobab.gschema.xml.in.h:8
 msgid "The GdkWindowState of the window"
-msgstr "Το GdkWindowState του παραθύρου"
+msgstr "Η GdkWindowState του παραθύρου"
 
-#: src/baobab-application.vala:28
+#: ../src/baobab-application.vala:30
 msgid "Print version information and exit"
 msgstr "Προβολή πληροφοριών έκδοσης και έξοδος"
 
-#: src/baobab-cellrenderers.vala:91
+#: ../src/baobab-application.vala:104
+msgid "- Disk Usage Analyzer"
+msgstr "- Αναλυτής χρήσης δίσκου"
+
+#: ../src/baobab-cellrenderers.vala:100
 #, c-format
 msgid "%d item"
 msgid_plural "%d items"
 msgstr[0] "%d αντικείμενο"
 msgstr[1] "%d αντικείμενα"
 
-#. Translators: when the last modified time is unknown
-#: src/baobab-cellrenderers.vala:101 src/baobab-location-list.vala:79
-msgid "Unknown"
-msgstr "Άγνωστο"
+#: ../src/baobab-chart.c:186
+msgid "Maximum depth"
+msgstr "Μέγιστο βάθος"
 
-#. Translators: when the last modified time is today
-#: src/baobab-cellrenderers.vala:110
-msgid "Today"
-msgstr "Σήμερα"
+#: ../src/baobab-chart.c:187
+msgid "The maximum depth drawn in the chart from the root"
+msgstr "Το μέγιστος βάθος που θα σχεδιάζεται στο διάγραμμα από τον υπερχρήστη"
 
-#. Translators: when the last modified time is "days" days ago
-#: src/baobab-cellrenderers.vala:114
-#, c-format
-msgid "%lu day"
-msgid_plural "%lu days"
-msgstr[0] "%lu ημέρα"
-msgstr[1] "%lu ημέρες"
+#: ../src/baobab-chart.c:196
+msgid "Chart model"
+msgstr "Μοντέλο διαγράμματος"
 
-#. Translators: when the last modified time is "months" months ago
-#: src/baobab-cellrenderers.vala:118
-#, c-format
-msgid "%lu month"
-msgid_plural "%lu months"
-msgstr[0] "%lu μήνας"
-msgstr[1] "%lu μήνες"
+#: ../src/baobab-chart.c:197
+msgid "Set the model of the chart"
+msgstr "Ορισμός του μοντέλου για το διάγραμμα"
 
-#. Translators: when the last modified time is "years" years ago
-#: src/baobab-cellrenderers.vala:122
-#, c-format
-msgid "%lu year"
-msgid_plural "%lu years"
-msgstr[0] "%lu έτος"
-msgstr[1] "%lu έτη"
+#: ../src/baobab-chart.c:204
+msgid "Chart root node"
+msgstr "Διάγραμμα κόμβου υπερχρήστη"
 
-#: src/baobab-location-list.ui:17
-msgid "This Computer"
-msgstr "Αυτός ο υπολογιστής"
+#: ../src/baobab-chart.c:205
+msgid "Set the root node from the model"
+msgstr "Ορισμός του κόμβου υπερχρήστη από το μοντέλο"
 
-#: src/baobab-location-list.ui:47
-msgid "Remote Locations"
-msgstr "Απομακρυσμένες τοποθεσίες"
+#: ../src/baobab-chart.c:898
+msgid "_Move to parent folder"
+msgstr "_Μετακίνηση στο γονικό φάκελο"
 
-#: src/baobab-location-list.vala:66
-#, c-format
-msgid "%s Total"
-msgstr "%s σύνολο"
+#: ../src/baobab-chart.c:902
+msgid "Zoom _in"
+msgstr "Μεγέ_θυνση "
 
-#: src/baobab-location-list.vala:70
-#, c-format
-msgid "%s Available"
-msgstr "%s διαθέσιμο"
+#: ../src/baobab-chart.c:906
+msgid "Zoom _out"
+msgstr "Σμίκρυ_νση"
 
-#. useful for some remote mounts where we don't know the
-#. size but do have a usage figure
-#: src/baobab-location-list.vala:84
-#, c-format
-msgid "%s Used"
-msgstr "%s χρησιμοποιείται"
-
-#: src/baobab-location-list.vala:86
-msgid "Unmounted"
-msgstr "Αποπροσαρτημένο"
-
-#: src/baobab-location.vala:73
+#: ../src/baobab-location.vala:77
 msgid "Home folder"
 msgstr "Προσωπικός φάκελος"
 
-#: src/baobab-location.vala:113
-msgid "Computer"
-msgstr "Υπολογιστής"
+#: ../src/baobab-location.vala:123
+msgid "Main volume"
+msgstr "Κύριος τόμος"
 
-#: src/baobab-main-window.ui:7
+#: ../src/baobab-main-window.ui.h:1
+#| msgid "Scan F_older…"
 msgid "Scan Folder…"
 msgstr "Σάρωση φακέλου…"
 
-#: src/baobab-main-window.ui:20 src/menus.ui:25
-msgid "_Open Folder"
-msgstr "Ά_νοιγμα φακέλου "
+#: ../src/baobab-main-window.ui.h:2
+#| msgid "Scan Remote Fo_lder…"
+msgid "Scan Remote Folder…"
+msgstr "Σάρωση απομακρυσμένου φακέλου…"
 
-#: src/baobab-main-window.ui:29 src/menus.ui:29
-msgid "_Copy Path to Clipboard"
-msgstr "Αντι_γραφή διαδρομής στο πρόχειρο"
-
-#: src/baobab-main-window.ui:38 src/menus.ui:33
-msgid "Mo_ve to Trash"
-msgstr "_Μετακίνηση στα απορρίμματα"
-
-#: src/baobab-main-window.ui:170
+#: ../src/baobab-main-window.ui.h:3
 msgid "Close"
 msgstr "Κλείσιμο"
 
-#: src/baobab-main-window.ui:225
+#: ../src/baobab-main-window.ui.h:4
 msgid "Folder"
 msgstr "Φάκελος"
 
-#: src/baobab-main-window.ui:252
+#: ../src/baobab-main-window.ui.h:5
+msgid "Usage"
+msgstr "Χρήση"
+
+#: ../src/baobab-main-window.ui.h:6
 msgid "Size"
 msgstr "Μέγεθος"
 
-#: src/baobab-main-window.ui:272
+#: ../src/baobab-main-window.ui.h:7
 msgid "Contents"
 msgstr "Περιεχόμενα"
 
-#: src/baobab-main-window.ui:290
-msgid "Modified"
-msgstr "Τροποποιήθηκε"
-
-#: src/baobab-main-window.ui:335
+#: ../src/baobab-main-window.ui.h:8
 msgid "Rings Chart"
 msgstr "Διάγραμμα δακτυλίων"
 
-#: src/baobab-main-window.ui:347
+#: ../src/baobab-main-window.ui.h:9
 msgid "Treemap Chart"
-msgstr "Δενδροειδές διάγραμμα"
+msgstr "Διάγραμμα δέντρου"
 
-#: src/baobab-window.vala:215
+#: ../src/baobab-main-window.ui.h:10
+msgid "_Open Folder"
+msgstr "Ά_νοιγμα φακέλου "
+
+#: ../src/baobab-main-window.ui.h:11
+msgid "_Copy Path to Clipboard"
+msgstr "Αντι_γραφή διαδρομής στο πρόχειρο"
+
+#: ../src/baobab-main-window.ui.h:12
+msgid "Mo_ve to Trash"
+msgstr "_Μετακίνηση στα απορρίμματα"
+
+#: ../src/baobab-menu.ui.h:1
+msgid "_Help"
+msgstr "_Βοήθεια"
+
+#: ../src/baobab-menu.ui.h:2
+msgid "_About"
+msgstr "_Περί"
+
+#: ../src/baobab-menu.ui.h:3
+msgid "_Quit"
+msgstr "Έ_ξοδος"
+
+#: ../src/baobab-menu.ui.h:4
+msgid "_Analyzer"
+msgstr "_Αναλυτής"
+
+#: ../src/baobab-menu.ui.h:5
+msgid "_Scan Home"
+msgstr "_Σάρωση αρχικού καταλόγου"
+
+#: ../src/baobab-menu.ui.h:6
+msgid "Scan F_older…"
+msgstr "Σάρωση φα_κέλου"
+
+#: ../src/baobab-menu.ui.h:7
+msgid "Scan Remote Fo_lder…"
+msgstr "Σάρωση απομακρυσμένου φακέ_λου"
+
+#: ../src/baobab-menu.ui.h:8
+msgid "_View"
+msgstr "Προ_βολή"
+
+#: ../src/baobab-menu.ui.h:9
+msgid "_Reload"
+msgstr "_Επαναφόρτωση"
+
+#: ../src/baobab-menu.ui.h:10
+msgid "_Expand All"
+msgstr "Α_νάπτυξη όλων"
+
+#: ../src/baobab-menu.ui.h:11
+msgid "_Collapse All"
+msgstr "Σύμπτυξη ό_λων"
+
+#: ../src/baobab-window.vala:131
+#| msgid "Show all locations"
+msgid "Devices and locations"
+msgstr "Συσκευές και τοποθεσίες"
+
+#: ../src/baobab-window.vala:229
 msgid "Select Folder"
 msgstr "Επιλογή φακέλου"
 
-#: src/baobab-window.vala:217
-msgid "_Cancel"
-msgstr "Α_κύρωση"
-
-#: src/baobab-window.vala:218
-msgid "_Open"
-msgstr "Άν_οιγμα"
-
-#: src/baobab-window.vala:224
-msgid "Recursively analyze mount points"
-msgstr "Αναδρομική ανάλυση προσαρτημένων συσκευών"
-
-#: src/baobab-window.vala:259
+#: ../src/baobab-window.vala:279
 msgid "Could not analyze volume."
 msgstr "Αδυναμία ανάλυσης τόμου."
 
-#: src/baobab-window.vala:291
-msgid "Failed to show help"
-msgstr "Αποτυχία προβολής βοήθειας"
-
-#: src/baobab-window.vala:310
+#: ../src/baobab-window.vala:329
 msgid "Baobab"
 msgstr "Baobab"
 
-#: src/baobab-window.vala:313
+#: ../src/baobab-window.vala:332
 msgid "A graphical tool to analyze disk usage."
 msgstr "Ένα γραφικό εργαλείο για την ανάλυση χρήσης του δίσκου."
 
-#: src/baobab-window.vala:318
+#: ../src/baobab-window.vala:337
 msgid "translator-credits"
 msgstr ""
 "Ελληνική μεταφραστική ομάδα GNOME\n"
@@ -289,139 +274,23 @@ msgstr ""
 " Συμεών (σίμος) Ξενιτέλλης <simos@hellug.gr>\n"
 " Κώστας Παπαδήμας <pkst@gnome.org>\n"
 " Νίκος Χαρωνιτάκης <nikosx@gmail.com>\n"
-" Ευστάθιος Ιωσηφίδης <iosifidis@opensuse.org>\n"
-" Μαρία Μαυρίδου <mavridou@gmail.com>\n"
-"\n"
-"Για περισσότερες πληροφορίες, επισκεφθείτε τη σελίδα\n"
-"http://gnome.gr/"
+"Για περισσότερα δείτε http://www.gnome.gr/"
 
-#: src/baobab-window.vala:387
-msgid "Failed to open file"
-msgstr "Αποτυχία ανοίγματος αρχείου"
-
-#: src/baobab-window.vala:407
-msgid "Failed to move file to the trash"
-msgstr "Αποτυχία μετακίνησης αρχείου στα απορρίμματα"
-
-#: src/baobab-window.vala:511
-msgid "Devices & Locations"
-msgstr "Συσκευές & τοποθεσίες"
-
-#: src/baobab-window.vala:572
+#: ../src/baobab-window.vala:579
 #, c-format
-msgid "Could not scan folder “%s”"
-msgstr "Αδυναμία σάρωσης φακέλου \"%s\""
-
-#: src/baobab-window.vala:575
-#, c-format
-msgid "Could not scan some of the folders contained in “%s”"
-msgstr "Αδυναμία σάρωσης μερικών από τους φακέλους που περιέχονται στο \"%s\""
-
-#: src/baobab-window.vala:594
-msgid "Could not detect occupied disk sizes."
-msgstr "Αδυναμία εντοπισμού μεγέθους απασχολημένων δίσκων."
-
-#: src/baobab-window.vala:594
-msgid "Apparent sizes are shown instead."
-msgstr "Προφανή μεγέθη εμφανίζονται αντ' αυτού."
+msgid "Could not scan folder \"%s\" or some of the folders it contains."
+msgstr ""
+"Αδυναμία σάρωσης του φακέλου \"%s\" ή μερικών από τους φακέλους που περιέχει."
 
 #. || is_virtual_filesystem ()
-#: src/baobab-window.vala:611 src/baobab-window.vala:617
+#: ../src/baobab-window.vala:598 ../src/baobab-window.vala:604
 #, c-format
-msgid "“%s” is not a valid folder"
-msgstr " \"%s\" δεν είναι έγκυρος φάκελος"
+msgid "\"%s\" is not a valid folder"
+msgstr "Το \"%s\" δεν είναι έγκυρος φάκελος"
 
-#: src/baobab-window.vala:612 src/baobab-window.vala:618
+#: ../src/baobab-window.vala:599 ../src/baobab-window.vala:605
 msgid "Could not analyze disk usage."
 msgstr "Αδυναμία ανάλυσης χρήσης του δίσκου."
-
-#: src/menus.ui:7
-msgid "_Help"
-msgstr "_Βοήθεια"
-
-#: src/menus.ui:12
-msgid "_About"
-msgstr "_Περί"
-
-#: src/menus.ui:16
-msgid "_Quit"
-msgstr "Έ_ξοδος"
-
-#: src/menus.ui:39
-msgid "Go to _parent folder"
-msgstr "Μετάβαση στο _γονικό φάκελο"
-
-#: src/menus.ui:45
-msgid "Zoom _in"
-msgstr "Μεγέ_θυνση "
-
-#: src/menus.ui:49
-msgid "Zoom _out"
-msgstr "Σμίκρυ_νση"
-
-#~ msgid ""
-#~ "A simple application which can scan either specific folders (local or "
-#~ "remote) or volumes and give a graphical representation including each "
-#~ "directory size or percentage."
-#~ msgstr ""
-#~ "Μια απλή εφαρμογή που σαρώνει είτε καθορισμένους φακέλους (τοπικούς ή "
-#~ "απομακρυσμένους) ή τόμους παρέχοντας γραφική αναπαράσταση που "
-#~ "συμπεριλαμβάνει το μέγεθος ή το ποσοστό του κάθε καταλόγου."
-
-#~ msgid "Scan Remote Folder…"
-#~ msgstr "Σάρωση απομακρυσμένου φακέλου…"
-
-#~ msgid "- Disk Usage Analyzer"
-#~ msgstr "- Αναλυτής χρήσης δίσκου"
-
-#~ msgid "Maximum depth"
-#~ msgstr "Μέγιστο βάθος"
-
-#~ msgid "The maximum depth drawn in the chart from the root"
-#~ msgstr ""
-#~ "Το μέγιστος βάθος που θα σχεδιάζεται στο διάγραμμα από τον υπερχρήστη"
-
-#~ msgid "Chart model"
-#~ msgstr "Μοντέλο διαγράμματος"
-
-#~ msgid "Set the model of the chart"
-#~ msgstr "Ορισμός του μοντέλου για το διάγραμμα"
-
-#~ msgid "Chart root node"
-#~ msgstr "Διάγραμμα κόμβου υπερχρήστη"
-
-#~ msgid "Set the root node from the model"
-#~ msgstr "Ορισμός του κόμβου υπερχρήστη από το μοντέλο"
-
-#~ msgid "Main volume"
-#~ msgstr "Κύριος τόμος"
-
-#~ msgid "Usage"
-#~ msgstr "Χρήση"
-
-#~ msgid "_Analyzer"
-#~ msgstr "_Αναλυτής"
-
-#~ msgid "_Scan Home"
-#~ msgstr "_Σάρωση αρχικού καταλόγου"
-
-#~ msgid "Scan F_older…"
-#~ msgstr "Σάρωση φα_κέλου"
-
-#~ msgid "Scan Remote Fo_lder…"
-#~ msgstr "Σάρωση απομακρυσμένου φακέ_λου"
-
-#~ msgid "_View"
-#~ msgstr "Προ_βολή"
-
-#~ msgid "_Reload"
-#~ msgstr "_Επαναφόρτωση"
-
-#~ msgid "_Expand All"
-#~ msgstr "Α_νάπτυξη όλων"
-
-#~ msgid "_Collapse All"
-#~ msgstr "Σύμπτυξη ό_λων"
 
 #~ msgid "Scan Folder"
 #~ msgstr "Σάρωση φακέλου"
@@ -443,6 +312,9 @@ msgstr "Σμίκρυ_νση"
 
 #~ msgid "_Allocated Space"
 #~ msgstr "Χώρος μη _εκχωρημένος"
+
+#~ msgid "Cancel"
+#~ msgstr "Ακύρωση"
 
 #~ msgid "Monitor Home"
 #~ msgstr "Παρακολούθηση προσωπικού φακέλου"
@@ -466,6 +338,9 @@ msgstr "Σμίκρυ_νση"
 #~ "Whether the status bar at the bottom of main window should be visible."
 #~ msgstr ""
 #~ "Αν θα είναι ορατή η γραμμή κατάστασης στο κάτω μέρος του κύριου παραθύρου."
+
+#~ msgid "Usage unknown"
+#~ msgstr "Άγνωστη χρήση"
 
 #~ msgid "Scan"
 #~ msgstr "Σάρωση"
@@ -574,6 +449,9 @@ msgstr "Σμίκρυ_νση"
 #~ msgid "Too many arguments. Only one directory can be specified."
 #~ msgstr "Πάρα πολλές επιλογές. Μόνο ένας κατάλογος μπορεί να οριστεί."
 
+#~ msgid "Could not detect any mount point."
+#~ msgstr "Δεν εντοπίστηκε κάποιο σημείο προσάρτησης."
+
 #~ msgid "Without mount points disk usage cannot be analyzed."
 #~ msgstr ""
 #~ "Χωρίς τα σημεία προσάρτησης δεν είναι δυνατή η ανάλυση χρήσης δίσκων."
@@ -589,6 +467,12 @@ msgstr "Σμίκρυ_νση"
 
 #~ msgid "Total Size"
 #~ msgstr "Συνολικό μέγεθος"
+
+#~ msgid "Available"
+#~ msgstr "Διαθέσιμο"
+
+#~ msgid "Custom Location"
+#~ msgstr "Προσαρμοσμένη τοποθεσία"
 
 #~ msgid "SSH"
 #~ msgstr "SSH"
@@ -665,6 +549,9 @@ msgstr "Σμίκρυ_νση"
 #~ msgid "Cannot check an excluded folder!"
 #~ msgstr "Δεν είναι δυνατός ο έλεγχος φακέλων που εξαιρούνται!"
 
+#~ msgid "Could not open folder \"%s\""
+#~ msgstr "Αδυναμία ανοίγματος φακέλου \"%s\"."
+
 #~ msgid "There is no installed viewer capable of displaying the folder."
 #~ msgstr ""
 #~ "Δεν υπάρχει εγκατεστημένο πρόγραμμα παρουσίασης για την εμφάνιση του "
@@ -672,6 +559,9 @@ msgstr "Σμίκρυ_νση"
 
 #~ msgid "Could not move \"%s\" to the Trash"
 #~ msgstr "Αδυναμία μετακίνησης \"%s\" στα απορρίμματα"
+
+#~ msgid "Could not move file to the Trash"
+#~ msgstr "Αδυναμία μετακίνησης αρχείου στα απορρίμματα"
 
 #~ msgid "Details: %s"
 #~ msgstr "Λεπτομέρειες: %s"

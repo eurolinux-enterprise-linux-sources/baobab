@@ -20,21 +20,30 @@
 
 namespace Baobab {
 
+    public class CellRendererPercent : Gtk.CellRendererText {
+        public Scanner.State state { set; get; }
+
+        public double percent {
+            set {
+                text = (state != Scanner.State.ERROR ? "%.1f %%".printf (value) : "");
+            }
+        }
+    }
+
     public class CellRendererName : Gtk.CellRendererText {
         public Scanner.State state { set; get; }
 
         public string name {
             set {
-                var escaped = (value != null) ? Markup.escape_text (value) : null;
                 switch (state) {
                 case Scanner.State.ERROR:
-                    markup = "<b>%s</b>".printf (escaped);
+                    markup = "<b>%s</b>".printf (value);
                     break;
                 case Scanner.State.CHILD_ERROR:
-                    markup = "<b>%s</b>".printf (escaped);
+                    markup = "<b>%s</b>".printf (value);
                     break;
                 default:
-                    markup = escaped;
+                    markup = value;
                     break;
                 }
             }
@@ -93,38 +102,6 @@ namespace Baobab {
         }
     }
 
-    public class CellRendererTime : Gtk.CellRendererText {
-        public uint64 time {
-            set {
-                if (value == 0) {
-                    // Translators: when the last modified time is unknown
-                    text = _("Unknown");
-                    return;
-                }
-
-                var dt = new DateTime.from_unix_local ((int64)value);
-                var now = new DateTime.now_local ();
-                var ts = now.difference (dt);
-                if (ts < TimeSpan.DAY) {
-                    // Translators: when the last modified time is today
-                    text = _("Today");
-                } else if (ts < 31 * TimeSpan.DAY) {
-                    var days = (ulong) (ts / TimeSpan.DAY);
-                    // Translators: when the last modified time is "days" days ago
-                    text = ngettext ("%lu day", "%lu days", days).printf (days);
-                } else if (ts < 365 * TimeSpan.DAY) {
-                    var months = (ulong) (ts / (31 * TimeSpan.DAY));
-                    // Translators: when the last modified time is "months" months ago
-                    text = ngettext ("%lu month", "%lu months", months).printf (months);
-                } else {
-                    var years = (ulong) (ts / (365 * TimeSpan.DAY));
-                    // Translators: when the last modified time is "years" years ago
-                    text = ngettext ("%lu year", "%lu years", years).printf (years);
-                }
-            }
-        }
-    }
-
     public class CellRendererProgress : Gtk.CellRendererProgress {
         public Scanner.State state { set; get; }
 
@@ -151,12 +128,6 @@ namespace Baobab {
             context.render_frame (cr, x, y, w, h);
 
             var border = context.get_border (Gtk.StateFlags.NORMAL);
-            x += border.left;
-            y += border.top;
-            w -= border.left + border.right;
-            h -= border.top + border.bottom;
-
-            border = context.get_padding (Gtk.StateFlags.NORMAL);
             x += border.left;
             y += border.top;
             w -= border.left + border.right;

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scan-home" xml:lang="sl">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision version="0.1" date="2011-12-20" status="review"/>
+    <link type="guide" xref="index#scan"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>Preiščite vse vaše osebne datoteke, ki so na vaših notranjih napravah shrambe.</desc>
+
+  </info>
+
+  <title>Preiščite vašo mapo <file>Domača mapa</file></title>
+
+  <p>V mapi <file>Domača mapa</file> se nahaja največ datotek za povprečnega uporabnika, saj privzete nastavitve pogosto shranjujejo ali kopirajo datoteke v njene podmape. To vključuje prejeme iz interneta, dokumente, na katerih delate, in slike iz vašega fotoaparata. Ponavadi obstaja ena <file>Domača mapa</file> za vsakega uporabnika na računalniku.</p>
+
+  <steps>
+    <item>
+      <p>Izberite <guiseq><gui>Orodje za preučevanje</gui><gui>Preišči Domačo mapo</gui></guiseq> v meniju</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Izberite <guiseq><gui>Orodje za preučevanje</gui><gui>Zaustavi</gui></guiseq> za zaustavitev trenutnega preiskovanja ali <guiseq><gui>Orodje za preučevanje</gui><gui>Osveži</gui></guiseq> za ponovitev zadnjega preiskovanja.</p>
+  </note>
+
+  <p>The results may be useful in deciding which folders can be
+  <link href="help:file-roller">archived</link>,
+  <link href="help:gnome-help/files-delete">deleted</link> or
+  <link href="help:gnome-help/files-copy">moved</link> to free up space. You
+  can also use the results to estimate how much space would be needed for a
+  <link href="help:gnome-help/backup-how">backup</link> of your
+  <file>Home</file> folder.</p>
+
+  <p>Desno kliknite na katerokoli mapo in izberite <gui>Odpri mapo</gui> za zagon <app>Datoteke</app> programa, ali <gui>Premakni v smeti</gui> za premik mape v <file>Smeti</file>.</p>
+
+  <note style="advanced">
+    <p>Privzete podmape med drugim ponavadi vključujejo <file>Namizje</file>, <file>Dokumenti</file>, <file>Prejemi</file>, <file>Slike</file> in <file>Glasba</file>. Nekatere izmed teh bodo že obstajale z namestitvijo GNOME; druge bodo ustvarjene preko programov, če bodo potrebovane.</p>
+  </note>
+
+</page>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="introduction" xml:lang="zh-CN">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="author copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+
+    <desc><app>磁盘使用分析器</app>，也称作 <app>baobab</app>，图形化地展示您的存储空间使用情况。</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>tuhaihe</mal:name>
+      <mal:email>1132321739qq@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>介绍</title>
+
+  <p><app>磁盘使用分析器</app>是一款图形化、菜单化操作的应用程序，用来分析存储设备的使用情况。它可以用来扫描多个本地或远程存储设备(包括硬盘、固态硬盘、U 盘、数码相机和存储卡)。<app>磁盘使用分析器</app>可以扫描<link xref="scan-file-system">整个文件系统</link>树、<link xref="scan-home">您的<file>主目录</file></link>、<link xref="scan-folder">用户请求的特定目录</link>或<link xref="scan-remote">远程文件夹</link>。</p>
+
+</page>

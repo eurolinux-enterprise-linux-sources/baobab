@@ -23,15 +23,20 @@
 namespace Baobab {
 
     public class Application : Gtk.Application {
+        static Application baobab;
 
+        static bool print_version;
         const OptionEntry[] option_entries = {
-            { "version", 'v', 0, OptionArg.NONE, null, N_("Print version information and exit"), null },
+            { "version", 'v', 0, OptionArg.NONE, ref print_version, N_("Print version information and exit"), null },
             { null }
         };
 
         const GLib.ActionEntry[] action_entries = {
             { "quit", on_quit_activate }
         };
+
+        Settings prefs_settings;
+        Settings ui_settings;
 
         protected override void activate () {
             new Window (this);
@@ -40,16 +45,14 @@ namespace Baobab {
         protected override void open (File[] files, string hint) {
             foreach (var file in files) {
                 var window = new Window (this);
-                window.scan_directory (file, ScanFlags.EXCLUDE_MOUNTS);
+                window.scan_directory (file);
             }
         }
 
-        public static new Application get_default () {
-            return (Application) GLib.Application.get_default ();
-        }
+        public static HashTable<File, unowned File> get_excluded_locations () {
+            var app = baobab;
 
-        public GenericSet<File> get_excluded_locations () {
-            var excluded_locations = new GenericSet<File> (File.hash, File.equal);
+            var excluded_locations = new HashTable<File, unowned File> (File.hash, File.equal);
             excluded_locations.add (File.new_for_path ("/proc"));
             excluded_locations.add (File.new_for_path ("/sys"));
             excluded_locations.add (File.new_for_path ("/selinux"));
@@ -58,8 +61,7 @@ namespace Baobab {
             excluded_locations.add (home.get_child (".gvfs"));
 
             var root = File.new_for_path ("/");
-            var prefs_settings = new Settings ("org.gnome.baobab.preferences");
-            foreach (var uri in prefs_settings.get_value ("excluded-uris")) {
+            foreach (var uri in app.prefs_settings.get_value ("excluded-uris")) {
                 var file = File.new_for_uri ((string) uri);
                 if (!file.equal (root)) {
                     excluded_locations.add (file);
@@ -72,34 +74,80 @@ namespace Baobab {
         protected override void startup () {
             base.startup ();
 
-            // Load custom CSS
-            var css_provider = new Gtk.CssProvider ();
-            var css_file = File.new_for_uri ("resource:///org/gnome/baobab/baobab.css");
-            try {
-              css_provider.load_from_file (css_file);
-            } catch (Error e) {
-                warning ("loading css: %s", e.message);
-            }
-            Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
+            baobab = this;
 
-            set_accels_for_action ("win.scan-folder", { "<Primary>o" });
-            set_accels_for_action ("win.reload", { "<Primary>r" });
+            // Settings
+            ui_settings = new Settings ("org.gnome.baobab.ui");
+            prefs_settings = new Settings ("org.gnome.baobab.preferences");
+
+            ui_settings.delay ();
+
+            // Menus: in gnome shell we just use the app menu, since the remaining
+            // items are too few to look ok in a menubar and they are not essential
+            var gtk_settings = Gtk.Settings.get_default ();
+            var builder = new Gtk.Builder ();
+            try {
+                builder.add_from_resource ("/org/gnome/baobab/ui/baobab-menu.ui");
+            } catch (Error e) {
+                error ("loading menu builder file: %s", e.message);
+            }
+            if (gtk_settings.gtk_shell_shows_app_menu) {
+                var app_menu = builder.get_object ("appmenu") as MenuModel;
+                set_app_menu (app_menu);
+            } else {
+                var menubar = builder.get_object ("menubar") as MenuModel;
+                set_menubar (menubar);
+            }
+
+            add_accelerator ("F10", "win.gear-menu", null);
         }
 
-        protected override int handle_local_options (GLib.VariantDict options) {
-            if (options.contains("version")) {
-                print ("%s %s\n", Environment.get_application_name (), Config.VERSION);
-                return 0;
+        protected override bool local_command_line ([CCode (array_length = false, array_null_terminated = true)] ref unowned string[] arguments, out int exit_status) {
+            var ctx = new OptionContext (_("- Disk Usage Analyzer"));
+
+            ctx.add_main_entries (option_entries, Config.GETTEXT_PACKAGE);
+            ctx.add_group (Gtk.get_option_group (true));
+
+            // Workaround for bug #642885
+            unowned string[] argv = arguments;
+
+            try {
+                ctx.parse (ref argv);
+            } catch (Error e) {
+                exit_status = 1;
+                return true;
             }
 
-            return -1; 
+            if (print_version) {
+                print ("%s %s\n", Environment.get_application_name (), Config.VERSION);
+                exit_status = 0;
+                return true;
+            }
+
+            return base.local_command_line (ref arguments, out exit_status);
+        }
+
+        protected override void shutdown () {
+            ui_settings.apply ();
+            base.shutdown ();
         }
 
         public Application () {
             Object (application_id: "org.gnome.baobab", flags: ApplicationFlags.HANDLES_OPEN);
 
-            add_main_option_entries (option_entries);
+            Gd.ensure_types ();
+
             add_action_entries (action_entries, this);
+        }
+
+        public static Settings get_prefs_settings () {
+            var app = baobab;
+            return app.prefs_settings;
+        }
+
+        public static Settings get_ui_settings () {
+            var app = baobab;
+            return app.ui_settings;
         }
 
         void on_quit_activate () {

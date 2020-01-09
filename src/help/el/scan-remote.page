@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scan-remote" xml:lang="el">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+    <link type="guide" xref="index#scan" group="#last"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Σαρώστε ένα φάκελο απομακρυσμένα από τον υπολογιστή σας.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Σάρωση ενός απομακρυσμένου φακέλου</title>
+
+  <p>Ο <app>Αναλυτής χρήσης δίσκου</app> μπορεί να σαρώσει συσκευές αποθήκευσης που είναι προσβάσιμες εξ αποστάσεως. Για να σαρώσετε απομακρυσμένα ολόκληρο το σύστημα αρχείων ή κάποιο συγκεκριμένο φάκελο:</p>
+
+  <steps>
+    <item>
+      <p>Επιλέξτε από το μενού <guiseq><gui>Αναλυτής</gui> <gui>Σάρωση απομακρυσμένου φακέλου…</gui></guiseq></p>
+    </item>
+    <item>
+      <p>Επιλέξτε το πρωτόκολλο που επιθυμείτε να χρησιμοποιήσετε</p>
+<!--      <p>Choose one of following protocols, depends of what you want to do:</p>
+      <terms>
+        <item>
+          <title><link xref="ssh">SSH</link></title>
+	  <p>Secure Shell offers you a secure connection because you need to
+	  login with a username and password.</p>
+        </item>
+        <item>
+          <title><link xref="ftp">FTP (with login)</link></title>
+	  <p>File Transfer Protocol with login is reliable because a user
+	  account is required.</p>
+        </item>
+        <item>
+          <title><link xref="windows-share">Windows Share</link></title>
+          <p>Scan between Windows and Linux machines.</p>
+        </item>
+        <item>
+          <title><link xref="web-dav">WebDAV (HTTP)</link></title>
+	  <p>Web-based Distributed Authoring and Versioning methods of
+	  Hypertext Transfer Protocol HTTP scan folders that are stored on
+	  World Wide Web servers.</p>
+        </item>
+        <item>
+          <title><link xref="web-dav">Secure WebDAV (HTTPS)</link></title>
+	  <p>Secure WebDAV,ensures encryption while you are transfering
+	  data.</p>
+        </item>
+
+  <comment>
+    <cite date="2011-12-28" href="mailto:mdhillca@gmail.com">Michael Hill</cite>
+    <p>Custom Location needs a better explanation.</p>
+  </comment>
+        <item>
+          <title><link xref="custom-location">Custom Location</link></title>
+	  <p>Custom Location enables you to access a particular function from
+	  the folder manager.</p>
+        </item>
+      </terms>-->
+    </item>
+    <item>
+      <p>Πληκτρολογήστε τη διεύθυνση IP της απομακρυσμένης συσκευής αποθήκευσης στο πεδίο <gui>Εξυπηρετητής</gui> ή το URI, αναλόγως με το πρωτόκολλο που χρησιμοποιείται. </p>
+<!--      <p>If you are not so sure about the information you have to write into
+      <gui>Port</gui> and <gui>Folder</gui>, left in blank.</p>-->
+    </item>
+    <item>
+      <p>Για να συνεχίσετε κάντε κλικ στη <gui>Σάρωση</gui>, πριν ξεκινήσει η σάρωση, μπορεί να ερωτηθείτε για περισσότερες λεπτομέρειες, όπως κωδικό πρόσβασης και όνομα χρήστη.</p>
+    </item>
+  </steps>
+
+  <note>
+    <p>Η διαδικασία της σάρωσης μέσω δικτύου μπορεί να είναι βραδύτερη από αυτή ενός τοπικού συστήματος αρχείων.</p>
+  </note>
+
+  <note>
+    <p>Κάντε δεξί κλικ σε οποιοδήποτε φάκελο και επιλέξτε <gui>Άνοιγμα φακέλου</gui> για να εκκινήσετε την εφαρμογή <app>Αρχεία</app>, ή <gui>Μετακίνηση στα απορρίμματα</gui> για να μεταφέρετε τον φάκελο στα <file>απορρίμματα</file>.</p>
+  </note>
+
+</page>

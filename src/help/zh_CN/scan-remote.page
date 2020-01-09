@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scan-remote" xml:lang="zh-CN">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+    <link type="guide" xref="index#scan" group="#last"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>从您的电脑上远程扫描文件夹。</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>tuhaihe</mal:name>
+      <mal:email>1132321739qq@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>扫描远程文件夹</title>
+
+  <p><app>磁盘使用分析器</app> 可以扫描能够远程访问的存储设备。要远程扫描整个文件系统或任何指定的文件夹：</p>
+
+  <steps>
+    <item>
+      <p>从菜单选择 <guiseq><gui>分析器</gui> <gui>扫描远程文件夹…</gui></guiseq></p>
+    </item>
+    <item>
+      <p>选择您希望使用的协议</p>
+<!--      <p>Choose one of following protocols, depends of what you want to do:</p>
+      <terms>
+        <item>
+          <title><link xref="ssh">SSH</link></title>
+	  <p>Secure Shell offers you a secure connection because you need to
+	  login with a username and password.</p>
+        </item>
+        <item>
+          <title><link xref="ftp">FTP (with login)</link></title>
+	  <p>File Transfer Protocol with login is reliable because a user
+	  account is required.</p>
+        </item>
+        <item>
+          <title><link xref="windows-share">Windows Share</link></title>
+          <p>Scan between Windows and Linux machines.</p>
+        </item>
+        <item>
+          <title><link xref="web-dav">WebDAV (HTTP)</link></title>
+	  <p>Web-based Distributed Authoring and Versioning methods of
+	  Hypertext Transfer Protocol HTTP scan folders that are stored on
+	  World Wide Web servers.</p>
+        </item>
+        <item>
+          <title><link xref="web-dav">Secure WebDAV (HTTPS)</link></title>
+	  <p>Secure WebDAV,ensures encryption while you are transfering
+	  data.</p>
+        </item>
+
+  <comment>
+    <cite date="2011-12-28" href="mailto:mdhillca@gmail.com">Michael Hill</cite>
+    <p>Custom Location needs a better explanation.</p>
+  </comment>
+        <item>
+          <title><link xref="custom-location">Custom Location</link></title>
+	  <p>Custom Location enables you to access a particular function from
+	  the folder manager.</p>
+        </item>
+      </terms>-->
+    </item>
+    <item>
+      <p>将远程存储设备的 IP 地址填入 <gui>服务器</gui> 区域或位置(URI)处，这决定于您使用的协议。</p>
+<!--      <p>If you are not so sure about the information you have to write into
+      <gui>Port</gui> and <gui>Folder</gui>, left in blank.</p>-->
+    </item>
+    <item>
+      <p>点击 <gui>扫描</gui> 继续；在扫描开始前，您可能会被询问更多细节，比如密码和用户名。</p>
+    </item>
+  </steps>
+
+  <note>
+    <p>通过网络扫描可能比扫描本地文件系统速度慢些。</p>
+  </note>
+
+  <note>
+    <p>右击任何文件夹，选择 <gui>打开文件夹</gui> 启用 <app>文件</app> 应用程序，或选择 <gui>移动到回收站</gui> 将您的文件夹移动到 <file>回收站</file>。</p>
+  </note>
+
+</page>

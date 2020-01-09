@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scan-home" xml:lang="hu">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision version="0.1" date="2011-12-20" status="review"/>
+    <link type="guide" xref="index#scan"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>Vizsgálja meg a belső háttértárolón lévő összes személyes fájlját.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>A <file>saját</file> mappájának vizsgálata.</title>
+
+  <p>A <file>saját</file> mappa a felhasználók fájljainak tárolására szolgáló hely, a felhasználók alapértelmezetten csak ide, vagy ennek almappáiba menthetik a fájlokat. Ide kerülnek a letöltései az internetről, a dokumentumai amelyeken dolgozik, és a fotói a fényképezőgépéről. Normális esetben minden felhasználónak van egy <file>saját</file> mappája a számítógépen.</p>
+
+  <steps>
+    <item>
+      <p>Válassza az <guiseq><gui>Elemző</gui><gui>Saját mappa vizsgálata</gui></guiseq> menüpontot.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Válassza az <guiseq><gui>Elemző</gui><gui>Leállítás</gui></guiseq> menüpontot az aktuális vizsgálat megszakításához, vagy az <guiseq><gui>Elemző</gui><gui>Frissítés</gui></guiseq> menüpontot a legutolsó vizsgálat megismétléséhez.</p>
+  </note>
+
+  <p>Az eredmény segíthet eldönteni, melyik mappát lehet <link href="help:file-roller">archiválni</link>, <link href="help:gnome-help/files-delete">törölni</link> vagy <link href="help:gnome-help/files-copy">áthelyezni</link> hely felszabadításához. Az eredmény szintén felhasználható annak megbecslésére, hogy mennyi hely szükséges a <file>saját</file> mappája <link href="help:gnome-help/backup-how">biztonsági mentéséhez</link>.</p>
+
+  <p>A jobb egérgombbal kattintson bármely mappára, és válassza a <gui>Mappa megnyitása</gui> menüpontot a <app>Fájlok</app> alkalmazás megnyitásához, vagy az <gui>Áthelyezés a Kukába</gui> menüpontot a mappa áthelyezéséhez a <file>Kukába</file>.</p>
+
+  <note style="advanced">
+    <p>Az alapértelmezett almappák közé tartozik többek között az <file>Asztal</file>, <file>Dokumentumok</file>, <file>Letöltések</file>, <file>Képek</file> és a <file>Zenék</file> mappa. Néhányuk már akkor létezik, amikor a GNOME feltelepül, mások csak akkor jönnek létre, ha egy alkalmazásnak szüksége van rá.</p>
+  </note>
+
+</page>

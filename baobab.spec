@@ -1,27 +1,21 @@
-%global gtk3_version 3.19.1
-
 Name:           baobab
-Version:        3.28.0
-Release:        2%{?dist}
+Version:        3.8.2
+Release:        1%{?dist}
 Summary:        A graphical directory tree analyzer
 
+Group:          Applications/System
 License:        GPLv2+ and GFDL
-URL:            https://wiki.gnome.org/Apps/Baobab
-Source0:        https://download.gnome.org/sources/baobab/3.28/%{name}-%{version}.tar.xz
+URL:            https://live.gnome.org/Baobab
+Source0:        http://download.gnome.org/sources/baobab/3.8/%{name}-%{version}.tar.xz
 
-Patch0:         build-Fix-setting-GNOMELOCALEDIR.patch
-Patch1:         build-Install-also-24x24-icons.patch
-Patch2:         build-Fix-gschema-translations.patch
-
-BuildRequires:  pkgconfig(gtk+-3.0) >= %{gtk3_version}
-BuildRequires:  /usr/bin/appstream-util
+BuildRequires:  chrpath
+BuildRequires:  gobject-introspection-devel
+BuildRequires:  gtk3-devel
+BuildRequires:  libgtop2-devel
+BuildRequires:  intltool
 BuildRequires:  desktop-file-utils
-BuildRequires:  gettext
 BuildRequires:  itstool
-BuildRequires:  meson
-BuildRequires:  vala
-
-Requires: gtk3%{?_isa} >= %{gtk3_version}
+BuildRequires:  vala-tools
 
 Obsoletes: gnome-utils < 1:3.3
 Obsoletes: gnome-utils-devel < 1:3.3
@@ -35,102 +29,58 @@ any change made to your home folder as far as any mounted/unmounted device.
 
 %prep
 %setup -q
-%patch0 -p1 -b .build-Fix-setting-GNOMELOCALEDIR
-%patch1 -p1 -b .build-Install-also-24x24-icons
-%patch2 -p1 -b .build-Fix-gschema-translations
 
 
 %build
-%meson
-%meson_build
+%configure
+make %{?_smp_mflags}
 
 
 %install
-%meson_install
+make install DESTDIR=$RPM_BUILD_ROOT
+
+chrpath --delete $RPM_BUILD_ROOT%{_bindir}/baobab
+
+desktop-file-validate $RPM_BUILD_ROOT%{_datadir}/applications/baobab.desktop
 
 %find_lang %{name} --with-gnome
 
 
-%check
-appstream-util validate-relax --nonet %{buildroot}/%{_datadir}/metainfo/org.gnome.baobab.appdata.xml
-desktop-file-validate %{buildroot}/%{_datadir}/applications/org.gnome.baobab.desktop
-
-
 %post
-touch --no-create %{_datadir}/icons/hicolor >&/dev/null || :
+for d in hicolor HighContrast ; do
+  touch --no-create %{_datadir}/icons/$d >&/dev/null || :
+done
 
 
 %postun
 if [ $1 -eq 0 ]; then
   glib-compile-schemas %{_datadir}/glib-2.0/schemas >&/dev/null || :
-  touch --no-create %{_datadir}/icons/hicolor >&/dev/null || :
-  gtk-update-icon-cache %{_datadir}/icons/hicolor >&/dev/null || :
+  for d in hicolor HighContrast ; do
+    touch --no-create %{_datadir}/icons/$d >&/dev/null || :
+    gtk-update-icon-cache %{_datadir}/icons/$d >&/dev/null || :
+  done
 fi
 
 
 %posttrans
 glib-compile-schemas %{_datadir}/glib-2.0/schemas >&/dev/null || :
-gtk-update-icon-cache %{_datadir}/icons/hicolor >&/dev/null || :
+for d in hicolor HighContrast ; do
+  gtk-update-icon-cache %{_datadir}/icons/$d >&/dev/null || :
+done
 
 
 %files -f %{name}.lang
-%doc AUTHORS NEWS README
-%license COPYING COPYING.docs
+%doc AUTHORS COPYING NEWS README COPYING.docs
 %{_bindir}/baobab
-%{_datadir}/applications/org.gnome.baobab.desktop
-%{_datadir}/dbus-1/services/org.gnome.baobab.service
+%{_datadir}/applications/baobab.desktop
 %{_datadir}/icons/hicolor/*/apps/baobab.png
-%{_datadir}/icons/hicolor/symbolic/apps/baobab-symbolic.svg
+%{_datadir}/icons/HighContrast/*/apps/baobab.png
 %{_datadir}/glib-2.0/schemas/org.gnome.baobab.gschema.xml
-%{_datadir}/metainfo/org.gnome.baobab.appdata.xml
-%{_mandir}/man1/baobab.1*
-
+%{_mandir}/man1/baobab.1.gz
+%{_datadir}/icons/hicolor/scalable/actions/view-ringschart-symbolic.svg
+%{_datadir}/icons/hicolor/scalable/actions/view-treemap-symbolic.svg
 
 %changelog
-* Fri Jun 22 2018 Ondrej Holy <oholy@redhat.com> - 3.28.0-2
-- Install also 24x24 icons
-- Fix gschema translations
-- Resolves: #1567161
-
-* Mon Mar 12 2018 Kalev Lember <klember@redhat.com> - 3.28.0-1
-- Update to 3.28.0
-- Fix setting GNOMELOCALEDIR
-- Resolves: #1567161
-
-* Thu Feb 16 2017 Ondrej Holy <oholy@redhat.com> - 3.22.1-1
-- Update to 3.22.1
-- Resolves: #1386818
-
-* Fri Sep 11 2015 Ondrej Holy <oholy@redhat.com> - 3.14.1-5
-- Exclude mountpoints when scanning recent locations
-- Resolves: #840427
-
-* Tue Jul 28 2015 David King <dking@redhat.com> - 3.14.1-4
-- Fix menu item sensitivity (#1233656)
-
-* Fri May 15 2015 Ondrej Holy <oholy@redhat.com> - 3.14.1-3
-- Exclude mountpoints when handling commandline arguments
-- Resolves: #840427
-
-* Fri May 15 2015 Ondrej Holy <oholy@redhat.com> - 3.14.1-2
-- Add translation updates from translation team
-- Resolves: #1174557
-
-* Tue May 5 2015 Ondrej Holy <oholy@redhat.com> - 3.14.1-1
-- Update to 3.14.1
-- Remove obsolete upstream patch
-- Add translations updates from upstream
-- Resolves: #1174557
-
-* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 3.8.2-4
-- Mass rebuild 2014-01-24
-
-* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 3.8.2-3
-- Mass rebuild 2013-12-27
-
-* Fri Dec 6 2013 Ondrej Holy <oholy@redhat.com> - 3.8.2-2
-- Translation updates (#1030317)
-
 * Mon May 13 2013 Richard Hughes <rhughes@redhat.com> - 3.8.2-1
 - Update to 3.8.2
 

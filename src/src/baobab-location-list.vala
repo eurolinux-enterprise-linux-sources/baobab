@@ -20,92 +20,15 @@
 
 namespace Baobab {
 
-    [GtkTemplate (ui = "/org/gnome/baobab/ui/baobab-location-row.ui")]
-    private class LocationRow : Gtk.ListBoxRow {
-        [GtkChild]
-        private Gtk.Image image;
-        [GtkChild]
-        private Gtk.Label name_label;
-        [GtkChild]
-        private Gtk.Label path_label;
-        [GtkChild]
-        private Gtk.Label available_label;
-        [GtkChild]
-        private Gtk.Label total_size_label;
-        [GtkChild]
-        private Gtk.LevelBar usage_bar;
-
-        public Location? location { get; private set; }
-
-        public LocationRow (Location l) {
-            location = l;
-            update ();
-        }
-
-        public void update () {
-            location.get_fs_usage ();
-            image.gicon = location.icon;
-
-            var escaped = GLib.Markup.escape_text (location.name, -1);
-            name_label.label = "<b>%s</b>".printf (escaped);
-
-            path_label.hide();
-            if (location.file != null) {
-                path_label.label = GLib.Markup.escape_text (location.file.get_parse_name (), -1);
-                path_label.show();
-            }
-
-            // assume for local mounts the end of the mount path is the
-            // relevant information, and for remote mounts the beginning is
-            // more important
-            path_label.ellipsize = location.is_remote ? Pango.EllipsizeMode.END : Pango.EllipsizeMode.START;
-
-            total_size_label.hide();
-            if (location.is_volume || location.is_main_volume) {
-                if (location.size != null) {
-                    total_size_label.label = _("%s Total").printf (format_size (location.size));
-                    total_size_label.show();
-
-                    if (location.used != null) {
-                        available_label.label = _("%s Available").printf (format_size (location.size - location.used));
-
-                        usage_bar.max_value = location.size;
-
-                        // Set critical color at 90% of the size
-                        usage_bar.add_offset_value (Gtk.LEVEL_BAR_OFFSET_LOW, 0.9 * location.size);
-                        usage_bar.value = location.used;
-                        usage_bar.show ();
-                    } else {
-                        available_label.label = _("Unknown");
-                    }
-                } else if (location.used != null) {
-                    // useful for some remote mounts where we don't know the
-                    // size but do have a usage figure
-                    available_label.label = _("%s Used").printf (format_size (location.used));
-                } else if (location.mount == null && location.volume.can_mount ()) {
-                    available_label.label = _("Unmounted");
-                }
-            }
-        }
-    }
-
-    [GtkTemplate (ui = "/org/gnome/baobab/ui/baobab-location-list.ui")]
-    public class LocationList : Gtk.Box {
-        [GtkChild]
-        private Gtk.ListBox local_list_box;
-        [GtkChild]
-        private Gtk.ListBox remote_list_box;
-        [GtkChild]
-        private Gtk.Box remote_box;
-
-        public delegate void LocationAction (Location l);
-        private LocationAction? location_action;
-
+    public class LocationList : Egg.ListBox {
         private const int MAX_RECENT_LOCATIONS = 5;
 
         private VolumeMonitor monitor;
 
         private List<Location> locations = null;
+
+        public delegate void LocationAction (Location l);
+        private LocationAction? location_action;
 
         construct {
             monitor = VolumeMonitor.get ();
@@ -116,23 +39,25 @@ namespace Baobab {
             monitor.volume_removed.connect (volume_removed);
             monitor.volume_added.connect (volume_added);
 
-            local_list_box.set_header_func (update_header);
-            local_list_box.row_activated.connect (row_activated);
-
-            remote_list_box.set_header_func (update_header);
-            remote_list_box.row_activated.connect (row_activated);
-
-            Timeout.add_seconds(3, (() => {
-                update_existing ();
-                return Source.CONTINUE;
-            }));
+            set_selection_mode (Gtk.SelectionMode.NONE);
+            set_separator_funcs (update_separator);
 
             populate ();
         }
 
-        void update_existing () {
-            local_list_box.foreach ((widget) => { ((LocationRow)widget).update (); });
-            remote_list_box.foreach ((widget) => { ((LocationRow)widget).update (); });
+        void update_separator (ref Gtk.Widget? separator, Gtk.Widget widget, Gtk.Widget? before_widget) {
+            if (before_widget != null && separator == null) {
+                separator = new Gtk.Separator (Gtk.Orientation.HORIZONTAL);
+            } else {
+                separator = null;
+            }
+        }
+
+        public override void child_activated (Gtk.Widget? widget) {
+            if (location_action != null) {
+                var location_widget = widget as LocationWidget;
+                location_action (location_widget.location);
+            }
         }
 
         bool already_present (File file) {
@@ -142,6 +67,10 @@ namespace Baobab {
                 }
             }
             return false;
+        }
+
+        void append_to_volumes (Location location) {
+            locations.insert_before (locations.find (Location.get_home_location ()), location);
         }
 
         void volume_changed (Volume volume) {
@@ -160,7 +89,16 @@ namespace Baobab {
         }
 
         void volume_added (Volume volume) {
-            locations.append (new Location.from_volume (volume));
+            // Since GVolumeMonitor unnecessarly fires "volume-added" signals
+            // at startup (see bugzilla bug 684677) we need to workaround and
+            // check for duplicates, until a fixed version of gvfs is released.
+            foreach (var location in locations) {
+                if (location.volume == volume) {
+                    return;
+                }
+            }
+            append_to_volumes (new Location.from_volume (volume));
+
             update ();
         }
 
@@ -182,7 +120,7 @@ namespace Baobab {
             var volume = mount.get_volume ();
             if (volume == null) {
                 if (!already_present (mount.get_root ())) {
-                    locations.append (new Location.from_mount (mount));
+                    append_to_volumes (new Location.from_mount (mount));
                 }
             } else {
                 foreach (var location in locations) {
@@ -197,23 +135,28 @@ namespace Baobab {
         }
 
         void populate () {
-            locations.append (new Location.for_home_folder ());
             locations.append (new Location.for_main_volume ());
 
             foreach (var volume in monitor.get_volumes ()) {
-                volume_added (volume);
+                var location = new Location.from_volume (volume);
+                if (!location.is_home) {
+                    locations.append (location);
+                }
             }
 
             foreach (var mount in monitor.get_mounts ()) {
-                mount_added (mount);
+                if (mount.get_volume () == null) {
+                    var location = new Location.from_mount (mount);
+                    if (!location.is_home) {
+                        locations.append (location);
+                    }
+                } else {
+                    // Already added as volume
+                }
             }
 
-            populate_recent ();
+            locations.append (Location.get_home_location ());
 
-            update ();
-        }
-
-        void populate_recent () {
             Gtk.RecentManager recent_manager = Gtk.RecentManager.get_default ();
             List<Gtk.RecentInfo> recent_items = recent_manager.get_items ();
 
@@ -240,21 +183,8 @@ namespace Baobab {
             foreach (var info in recent_items) {
                 locations.append (new Location.for_recent_info (info));
             }
-        }
 
-        void update_header (Gtk.ListBoxRow row, Gtk.ListBoxRow? before_row) {
-            if (before_row != null && row.get_header () == null) {
-                row.set_header (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
-            } else {
-                row.set_header (null);
-            }
-        }
-
-        void row_activated (Gtk.ListBoxRow row) {
-            if (location_action != null) {
-                var location_widget = row as LocationRow;
-                location_action (location_widget.location);
-            }
+            update ();
         }
 
         public void set_action (owned LocationAction? action) {
@@ -262,25 +192,25 @@ namespace Baobab {
         }
 
         public void update () {
-            local_list_box.foreach ((widget) => { widget.destroy (); });
-            remote_list_box.foreach ((widget) => { widget.destroy (); });
-
-            remote_box.visible = false;
+            this.foreach ((widget) => { widget.destroy (); });
 
             foreach (var location in locations) {
-                if (location.is_remote) {
-                    remote_list_box.add (new LocationRow (location));
-                    remote_box.visible = true;
-                } else {
-                    local_list_box.add (new LocationRow (location));
-                }
+                add (new LocationWidget (location));
             }
+
+            show_all ();
         }
 
         public void add_location (Location location) {
             if (location.file == null) {
                 return;
             }
+
+            if (!already_present (location.file)) {
+                locations.append (location);
+            }
+
+            update ();
 
             // Add to recent files
             Gtk.RecentData data = Gtk.RecentData ();
@@ -294,19 +224,6 @@ namespace Baobab {
             groups[1] = null;
             data.groups = groups;
             Gtk.RecentManager.get_default ().add_full (location.file.get_uri (), data);
-
-            // Reload recent locations
-            unowned List<Location> iter = locations;
-            while (iter != null) {
-                unowned List<Location> next = iter.next;
-                if (iter.data.is_recent) {
-                    locations.remove_link (iter);
-                }
-                iter = next;
-            }
-            populate_recent ();
-
-            update ();
         }
     }
 }

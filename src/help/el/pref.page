@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="guide" id="pref" xml:lang="el">
+
+  <info>
+    <revision pkgversion="3.4" date="2012-02-18" status="review"/>
+    <link type="guide" xref="index#preferences"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Παράληψη συγκεκριμένων συσκευών και κατατμήσεων κατά τη σάρωση του συστήματος αρχείων.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Απενεργοποίηση σάρωσης σε συγκεκριμένες συσκευές αποθήκευσης και κατατμήσεις</title>
+
+  <p>Η εφαρμογή <app>Αναλυτής χρήσης δίσκου</app> σας επιτρέπει να σαρώσετε μόνο τις κατατμήσεις και τις συσκευές αποθήκευσης που επιλέξατε στο διάλογο <gui>Προτιμήσεις</gui>. Από προεπιλογή, όλες οι συσκευές και κατατμήσεις είναι επιλεγμένες, αλλά η εφαρμογή θα αποθηκεύσει τις προτιμήσεις σας όταν κλείσετε την εφαρμογή.</p>
+
+  <steps>
+    <item>
+      <p>Επιλέξτε <guiseq><gui>Επεξεργασία</gui><gui>Προτιμήσεις</gui></guiseq></p>
+    </item>
+    <item>
+      <p>Επιλέξτε τις συσκευές αποθήκευσης και τις κατατμήσεις που θέλετε να σαρώσετε, ή αποεπιλέξτε τα αν επιθυμείτε το αντίθετο</p>
+    </item>
+    <item>
+      <p>Πατήστε <gui>Κλείσιμο</gui> για να αποθηκεύσετε τις προτιμήσεις σας</p>
+    </item>
+  </steps>
+
+  <note style="bug">
+    <p>Δεν μπορεί να αποεπιλεχθεί, το πρώτο αντικείμενο στη λίστα, που έχει προσαρτηθεί στο <file>/</file></p>
+  </note>
+
+</page>

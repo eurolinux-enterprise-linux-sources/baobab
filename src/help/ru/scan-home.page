@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scan-home" xml:lang="ru">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision version="0.1" date="2011-12-20" status="review"/>
+    <link type="guide" xref="index#scan"/>
+
+    <credit type="author copyright">
+      <name>Юлита Инка (Julita Inca)</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Майкл Хилл (Michael Hill)</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>Сканирование всех ваших личных файлов на внутреннем устройстве хранения информации.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yuri Myasoedov</mal:name>
+      <mal:email>omerta13@yandex.ru</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Василий Фаронов</mal:name>
+      <mal:email>qvvx@yandex.ru</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Сканирование <file>домашней папки</file></title>
+
+  <p><file>Домашняя папка</file> — это место, где хранится большинство файлов обычного пользователя, так как по умолчанию файлы часто сохраняются или копируются в её подпапки. Это относится, в том числе, к загрузкам из Интернета, документам, с которыми вы работаете и снимкам с фотокамеры. Как правило, для каждого пользователя на компьютере существует своя <file>домашняя папка</file>.</p>
+
+  <steps>
+    <item>
+      <p>Выберите из меню <guiseq><gui>Анализатор</gui><gui>Сканировать домашнюю папку</gui></guiseq></p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Выберите <guiseq><gui>Анализатор</gui><gui>Остановить</gui></guiseq>, чтобы остановить текущее сканирование, или <guiseq><gui>Анализатор</gui><gui>Обновить</gui></guiseq>, чтобы повторить последнее сканирование.</p>
+  </note>
+
+  <p>С помощью полученных результатов можно определить, какие папки можно <link href="help:file-roller">заархивировать</link>, <link href="help:gnome-help/files-delete">удалить</link> или <link href="help:gnome-help/files-copy">переместить</link>, чтобы освободить место. С их помощью также можно оценить, сколько места понадобится для <link href="help:gnome-help/backup-how">резервного копирования</link> вашей <file>домашней папки</file>.</p>
+
+  <p>Нажмите правой кнопкой мыши на любую папку и выберите <gui>Открыть папку</gui>, чтобы запустить приложение <app>Файлы</app>, или <gui>Удалить в корзину</gui>, чтобы переместить папку в <file>Корзину</file>.</p>
+
+  <note style="advanced">
+    <p>По умолчанию домашняя папка содержит подпапки <file>Рабочий стол</file>, <file>Документы</file>, <file>Загрузки</file>, <file>Изображения</file>, <file>Музыка</file> и другие. Некоторые из них уже существуют при установке GNOME, другие создаются различными приложениями при необходимости.</p>
+  </note>
+
+</page>

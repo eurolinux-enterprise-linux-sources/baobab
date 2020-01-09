@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scan-file-system" xml:lang="es">
+
+  <info>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+    <link type="guide" xref="index#scan"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>Analizar todos los dispositivos de almacenamiento internos y extraíbles.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2008.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Montse Fernández Dopacio</mal:name>
+      <mal:email>mfernandez@igalia.com</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Analizar el sistema de archivos</title>
+
+  <p>Para saber cuánto espacio ocupa el sistema de archivos:</p>
+
+  <steps>
+    <item>
+      <p>Seleccione <guiseq><gui>Analizador</gui><gui>Analizar sistema de archivos</gui></guiseq> del menú</p>
+    </item>
+  </steps>
+
+  <p>Su sistema de archivos incluye todos los dispositivos de almacenamiento internos y extraíbles que están montados cuando se analiza la carpeta correspondiente.</p>
+
+  <note style="tip">
+    <p>Si el sistema de archivo que intenta analizar es grande, el análisis puede tardar varios minutos en completarse.</p>
+    <p>Seleccione <guiseq><gui>Analizador</gui><gui>Detener</gui></guiseq> para cancelar el análisis actual, o <guiseq><gui>Analizador</gui><gui>Actualizar</gui></guiseq> para repetir el último análisis.</p>
+  </note>
+
+  <p>Los resultados pueden ser útiles para decidir qué carpetas se pueden <link href="ghelp:file-roller">comprimir</link>, <link href="help:gnome-help/files-delete">eliminar</link> o <link href="help:gnome-help/files-copy">mover</link> para liberar espacio. También puede usar los resultados para estimar cuánto espacio sería necesario para hacer una <link href="help:gnome-help/backup-how">copia de respaldo</link> de ciertas carpetas.</p>
+
+  <p>Pulse con el botón derecho sobre cualquier carpeta y seleccione <gui>Abrir carpeta</gui> para lanzar la aplicación de <app>Archivos</app>, o <gui>Mover a la papelera</gui> para mover el archivo a la <file>Papelera</file>.</p>
+
+</page>

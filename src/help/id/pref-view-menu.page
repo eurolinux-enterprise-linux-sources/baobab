@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="tool-status-bar" xml:lang="id">
+
+  <info>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Sembunyikan atau tampilkan bilah perkakas dan bilah status.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Bilah perkakas dan bilah status</title>
+
+  <p><gui>Bilah perkakas</gui> menyediakan pintasan ke berbagi aksi pemindaian, sementara <gui>Bilah status</gui> menyediakan status aplikasi (sebagai contoh, <gui>Siap</gui> dan <gui>Memindai</gui>).</p>
+
+  <steps>
+    <item>
+      <p>Pilih <guiseq><gui>Tilikan</gui><gui>Bilah perkakas</gui></guiseq> dari menu dan aktifkan atau nonaktifkan opsi</p>
+    </item>
+    <item>
+      <p>Pilih <guiseq><gui>Tilikan</gui><gui>Bilah status</gui></guiseq> dari menu dan aktifkan atau nonaktifkan opsi</p>
+    </item>
+  </steps>
+
+</page>

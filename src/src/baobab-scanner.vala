@@ -35,7 +35,6 @@ namespace Baobab {
             PERCENT,
             SIZE,
             ALLOC_SIZE,
-            TIME_MODIFIED,
             ELEMENTS,
             STATE,
             ERROR,
@@ -59,13 +58,12 @@ namespace Baobab {
 
         public signal void completed();
 
-        const string ATTRIBUTES =
+        static const string ATTRIBUTES =
             FileAttribute.STANDARD_NAME + "," +
             FileAttribute.STANDARD_DISPLAY_NAME + "," +
             FileAttribute.STANDARD_TYPE + "," +
             FileAttribute.STANDARD_SIZE +  "," +
             FileAttribute.STANDARD_ALLOCATED_SIZE + "," +
-            FileAttribute.TIME_MODIFIED + "," +
             FileAttribute.UNIX_NLINK + "," +
             FileAttribute.UNIX_INODE + "," +
             FileAttribute.UNIX_DEVICE + "," +
@@ -81,11 +79,11 @@ namespace Baobab {
             }
         }
 
-        Thread<void*>? thread = null;
+        GLib2.Thread? thread = null;
         uint process_result_idle = 0;
 
         HardLink[] hardlinks;
-        GenericSet<File> excluded_locations;
+        HashTable<File, unowned File> excluded_locations;
 
         bool successful = false;
 
@@ -147,7 +145,6 @@ namespace Baobab {
             // read from the main thread only after dispatch
             internal uint64 size;
             internal uint64 alloc_size;
-            internal uint64 time_modified;
             internal int elements;
             internal double percent;
             internal int max_depth;
@@ -171,8 +168,6 @@ namespace Baobab {
             results.parse_name = directory.get_parse_name ();
             results.parent = parent;
 
-            results.time_modified = info.get_attribute_uint64 (FileAttribute.TIME_MODIFIED);
-
             results.size = info.get_size ();
             if (info.has_attribute (FileAttribute.STANDARD_ALLOCATED_SIZE)) {
                 results.alloc_size = info.get_attribute_uint64 (FileAttribute.STANDARD_ALLOCATED_SIZE);
@@ -195,12 +190,8 @@ namespace Baobab {
                                 results.alloc_size += child_results.alloc_size;
                                 results.elements += child_results.elements;
                                 results.max_depth = int.max (results.max_depth, child_results.max_depth + 1);
-                                if (child_results.error != null || child_results.child_error) {
+                                if (child_results.error != null) {
                                     results.child_error = true;
-                                }
-
-                                if (results.time_modified < child_results.time_modified) {
-                                    results.time_modified = child_results.time_modified;
                                 }
 
                                 results_array.results += (owned) child_results;
@@ -226,11 +217,6 @@ namespace Baobab {
                                 results.alloc_size += child_info.get_attribute_uint64 (FileAttribute.STANDARD_ALLOCATED_SIZE);
                             }
                             results.elements++;
-
-                            var child_time = child_info.get_attribute_uint64 (FileAttribute.TIME_MODIFIED);
-                            if (results.time_modified < child_time) {
-                                results.time_modified = child_time;
-                            }
                             break;
 
                         default:
@@ -243,11 +229,7 @@ namespace Baobab {
             }
 
             foreach (unowned Results child_results in results_array.results) {
-                if (results.size > 0) {
-                    child_results.percent = 100 * ((double) child_results.size) / ((double) results.size);
-                } else {
-                    child_results.percent = 0;
-                }
+                child_results.percent = 100 * ((double) child_results.size) / ((double) results.size);
             }
 
             // No early exit: in order to avoid a potential crash, we absolutely *must* push this onto the
@@ -292,8 +274,7 @@ namespace Baobab {
             set (results.iter,
                  Columns.STATE,        State.SCANNING,
                  Columns.DISPLAY_NAME, results.display_name,
-                 Columns.PARSE_NAME,   results.parse_name,
-                 Columns.TIME_MODIFIED,results.time_modified);
+                 Columns.PARSE_NAME,   results.parse_name);
             results.iter_is_set = true;
         }
 
@@ -373,8 +354,6 @@ namespace Baobab {
                 tmp = results_queue.try_pop ();
             }
 
-            hardlinks = null;
-
             base.clear ();
 
             cancellable.reset ();
@@ -392,15 +371,9 @@ namespace Baobab {
                 // the thread owns a reference on the Scanner object
                 this.self = this;
 
-                thread = new Thread<void*> ("scanner", scan_in_thread);
+                thread = new GLib2.Thread ("scanner", scan_in_thread);
 
-                process_result_idle = Timeout.add (100, () => {
-                        bool res = process_results();
-                        if (!res) {
-                            process_result_idle = 0;
-                        }
-                        return res;
-                    });
+                process_result_idle = Timeout.add (100, process_results);
             } else {
                 completed ();
             }
@@ -429,14 +402,13 @@ namespace Baobab {
                 typeof (double),  // PERCENT
                 typeof (uint64),  // SIZE
                 typeof (uint64),  // ALLOC_SIZE
-                typeof (uint64),  // TIME_MODIFIED
                 typeof (int),     // ELEMENTS
                 typeof (State),   // STATE
                 typeof (Error)    // ERROR (if STATE is ERROR)
             });
             set_sort_column_id (Columns.SIZE, Gtk.SortType.DESCENDING);
 
-            excluded_locations = Application.get_default ().get_excluded_locations ();
+            excluded_locations = Application.get_excluded_locations ();
 
             if (ScanFlags.EXCLUDE_MOUNTS in flags) {
                 foreach (unowned UnixMountEntry mount in UnixMountEntry.get (null)) {

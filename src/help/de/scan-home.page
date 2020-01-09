@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scan-home" xml:lang="de">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision version="0.1" date="2011-12-20" status="review"/>
+    <link type="guide" xref="index#scan"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>Ihre persönlichen Dateien einlesen, die sich auf Ihrem internen Speichergerät befinden.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ihren persönlichen Ordner einlesen</title>
+
+  <p>In Ihrem persönlichen Ordner (<file>home</file>) werden die meisten Dateien des gewöhnlichen Benutzers gespeichert, da die Standardeinstellungen zumeist bewirken, dass Dateien innerhalb des persönlichen Ordners in Unterordnern gespeichert werden. Das betrifft Downloads aus dem Internet, Dokumente, an denen Sie arbeiten und Fotos von Ihrer Kamera. Normalerweise ist für jeden Benutzer eines Rechners ein persönlicher Ordner vorhanden.</p>
+
+  <steps>
+    <item>
+      <p>Wählen Sie <guiseq><gui>Aktionen</gui><gui>Persönlichen Ordner einlesen</gui></guiseq> im Menü</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Wählen Sie <guiseq><gui>Aktionen</gui><gui>Stopp</gui></guiseq>, um den aktuellen Einlesevorgang abzubrechen, oder <guiseq><gui>Aktionen</gui><gui>Aktualisieren</gui></guiseq>, um den letzten Einlesevorgang zu wiederholen.</p>
+  </note>
+
+  <p>Die Ergebnisse können bei der Entscheidung darüber helfen, welche Ordner <link href="help:file-roller">archiviert</link>, <link href="help:gnome-help/files-delete">gelöscht</link> oder <link href="help:gnome-help/files-copy">verschoben</link> werden können, um Platz zu schaffen. Mit Hilfe der Ergebnisse können Sie auch abschätzen, wie viel Platz eine <link href="help:gnome-help/backup-how">Datensicherung</link> Ihres persönlichen Ordners benötigen würde.</p>
+
+  <p>Klicken Sie mit der rechten Maustaste auf einen beliebigen Ordner und wählen Sie <gui>Ordner öffnen</gui>, um die <app>Dateiverwaltung</app> zu starten, oder <gui>In den Papierkorb verschieben</gui>, um den Ordner in den <file>Papierkorb</file> zu verschieben.</p>
+
+  <note style="advanced">
+    <p>Die Standard-Unterordner sind üblicherweise <file>Arbeitsfläche</file>, <file>Dokumente</file>, <file>Downloads</file>, <file>Bilder</file>, <file>Musik</file> und weitere. Einige davon sind bereits vorhanden, wenn GNOME installiert ist, weitere werden durch Anwendungen erstellt, sobald Sie benötigt werden.</p>
+  </note>
+
+</page>

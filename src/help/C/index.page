@@ -4,11 +4,7 @@
       id="index">
 
   <info>
-    <title type="text">Disk Usage Analyzer help</title>
-    <title type="link">Disk Usage Analyzer</title>
-
-    <revision pkgversion="3.8" date="2013-07-24" status="final"/>
-    <revision pkgversion="3.14" date="2014-10-01" status="final"/>
+    <revision pkgversion="3.8" date="2013-04-10" status="final"/>
 
     <credit type="author copyright">
       <name>Julita Inca</name>
@@ -19,28 +15,23 @@
       <email its:translate="no">kittykat3756@gmail.com</email>
     </credit>
 
-    <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
-
-    <desc><app>Disk Usage Analyzer</app> is a graphical storage device
+    <desc><app>Disk Usage Analyzer</app>, a graphical storage device
     scanner.</desc>
 
   </info>
 
-  <title>
-    <media type="image" mime="image/png" its:translate="no" src="media/hicolor_apps_48x48_baobab.png" />
-    Disk Usage Analyzer
-  </title>
+  <title>Disk Usage Analyzer</title>
 
-  <section id="scan" style="2column">
-    <title>Scan</title>
-  </section>
+    <section id="scan" style="2column">
+ 	<title>Scan storage devices</title>
+    </section>
 
-  <section id="preferences" style="2column">
-    <title>Preferences</title>
-  </section>
+    <section id="preferences" style="2column">
+	<title>Views and preferences</title>
+    </section>
 
-  <section id="problems" style="2column">
-    <title>Common problems and questions</title>
-  </section>
+<!--    <section id="problems">
+	<title>Common problems and questions</title>
+    </section>-->
 
 </page>

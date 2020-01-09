@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="guide" id="views" xml:lang="id">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+    <link type="guide" xref="index#preferences"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Tampilkan hasil sebagai bagan cincin atau bagan peta pohon.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Tilikan bagan lain</title>
+
+  <p>Secara baku, hasil pemindaian menunjukkan setiap subfolder sebagai seksi dari suatu cincin, memiliki besar sudut yang sebanding dengan ukuran folder yang terkait. Sub folder ditunjukkan dalam warna yang berbeda.</p>
+  <p>Memindahkan mouse Anda melewati bagan cincin akan menampilkan lebih banyak rincian tentang subfolder.</p>
+  <p>Kenampakan bagan dapat diubah ke <gui>Tilikan Peta Pohon</gui> memakai daftar drop-down di puncak bagan di sisi kanan. Tata letak pohon menampilkan folder sebagai kotak-kotak dengan ukuran sebanding.</p>
+
+</page>

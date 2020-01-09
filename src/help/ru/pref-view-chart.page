@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="guide" id="views" xml:lang="ru">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+    <link type="guide" xref="index#preferences"/>
+
+    <credit type="author copyright">
+      <name>Юлита Инка (Julita Inca)</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Майкл Хилл (Michael Hill)</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Отображение результата в виде круговой диаграммы или дерева.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yuri Myasoedov</mal:name>
+      <mal:email>omerta13@yandex.ru</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Василий Фаронов</mal:name>
+      <mal:email>qvvx@yandex.ru</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Различные виды диаграмм</title>
+
+  <p>По умолчанию результаты сканирования каждой подпапки отображаются в виде сектора кольца, угол которого пропорционален размеру папки. Подпапки отображаются различными цветами.</p>
+  <p>При наведении указателя мыши на круговые диаграммы отображаются дополнительные сведения о подпапках.</p>
+  <p>Можно переключиться в режим просмотра в виде <gui>Древовидной карты</gui> с помощью выпадающего списка справа вверху диаграммы. В этом режиме папки отображаются в виде прямоугольников пропорционального размера.</p>
+
+</page>

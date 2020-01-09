@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="guide" id="pref" xml:lang="fr">
+
+  <info>
+    <revision pkgversion="3.4" date="2012-02-18" status="review"/>
+    <link type="guide" xref="index#preferences"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Ignorer certaines partitions et certains périphériques de stockage lors de l'analyse du système de fichiers.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Philippe Lefevre</mal:name>
+      <mal:email>ph.l@libertysurf.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2006-2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Désactivation de l'analyse de partitions et de périphériques de stockage particuliers</title>
+
+  <p>L'<app>analyseur d'utilisation des disques</app> vous permet d'analyser seulement les partitions et périphériques de stockage que vous avez sélectionnés dans la boîte de dialogue des <gui>Préférences</gui>. Par défaut, tous les périphériques et toutes partitions sont sélectionnés. L'application enregistre vos préférences lorsque vous la quittez.</p>
+
+  <steps>
+    <item>
+      <p>Choisissez <guiseq><gui>Édition</gui><gui>Préférences</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Sélectionnez les partitions et périphériques de stockage que vous désirez analyser et décochez les autres.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui>Fermer</gui> pour enregistrer vos préférences.</p>
+    </item>
+  </steps>
+
+  <note style="bug">
+    <p>Le premier élément de la liste, qui est monté sur <file>/</file> (la racine de votre système de fichiers), ne peut pas être désactivé.</p>
+  </note>
+
+</page>

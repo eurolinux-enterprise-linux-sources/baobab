@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="guide" id="pref" xml:lang="zh-CN">
+
+  <info>
+    <revision pkgversion="3.4" date="2012-02-18" status="review"/>
+    <link type="guide" xref="index#preferences"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>当扫描文件系统时跳过指定的设备和分区。</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>tuhaihe</mal:name>
+      <mal:email>1132321739qq@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>禁止对单个存储设备和分区的扫描</title>
+
+  <p><app>磁盘使用分析器</app>允许您只扫描在<gui>首选项</gui>对话框中选中的分区和存储设备。默认情况下，所有的设备和分区都被选中，但当您关闭对话框时应用程序将保存您的偏好设置。</p>
+
+  <steps>
+    <item>
+      <p>选择 <guiseq><gui>编辑</gui><gui>首选项</gui></guiseq></p>
+    </item>
+    <item>
+      <p>选择您想要扫描的存储设备和分区，或不选您不希望扫描的存储设备和分区</p>
+    </item>
+    <item>
+      <p>点击 <gui>关闭</gui> 保存您的首选项</p>
+    </item>
+  </steps>
+
+  <note style="bug">
+    <p>列表中的第一项，挂载在 <file>/</file> 上，不能取消选择</p>
+  </note>
+
+</page>

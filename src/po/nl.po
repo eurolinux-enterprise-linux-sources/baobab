@@ -1,271 +1,250 @@
-# Dutch translation for baobab
+# Dutch translation for gnome-utils
 #
-# This file is distributed under the same license as the baobab package.
+# This file is distributed under the same license as the gnome-utils package.
 #
 #
 # side bar = side pane = zijpaneel
-#
 #
 # Jan-Willem Harmanny <jwharmanny@hotmail.com>, 2003.
 # Tino Meinen <a.t.meinen@chello.nl>, 2004–2008.
 # Vincent van Adrighem <adrighem@gnome.org>, 2006.
 # Wouter Bolsterlee <wbolster@gnome.org>, 2006–2011.
-# Hannie Dumoleyn <hannie@ubuntu-nl.org>, 2010–2011, 2013, 2014, 2016.
-# Erwin Poeze <donnut@outlook.com>, 2013.
-# Justin van Steijn <jvs@fsfe.org>, 2016, 2018.
-# Nathan Follens <nthn@unseen.is>, 2017-2018.
+# Hannie Dumoleyn <hannie@ubuntu-nl.org>, 2010–2011, 2013.
 msgid ""
 msgstr ""
-"Project-Id-Version: baobab.master.nl\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=baobab&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2018-02-04 23:45+0000\n"
-"PO-Revision-Date: 2018-02-21 22:32+0100\n"
-"Last-Translator: Justin van Steijn <jvs@fsfe.org>\n"
-"Language-Team: Dutch <gnome-nl-list@gnome.org>\n"
+"Project-Id-Version: gnome-utils.master.nl\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-03-23 23:13+0100\n"
+"PO-Revision-Date: 2013-03-23 23:14+0100\n"
+"Last-Translator: Wouter Bolsterlee <wbolster@gnome.org>\n"
+"Language-Team: Dutch <vertaling@vrijschrift.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Lokalize 1.5\n"
 
-#: data/org.gnome.baobab.appdata.xml.in:6 data/org.gnome.baobab.desktop.in:3
-#: src/baobab-main-window.ui:93
+#: ../data/baobab.desktop.in.in.h:1 ../src/baobab-window.vala:170
 msgid "Disk Usage Analyzer"
 msgstr "Schijfgebruik"
 
-#: data/org.gnome.baobab.appdata.xml.in:7 data/org.gnome.baobab.desktop.in:4
+#: ../data/baobab.desktop.in.in.h:2
 msgid "Check folder sizes and available disk space"
 msgstr "Mapgroottes en beschikbare schijfruimte bekijken"
 
-#: data/org.gnome.baobab.appdata.xml.in:9
-msgid ""
-"A simple application to keep your disk usage and available space under "
-"control."
-msgstr ""
-"Een eenvoudige toepassing om uw schijfgebruik en beschikbare ruimte onder "
-"controle te houden."
-
-#: data/org.gnome.baobab.appdata.xml.in:12
-msgid ""
-"Disk Usage Analyzer can scan specific folders, storage devices and online "
-"accounts. It provides both a tree and a graphical representation showing the "
-"size of each folder, making it easy to identify where disk space is wasted."
-msgstr ""
-"Schijfgebruik kan specifieke mappen, opslagapparaten en online-accounts "
-"scannen. Het laat zowel een boomstructuur als een grafische weergave zien "
-"met de grootte van elke map, wat het gemakkelijk maakt om te zien waar veel "
-"schijfruimte wordt gebruikt."
-
-#: data/org.gnome.baobab.appdata.xml.in:34
-msgid "The GNOME Project"
-msgstr "Het Gnome-project"
-
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.baobab.desktop.in:6
+#: ../data/baobab.desktop.in.in.h:3
 msgid "storage;space;cleanup;"
-msgstr "storage;opslag;ruimte;schijfgebruik;cleanup;opschonen;"
+msgstr "storage;opslag;ruimte;schijfgebruik;"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.baobab.desktop.in:10
-msgid "baobab"
-msgstr "baobab"
-
-#: data/org.gnome.baobab.gschema.xml.in:9
+#: ../data/org.gnome.baobab.gschema.xml.in.h:1
 msgid "Excluded partitions URIs"
-msgstr "URI’s van uitgesloten partities"
+msgstr "Uri's van uitgesloten partities"
 
-#: data/org.gnome.baobab.gschema.xml.in:10
+#: ../data/org.gnome.baobab.gschema.xml.in.h:2
 msgid "A list of URIs for partitions to be excluded from scanning."
-msgstr "Een lijst met URI’s voor partities die niet doorzocht moeten worden."
+msgstr "Een lijst met uri's voor partities die niet doorzocht moeten worden."
 
-#: data/org.gnome.baobab.gschema.xml.in:20
+#: ../data/org.gnome.baobab.gschema.xml.in.h:3
 msgid "Active Chart"
 msgstr "Actieve grafiek"
 
-#: data/org.gnome.baobab.gschema.xml.in:21
+#: ../data/org.gnome.baobab.gschema.xml.in.h:4
 msgid "Which type of chart should be displayed."
-msgstr "Welke type grafiek zichtbaar dient te zijn."
+msgstr "Welke type grafiek zichtbaar dient te zijn"
 
-#: data/org.gnome.baobab.gschema.xml.in:25
+#: ../data/org.gnome.baobab.gschema.xml.in.h:5
 msgid "Window size"
 msgstr "Venstergrootte"
 
-#: data/org.gnome.baobab.gschema.xml.in:26
+#: ../data/org.gnome.baobab.gschema.xml.in.h:6
 msgid "The initial size of the window"
 msgstr "Initiële venstergrootte"
 
-#: data/org.gnome.baobab.gschema.xml.in:30
+#: ../data/org.gnome.baobab.gschema.xml.in.h:7
 msgid "Window state"
 msgstr "Vensterstaat"
 
-#: data/org.gnome.baobab.gschema.xml.in:31
+#: ../data/org.gnome.baobab.gschema.xml.in.h:8
 msgid "The GdkWindowState of the window"
 msgstr "De GdkWindowState van het venster"
 
-# beschrijving opdrachtregelargument
-#: src/baobab-application.vala:28
+#: ../src/baobab-application.vala:30
 msgid "Print version information and exit"
-msgstr "Versie-informatie tonen en afsluiten"
+msgstr "Versie-informatie afdrukken en sluiten"
 
-#: src/baobab-cellrenderers.vala:91
+#: ../src/baobab-application.vala:106
+msgid "- Disk Usage Analyzer"
+msgstr "- Schijfgebruikanalyse"
+
+#: ../src/baobab-cellrenderers.vala:100
 #, c-format
 msgid "%d item"
 msgid_plural "%d items"
 msgstr[0] "%d item"
 msgstr[1] "%d items"
 
-#. Translators: when the last modified time is unknown
-#: src/baobab-cellrenderers.vala:101 src/baobab-location-list.vala:79
-msgid "Unknown"
-msgstr "Onbekend"
+#: ../src/baobab-chart.c:186
+msgid "Maximum depth"
+msgstr "Maximumdiepte"
 
-#. Translators: when the last modified time is today
-#: src/baobab-cellrenderers.vala:110
-msgid "Today"
-msgstr "Vandaag"
+#: ../src/baobab-chart.c:187
+msgid "The maximum depth drawn in the chart from the root"
+msgstr "De maximumdiepte in het ringdiagram vanaf de root"
 
-#. Translators: when the last modified time is "days" days ago
-#: src/baobab-cellrenderers.vala:114
-#, c-format
-msgid "%lu day"
-msgid_plural "%lu days"
-msgstr[0] "%lu dag"
-msgstr[1] "%lu dagen"
+# Vrij vertaald (Wouter Bolsterlee)
+#: ../src/baobab-chart.c:196
+msgid "Chart model"
+msgstr "Diagrammodel"
 
-#. Translators: when the last modified time is "months" months ago
-#: src/baobab-cellrenderers.vala:118
-#, c-format
-msgid "%lu month"
-msgid_plural "%lu months"
-msgstr[0] "%lu maand"
-msgstr[1] "%lu maanden"
+#: ../src/baobab-chart.c:197
+msgid "Set the model of the chart"
+msgstr "Model van het ringdiagram instellen"
 
-#. Translators: when the last modified time is "years" years ago
-#: src/baobab-cellrenderers.vala:122
-#, c-format
-msgid "%lu year"
-msgid_plural "%lu years"
-msgstr[0] "%lu jaar"
-msgstr[1] "%lu jaar"
+#: ../src/baobab-chart.c:204
+msgid "Chart root node"
+msgstr "Root-node van ringdiagram"
 
-#: src/baobab-location-list.ui:17
-msgid "This Computer"
-msgstr "Deze computer"
+#: ../src/baobab-chart.c:205
+msgid "Set the root node from the model"
+msgstr "Stel de root-node in van het model"
 
-#: src/baobab-location-list.ui:47
-msgid "Remote Locations"
-msgstr "Locaties op afstand"
+#: ../src/baobab-chart.c:898
+msgid "_Move to parent folder"
+msgstr "_Naar bovenliggende map verplaatsen"
 
-#: src/baobab-location-list.vala:66
-#, c-format
-msgid "%s Total"
-msgstr "%s totaal"
+#: ../src/baobab-chart.c:902
+msgid "Zoom _in"
+msgstr "_Inzoomen"
 
-#: src/baobab-location-list.vala:70
-#, c-format
-msgid "%s Available"
-msgstr "%s beschikbaar"
+#: ../src/baobab-chart.c:906
+msgid "Zoom _out"
+msgstr "_Uitzoomen"
 
-#. useful for some remote mounts where we don't know the
-#. size but do have a usage figure
-#: src/baobab-location-list.vala:84
-#, c-format
-msgid "%s Used"
-msgstr "%s gebruikt"
-
-#: src/baobab-location-list.vala:86
-msgid "Unmounted"
-msgstr "Ontkoppeld"
-
-#: src/baobab-location.vala:73
+#: ../src/baobab-location.vala:77
 msgid "Home folder"
 msgstr "Persoonlijke map"
 
-#: src/baobab-location.vala:113
-msgid "Computer"
-msgstr "Computer"
+#: ../src/baobab-location.vala:123
+msgid "Main volume"
+msgstr "Hoofdpartitie"
 
-#: src/baobab-main-window.ui:12 src/menus.ui:25
-msgid "_Open Folder"
-msgstr "Map _openen"
-
-#: src/baobab-main-window.ui:21 src/menus.ui:29
-msgid "_Copy Path to Clipboard"
-msgstr "Pad naar klembord _kopiëren"
-
-#: src/baobab-main-window.ui:30 src/menus.ui:33
-msgid "Mo_ve to Trash"
-msgstr "_Naar prullenbak verplaatsen"
-
-#: src/baobab-main-window.ui:45
+#: ../src/baobab-main-window.ui.h:1
 msgid "Scan Folder…"
 msgstr "Map scannen…"
 
-#: src/baobab-main-window.ui:157
+#: ../src/baobab-main-window.ui.h:2
+msgid "Scan Remote Folder…"
+msgstr "Map op afstand scannen…"
+
+#: ../src/baobab-main-window.ui.h:3
+msgid "Devices and locations"
+msgstr "Apparaten en locaties"
+
+#: ../src/baobab-main-window.ui.h:4
 msgid "Close"
 msgstr "Sluiten"
 
-#: src/baobab-main-window.ui:212
+#: ../src/baobab-main-window.ui.h:5
 msgid "Folder"
 msgstr "Map"
 
-#: src/baobab-main-window.ui:239
+#: ../src/baobab-main-window.ui.h:6
+msgid "Usage"
+msgstr "Gebruik"
+
+#: ../src/baobab-main-window.ui.h:7
 msgid "Size"
 msgstr "Grootte"
 
-#: src/baobab-main-window.ui:259
+#: ../src/baobab-main-window.ui.h:8
 msgid "Contents"
 msgstr "Inhoud"
 
-#: src/baobab-main-window.ui:277
-msgid "Modified"
-msgstr "Gewijzigd"
-
-#: src/baobab-main-window.ui:322
+#: ../src/baobab-main-window.ui.h:9
 msgid "Rings Chart"
 msgstr "Ringdiagram"
 
 # Tip van Tino en Vincent (Wouter Bolsterlee)
-#: src/baobab-main-window.ui:334
+#: ../src/baobab-main-window.ui.h:10
 msgid "Treemap Chart"
 msgstr "Hiërarchisch blokdiagram"
 
-#: src/baobab-window.vala:209
+#: ../src/baobab-main-window.ui.h:11
+msgid "_Open Folder"
+msgstr "Map _openen"
+
+#: ../src/baobab-main-window.ui.h:12
+msgid "_Copy Path to Clipboard"
+msgstr "Pad naar klembord _kopiëren"
+
+#: ../src/baobab-main-window.ui.h:13
+msgid "Mo_ve to Trash"
+msgstr "_Naar prullenbak verplaatsen"
+
+#: ../src/baobab-menu.ui.h:1
+msgid "_Help"
+msgstr "_Hulp"
+
+#: ../src/baobab-menu.ui.h:2
+msgid "_About"
+msgstr "I_nfo"
+
+#: ../src/baobab-menu.ui.h:3
+msgid "_Quit"
+msgstr "_Afsluiten"
+
+#: ../src/baobab-menu.ui.h:4
+msgid "_Analyzer"
+msgstr "_Analyseren"
+
+#: ../src/baobab-menu.ui.h:5
+msgid "_Scan Home"
+msgstr "_Persoonlijke map scannen"
+
+#: ../src/baobab-menu.ui.h:6
+msgid "Scan F_older…"
+msgstr "_Map scannen…"
+
+#: ../src/baobab-menu.ui.h:7
+msgid "Scan Remote Fo_lder…"
+msgstr "_Externe map scannen…"
+
+#: ../src/baobab-menu.ui.h:8
+msgid "_View"
+msgstr "Beel_d"
+
+#: ../src/baobab-menu.ui.h:9
+msgid "_Reload"
+msgstr "_Herladen"
+
+#: ../src/baobab-menu.ui.h:10
+msgid "_Expand All"
+msgstr "_Alles uitvouwen"
+
+# opvouwen/invouwen (vergelijk uitvouwen)
+#: ../src/baobab-menu.ui.h:11
+msgid "_Collapse All"
+msgstr "Alles op_vouwen"
+
+#: ../src/baobab-window.vala:216
 msgid "Select Folder"
-msgstr "Map selecteren"
+msgstr "Selecteer een map"
 
-#: src/baobab-window.vala:211
-msgid "_Cancel"
-msgstr "_Annuleren"
-
-#: src/baobab-window.vala:212
-msgid "_Open"
-msgstr "_Openen"
-
-#: src/baobab-window.vala:218
-msgid "Recursively analyze mount points"
-msgstr "Koppelpunten recursief analyseren"
-
-#: src/baobab-window.vala:253
+#: ../src/baobab-window.vala:266
 msgid "Could not analyze volume."
-msgstr "Volumen analyseren is mislukt."
+msgstr "Kon volumen niet analyseren."
 
-#: src/baobab-window.vala:285
-msgid "Failed to show help"
-msgstr "Hulp tonen is mislukt"
-
-#: src/baobab-window.vala:304
+#: ../src/baobab-window.vala:317
 msgid "Baobab"
 msgstr "Baobab"
 
 # schijfgebruik/hardeschijfgebruik
-#: src/baobab-window.vala:307
+#: ../src/baobab-window.vala:320
 msgid "A graphical tool to analyze disk usage."
 msgstr "Een grafisch hulpmiddel om schijfgebruik te analyseren."
 
-#: src/baobab-window.vala:312
+#: ../src/baobab-window.vala:325
 msgid "translator-credits"
 msgstr ""
 "Tino Meinen\n"
@@ -273,93 +252,322 @@ msgstr ""
 "Wouter Bolsterlee\n"
 "Jan-Willem Harmanny\n"
 "Hannie Dumoleyn\n"
-"Erwin Poeze\n"
-"Justin van Steijn\n"
-"Nathan Follens\n"
 "\n"
-"Meer info over Gnome-NL http://nl.gnome.org/"
+"Kijk voor meer informatie op http://nl.gnome.org/"
 
-#: src/baobab-window.vala:381
-msgid "Failed to open file"
-msgstr "Bestand openen is mislukt"
-
-#: src/baobab-window.vala:401
-msgid "Failed to move file to the trash"
-msgstr "Bestand naar de prullenbak verplaatsen is mislukt"
-
-#: src/baobab-window.vala:505
-msgid "Devices & Locations"
-msgstr "Apparaten & locaties"
-
-#: src/baobab-window.vala:566
+#: ../src/baobab-window.vala:569
 #, c-format
-msgid "Could not scan folder “%s”"
-msgstr "Scannen van map ‘%s’ is mislukt"
-
-#: src/baobab-window.vala:569
-#, c-format
-msgid "Could not scan some of the folders contained in “%s”"
-msgstr "Sommige van de mappen in ‘%s’ konden niet worden gescand"
-
-#: src/baobab-window.vala:588
-msgid "Could not detect occupied disk sizes."
-msgstr "Grootte van gebruikte schijfruimte detecteren is mislukt."
-
-#: src/baobab-window.vala:588
-msgid "Apparent sizes are shown instead."
-msgstr "In plaats hiervan worden schijnbare groottes getoond."
+msgid "Could not scan folder \"%s\" or some of the folders it contains."
+msgstr ""
+"Kon map ‘%s’, of sommige van de mappen die zich daarin bevinden, niet "
+"scannen."
 
 #. || is_virtual_filesystem ()
-#: src/baobab-window.vala:605 src/baobab-window.vala:611
+#: ../src/baobab-window.vala:588 ../src/baobab-window.vala:594
 #, c-format
-msgid "“%s” is not a valid folder"
+msgid "\"%s\" is not a valid folder"
 msgstr "‘%s’ is geen geldige map"
 
-#: src/baobab-window.vala:606 src/baobab-window.vala:612
+#: ../src/baobab-window.vala:589 ../src/baobab-window.vala:595
 msgid "Could not analyze disk usage."
-msgstr "Schijfgebruik analyseren is mislukt."
+msgstr "Kon schijfgebruik niet analyseren."
 
-#: src/menus.ui:7
-msgid "_Help"
-msgstr "_Hulp"
+#~ msgid "Scan Folder"
+#~ msgstr "Map scannen"
 
-#: src/menus.ui:12
-msgid "_About"
-msgstr "I_nfo"
+#~ msgid "Scan a folder"
+#~ msgstr "Een map scannen"
 
-#: src/menus.ui:16
-msgid "_Quit"
-msgstr "_Afsluiten"
+#~ msgid "Scan Remote Folder"
+#~ msgstr "Externe map scannen"
 
-#: src/menus.ui:39
-msgid "Go to _parent folder"
-msgstr "Naar _bovenliggende map gaan"
+#~ msgid "Scan a remote folder"
+#~ msgstr "Een externe map scannen"
 
-#: src/menus.ui:45
-msgid "Zoom _in"
-msgstr "_Inzoomen"
+#~ msgid "Disk Usage Analyzer Preferences"
+#~ msgstr "Voorkeuren schijfgebruik"
 
-#: src/menus.ui:49
-msgid "Zoom _out"
-msgstr "_Uitzoomen"
+#~ msgid "Select _devices to include in filesystem scan:"
+#~ msgstr "Kies de te doorzoeken _apparaten bij een systeemscan:"
+
+#~ msgid "_Monitor changes to your home folder"
+#~ msgstr "_Wijzigingen aan uw persoonlijke map detecteren"
+
+#~ msgid "Monitor Home"
+#~ msgstr "Persoonlijke map monitoren"
+
+#~ msgid "Statusbar is Visible"
+#~ msgstr "Statusbalk is zichtbaar"
+
+#~ msgid "Toolbar is Visible"
+#~ msgstr "Werkbalk zichtbaar"
+
+#~ msgid "Whether any change to the home directory should be monitored."
+#~ msgstr ""
+#~ "Of wijzigingen in de persoonlijke map gedetecteerd dienen te worden."
 
 #~ msgid ""
-#~ "A simple application which can scan either specific folders (local or "
-#~ "remote) or volumes and give a graphical representation including each "
-#~ "directory size or percentage."
+#~ "Whether the status bar at the bottom of main window should be visible."
+#~ msgstr "Of de statusbalk zichtbaar dient te zijn."
+
+#~ msgid "Whether the toolbar should be visible in main window."
+#~ msgstr "Of de werkbalk zichtbaar dient te zijn."
+
+# ../lisp/workspace.jl
+#~ msgid "All_ocated Space"
+#~ msgstr "_Toegewezen ruimte"
+
+# vernieuwen/verversen
+#~ msgid "Refresh"
+#~ msgstr "Verversen"
+
+#~ msgid "S_can Remote Folder..."
+#~ msgstr "E_xterne map scannen…"
+
+#~ msgid "Scan F_older..."
+#~ msgstr "_Map scannen…"
+
+#~ msgid "Scan Filesystem"
+#~ msgstr "Bestandssysteem scannen"
+
+#~ msgid "Scan _Filesystem"
+#~ msgstr "Bestands_systeem scannen"
+
+#~ msgid "Scan _Home Folder"
+#~ msgstr "_Persoonlijke map scannen"
+
+#~ msgid "Scan filesystem"
+#~ msgstr "Bestandssysteem scannen"
+
+#~ msgid "St_atusbar"
+#~ msgstr "_Statusbalk"
+
+#~ msgid "Stop scanning"
+#~ msgstr "Scannen stoppen"
+
+#~ msgid "_Contents"
+#~ msgstr "In_houd"
+
+#~ msgid "_Edit"
+#~ msgstr "Be_werken"
+
+#~ msgid "_Toolbar"
+#~ msgstr "_Werkbalk"
+
+#~ msgid "Scanning..."
+#~ msgstr "Scannen…"
+
+#~ msgid "Total filesystem capacity:"
+#~ msgstr "Totale capaciteit:"
+
+#~ msgid "used:"
+#~ msgstr "gebruikt:"
+
+#~ msgid "available:"
+#~ msgstr "beschikbaar:"
+
+#~ msgid "Calculating percentage bars..."
+#~ msgstr "Berekenen van percentages…"
+
+# klaar
+#~ msgid "Ready"
+#~ msgstr "Voltooid"
+
+#~ msgid "Total filesystem capacity"
+#~ msgstr "Totale capaciteit van bestandssysteem"
+
+#~ msgid "Total filesystem usage"
+#~ msgstr "Totaal gebruik van bestandssysteem"
+
+#~ msgid "contains hardlinks for:"
+#~ msgstr "bevat koppelingen voor:"
+
+#~ msgid "Could not initialize monitoring"
+#~ msgstr "Kon monitoring niet initialiseren"
+
+#~ msgid "Changes to your home folder will not be monitored."
+#~ msgstr "Wijzigingen in de persoonlijke map worden niet continue gevolgd."
+
+#~ msgid "Save screenshot"
+#~ msgstr "Schermafdruk opslaan"
+
+#~ msgid "Show version"
+#~ msgstr "Versie tonen"
+
+#~ msgid "[DIRECTORY]"
+#~ msgstr "[MAP]"
+
+#~ msgid "Too many arguments. Only one directory can be specified."
+#~ msgstr "Te veel argumenten. Er kan slechts één map worden opgegeven."
+
+#~ msgid "Could not detect any mount point."
+#~ msgstr "Kon geen koppelpunten vinden."
+
+#~ msgid "Without mount points disk usage cannot be analyzed."
+#~ msgstr "Zonder koppelpunten kan het schijfgebruik niet worden bekeken."
+
+#~ msgid "Cannot create pixbuf image!"
+#~ msgstr "Kan geen pixbuf-afbeelding aanmaken!"
+
+#~ msgid "Save Snapshot"
+#~ msgstr "Schermafdruk opslaan"
+
+#~ msgid "_Image type:"
+#~ msgstr "_Type afbeelding:"
+
+#~ msgid "Scan"
+#~ msgstr "Scannen"
+
+#~ msgid "Device"
+#~ msgstr "Apparaat"
+
+#~ msgid "Mount Point"
+#~ msgstr "Koppelpunt"
+
+#~ msgid "Filesystem Type"
+#~ msgstr "Type bestandssysteem"
+
+#~ msgid "Total Size"
+#~ msgstr "Totale grootte"
+
+#~ msgid "Available"
+#~ msgstr "Beschikbaar"
+
+#~ msgid "Cannot scan location \"%s\""
+#~ msgstr "Kan locatie ‘%s’ niet openen"
+
+#~ msgid "Custom Location"
+#~ msgstr "Aangepaste locatie"
+
+#~ msgid "SSH"
+#~ msgstr "SSH"
+
+#~ msgid "Public FTP"
+#~ msgstr "Publieke FTP"
+
+#~ msgid "FTP (with login)"
+#~ msgstr "FTP (met aanmelden)"
+
+#~ msgid "WebDAV (HTTP)"
+#~ msgstr "WebDAV (HTTP)"
+
+#~ msgid "Secure WebDAV (HTTPS)"
+#~ msgstr "Beveiligde WebDAV (HTTPS)"
+
+#~ msgid "Cannot Connect to Server. You must enter a name for the server."
 #~ msgstr ""
-#~ "Een eenvoudige toepassing die specifieke mappen (lokaal of op afstand) of "
-#~ "volumina scant en hiervan een grafische weergave maakt, inclusief de "
-#~ "grootte van iedere map en het procentuele ruimtegebruik."
+#~ "Kan niet met de server verbinden. U dient een naam voor de server in te "
+#~ "voeren."
 
-#~ msgid "Scan Remote Folder…"
-#~ msgstr "Map op afstand scannen…"
+#~ msgid "Please enter a name and try again."
+#~ msgstr "Vul een naam in en probeer het opnieuw."
 
-#~ msgid "- Disk Usage Analyzer"
-#~ msgstr "- Schijfgebruikanalyse"
+#~ msgid "_Location (URI):"
+#~ msgstr "_Locatie (URI):"
 
-#~ msgid "Maximum depth"
-#~ msgstr "Maximumdiepte"
+#~ msgid "_Server:"
+#~ msgstr "_Server:"
 
-#~ msgid "The maximum depth drawn in the chart from the root"
-#~ msgstr "De maximumdiepte in het ringdiagram vanaf de root"
+#~ msgid "Optional information:"
+#~ msgstr "Optionele informatie:"
+
+#~ msgid "_Share:"
+#~ msgstr "_Gedeelde map:"
+
+#~ msgid "_Port:"
+#~ msgstr "_Poort:"
+
+#~ msgid "_Folder:"
+#~ msgstr "_Map:"
+
+#~ msgid "_User Name:"
+#~ msgstr "_Gebruikersnaam:"
+
+#~ msgid "_Domain Name:"
+#~ msgstr "_Domeinnaam:"
+
+#~ msgid "Connect to Server"
+#~ msgstr "Met server verbinden"
+
+#~ msgid "Service _type:"
+#~ msgstr "Server-_type:"
+
+#~ msgid "_Scan"
+#~ msgstr "_Scannen"
+
+#~ msgid "Rescan your home folder?"
+#~ msgstr "Uw persoonlijke map opnieuw scannen?"
+
+# druk op/selecteer/kies
+#~ msgid ""
+#~ "The content of your home folder has changed. Select rescan to update the "
+#~ "disk usage details."
+#~ msgstr ""
+#~ "De inhoud van uw persoonlijke map is gewijzigd. Selecteer ‘Opnieuw "
+#~ "scannen’ om de details van het schijfgebruik bij te werken."
+
+#~ msgid "_Rescan"
+#~ msgstr "O_pnieuw scannen"
+
+# tonen/weergeven
+#~ msgid "_Show hidden folders"
+#~ msgstr "_Verborgen mappen tonen"
+
+#~ msgid "Cannot check an excluded folder!"
+#~ msgstr "Kan een uitgesloten map niet controleren!"
+
+#~ msgid "Could not open folder \"%s\""
+#~ msgstr "Kon map ‘%s’ niet openen"
+
+#~ msgid "There is no installed viewer capable of displaying the folder."
+#~ msgstr "Er is geen viewer geïnstalleerd die het document kan weergeven."
+
+#~ msgid "Could not move \"%s\" to the Trash"
+#~ msgstr "Kon ‘%s’ niet naar de prullenbak verplaatsen"
+
+#~ msgid "Could not move file to the Trash"
+#~ msgstr "Kon bestand niet naar de prullenbak verplaatsen"
+
+#~ msgid "Details: %s"
+#~ msgstr "Details: %s"
+
+#~ msgid "There was an error displaying help."
+#~ msgstr "Er is een fout opgetreden bij het weergeven van de hulp."
+
+#~ msgid ""
+#~ "This program is free software; you can redistribute it and/or modify it "
+#~ "under the terms of the GNU General Public License as published by the "
+#~ "Free Software Foundation; either version 2 of the License, or (at your "
+#~ "option) any later version."
+#~ msgstr ""
+#~ "Dit programma is vrije software; u kunt het verspreiden en/of wijzigen "
+#~ "onder de voorwaarden van de GNU General Public License zoals gepubliceerd "
+#~ "door de Free Software Foundation; bekijk versie 2 van deze licentie, of "
+#~ "(naar wens) een latere versie."
+
+#~ msgid ""
+#~ "This program is distributed in the hope that it will be useful, but "
+#~ "WITHOUT ANY WARRANTY; without even the implied warranty of "
+#~ "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General "
+#~ "Public License for more details."
+#~ msgstr ""
+#~ "Dit programma wordt verspreid in de hoop dat het bruikbaar zal zijn, maar "
+#~ "ZONDER ENIGE GARANTIE; zelfs zonder de impliciete garantie voor "
+#~ "VERKOOPBAARHEID of GESCHIKTHEID VOOR EEN SPECIFIEK DOEL. Zie de GNU "
+#~ "General Public License voor meer details."
+
+#~ msgid ""
+#~ "You should have received a copy of the GNU General Public License along "
+#~ "with this program; if not, write to the Free Software Foundation, Inc., "
+#~ "51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+#~ msgstr ""
+#~ "Samen met dit programma moet u een kopie van de GNU General Public "
+#~ "License hebben ontvangen; indien dit niet het geval is, schrijf naar Free "
+#~ "Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA "
+#~ "02110-1301, USA"
+
+#~ msgid "The document does not exist."
+#~ msgstr "Het document bestaat niet."
+
+#~ msgid "The folder does not exist."
+#~ msgstr "De map bestaat niet."

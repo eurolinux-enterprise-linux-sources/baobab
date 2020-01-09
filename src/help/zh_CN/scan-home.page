@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scan-home" xml:lang="zh-CN">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision version="0.1" date="2011-12-20" status="review"/>
+    <link type="guide" xref="index#scan"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>扫描您内部存储设备上的所有个人文件。</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>tuhaihe</mal:name>
+      <mal:email>1132321739qq@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>扫描您的 <file>主目录</file></title>
+
+  <p><file>主目录</file>是普通用户存放大部分文件的地方，因为默认设置经常被设为将文件保存或复制到主目录下的子目录里。包括网络下载、工作文档和相机里面的照片。通常，计算机上的每位用户都有自己的 <file>主目录</file>。</p>
+
+  <steps>
+    <item>
+      <p>从菜单选择 <guiseq><gui>分析器</gui><gui>扫描主目录</gui></guiseq></p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>选择 <guiseq><gui>分析器</gui><gui>停止</gui></guiseq> 可取消当前扫描，或选择 <guiseq><gui>分析器</gui><gui>刷新</gui></guiseq> 重复上次扫描。</p>
+  </note>
+
+  <p>The results may be useful in deciding which folders can be
+  <link href="help:file-roller">archived</link>,
+  <link href="help:gnome-help/files-delete">deleted</link> or
+  <link href="help:gnome-help/files-copy">moved</link> to free up space. You
+  can also use the results to estimate how much space would be needed for a
+  <link href="help:gnome-help/backup-how">backup</link> of your
+  <file>Home</file> folder.</p>
+
+  <p>右击任何文件夹，选择 <gui>打开文件夹</gui> 启用 <app>文件</app> 应用程序，或选择 <gui>移动到回收站</gui> 将您的文件夹移动到 <file>回收站</file>。</p>
+
+  <note style="advanced">
+    <p>默认子目录通常包括 <file>桌面</file>、<file>文档</file>、<file>下载</file>、<file>图片</file> 和 <file>音乐</file>等。部分子目录在安装 GNOME 时已经存在；其他子目录会在需要时由应用程序创建。</p>
+  </note>
+
+</page>

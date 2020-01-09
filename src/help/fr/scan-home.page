@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scan-home" xml:lang="fr">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision version="0.1" date="2011-12-20" status="review"/>
+    <link type="guide" xref="index#scan"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>Analyser tous les fichiers de votre dossier personnel.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Philippe Lefevre</mal:name>
+      <mal:email>ph.l@libertysurf.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2006-2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Analyse de votre <file>dossier personnel</file></title>
+
+  <p>Le <file>dossier personnel</file> est l'emplacement où se trouvent la plupart de vos fichiers, parce que les paramètres par défaut sont souvent d'enregistrer ou de copier les fichiers dans des sous-répertoires de celui-ci. Cela inclut les téléchargements, les documents sur lesquels vous travaillez et les photos de votre appareil photo. Normalement, chaque utilisateur de l'ordinateur possède un <file>dossier personnel</file>.</p>
+
+  <steps>
+    <item>
+      <p>Sélectionnez <guiseq><gui>Analyse</gui><gui>Analyser le dossier personnel</gui></guiseq> dans le menu.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Sélectionnez <guiseq><gui>Analyse</gui><gui>Arrêter</gui></guiseq> pour annuler l'analyse en cours ou <guiseq><gui>Analyse</gui><gui>Actualiser</gui></guiseq> pour mettre à jour la dernière analyse.</p>
+  </note>
+
+  <p>Les résultats peuvent être utiles pour décider quels dossiers peuvent être <link href="help:file-roller">archivés</link>, <link href="help:gnome-help/files-delete">supprimés</link> ou <link href="help:gnome-help/files-copy">déplacés</link> pour libérer de l'espace. Vous pouvez aussi utiliser les résultats pour estimer l'espace nécessaire pour faire une <link href="help:gnome-help/backup-how">sauvegarde</link> de votre dossier personnel.</p>
+
+  <p>Faites un clic-droit sur un des dossiers et sélectionnez <gui>Ouvrir le dossier</gui> pour lancer l'application <app>Fichiers</app> ou <gui>Mettre à la corbeille</gui> pour déplacer le dossier dans la <file>Corbeille</file>.</p>
+
+  <note style="advanced">
+    <p>Les sous-répertoires par défaut comprennent habituellement <file>Bureau</file>, <file>Documents</file>, <file>Téléchargements</file>, <file>Photos</file> et <file>Musique</file>, entre autres. Certains existent déjà dès l'installation de GNOME, d'autres sont créés par les applications si besoin.</p>
+  </note>
+
+</page>

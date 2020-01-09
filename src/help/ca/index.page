@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="index" xml:lang="ca">
+
+  <info>
+    <revision pkgversion="3.8" date="2013-04-10" status="final"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc><app>Analitzador de l'us dels discs</app>, un escanejador gràfic dels dispositius d'emmagatzematge.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Manel Vidal</mal:name>
+      <mal:email>verduler@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Analitzador de l'ús dels discs</title>
+
+    <section id="scan" style="2column">
+ 	<title>Escaneja dispositius d'emmagatzematge</title>
+    </section>
+
+    <section id="preferences" style="2column">
+	<title>Vistes i preferències</title>
+    </section>
+
+<!--    <section id="problems">
+	<title>Common problems and questions</title>
+    </section>-->
+
+</page>

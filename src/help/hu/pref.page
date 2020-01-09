@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="guide" id="pref" xml:lang="hu">
+
+  <info>
+    <revision pkgversion="3.4" date="2012-02-18" status="review"/>
+    <link type="guide" xref="index#preferences"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Megadott eszközök és partíciók kihagyása a fájlrendszer vizsgálatánál.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Adott háttértárolók és partíciók vizsgálatának kikapcsolása</title>
+
+  <p>A <app>Lemezhasználat-elemző</app> lehetővé teszi, hogy csak a <gui>Beállítások</gui> ablakban kiválasztott partíciókat és háttértárolókat vizsgálja meg. Alapértelmezetten minden eszköz és partíció ki van választva, de az alkalmazás tárolni fogja beállításait a bezárásakor.</p>
+
+  <steps>
+    <item>
+      <p>Válassza a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui></guiseq> menüpontot.</p>
+    </item>
+    <item>
+      <p>Válassza ki a vizsgálandó háttértárolókat és partíciókat, vagy törölje azok kiválasztását, amelyeket nem kíván vizsgálni.</p>
+    </item>
+    <item>
+      <p>Nyomja meg a <gui>Bezárás</gui> gombot a beállítások mentéséhez.</p>
+    </item>
+  </steps>
+
+  <note style="bug">
+    <p>A lista első eleme, amely a <file>/</file> könyvtárba van csatolva, nem törölhető.</p>
+  </note>
+
+</page>

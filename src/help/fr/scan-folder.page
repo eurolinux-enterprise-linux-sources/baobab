@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scan-folder" xml:lang="fr">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+    <link type="guide" xref="index#scan"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Analyser un dossier local, y compris tous les sous-dossiers.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Philippe Lefevre</mal:name>
+      <mal:email>ph.l@libertysurf.fr</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2006-2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Analyse d'un dossier</title>
+
+  <p>Les analyses de dossiers particuliers sont plus rapides que celles du système de fichiers complet, donc cela peut être plus efficace si vous voulez des informations uniquement sur un emplacement spécifique de votre système de fichiers.</p>
+
+  <steps>
+    <item>
+      <p>Sélectionnez <guiseq><gui>Analyse</gui><gui>Analyser un dossier...</gui></guiseq> dans le menu.</p>
+    </item>
+    <item>
+      <p>Utilisez le navigateur de fichiers pour parcourir votre système de fichiers et sélectionner le dossier souhaité.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui>Ouvrir</gui> pour commencer l'analyse.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Sélectionnez <guiseq><gui>Analyse</gui><gui>Arrêter</gui></guiseq> pour annuler l'analyse en cours ou <guiseq><gui>Analyse</gui><gui>Actualiser</gui></guiseq> pour mettre à jour la dernière analyse.</p>
+  </note>
+
+  <p>Les résultats peuvent être utiles pour décider quels dossiers peuvent être <link href="help:file-roller">archivés</link>, <link href="help:gnome-help/files-delete">supprimés</link> ou <link href="help:gnome-help/files-copy">déplacés</link> pour libérer de l'espace. Vous pouvez aussi utiliser les résultats pour estimer l'espace nécessaire pour faire une <link href="help:gnome-help/backup-how">sauvegarde</link> de certains dossiers.</p>
+
+  <p>Faites un clic-droit sur un des dossiers et sélectionnez <gui>Ouvrir le dossier</gui> pour lancer l'application <app>Fichiers</app> ou <gui>Mettre à la corbeille</gui> pour déplacer le dossier dans la <file>Corbeille</file>.</p>
+
+</page>

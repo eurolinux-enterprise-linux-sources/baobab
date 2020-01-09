@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scan-file-system" xml:lang="gl">
+
+  <info>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+    <link type="guide" xref="index#scan"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>Analizar todos os dispositivos de almacenamento interno e extraíbel</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Analizar o sistema de ficheiros</title>
+
+  <p>Para saber canto espazo ten o seu sistema de ficheiros:</p>
+
+  <steps>
+    <item>
+      <p>Seleccione <guiseq><gui>Analizador</gui><gui>Analizar sistema de ficheiros</gui></guiseq> desde o menú</p>
+    </item>
+  </steps>
+
+  <p>O seus sistema de ficheiros inclúe todos os dispositivos de almacenamento interno ou extraíbeis que están montados cando se analiza o cartafol respectivo.</p>
+
+  <note style="tip">
+    <p>Se o sistema de ficheiros que tenta analizar é moi grande, pode levar varios minutos analizalo por completo.</p>
+    <p>Seleccione <guiseq><gui>Analizador</gui><gui>Deter</gui></guiseq> para cancelar o análise actual, ou <guiseq><gui>Analizador</gui><gui>Actualizar</gui></guiseq> para repetir o último análise.</p>
+  </note>
+
+  <p>The results may be useful in deciding which folders can be
+  <link href="help:file-roller">archived</link>,
+  <link href="help:gnome-help/files-delete">deleted</link> or
+  <link href="help:gnome-help/files-copy">moved</link> to free up space. You can
+  also use the results to estimate how much space would be needed for a
+  <link href="help:gnome-help/backup-how">backup</link> of specific folders.</p>
+
+  <p>Prema co botón dereito sobre calquera cartafol e seleccione <gui>Abrir cartafol</gui> para iniciar o aplicativo <app>Ficheiros</app>, ou <gui>Mover ao lixo</gui> para mover o seu cartafol <file>Lixo</file>.</p>
+
+</page>

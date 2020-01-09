@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scan-home" xml:lang="gl">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision version="0.1" date="2011-12-20" status="review"/>
+    <link type="guide" xref="index#scan"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>Analizar todos os seus ficheiros persoais que están no seu dispositivo de almacenamento interno.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Analizar o seu <file>cartafol persoal</file></title>
+
+  <p>O <file>cartafol persoal</file> é onde a maioría dos seus ficheiros están gardados para case todos os usuarios xa que as preferencias por omisión son que se garde ou copien os ficheiros en subcartafoles dentro del. Isto inclúe as descargas de Internet, documentos nos que traballa e fotos da súa cámara. Normalmente, existe un <file>cartafol persoal</file> para cada usuario no computador.</p>
+
+  <steps>
+    <item>
+      <p>Seleccione <guiseq><gui>Analizador</gui><gui>Analizar cartafol persoal</gui></guiseq> desde o menú</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Seleccione <guiseq><gui>Analizador</gui><gui>Deter</gui></guiseq> para cancelar o análise actual, ou <guiseq><gui>Analizador</gui><gui>Actualizar</gui></guiseq> para repetir o último análise.</p>
+  </note>
+
+  <p>The results may be useful in deciding which folders can be
+  <link href="help:file-roller">archived</link>,
+  <link href="help:gnome-help/files-delete">deleted</link> or
+  <link href="help:gnome-help/files-copy">moved</link> to free up space. You
+  can also use the results to estimate how much space would be needed for a
+  <link href="help:gnome-help/backup-how">backup</link> of your
+  <file>Home</file> folder.</p>
+
+  <p>Prema co botón dereito sobre calquera cartafol e seleccione <gui>Abrir cartafol</gui> para iniciar o aplicativo <app>Ficheiros</app>, ou <gui>Mover ao lixo</gui> para mover o seu cartafol <file>Lixo</file>.</p>
+
+  <note style="advanced">
+    <p>Os subcartafoles por omisión normalmente inclúen <file>Escritorio</file>, <file>Documentos</file>, <file>Descargas</file>, <file>Imaxes</file> e <file>Música</file>, entre outros. Algúns deles xa existen cando GNOME se instala; outros creanse por aplicativos cando os precisen.</p>
+  </note>
+
+</page>

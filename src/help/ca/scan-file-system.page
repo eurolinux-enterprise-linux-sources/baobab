@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scan-file-system" xml:lang="ca">
+
+  <info>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+    <link type="guide" xref="index#scan"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>Escaneja tots els dispositius d'emmagatzematge interns i extraïbles.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Manel Vidal</mal:name>
+      <mal:email>verduler@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Escaneja el sistema de fitxers</title>
+
+  <p>Per saber quant d'espai ocupa el sistema de fitxers:</p>
+
+  <steps>
+    <item>
+      <p>Seleccioneu en el menú <guiseq><gui>Analitzador</gui><gui>Escaneja el sistema de fitxers</gui></guiseq></p>
+    </item>
+  </steps>
+
+  <p>El sistema de fitxers inclou tots els dispositius d'emmagatzematge interns i extraïbles que estiguin muntats quan s'escanegi la carpeta en qüestió.</p>
+
+  <note style="tip">
+    <p>Si el sistema de fitxers que es vol escanejar és gran, l'escanejat pot trigar uns minuts.</p>
+    <p>Seleccioneu <guiseq><gui>Analitzador</gui><gui>Atura</gui></guiseq> per cancel·lar l'escaneig actual, o <guiseq><gui>Analitzador</gui><gui>Actualitza</gui></guiseq> per repetir l'últim escaneig.</p>
+  </note>
+
+  <p>Amb la finalitat d'alliberar espai, els resultats poden ser útils per decidir quines carpetes poden ser <link href="help:file-roller">comprimides</link>, <link href="help:gnome-help/files-delete">esborrades</link> o <link href="help:gnome-help/files-copy">mogudes</link>. També si es vol fer una <link href="help:gnome-help/backup-how">còpia de seguretat</link> d'unes determinades carpetes, els resultats poden servir per fer l'estimació de la quantitat d'espai que seria necessari.</p>
+
+  <p>Feu clic amb el botó secundari a qualsevol carpeta i seleccioneu <gui>Obre la carpeta</gui> per obrir l'aplicació <app>Fitxers</app>, o <gui>Mou a la paperera</gui> per moure la carpeta a la <file>Paperera</file>.</p>
+
+</page>

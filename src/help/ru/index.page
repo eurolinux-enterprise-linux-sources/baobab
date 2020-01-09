@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="index" xml:lang="ru">
+
+  <info>
+    <revision pkgversion="3.8" date="2013-04-10" status="final"/>
+
+    <credit type="author copyright">
+      <name>Юлита Инка (Julita Inca)</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc><app>Анализатор использования дисков</app> — графический сканер устройств хранения информации.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yuri Myasoedov</mal:name>
+      <mal:email>omerta13@yandex.ru</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Василий Фаронов</mal:name>
+      <mal:email>qvvx@yandex.ru</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Анализатор использования дисков</title>
+
+    <section id="scan" style="2column">
+ 	<title>Сканирование устройств хранения информации</title>
+    </section>
+
+    <section id="preferences" style="2column">
+	<title>Виды и параметры</title>
+    </section>
+
+<!--    <section id="problems">
+	<title>Common problems and questions</title>
+    </section>-->
+
+</page>

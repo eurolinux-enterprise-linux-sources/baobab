@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scan-folder" xml:lang="de">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+    <link type="guide" xref="index#scan"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Einen lokalen Ordner einschließlich dessen Unterordnern einlesen.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Einen Ordner einlesen</title>
+
+  <p>Das Einlesen individueller Ordner benötigt weniger Zeit als für das gesamte Dateisystem. Das ist effizienter, falls Sie lediglich Informationen zu einem bestimmten Teil Ihres Dateisystems benötigen.</p>
+
+  <steps>
+    <item>
+      <p>Wählen Sie <guiseq><gui>Aktionen</gui><gui>Ordner einlesen</gui></guiseq> im Menü</p>
+    </item>
+    <item>
+      <p>Verwenden Sie den Dateibrowser, um sich im Dateisystem zu bewegen, und wählen Sie den gewünschten Ordner aus</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf <gui>Öffnen</gui>, um mit dem Einlesen zu beginnen</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Wählen Sie <guiseq><gui>Aktionen</gui><gui>Stopp</gui></guiseq>, um den aktuellen Einlesevorgang abzubrechen, oder <guiseq><gui>Aktionen</gui><gui>Aktualisieren</gui></guiseq>, um den letzten Einlesevorgang zu wiederholen.</p>
+  </note>
+
+  <p>Die Ergebnisse können bei der Entscheidung darüber helfen, welche Ordner <link href="help:file-roller">archiviert</link>, <link href="help:gnome-help/files-delete">gelöscht</link> oder <link href="help:gnome-help/files-copy">verschoben</link> werden können, um Platz zu schaffen. Mit Hilfe der Ergebnisse können Sie auch abschätzen, wie viel Platz eine <link href="help:gnome-help/backup-how">Datensicherung</link> bestimmter Ordner benötigen würde.</p>
+
+  <p>Klicken Sie mit der rechten Maustaste auf einen beliebigen Ordner und wählen Sie <gui>Ordner öffnen</gui>, um die <app>Dateiverwaltung</app> zu starten, oder <gui>In den Papierkorb verschieben</gui>, um den Ordner in den <file>Papierkorb</file> zu verschieben.</p>
+
+</page>

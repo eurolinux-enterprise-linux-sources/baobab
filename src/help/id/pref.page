@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="guide" id="pref" xml:lang="id">
+
+  <info>
+    <revision pkgversion="3.4" date="2012-02-18" status="review"/>
+    <link type="guide" xref="index#preferences"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Melewatkan perangkat dan partisi tertentu saat memindai sistem berkas.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Menonaktifkan pemindaian perangkat penyimpanan dan partisi tertentu</title>
+
+  <p><app>Penganalisa Pemakaian Disk</app> memungkinkan Anda untuk memindai hanya partisi dan perangkat penyimpanan yang Anda pilih di dialog <gui>Preferensi</gui>. Secara baku, semua perangkat dan partisi akan dipilih, tetapi aplikasi akan menyimpan preferensi Anda ketika Anda menutupnya.</p>
+
+  <steps>
+    <item>
+      <p>Pilih <guiseq><gui>Sunting</gui><gui>Preferensi</gui></guiseq></p>
+    </item>
+    <item>
+      <p>Pilih perangkat penyimpanan dan partisi yang ingin Anda pindai, atau keluarkan dari pilihan yang tidak ingin Anda pindai</p>
+    </item>
+    <item>
+      <p>Klik <gui>Tutup</gui> untuk menyimpan preferensi Anda</p>
+    </item>
+  </steps>
+
+  <note style="bug">
+    <p>Butir pertama dalam daftar, yang dikaitkan pada <file>/</file>, tak dapat dikeluarkan dari pilihan</p>
+  </note>
+
+</page>

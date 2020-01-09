@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="guide" id="pref" xml:lang="es">
+
+  <info>
+    <revision pkgversion="3.4" date="2012-02-18" status="review"/>
+    <link type="guide" xref="index#preferences"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Omitir dispositivos y particiones específicas al analizar el sistema de archivos.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2008.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Montse Fernández Dopacio</mal:name>
+      <mal:email>mfernandez@igalia.com</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Desactivar el análisis de dispositivos de almacenamiento individuales y particiones</title>
+
+  <p>El <app>Analizador de uso del disco</app> le permite analizar solamente las particiones y los dispositivos de almacenamiento que haya seleccionado en el diálogo de <gui>Preferencias</gui>. De manera predeterminada, están seleccionados todos los dispositivos y todas las particiones, pero la aplicación recordará sus preferencias cuando la cierre.</p>
+
+  <steps>
+    <item>
+      <p>Seleccione <guiseq><gui>Editar</gui><gui>Preferencias</gui></guiseq></p>
+    </item>
+    <item>
+      <p>Seleccione los dispositivos de almacenamiento y las particiones que quiere analizar, o deseleccione aquellas que no quiere analizar</p>
+    </item>
+    <item>
+      <p>Pulse <gui>Cerrar</gui> para guardar sus preferencias</p>
+    </item>
+  </steps>
+
+  <note style="bug">
+    <p>El primer elemento de la lista, que está montado en <file>/</file>, no se puede deseleccionar</p>
+  </note>
+
+</page>

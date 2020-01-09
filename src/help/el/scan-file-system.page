@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scan-file-system" xml:lang="el">
+
+  <info>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+    <link type="guide" xref="index#scan"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>Σαρώστε όλες τις εσωτερικές και αφαιρούμενες συσκευές αποθήκευσης.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Σάρωση του συστήματος αρχείων σας</title>
+
+  <p>Για να μάθετε πόσο χώρο καταλαμβάνει το σύστημα αρχείων σας:</p>
+
+  <steps>
+    <item>
+      <p>Επιλέξτε από το μενού <guiseq><gui>Αναλυτής</gui><gui>Σάρωση αρχείων συστήματος</gui></guiseq></p>
+    </item>
+  </steps>
+
+  <p>Το σύστημα αρχείων σας περιλαμβάνει όλες τις προσαρτημένες εσωτερικές και αφαιρούμενες συσκευές αποθήκευσης όταν ο συγκεκριμένες φάκελος έχει σαρωθεί.</p>
+
+  <note style="tip">
+    <p>Μπορεί να πάρει αρκετά λεπτά μέχρι να ολοκληρωθεί η σάρωση, αν το σύστημα αρχείων που προσπαθείτε να σαρώσετε είναι μεγάλο.</p>
+    <p>Επιλέξτε <guiseq><gui>Αναλυτής</gui><gui>Διακοπή</gui></guiseq> για να ακυρώσετε την τρέχουσα σάρωση, ή <guiseq><gui>Αναλυτής</gui><gui>Ανανέωση</gui></guiseq> για να επαναλάβετε τη τελευταία σάρωση.</p>
+  </note>
+
+  <p>Τα αποτελέσματα μπορεί να είναι χρήσιμα για να αποφασίσετε ποιοι φάκελοι μπορούν να <link href="help:file-roller">αρχειοθετηθούν</link>, <link href="help:gnome-help/files-delete">διαγραφούν</link> ή να <link href="help:gnome-help/files-copy">μετακινηθούν</link> για να ελευθερώσετε χώρο. Μπορείτε επίσης να χρησιμοποιήσετε τα αποτελέσματα για να εκτιμήσετε πόσο ελεύθερος χώρος θα χρειαστεί για ένα <link href="help:gnome-help/backup-how">αντίγραφο ασφαλείας</link> συγκεκριμένων φακέλων.</p>
+
+  <p>Κάντε δεξί κλικ σε οποιοδήποτε φάκελο και επιλέξτε <gui>Άνοιγμα φακέλου</gui> για να εκκινήσετε την εφαρμογή <app>Αρχεία</app>, ή <gui>Μετακίνηση στα απορρίμματα</gui> για να μεταφέρετε τον φάκελο στα <file>απορρίμματα</file>.</p>
+
+</page>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scan-folder" xml:lang="id">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+    <link type="guide" xref="index#scan"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Pindai folder lokal, termasuk semua subfolder.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Pindai suatu folder</title>
+
+  <p>Pemindaian folder individu lebih cepat daripada ke seluruh sistem berkas, sehingga mungkin lebih efisien bila Anda ingin informasi hanya tentang bagian khusus dari sistem berkas Anda.</p>
+
+  <steps>
+    <item>
+      <p>Pilih <guiseq><gui>Penganalisa</gui><gui>Pindai Folder…</gui></guiseq> dari menu</p>
+    </item>
+    <item>
+      <p>Gunakan peramban berkas untuk menavigasi dalam sistem berkas Anda dan pilih folder yang dikehendaki</p>
+    </item>
+    <item>
+      <p>Klik <gui>Buka</gui> untuk memulai pemindaian</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Pilih <guiseq><gui>Penganalisa</gui><gui>Stop</gui></guiseq> untuk membatalkan pemindaian kini, atau <guiseq><gui>Penganalisa</gui><gui>Segarkan</gui></guiseq> untuk mengulangi pemindaian terakhir.</p>
+  </note>
+
+  <p>The results may be useful in deciding which folders can be
+  <link href="help:file-roller">archived</link>,
+  <link href="help:gnome-help/files-delete">deleted</link> or
+  <link href="help:gnome-help/files-copy">moved</link> to free up space. You can
+  also use the results to estimate how much space would be needed for a
+  <link href="help:gnome-help/backup-how">backup</link> of specific folders.</p>
+
+  <p>Klik kanan pada sebarang folder dan pilih <gui>Buka Folder</gui> untuk meluncurkan aplikasi <app>Berkas</app>, atau <gui>Pindahkan ke Tong Sampah</gui> untuk memindahkan folder Anda ke <file>Tong Sampah</file>.</p>
+
+</page>

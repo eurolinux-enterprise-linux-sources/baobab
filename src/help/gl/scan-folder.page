@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scan-folder" xml:lang="gl">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+    <link type="guide" xref="index#scan"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Analiar un cartafol local, incluindo todos os subcartafoles.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Analizar un cartafol</title>
+
+  <p>Os análises de cartafoles individuais son máis rápidos que aqueles dos sistemas de ficheiros completos, polo que podería ser máis eficiente se quere información sobre unha parte específica do seu sistema de ficheiros.</p>
+
+  <steps>
+    <item>
+      <p>Seleccione <guiseq><gui>Analizador</gui><gui>Analizar cartafol…</gui></guiseq> desde o menú</p>
+    </item>
+    <item>
+      <p>Use o explorador de ficheiros para navegar no seu sistema de ficheiros e seleccoine o cartafol desexado</p>
+    </item>
+    <item>
+      <p>Prema <gui>Abrir</gui> para comezar un análise</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Seleccione <guiseq><gui>Analizador</gui><gui>Deter</gui></guiseq> para cancelar o análise actual, ou <guiseq><gui>Analizador</gui><gui>Actualizar</gui></guiseq> para repetir o último análise.</p>
+  </note>
+
+  <p>The results may be useful in deciding which folders can be
+  <link href="help:file-roller">archived</link>,
+  <link href="help:gnome-help/files-delete">deleted</link> or
+  <link href="help:gnome-help/files-copy">moved</link> to free up space. You can
+  also use the results to estimate how much space would be needed for a
+  <link href="help:gnome-help/backup-how">backup</link> of specific folders.</p>
+
+  <p>Prema co botón dereito sobre calquera cartafol e seleccione <gui>Abrir cartafol</gui> para iniciar o aplicativo <app>Ficheiros</app>, ou <gui>Mover ao lixo</gui> para mover o seu cartafol <file>Lixo</file>.</p>
+
+</page>

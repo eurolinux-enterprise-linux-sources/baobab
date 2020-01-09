@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="introduction" xml:lang="ru">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <credit type="author copyright">
+      <name>Юлита Инка (Julita Inca)</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="author copyright editor">
+      <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Майкл Хилл (Michael Hill)</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+
+    <desc><app>Анализатор использования дисков</app>, или <app>baobab</app>, представляет в графическом виде информацию об используемом пространстве на устройствах хранения информации.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yuri Myasoedov</mal:name>
+      <mal:email>omerta13@yandex.ru</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Василий Фаронов</mal:name>
+      <mal:email>qvvx@yandex.ru</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Введение</title>
+
+  <p><app>Анализатор использования дисков</app> — графическое, управляемое с помощью меню приложение для анализа использования устройств хранения информации. Он может сканировать различные локальные или удалённые устройства (в том числе жёсткие диски, SSD, USB-носители, цифровые камеры и карты памяти). <app>Анализатор использования дисков</app> может сканировать <link xref="scan-file-system">всю файловую систему</link>, <link xref="scan-home">вашу <file>домашнюю папку</file></link>, <link xref="scan-folder">указанную пользователем папку</link> или <link xref="scan-remote">удалённую папку</link>.</p>
+
+</page>

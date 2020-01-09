@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scan-folder" xml:lang="es">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+    <link type="guide" xref="index#scan"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Analizar una carpeta local, incluyendo todas su subcarpetas.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2008.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Montse Fernández Dopacio</mal:name>
+      <mal:email>mfernandez@igalia.com</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Analizar una carpeta</title>
+
+  <p>Los análisis de carpetas individuales son más rápidos que los análisis del sistema completo, por lo que puede resultar más eficiente si sólo quiere información de una parte concreta del sistema de archivos.</p>
+
+  <steps>
+    <item>
+      <p>Seleccione <guiseq><gui>Analizador</gui><gui>Analizar carpeta…</gui></guiseq> del menú</p>
+    </item>
+    <item>
+      <p>Use el explorador de archivos para navegar por su sistema de archivos y seleccionar la carpeta que quiere</p>
+    </item>
+    <item>
+      <p>Pulse <gui>Abrir</gui> para comenzar el análisis</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Seleccione <guiseq><gui>Analizador</gui><gui>Detener</gui></guiseq> para cancelar el análisis actual, o <guiseq><gui>Analizador</gui><gui>Actualizar</gui></guiseq> para repetir el último análisis.</p>
+  </note>
+
+  <p>Los resultados pueden ser útiles para decidir qué carpetas se pueden <link href="ghelp:file-roller">comprimir</link>, <link href="help:gnome-help/files-delete">eliminar</link> o <link href="help:gnome-help/files-copy">mover</link> para liberar espacio. También puede usar los resultados para estimar cuánto espacio sería necesario para hacer una <link href="help:gnome-help/backup-how">copia de respaldo</link> de ciertas carpetas.</p>
+
+  <p>Pulse con el botón derecho sobre cualquier carpeta y seleccione <gui>Abrir carpeta</gui> para lanzar la aplicación de <app>Archivos</app>, o <gui>Mover a la papelera</gui> para mover el archivo a la <file>Papelera</file>.</p>
+
+</page>

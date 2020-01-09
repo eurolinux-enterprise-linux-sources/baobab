@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scan-home" xml:lang="id">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision version="0.1" date="2011-12-20" status="review"/>
+    <link type="guide" xref="index#scan"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>Pindai semua berkas pribadi Anda yang ada pada perangkat penyimpanan internal.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Pindai folder <file>Rumah</file> Anda</title>
+
+  <p>Folder <file>Rumah</file> adalah dimana kebanyakan berkas ditempatkan bagi pengguna biasa karena pengaturan baku sering ditata agar menyimpan atau menyalin berkas ke subdirektori dibawahnya. Ini termasuk pengunduhan dari internet, dokumen yang sedang Anda kerjakan, dan foto dari kamera Anda. Biasanya, satu folder <file>Rumah</file> ada bagi setiap pengguna dalam komputer.</p>
+
+  <steps>
+    <item>
+      <p>Pilih <guiseq><gui>Penganalisa</gui><gui>Pindai Folder Rumah</gui></guiseq> dari menu</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Pilih <guiseq><gui>Penganalisa</gui><gui>Stop</gui></guiseq> untuk membatalkan pemindaian kini, atau <guiseq><gui>Penganalisa</gui><gui>Segarkan</gui></guiseq> untuk mengulangi pemindaian terakhir.</p>
+  </note>
+
+  <p>The results may be useful in deciding which folders can be
+  <link href="help:file-roller">archived</link>,
+  <link href="help:gnome-help/files-delete">deleted</link> or
+  <link href="help:gnome-help/files-copy">moved</link> to free up space. You
+  can also use the results to estimate how much space would be needed for a
+  <link href="help:gnome-help/backup-how">backup</link> of your
+  <file>Home</file> folder.</p>
+
+  <p>Klik kanan pada sebarang folder dan pilih <gui>Buka Folder</gui> untuk meluncurkan aplikasi <app>Berkas</app>, atau <gui>Pindahkan ke Tong Sampah</gui> untuk memindahkan folder Anda ke <file>Tong Sampah</file>.</p>
+
+  <note style="advanced">
+    <p>Subdirektori baku biasanya termasuk <file>Desktop</file>, <file>Dokumen</file>, <file>Unduhan</file>, <file>Gambar</file>, dan <file>Musik</file>. Beberapa diantaranya akan telah ada ketika GNOME dipasang; lainnya akan dibuat oleh aplikasi ketika mereka diperlukan.</p>
+  </note>
+
+</page>

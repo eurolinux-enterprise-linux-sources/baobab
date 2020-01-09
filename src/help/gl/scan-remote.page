@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scan-remote" xml:lang="gl">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+    <link type="guide" xref="index#scan" group="#last"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Analizar un cartafol remoto do seu computador.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Analizar un cartafol remoto</title>
+
+  <p>O <app>Analizador de uso de disco</app>pode analizar dispositivos de almacenamento que son accesíbeis remotamente. Para analizar un sistema de ficheiros completo ou un cartafol remoto específico:</p>
+
+  <steps>
+    <item>
+      <p>Seleccione <guiseq><gui>Analizador</gui><gui>Analizar cartafol remoto…</gui></guiseq> desde o menú</p>
+    </item>
+    <item>
+      <p>Seleccione o protocolo que desexa usar</p>
+<!--      <p>Choose one of following protocols, depends of what you want to do:</p>
+      <terms>
+        <item>
+          <title><link xref="ssh">SSH</link></title>
+	  <p>Secure Shell offers you a secure connection because you need to
+	  login with a username and password.</p>
+        </item>
+        <item>
+          <title><link xref="ftp">FTP (with login)</link></title>
+	  <p>File Transfer Protocol with login is reliable because a user
+	  account is required.</p>
+        </item>
+        <item>
+          <title><link xref="windows-share">Windows Share</link></title>
+          <p>Scan between Windows and Linux machines.</p>
+        </item>
+        <item>
+          <title><link xref="web-dav">WebDAV (HTTP)</link></title>
+	  <p>Web-based Distributed Authoring and Versioning methods of
+	  Hypertext Transfer Protocol HTTP scan folders that are stored on
+	  World Wide Web servers.</p>
+        </item>
+        <item>
+          <title><link xref="web-dav">Secure WebDAV (HTTPS)</link></title>
+	  <p>Secure WebDAV,ensures encryption while you are transfering
+	  data.</p>
+        </item>
+
+  <comment>
+    <cite date="2011-12-28" href="mailto:mdhillca@gmail.com">Michael Hill</cite>
+    <p>Custom Location needs a better explanation.</p>
+  </comment>
+        <item>
+          <title><link xref="custom-location">Custom Location</link></title>
+	  <p>Custom Location enables you to access a particular function from
+	  the folder manager.</p>
+        </item>
+      </terms>-->
+    </item>
+    <item>
+      <p>Escriba o enderezo IP do dispositivo de almacenamento remoto no campo <gui>Servidor</gui> ou o URI, dependendo do protocolo que está usando.</p>
+<!--      <p>If you are not so sure about the information you have to write into
+      <gui>Port</gui> and <gui>Folder</gui>, left in blank.</p>-->
+    </item>
+    <item>
+      <p>Prema <gui>Analizar</gui> para continuar. Pode que se lle pregunte para máis información, como o contrasinal ou nome de usuario, antes de que comece o análise.</p>
+    </item>
+  </steps>
+
+  <note>
+    <p>O análise sobre a rede pode ser máis lento que o análise dun sistema de ficheiros local.</p>
+  </note>
+
+  <note>
+    <p>Prema co botón dereito sobre calquera cartafol e seleccione <gui>Abrir cartafol</gui> para iniciar o aplicativo <app>Ficheiros</app>, ou <gui>Mover ao lixo</gui> para mover o seu cartafol <file>Lixo</file>.</p>
+  </note>
+
+</page>

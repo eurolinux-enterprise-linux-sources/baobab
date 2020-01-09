@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="guide" id="views" xml:lang="de">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+    <link type="guide" xref="index#preferences"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Die Ergebnisse als Kreisdiagramm oder als Tree Map betrachten</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Verschiedene Diagrammdarstellungen</title>
+
+  <p>Standardmäßig erscheinen die Ergebnisse in Form eines Kreissektors für jeden Unterordner. Der Winkel des Sektors ist dabei proportional zur Größe des entsprechenden Ordners. Die Unterordner werden in verschiedenen Farben dargestellt.</p>
+  <p>Bewegen Sie Ihre Maus über das Kreisdiagramm, um weitere Details über die Unterordner anzeigen zu lassen.</p>
+  <p>Die Darstellung des Diagramms kann auf die <gui>Treemap</gui>-Ansicht umgeschaltet werden. Dies erreichen Sie über die Auswahlliste rechts oben über dem Diagramm. Diese Ansicht stellt die Ordner in proportional verschachtelten Kästen dar.</p>
+
+</page>

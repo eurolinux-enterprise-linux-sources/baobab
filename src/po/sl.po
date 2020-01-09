@@ -4,15 +4,15 @@
 #
 # Andraž Tori <andraz.tori1@guest.arnes.si>, 2000.
 # Matic Žgur <mr.zgur@gmail.com>, 2006.
-# Matej Urbančič <mateju@svn.gnome.org>, 2007–2017.
+# Matej Urbančič <mateju@svn.gnome.org>, 2007 - 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: baobab master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=baobab&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-11-02 08:47+0000\n"
-"PO-Revision-Date: 2017-11-02 19:50+0100\n"
+"POT-Creation-Date: 2013-01-12 17:51+0000\n"
+"PO-Revision-Date: 2013-01-12 21:30+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -22,87 +22,61 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 2.0.4\n"
+"X-Generator: Poedit 1.5.4\n"
 
-#: data/org.gnome.baobab.appdata.xml.in:6 data/org.gnome.baobab.desktop.in:3
-#: src/baobab-main-window.ui:93
+#: ../data/baobab.desktop.in.in.h:1 ../src/baobab-window.vala:188
 msgid "Disk Usage Analyzer"
 msgstr "Orodje za preučevanje porabe diska"
 
-#: data/org.gnome.baobab.appdata.xml.in:7 data/org.gnome.baobab.desktop.in:4
+#: ../data/baobab.desktop.in.in.h:2
 msgid "Check folder sizes and available disk space"
 msgstr "Preveri velikosti map in prostor na disku"
 
-#: data/org.gnome.baobab.appdata.xml.in:9
-msgid ""
-"A simple application to keep your disk usage and available space under "
-"control."
-msgstr ""
-"Enostaven program za nadzor porabe diska in pregled razpoložljivosti "
-"prostora."
-
-#: data/org.gnome.baobab.appdata.xml.in:12
-msgid ""
-"Disk Usage Analyzer can scan specific folders, storage devices and online "
-"accounts. It provides both a tree and a graphical representation showing the "
-"size of each folder, making it easy to identify where disk space is wasted."
-msgstr ""
-"Program za preučevanje zasedenosti diska omogoča nadzor nad zasedenostjo "
-"prostora določenih map, naprav za shranjevanje datotek in spletnih računov. "
-"Omogoča drevesni in grafilni pregled s prikazom velikosti map, s čimer "
-"poenostavi odkrivanje  porabe."
-
-#: data/org.gnome.baobab.appdata.xml.in:34
-msgid "The GNOME Project"
-msgstr "Projekt GNOME"
-
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.baobab.desktop.in:6
+#: ../data/baobab.desktop.in.in.h:3
 msgid "storage;space;cleanup;"
 msgstr "shranjevanje;prostor;čiščenje;"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.baobab.desktop.in:10
-msgid "baobab"
-msgstr "baobab"
-
-#: data/org.gnome.baobab.gschema.xml.in:9
+#: ../data/org.gnome.baobab.gschema.xml.in.h:1
 msgid "Excluded partitions URIs"
 msgstr "Izločeni naslovni URI razdelkov"
 
-#: data/org.gnome.baobab.gschema.xml.in:10
+#: ../data/org.gnome.baobab.gschema.xml.in.h:2
 msgid "A list of URIs for partitions to be excluded from scanning."
 msgstr "Seznam naslovov URI razdelkov diska izločenih iz preiskovanja."
 
-#: data/org.gnome.baobab.gschema.xml.in:20
+#: ../data/org.gnome.baobab.gschema.xml.in.h:3
 msgid "Active Chart"
 msgstr "Dejavni grafikon"
 
-#: data/org.gnome.baobab.gschema.xml.in:21
+#: ../data/org.gnome.baobab.gschema.xml.in.h:4
 msgid "Which type of chart should be displayed."
 msgstr "Katera vrsta grafikona naj bo izrisana."
 
-#: data/org.gnome.baobab.gschema.xml.in:25
+#: ../data/org.gnome.baobab.gschema.xml.in.h:5
 msgid "Window size"
 msgstr "Velikost okna"
 
-#: data/org.gnome.baobab.gschema.xml.in:26
+#: ../data/org.gnome.baobab.gschema.xml.in.h:6
 msgid "The initial size of the window"
 msgstr "Začetna velikost okna"
 
-#: data/org.gnome.baobab.gschema.xml.in:30
+#: ../data/org.gnome.baobab.gschema.xml.in.h:7
 msgid "Window state"
 msgstr "Stanje okna"
 
-#: data/org.gnome.baobab.gschema.xml.in:31
+#: ../data/org.gnome.baobab.gschema.xml.in.h:8
 msgid "The GdkWindowState of the window"
 msgstr "Določilo okna GdkWindowState"
 
-#: src/baobab-application.vala:28
+#: ../src/baobab-application.vala:30
 msgid "Print version information and exit"
 msgstr "Izpiši podatke o različici in končaj"
 
-#: src/baobab-cellrenderers.vala:91
+#: ../src/baobab-application.vala:104
+msgid "- Disk Usage Analyzer"
+msgstr "- Orodje za preučevanje porabe diska"
+
+#: ../src/baobab-cellrenderers.vala:100
 #, c-format
 msgid "%d item"
 msgid_plural "%d items"
@@ -111,288 +85,180 @@ msgstr[1] "%d predmet"
 msgstr[2] "%d predmeta"
 msgstr[3] "%d predmeti"
 
-#. Translators: when the last modified time is unknown
-#: src/baobab-cellrenderers.vala:101 src/baobab-location-list.vala:79
-msgid "Unknown"
-msgstr "Neznano"
+#: ../src/baobab-chart.c:186
+msgid "Maximum depth"
+msgstr "Največja globina"
 
-#. Translators: when the last modified time is today
-#: src/baobab-cellrenderers.vala:110
-msgid "Today"
-msgstr "Danes"
+#: ../src/baobab-chart.c:187
+msgid "The maximum depth drawn in the chart from the root"
+msgstr "Največja narisana globina grafikona od korenskega vozlišča"
 
-#. Translators: when the last modified time is "days" days ago
-#: src/baobab-cellrenderers.vala:114
-#, c-format
-msgid "%lu day"
-msgid_plural "%lu days"
-msgstr[0] "%lu dni"
-msgstr[1] "%lu dan"
-msgstr[2] "%lu dneva"
-msgstr[3] "%lu dnevi"
+#: ../src/baobab-chart.c:196
+msgid "Chart model"
+msgstr "Grafični grafikon"
 
-#. Translators: when the last modified time is "months" months ago
-#: src/baobab-cellrenderers.vala:118
-#, c-format
-msgid "%lu month"
-msgid_plural "%lu months"
-msgstr[0] "%lu mesecev"
-msgstr[1] "%lu mesec"
-msgstr[2] "%lu meseca"
-msgstr[3] "%lu meseci"
+#: ../src/baobab-chart.c:197
+msgid "Set the model of the chart"
+msgstr "Določitev grafičnega grafikona"
 
-#. Translators: when the last modified time is "years" years ago
-#: src/baobab-cellrenderers.vala:122
-#, c-format
-msgid "%lu year"
-msgid_plural "%lu years"
-msgstr[0] "%lu let"
-msgstr[1] "%lu leto"
-msgstr[2] "%lu leti"
-msgstr[3] "%lu leta"
+#: ../src/baobab-chart.c:204
+msgid "Chart root node"
+msgstr "Korensko vozlišče grafikona"
 
-#: src/baobab-location-list.ui:17
-msgid "This Computer"
-msgstr "Računalnik"
+#: ../src/baobab-chart.c:205
+msgid "Set the root node from the model"
+msgstr "Določitev korenskega vozlišča modela"
 
-#: src/baobab-location-list.ui:47
-msgid "Remote Locations"
-msgstr "Oddaljena mesta"
+#: ../src/baobab-chart.c:898
+msgid "_Move to parent folder"
+msgstr "_Premakniti v nadrejeno mapo"
 
-#: src/baobab-location-list.vala:66
-#, c-format
-msgid "%s Total"
-msgstr "%s skupaj"
+#: ../src/baobab-chart.c:902
+msgid "Zoom _in"
+msgstr "_Približaj"
 
-#: src/baobab-location-list.vala:70
-#, c-format
-msgid "%s Available"
-msgstr "%s na voljo"
+#: ../src/baobab-chart.c:906
+msgid "Zoom _out"
+msgstr "_Oddalji"
 
-#. useful for some remote mounts where we don't know the
-#. size but do have a usage figure
-#: src/baobab-location-list.vala:84
-#, c-format
-msgid "%s Used"
-msgstr "%s uporabljeno"
-
-#: src/baobab-location-list.vala:86
-msgid "Unmounted"
-msgstr "Odklopljeno"
-
-#: src/baobab-location.vala:73
+#: ../src/baobab-location.vala:77
 msgid "Home folder"
 msgstr "Domača mapa"
 
-#: src/baobab-location.vala:113
-msgid "Computer"
-msgstr "Računalnik"
+#: ../src/baobab-location.vala:123
+msgid "Main volume"
+msgstr "Glavni nosilec"
 
-#: src/baobab-main-window.ui:12 src/menus.ui:25
-msgid "_Open Folder"
-msgstr "Odpri _mapo"
-
-#: src/baobab-main-window.ui:21 src/menus.ui:29
-msgid "_Copy Path to Clipboard"
-msgstr "_Kopiraj pot v odložišče"
-
-#: src/baobab-main-window.ui:30 src/menus.ui:33
-msgid "Mo_ve to Trash"
-msgstr "Pr_emakni v smeti"
-
-#: src/baobab-main-window.ui:45
+#: ../src/baobab-main-window.ui.h:1
 msgid "Scan Folder…"
 msgstr "Preišči mapo ..."
 
-#: src/baobab-main-window.ui:157
+#: ../src/baobab-main-window.ui.h:2
+msgid "Scan Remote Folder…"
+msgstr "Preišči oddaljeno mapo ..."
+
+#: ../src/baobab-main-window.ui.h:3
 msgid "Close"
 msgstr "Zapri"
 
-#: src/baobab-main-window.ui:212
+#: ../src/baobab-main-window.ui.h:4
 msgid "Folder"
 msgstr "Mapa"
 
-#: src/baobab-main-window.ui:239
+#: ../src/baobab-main-window.ui.h:5
+msgid "Usage"
+msgstr "Uporaba"
+
+#: ../src/baobab-main-window.ui.h:6
 msgid "Size"
 msgstr "Velikost"
 
-#: src/baobab-main-window.ui:259
+#: ../src/baobab-main-window.ui.h:7
 msgid "Contents"
 msgstr "Vsebina"
 
-#: src/baobab-main-window.ui:277
-msgid "Modified"
-msgstr "Spremenjeno"
-
-#: src/baobab-main-window.ui:322
+#: ../src/baobab-main-window.ui.h:8
 msgid "Rings Chart"
 msgstr "Krožni diagram"
 
-#: src/baobab-main-window.ui:334
+#: ../src/baobab-main-window.ui.h:9
 msgid "Treemap Chart"
 msgstr "Drevesni diagram"
 
-#: src/baobab-window.vala:209
+#: ../src/baobab-main-window.ui.h:10
+msgid "_Open Folder"
+msgstr "Odpri _mapo"
+
+#: ../src/baobab-main-window.ui.h:11
+msgid "_Copy Path to Clipboard"
+msgstr "_Kopiraj pot v odložišče"
+
+#: ../src/baobab-main-window.ui.h:12
+msgid "Mo_ve to Trash"
+msgstr "Pr_emakni v smeti"
+
+#: ../src/baobab-menu.ui.h:1
+msgid "_Help"
+msgstr "Pomo_č"
+
+#: ../src/baobab-menu.ui.h:2
+msgid "_About"
+msgstr "_O programu"
+
+#: ../src/baobab-menu.ui.h:3
+msgid "_Quit"
+msgstr "_Končaj"
+
+#: ../src/baobab-menu.ui.h:4
+msgid "_Analyzer"
+msgstr "_Preučevalnik"
+
+#: ../src/baobab-menu.ui.h:5
+msgid "_Scan Home"
+msgstr "_Preišči domačo mapo"
+
+#: ../src/baobab-menu.ui.h:6
+msgid "Scan F_older…"
+msgstr "Preišči _mapo ..."
+
+#: ../src/baobab-menu.ui.h:7
+msgid "Scan Remote Fo_lder…"
+msgstr "Preišči _oddaljeno mapo ..."
+
+#: ../src/baobab-menu.ui.h:8
+msgid "_View"
+msgstr "Po_gled"
+
+#: ../src/baobab-menu.ui.h:9
+msgid "_Reload"
+msgstr "_Ponovno naloži"
+
+#: ../src/baobab-menu.ui.h:10
+msgid "_Expand All"
+msgstr "_Razširi vse"
+
+#: ../src/baobab-menu.ui.h:11
+msgid "_Collapse All"
+msgstr "_Zloži vse"
+
+#: ../src/baobab-window.vala:131
+msgid "Devices and locations"
+msgstr "Naprav in mesta"
+
+#: ../src/baobab-window.vala:229
 msgid "Select Folder"
 msgstr "Izbor mape"
 
-#: src/baobab-window.vala:211
-msgid "_Cancel"
-msgstr "_Prekliči"
-
-#: src/baobab-window.vala:212
-msgid "_Open"
-msgstr "_Odpri"
-
-#: src/baobab-window.vala:218
-msgid "Recursively analyze mount points"
-msgstr "Priklopne točke preuči po strukturi"
-
-#: src/baobab-window.vala:253
+#: ../src/baobab-window.vala:279
 msgid "Could not analyze volume."
 msgstr "Nosilca ni mogoče preučiti."
 
-#: src/baobab-window.vala:285
-msgid "Failed to show help"
-msgstr "Ni mogoče prikazati pomoči"
-
-#: src/baobab-window.vala:304
+#: ../src/baobab-window.vala:330
 msgid "Baobab"
 msgstr "Baobab"
 
-#: src/baobab-window.vala:307
+#: ../src/baobab-window.vala:333
 msgid "A graphical tool to analyze disk usage."
 msgstr "Grafično orodje za preučevanje porabe diska."
 
-#: src/baobab-window.vala:312
+#: ../src/baobab-window.vala:338
 msgid "translator-credits"
 msgstr ""
 "Matic Žgur <mr.zgur@gmail.com>\n"
 "Andraž Tori <andraz.tori1@guest.arnes.si>\n"
 "Matej Urbančič <mateju@svn.gnome.org>"
 
-#: src/baobab-window.vala:381
-msgid "Failed to open file"
-msgstr "Ni mogoče odpreti datoteke"
-
-#: src/baobab-window.vala:401
-msgid "Failed to move file to the trash"
-msgstr "Premakne datoteko v smeti"
-
-#: src/baobab-window.vala:505
-msgid "Devices & Locations"
-msgstr "Naprave in mesta"
-
-#: src/baobab-window.vala:566
+#: ../src/baobab-window.vala:580
 #, c-format
-msgid "Could not scan folder “%s”"
-msgstr "Ni mogoče preiskati mape »%s«"
-
-#: src/baobab-window.vala:569
-#, c-format
-msgid "Could not scan some of the folders contained in “%s”"
-msgstr "Ni mogoče preučiti nekaterih map znotraj »%s«"
-
-#: src/baobab-window.vala:588
-msgid "Could not detect occupied disk sizes."
-msgstr "Ni mogoče določiti velikosti zasedenih diskov."
-
-#: src/baobab-window.vala:588
-msgid "Apparent sizes are shown instead."
-msgstr "Pokazane so očitne velikosti."
+msgid "Could not scan folder \"%s\" or some of the folders it contains."
+msgstr "Mape \"%s\" ali pa njenih podrejenih map ni mogoče preiskati."
 
 #. || is_virtual_filesystem ()
-#: src/baobab-window.vala:605 src/baobab-window.vala:611
+#: ../src/baobab-window.vala:599 ../src/baobab-window.vala:605
 #, c-format
-msgid "“%s” is not a valid folder"
-msgstr "»%s« ni veljavna mapa"
+msgid "\"%s\" is not a valid folder"
+msgstr "\"%s\" ni veljavna mapa"
 
-#: src/baobab-window.vala:606 src/baobab-window.vala:612
+#: ../src/baobab-window.vala:600 ../src/baobab-window.vala:606
 msgid "Could not analyze disk usage."
 msgstr "Ni mogoče preučiti porabe diska."
-
-#: src/menus.ui:7
-msgid "_Help"
-msgstr "Pomo_č"
-
-#: src/menus.ui:12
-msgid "_About"
-msgstr "_O programu"
-
-#: src/menus.ui:16
-msgid "_Quit"
-msgstr "_Končaj"
-
-#: src/menus.ui:39
-msgid "Go to _parent folder"
-msgstr "Premakni v _nadrejeno mapo"
-
-#: src/menus.ui:45
-msgid "Zoom _in"
-msgstr "_Približaj"
-
-#: src/menus.ui:49
-msgid "Zoom _out"
-msgstr "_Oddalji"
-
-#~ msgid ""
-#~ "A simple application which can scan either specific folders (local or "
-#~ "remote) or volumes and give a graphical representation including each "
-#~ "directory size or percentage."
-#~ msgstr ""
-#~ "Enostaven program za preiskovanje krajevnih in oddaljenih map in "
-#~ "različnih nosilcev in grafični prikaz zbranih podatkov."
-
-#~ msgid "Scan Remote Folder…"
-#~ msgstr "Preišči oddaljeno mapo ..."
-
-#~ msgid "- Disk Usage Analyzer"
-#~ msgstr "- Orodje za preučevanje porabe diska"
-
-#~ msgid "Maximum depth"
-#~ msgstr "Največja globina"
-
-#~ msgid "The maximum depth drawn in the chart from the root"
-#~ msgstr "Največja narisana globina grafikona od korenskega vozlišča"
-
-#~ msgid "Chart model"
-#~ msgstr "Grafični grafikon"
-
-#~ msgid "Set the model of the chart"
-#~ msgstr "Določitev grafičnega grafikona"
-
-#~ msgid "Chart root node"
-#~ msgstr "Korensko vozlišče grafikona"
-
-#~ msgid "Set the root node from the model"
-#~ msgstr "Določitev korenskega vozlišča modela"
-
-#~ msgid "Main volume"
-#~ msgstr "Glavni nosilec"
-
-#~ msgid "Usage"
-#~ msgstr "Uporaba"
-
-#~ msgid "_Analyzer"
-#~ msgstr "_Preučevalnik"
-
-#~ msgid "_Scan Home"
-#~ msgstr "_Preišči domačo mapo"
-
-#~ msgid "Scan F_older…"
-#~ msgstr "Preišči _mapo ..."
-
-#~ msgid "Scan Remote Fo_lder…"
-#~ msgstr "Preišči _oddaljeno mapo ..."
-
-#~ msgid "_View"
-#~ msgstr "Po_gled"
-
-#~ msgid "_Reload"
-#~ msgstr "_Ponovno naloži"
-
-#~ msgid "_Expand All"
-#~ msgstr "_Razširi vse"
-
-#~ msgid "_Collapse All"
-#~ msgstr "_Zloži vse"

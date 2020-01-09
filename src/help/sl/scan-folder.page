@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scan-folder" xml:lang="sl">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+    <link type="guide" xref="index#scan"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Preišči krajevne mape, vključujoč vse podmape.</desc>
+
+  </info>
+
+  <title>Preišči mapo</title>
+
+  <p>Preiskovanje posameznih map je hitrejše od tistih, ki so v celotnem datotečnem sistemu, tako da je učinkoviteje, če želite podrobnosti zgolj o določenem delu vašega datotečnega sistema.</p>
+
+  <steps>
+    <item>
+      <p>Izberite <guiseq><gui>Orodje za preučevanje</gui><gui>Preišči mapo...</gui></guiseq> v meniju</p>
+    </item>
+    <item>
+      <p>Uporabite brskalnik datotek za krmarjenje po vašem datotečnem sistemu in izberite željeno mapo</p>
+    </item>
+    <item>
+      <p>Kliknite <gui>Odpri</gui> za pričetek preiskovanja</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Izberite <guiseq><gui>Orodje za preučevanje</gui><gui>Zaustavi</gui></guiseq> za zaustavitev trenutnega preiskovanja ali <guiseq><gui>Orodje za preučevanje</gui><gui>Osveži</gui></guiseq> za ponovitev zadnjega preiskovanja.</p>
+  </note>
+
+  <p>The results may be useful in deciding which folders can be
+  <link href="help:file-roller">archived</link>,
+  <link href="help:gnome-help/files-delete">deleted</link> or
+  <link href="help:gnome-help/files-copy">moved</link> to free up space. You can
+  also use the results to estimate how much space would be needed for a
+  <link href="help:gnome-help/backup-how">backup</link> of specific folders.</p>
+
+  <p>Desno kliknite na katerokoli mapo in izberite <gui>Odpri mapo</gui> za zagon <app>Datoteke</app> programa, ali <gui>Premakni v smeti</gui> za premik mape v <file>Smeti</file>.</p>
+
+</page>

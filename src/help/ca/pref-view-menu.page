@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="tool-status-bar" xml:lang="ca">
+
+  <info>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Oculta o mostra la barra d'eines i la barra d'estat.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Manel Vidal</mal:name>
+      <mal:email>verduler@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Barra d'eines i barra d'estat</title>
+
+  <p>La <gui>Barra d'eines</gui> proporciona dreceres a les diverses accions d'escaneig, en canvi, la <gui>Barra d'estat</gui> proporciona l'estat de l'aplicació (per exemple, <gui>Preparat</gui> i <gui>Escanejant…</gui>).</p>
+
+  <steps>
+    <item>
+      <p>Seleccioneu en el menú <guiseq><gui>Visualitza</gui><gui>Barra d'eines</gui></guiseq> per mostrar o ocultar la barra d'eines</p>
+    </item>
+    <item>
+      <p>Seleccioneu en el menú <guiseq><gui>Visualitza</gui><gui>Barra d'estat</gui></guiseq> per mostrar o ocultar la barra d'estat</p>
+    </item>
+  </steps>
+
+</page>

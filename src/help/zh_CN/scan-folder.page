@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scan-folder" xml:lang="zh-CN">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+    <link type="guide" xref="index#scan"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>扫描本地文件夹，包括所有的子文件夹。</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>tuhaihe</mal:name>
+      <mal:email>1132321739qq@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>扫描文件夹</title>
+
+  <p>单个文件夹的扫描要比整个文件系统的扫描快得多，所以如果您只想要关于文件系统某个特定部分的信息，这可能效率更高。</p>
+
+  <steps>
+    <item>
+      <p>从菜单选择 <guiseq><gui>分析器</gui><gui>扫描文件夹…</gui></guiseq></p>
+    </item>
+    <item>
+      <p>使用文件浏览器来浏览您的文件系统，并选择希望分析的文件夹</p>
+    </item>
+    <item>
+      <p>点击 <gui>打开</gui> 开始扫描</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>选择 <guiseq><gui>分析器</gui><gui>停止</gui></guiseq> 可取消当前扫描，或选择 <guiseq><gui>分析器</gui><gui>刷新</gui></guiseq> 重复上次扫描。</p>
+  </note>
+
+  <p>The results may be useful in deciding which folders can be
+  <link href="help:file-roller">archived</link>,
+  <link href="help:gnome-help/files-delete">deleted</link> or
+  <link href="help:gnome-help/files-copy">moved</link> to free up space. You can
+  also use the results to estimate how much space would be needed for a
+  <link href="help:gnome-help/backup-how">backup</link> of specific folders.</p>
+
+  <p>右击任何文件夹，选择 <gui>打开文件夹</gui> 启用 <app>文件</app> 应用程序，或选择 <gui>移动到回收站</gui> 将您的文件夹移动到 <file>回收站</file>。</p>
+
+</page>

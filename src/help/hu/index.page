@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="index" xml:lang="hu">
+
+  <info>
+    <revision pkgversion="3.8" date="2013-04-10" status="final"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>A <app>Lemezhasználat-elemző</app> egy grafikus háttértároló-vizsgáló.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Lemezhasználat-elemző</title>
+
+    <section id="scan" style="2column">
+ 	<title>Háttértárolók vizsgálata</title>
+    </section>
+
+    <section id="preferences" style="2column">
+	<title>Nézetek és beállítások</title>
+    </section>
+
+<!--    <section id="problems">
+	<title>Common problems and questions</title>
+    </section>-->
+
+</page>

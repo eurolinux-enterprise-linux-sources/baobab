@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="tool-status-bar" xml:lang="de">
+
+  <info>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Werkzeugleiste und Statusleiste anzeigen oder verbergen.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Werkzeugleiste und Statusleiste</title>
+
+  <p>Die <gui>werkzeugleiste</gui> bietet Schnellzugriffe zu den verschiedenen Einleseaktionen. Die <gui>Statusleiste</gui> zeigt den Status der Anwendung an (beispielsweise <gui>Fertig</gui> und <gui>Einlesen läuft …</gui>).</p>
+
+  <steps>
+    <item>
+      <p>Wählen Sie <guiseq><gui>Ansicht</gui><gui>Werkzeugleiste</gui></guiseq> im Menü und aktivieren oder deaktivieren Sie die Option</p>
+    </item>
+    <item>
+      <p>Wählen Sie <guiseq><gui>Ansicht</gui><gui>Statusleiste</gui></guiseq> im Menü und aktivieren oder deaktivieren Sie die Option</p>
+    </item>
+  </steps>
+
+</page>

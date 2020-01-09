@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="guide" id="pref" xml:lang="de">
+
+  <info>
+    <revision pkgversion="3.4" date="2012-02-18" status="review"/>
+    <link type="guide" xref="index#preferences"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Bestimmte Geräte und Partitionen beim Einlesen des Dateisystems überspringen.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Das Einlesen individueller Speichergeräte und Partitionen unterbinden</title>
+
+  <p>Die <app>Festplattenbelegungsanalyse</app> ermöglicht Ihnen, nur die Partitionen und Speichergeräte einzulesen, die Sie im <gui>Einstellungsdialog</gui> festgelegt haben. Standardmäßig sind alle Geräte und Partitionen dafür aktiviert, aber die Anwendung speichert Ihre Auswahl beim Schließen.</p>
+
+  <steps>
+    <item>
+      <p>Wählen Sie <guiseq><gui>Bearbeiten</gui><gui>Einstellungen</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Wählen Sie die Speichergeräte und Partitionen, die Sie einlesen wollen, oder deaktivieren Sie jene, die Sie nicht einlesen wollen</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf <gui>Schließen</gui>, um Ihre Einstellungen zu speichern</p>
+    </item>
+  </steps>
+
+  <note style="bug">
+    <p>Das erste Objekt in der Liste, welches unter <file>/</file> eingehängt ist, kann nicht abgewählt werden</p>
+  </note>
+
+</page>

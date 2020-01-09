@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="tool-status-bar" xml:lang="el">
+
+  <info>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Απόκρυψη ή εμφάνιση της εργαλειοθήκης και της γραμμής κατάστασης.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Εργαλειοθήκη και γραμμή κατάστασης</title>
+
+  <p>Η <gui>Εργαλειοθήκη</gui> παρέχει συντομεύσεις σε διάφορες επιλογές σάρωσης, ενώ η <gui>Γραμμή κατάσταση</gui> παρέχει τη κατάσταση της εφαρμογής (για παράδειγμα, <gui>Έτοιμο</gui> και <gui>Σάρωση…</gui>).</p>
+
+  <steps>
+    <item>
+      <p>Επιλέξτε από το μενού <guiseq><gui>Προβολή</gui><gui>Εργαλειοθήκη</gui></guiseq> και ενεργοποιήστε ή απενεργοποιήστε την επιλογή</p>
+    </item>
+    <item>
+      <p>Επιλέξτε από το μενού <guiseq><gui>Προβολή</gui><gui>Γραμμή κατάστασης</gui></guiseq> και ενεργοποιήστε ή απενεργοποιήστε την επιλογή</p>
+    </item>
+  </steps>
+
+</page>

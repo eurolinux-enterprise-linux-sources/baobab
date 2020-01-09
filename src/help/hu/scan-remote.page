@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scan-remote" xml:lang="hu">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+    <link type="guide" xref="index#scan" group="#last"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Távoli mappa vizsgálata a számítógépéről.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Távoli mappa vizsgálata</title>
+
+  <p>A <app>Lemezhasználat-elemző</app> képes távolról elérhető mappákat is vizsgálni. Az egész fájlrendszer vagy egy adott mappa távoli vizsgálatához:</p>
+
+  <steps>
+    <item>
+      <p>Válassza az <guiseq><gui>Elemző</gui> <gui>Távoli mappa vizsgálata…</gui></guiseq> menüpontot.</p>
+    </item>
+    <item>
+      <p>Válassza ki a használni kívánt protokollt.</p>
+<!--      <p>Choose one of following protocols, depends of what you want to do:</p>
+      <terms>
+        <item>
+          <title><link xref="ssh">SSH</link></title>
+	  <p>Secure Shell offers you a secure connection because you need to
+	  login with a username and password.</p>
+        </item>
+        <item>
+          <title><link xref="ftp">FTP (with login)</link></title>
+	  <p>File Transfer Protocol with login is reliable because a user
+	  account is required.</p>
+        </item>
+        <item>
+          <title><link xref="windows-share">Windows Share</link></title>
+          <p>Scan between Windows and Linux machines.</p>
+        </item>
+        <item>
+          <title><link xref="web-dav">WebDAV (HTTP)</link></title>
+	  <p>Web-based Distributed Authoring and Versioning methods of
+	  Hypertext Transfer Protocol HTTP scan folders that are stored on
+	  World Wide Web servers.</p>
+        </item>
+        <item>
+          <title><link xref="web-dav">Secure WebDAV (HTTPS)</link></title>
+	  <p>Secure WebDAV,ensures encryption while you are transfering
+	  data.</p>
+        </item>
+
+  <comment>
+    <cite date="2011-12-28" href="mailto:mdhillca@gmail.com">Michael Hill</cite>
+    <p>Custom Location needs a better explanation.</p>
+  </comment>
+        <item>
+          <title><link xref="custom-location">Custom Location</link></title>
+	  <p>Custom Location enables you to access a particular function from
+	  the folder manager.</p>
+        </item>
+      </terms>-->
+    </item>
+    <item>
+      <p>Írja be a távoli háttértároló IP- vagy URI-címét a <gui>Kiszolgáló</gui> mezőbe a használt protokolltól függően.</p>
+<!--      <p>If you are not so sure about the information you have to write into
+      <gui>Port</gui> and <gui>Folder</gui>, left in blank.</p>-->
+    </item>
+    <item>
+      <p>Kattintson a <gui>Vizsgálat</gui> gombra a folytatáshoz; a vizsgálat megkezdődése előtt további adatok megadása is szükséges lehet.</p>
+    </item>
+  </steps>
+
+  <note>
+    <p>A hálózaton keresztüli vizsgálat lassabb lehet, mint a helyi fájlrendszer vizsgálata.</p>
+  </note>
+
+  <note>
+    <p>A jobb egérgombbal kattintson bármely mappára, és válassza a <gui>Mappa megnyitása</gui> menüpontot a <app>Fájlok</app> alkalmazás megnyitásához, vagy az <gui>Áthelyezés a Kukába</gui> menüpontot a mappa áthelyezéséhez a <file>Kukába</file>.</p>
+  </note>
+
+</page>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scan-remote" xml:lang="de">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+    <link type="guide" xref="index#scan" group="#last"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Einen nicht auf Ihrem lokalen Rechner befindlichen Ordner einlesen.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Einen entfernten Ordner einlesen</title>
+
+  <p>Die <app>Festplattenbelegungsanalyse</app> kann entfernte Speichergeräte einlesen. So lesen Sie das gesamte Dateisystem oder einen bestimmten Ordner ein:</p>
+
+  <steps>
+    <item>
+      <p>Wählen Sie <guiseq><gui>Aktionen</gui><gui>Entfernten Ordner einlesen</gui></guiseq> im Menü</p>
+    </item>
+    <item>
+      <p>Wählen Sie das zu verwendende Protokoll</p>
+<!--      <p>Choose one of following protocols, depends of what you want to do:</p>
+      <terms>
+        <item>
+          <title><link xref="ssh">SSH</link></title>
+	  <p>Secure Shell offers you a secure connection because you need to
+	  login with a username and password.</p>
+        </item>
+        <item>
+          <title><link xref="ftp">FTP (with login)</link></title>
+	  <p>File Transfer Protocol with login is reliable because a user
+	  account is required.</p>
+        </item>
+        <item>
+          <title><link xref="windows-share">Windows Share</link></title>
+          <p>Scan between Windows and Linux machines.</p>
+        </item>
+        <item>
+          <title><link xref="web-dav">WebDAV (HTTP)</link></title>
+	  <p>Web-based Distributed Authoring and Versioning methods of
+	  Hypertext Transfer Protocol HTTP scan folders that are stored on
+	  World Wide Web servers.</p>
+        </item>
+        <item>
+          <title><link xref="web-dav">Secure WebDAV (HTTPS)</link></title>
+	  <p>Secure WebDAV,ensures encryption while you are transfering
+	  data.</p>
+        </item>
+
+  <comment>
+    <cite date="2011-12-28" href="mailto:mdhillca@gmail.com">Michael Hill</cite>
+    <p>Custom Location needs a better explanation.</p>
+  </comment>
+        <item>
+          <title><link xref="custom-location">Custom Location</link></title>
+	  <p>Custom Location enables you to access a particular function from
+	  the folder manager.</p>
+        </item>
+      </terms>-->
+    </item>
+    <item>
+      <p>Geben Sie die IP-Adresse des entfernten Speichergeräts in das <gui>Server</gui>-Feld ein, oder dessen URI, abhängig vom verwendeten Übertragungsprotokoll.</p>
+<!--      <p>If you are not so sure about the information you have to write into
+      <gui>Port</gui> and <gui>Folder</gui>, left in blank.</p>-->
+    </item>
+    <item>
+      <p>Klicken Sie zum Fortsetzen auf <gui>Einlesen</gui>. Sie werden nun nach weiteren Details gefragt, wie dem Benutzernamen und dem Passwort, bevor der Einlesevorgang beginnt.</p>
+    </item>
+  </steps>
+
+  <note>
+    <p>Das Einlesen über ein Netzwerk kann langsamer sein als innerhalb des lokalen Dateisystems.</p>
+  </note>
+
+  <note>
+    <p>Klicken Sie mit der rechten Maustaste auf einen beliebigen Ordner und wählen Sie <gui>Ordner öffnen</gui>, um die <app>Dateiverwaltung</app> zu starten, oder <gui>In den Papierkorb verschieben</gui>, um den Ordner in den <file>Papierkorb</file> zu verschieben.</p>
+  </note>
+
+</page>

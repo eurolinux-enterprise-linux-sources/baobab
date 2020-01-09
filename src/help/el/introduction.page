@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="introduction" xml:lang="el">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+    <link type="guide" xref="index" group="#first"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="author copyright editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>Ο <app>Αναλυτής χρήσης δίσκου</app>, που αναφέρεται επίσης και ως <app>baobab</app>, αναπαριστά γραφικά τη χρήση του χώρου αποθήκευσης.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Εισαγωγή</title>
+
+  <p>Ο <app>Αναλυτής χρήσης δίσκου</app> είναι γραφική, καθοδηγούμενη από το μενού εφαρμογή για την ανάλυση χρήσης των συσκευών αποθήκευσης. Μπορεί να χρησιμοποιηθεί για τη σάρωση τοπικών ή απομακρυσμένων συσκευών αποθήκευσης (συμπεριλαμβανομένου των σκληρών δίσκων, SSDs, USB στικάκια, ψηφιακές κάμερες και κάρτες μνήμης).Ο <app>Αναλυτής χρήσης δίσκου</app> μπορεί να σαρώσει <link xref="scan-file-system">ολόκληρο το σύστημα αρχείων</link>, <link xref="scan-home">τον <file>προσωπικό</file> σας κατάλογο</link>, ένα <link xref="scan-folder">συγκεκριμένο κατάλογο ορισμένο από το χρήστη</link> ή <link xref="scan-remote">έναν απομακρυσμένο φάκελο</link>.</p>
+
+</page>

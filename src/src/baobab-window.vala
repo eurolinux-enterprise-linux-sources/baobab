@@ -22,68 +22,39 @@
 
 namespace Baobab {
 
-    [GtkTemplate (ui = "/org/gnome/baobab/ui/baobab-main-window.ui")]
     public class Window : Gtk.ApplicationWindow {
-        [GtkChild]
-        private Gtk.Box vbox;
-        [GtkChild]
-        private Gtk.HeaderBar header_bar;
-        [GtkChild]
-        private Gtk.Button scan_button;
-        [GtkChild]
-        private Gtk.Button back_button;
-        [GtkChild]
-        private Gtk.Button reload_button;
-        [GtkChild]
-        private Gtk.Stack main_stack;
-        [GtkChild]
-        private Gtk.Widget home_page;
-        [GtkChild]
-        private Gtk.Widget result_page;
-        [GtkChild]
-        private Gtk.InfoBar infobar;
-        [GtkChild]
-        private Gtk.Label infobar_primary_label;
-        [GtkChild]
-        private Gtk.Label infobar_secondary_label;
-        [GtkChild]
-        private Gtk.Button infobar_close_button;
-        [GtkChild]
-        private LocationList location_list;
-        [GtkChild]
-        private Gtk.TreeView treeview;
-        [GtkChild]
-        private Gtk.TreeViewColumn size_column;
-        [GtkChild]
-        private CellRendererSize size_column_size_renderer;
-        [GtkChild]
-        private Gtk.Menu treeview_popup_menu;
-        [GtkChild]
-        private Gtk.MenuItem treeview_popup_open;
-        [GtkChild]
-        private Gtk.MenuItem treeview_popup_copy;
-        [GtkChild]
-        private Gtk.MenuItem treeview_popup_trash;
-        [GtkChild]
-        private Gtk.Stack chart_stack;
-        [GtkChild]
-        private Gtk.Stack spinner_stack;
-        [GtkChild]
-        private Gtk.StackSwitcher chart_stack_switcher;
-        [GtkChild]
-        private Chart rings_chart;
-        [GtkChild]
-        private Chart treemap_chart;
-        [GtkChild]
-        private Gtk.Spinner spinner;
-        private Location? active_location;
-        private ulong scan_completed_handler;
+        Settings ui_settings;
+        Gd.HeaderBar header_bar;
+        Gd.HeaderBar result_header_bar;
+        Gd.Stack main_stack;
+        Gtk.Widget home_page;
+        Gtk.Widget result_page;
+        Gtk.InfoBar infobar;
+        Gtk.Label infobar_primary;
+        Gtk.Label infobar_secondary;
+        Gtk.ScrolledWindow location_scroll;
+        LocationList location_list;
+        Gtk.TreeView treeview;
+        Gd.Stack chart_stack;
+        Chart rings_chart;
+        Chart treemap_chart;
+        Gtk.Spinner spinner;
+        Location? active_location;
+        ulong scan_completed_handler;
 
         static Gdk.Cursor busy_cursor;
 
+        void radio_activate (SimpleAction action, Variant? parameter) {
+            action.change_state (parameter);
+        }
+
         private const GLib.ActionEntry[] action_entries = {
+            { "gear-menu", on_show_gear_menu_activate , null, "false", null},
             { "show-home-page", on_show_home_page_activate },
+            { "active-chart", radio_activate, "s", "'rings'", on_chart_type_changed },
+            { "scan-home", on_scan_home_activate },
             { "scan-folder", on_scan_folder_activate },
+            { "scan-remote", on_scan_remote_activate },
             { "reload", on_reload_activate },
             { "show-allocated", on_show_allocated },
             { "expand-all", on_expand_all },
@@ -98,7 +69,9 @@ namespace Baobab {
         }
 
         private const ActionState[] actions_while_scanning = {
+            { "scan-home", false },
             { "scan-folder", false },
+            { "scan-remote", false },
             { "show-allocated", false },
             { "expand-all", false },
             { "collapse-all", false }
@@ -116,24 +89,50 @@ namespace Baobab {
             Object (application: app);
 
             if (busy_cursor == null) {
-                busy_cursor = new Gdk.Cursor.from_name (get_display(), "wait");
+                busy_cursor = new Gdk.Cursor (Gdk.CursorType.WATCH);
             }
 
-            var ui_settings = new Settings ("org.gnome.baobab.ui");
-            ui_settings.delay ();
-
             add_action_entries (action_entries, this);
-            var action = ui_settings.create_action ("active-chart");
-            add_action (action);
 
+            // Build ourselves.
+            var builder = new Gtk.Builder ();
+            try {
+                builder.add_from_resource ("/org/gnome/baobab/ui/baobab-main-window.ui");
+            } catch (Error e) {
+                error ("loading main builder file: %s", e.message);
+            }
+
+            // Cache some objects from the builder.
+            main_stack = builder.get_object ("main-stack") as Gd.Stack;
+            home_page = builder.get_object ("home-page") as Gtk.Widget;
+            result_page = builder.get_object ("result-page") as Gtk.Widget;
+            header_bar = builder.get_object ("header-bar") as Gd.HeaderBar;
+            result_header_bar = builder.get_object ("result-header-bar") as Gd.HeaderBar;
+            infobar = builder.get_object ("infobar") as Gtk.InfoBar;
+            infobar_primary = builder.get_object ("infobar-primary-label") as Gtk.Label;
+            infobar_secondary = builder.get_object ("infobar-secondary-label") as Gtk.Label;
+            location_scroll = builder.get_object ("location-scrolled-window") as Gtk.ScrolledWindow;
+            location_list = builder.get_object ("location-list") as LocationList;
+            treeview = builder.get_object ("treeview") as Gtk.TreeView;
+            chart_stack = builder.get_object ("chart-stack") as Gd.Stack;
+            rings_chart = builder.get_object ("rings-chart") as Chart;
+            treemap_chart = builder.get_object ("treemap-chart") as Chart;
+            spinner = builder.get_object ("spinner") as Gtk.Spinner;
+
+            location_list.set_adjustment (location_scroll.get_vadjustment ());
             location_list.set_action (on_scan_location_activate);
+            location_list.update ();
 
-            setup_treeview ();
+            var action = lookup_action ("scan-remote") as SimpleAction;
+            action.set_enabled (ConnectServer.available ());
 
+            setup_treeview (builder);
+
+            var infobar_close_button = builder.get_object ("infobar-close-button") as Gtk.Button;
             infobar_close_button.clicked.connect (() => { clear_message (); });
 
-            ui_settings.bind ("active-chart", chart_stack, "visible-child-name", SettingsBindFlags.DEFAULT);
-            chart_stack.destroy.connect (() => { Settings.unbind (chart_stack, "visible-child-name"); });
+            ui_settings = Application.get_ui_settings ();
+            lookup_action ("active-chart").change_state (ui_settings.get_value ("active-chart"));
 
             rings_chart.item_activated.connect (on_chart_item_activated);
             treemap_chart.item_activated.connect (on_chart_item_activated);
@@ -159,41 +158,26 @@ namespace Baobab {
 
             configure_event.connect ((event) => {
                 if (!(Gdk.WindowState.MAXIMIZED in get_window ().get_state ())) {
-                    get_size (out width, out height);
-                    ui_settings.set ("window-size", "(ii)", width, height);
+                    ui_settings.set ("window-size", "(ii)", event.width, event.height);
                 }
                 return false;
             });
 
-            destroy.connect (() => {
-                ui_settings.apply ();
-            });
+            add (builder.get_object ("window-contents") as Gtk.Widget);
+            title = _("Disk Usage Analyzer");
+            set_hide_titlebar_when_maximized (true);
 
             active_location = null;
             scan_completed_handler = 0;
 
-            var desktop = Environment.get_variable ("XDG_CURRENT_DESKTOP");
-
-            if (desktop == null || !desktop.contains ("Unity")) {
-                this.set_titlebar (header_bar);
-            } else {
-                header_bar.show_close_button = false;
-                header_bar.get_style_context ().remove_class ("titlebar");
-                vbox.pack_start (header_bar, false, false, 0);
-            }
-
             set_ui_state (home_page, false);
 
-            button_press_event.connect ((event) => {
-                // mouse back button
-                if (event.button == 8) {
-                    lookup_action ("show-home-page").activate (null);
-                    return Gdk.EVENT_STOP;
-                }
-                return Gdk.EVENT_PROPAGATE;
-            });
-
             show ();
+        }
+
+        void on_show_gear_menu_activate (SimpleAction action) {
+            var state = action.get_state ().get_boolean ();
+            action.set_state (new Variant.boolean (!state));
         }
 
         void on_show_home_page_activate () {
@@ -205,28 +189,54 @@ namespace Baobab {
             set_ui_state (home_page, false);
         }
 
+        void on_chart_type_changed (SimpleAction action, Variant value) {
+            switch (value as string) {
+            case "rings":
+                chart_stack.visible_child = rings_chart;
+                break;
+            case "treemap":
+                chart_stack.visible_child = treemap_chart;
+                break;
+            default:
+                return;
+            }
+
+            ui_settings.set_value ("active-chart", value);
+            action.set_state (value);
+        }
+
+        void on_scan_home_activate () {
+            scan_directory (File.new_for_path (GLib.Environment.get_home_dir ()));
+        }
+
         void on_scan_folder_activate () {
             var file_chooser = new Gtk.FileChooserDialog (_("Select Folder"), this,
                                                           Gtk.FileChooserAction.SELECT_FOLDER,
-                                                          _("_Cancel"), Gtk.ResponseType.CANCEL,
-                                                          _("_Open"), Gtk.ResponseType.ACCEPT);
+                                                          Gtk.Stock.CANCEL, Gtk.ResponseType.CANCEL,
+                                                          Gtk.Stock.OPEN, Gtk.ResponseType.ACCEPT);
 
-            file_chooser.local_only = false;
-            file_chooser.create_folders = false;
-            file_chooser.modal = true;
-
-            var check_button = new Gtk.CheckButton.with_label (_("Recursively analyze mount points"));
-            file_chooser.extra_widget = check_button;
+            file_chooser.set_modal (true);
 
             file_chooser.response.connect ((response) => {
                 if (response == Gtk.ResponseType.ACCEPT) {
-                    var flags = check_button.active ? ScanFlags.NONE : ScanFlags.EXCLUDE_MOUNTS;
-                    scan_directory (file_chooser.get_file (), flags);
+                    scan_directory (file_chooser.get_file ());
                 }
                 file_chooser.destroy ();
             });
 
             file_chooser.show ();
+        }
+
+        void on_scan_remote_activate () {
+            var connect_server = new ConnectServer ();
+
+            connect_server.selected.connect ((uri) => {
+                if (uri != null) {
+                    scan_directory (File.new_for_uri (uri));
+                }
+            });
+
+            connect_server.show ();
         }
 
         void set_active_location (Location location) {
@@ -282,7 +292,7 @@ namespace Baobab {
             try {
                 Gtk.show_uri (get_screen (), "help:baobab", Gtk.get_current_event_time ());
             } catch (Error e) {
-                message (_("Failed to show help"), e.message, Gtk.MessageType.WARNING);
+                warning ("Failed to show help: %s", e.message);
             }
         }
 
@@ -364,82 +374,69 @@ namespace Baobab {
             return true;
         }
 
-        public void open_item (Gtk.TreeIter iter) {
-            string parse_name;
-            active_location.scanner.get (iter, Scanner.Columns.PARSE_NAME, out parse_name);
-            var file = File.parse_name (parse_name);
-            try {
-                var info = file.query_info (FileAttribute.STANDARD_CONTENT_TYPE, 0, null);
-                var content = info.get_content_type ();
-                var appinfo = AppInfo.get_default_for_type (content, true);
-                var context = get_display ().get_app_launch_context ();
-                context.set_timestamp (Gtk.get_current_event_time ());
-                var files = new List<File>();
-                files.append (file);
-                appinfo.launch(files, context);
-            } catch (Error e) {
-                message (_("Failed to open file"), e.message, Gtk.MessageType.ERROR);
-            }
-        }
+        void setup_treeview (Gtk.Builder builder) {
+            var popup = builder.get_object ("treeview-popup-menu") as Gtk.Menu;
+            var open_item = builder.get_object ("treeview-popup-open") as Gtk.MenuItem;
+            var copy_item = builder.get_object ("treeview-popup-copy") as Gtk.MenuItem;
+            var trash_item = builder.get_object ("treeview-popup-trash") as Gtk.MenuItem;
 
-        public void copy_path (Gtk.TreeIter iter) {
-            string parse_name;
-            active_location.scanner.get (iter, Scanner.Columns.PARSE_NAME, out parse_name);
-            var clipboard = Gtk.Clipboard.get (Gdk.SELECTION_CLIPBOARD);
-            clipboard.set_text (parse_name, -1);
-            clipboard.store ();
-        }
-
-        public void trash_file (Gtk.TreeIter iter) {
-            string parse_name;
-            active_location.scanner.get (iter, Scanner.Columns.PARSE_NAME, out parse_name);
-            var file = File.parse_name (parse_name);
-            try {
-                file.trash ();
-                active_location.scanner.remove (ref iter);
-            } catch (Error e) {
-                message (_("Failed to move file to the trash"), e.message, Gtk.MessageType.ERROR);
-            }
-        }
-
-        void setup_treeview () {
             treeview.button_press_event.connect ((event) => {
-                if (event.triggers_context_menu ()) {
-                    Gtk.TreePath path;
-                    if (treeview.get_path_at_pos ((int)event.x, (int)event.y, out path, null, null, null)) {
-                        treeview.get_selection ().select_path (path);
-                        return show_treeview_popup (treeview_popup_menu, event);
-                    }
+                if (((Gdk.Event) (&event)).triggers_context_menu ()) {
+                    return show_treeview_popup (popup, event);
                 }
 
                 return false;
             });
 
             treeview.popup_menu.connect (() => {
-                return show_treeview_popup (treeview_popup_menu, null);
+                return show_treeview_popup (popup, null);
             });
 
-            treeview_popup_open.activate.connect (() => {
+            open_item.activate.connect (() => {
                 var selection = treeview.get_selection ();
                 Gtk.TreeIter iter;
                 if (selection.get_selected (null, out iter)) {
-                    open_item (iter);
+                    string parse_name;
+                    active_location.scanner.get (iter, Scanner.Columns.PARSE_NAME, out parse_name);
+                    var file = File.parse_name (parse_name);
+                    try {
+                        var info = file.query_info (FileAttribute.STANDARD_CONTENT_TYPE, 0, null);
+                        var content = info.get_content_type ();
+                        var appinfo = AppInfo.get_default_for_type (content, true);
+                        var files = new List<File>();
+                        files.append (file);
+                        appinfo.launch(files, null);
+                    } catch (Error e) {
+                        warning ("Failed open file with application: %s", e.message);
+                    }
                 }
             });
 
-            treeview_popup_copy.activate.connect (() => {
+            copy_item.activate.connect (() => {
                 var selection = treeview.get_selection ();
                 Gtk.TreeIter iter;
                 if (selection.get_selected (null, out iter)) {
-                    copy_path (iter);
+                    string parse_name;
+                    active_location.scanner.get (iter, Scanner.Columns.PARSE_NAME, out parse_name);
+                    var clipboard = Gtk.Clipboard.get (Gdk.SELECTION_CLIPBOARD);
+                    clipboard.set_text (parse_name, -1);
+                    clipboard.store ();
                 }
             });
 
-            treeview_popup_trash.activate.connect (() => {
+            trash_item.activate.connect (() => {
                 var selection = treeview.get_selection ();
                 Gtk.TreeIter iter;
                 if (selection.get_selected (null, out iter)) {
-                    trash_file (iter);
+                    string parse_name;
+                    active_location.scanner.get (iter, Scanner.Columns.PARSE_NAME, out parse_name);
+                    var file = File.parse_name (parse_name);
+                    try {
+                        file.trash ();
+                        active_location.scanner.remove (ref iter);
+                    } catch (Error e) {
+                        warning ("Failed to move file to the trash: %s", e.message);
+                    }
                 }
             });
 
@@ -448,16 +445,16 @@ namespace Baobab {
                 Gtk.TreeIter iter;
                 if (selection.get_selected (null, out iter)) {
                     var path = active_location.scanner.get_path (iter);
-                    rings_chart.root = path;
-                    treemap_chart.root = path;
+                    rings_chart.set_root (path);
+                    treemap_chart.set_root (path);
                 }
             });
         }
 
         void message (string primary_msg, string secondary_msg, Gtk.MessageType type) {
             infobar.message_type = type;
-            infobar_primary_label.label = "<b>%s</b>".printf (primary_msg);
-            infobar_secondary_label.label = "<small>%s</small>".printf (secondary_msg);
+            infobar_primary.set_label ("<b>%s</b>".printf (_(primary_msg)));
+            infobar_secondary.set_label ("<small>%s</small>".printf (_(secondary_msg)));
             infobar.show ();
         }
 
@@ -471,19 +468,23 @@ namespace Baobab {
             if (busy) {
                 cursor = busy_cursor;
                 disable_drop ();
-                chart_stack_switcher.sensitive = false;
-                spinner_stack.visible_child = spinner;
+                rings_chart.freeze_updates ();
+                treemap_chart.freeze_updates ();
+                (lookup_action ("active-chart") as SimpleAction).set_enabled (false);
+                chart_stack.visible_child = spinner;
                 spinner.start ();
             } else {
                 enable_drop ();
+                rings_chart.thaw_updates ();
+                treemap_chart.thaw_updates ();
+                (lookup_action ("active-chart") as SimpleAction).set_enabled (true);
                 spinner.stop ();
-                spinner_stack.visible_child = chart_stack;
-                chart_stack_switcher.sensitive = true;
+                lookup_action ("active-chart").change_state (ui_settings.get_value ("active-chart"));
             }
 
             var window = get_window ();
             if (window != null) {
-                window.cursor = cursor;
+                window.set_cursor (cursor);
             }
 
             foreach (ActionState action_state in actions_while_scanning) {
@@ -493,20 +494,20 @@ namespace Baobab {
         }
 
         void set_ui_state (Gtk.Widget child, bool busy) {
-            scan_button.visible = (child == home_page);
-            reload_button.visible = (child == result_page);
-            back_button.visible = (child == result_page);
+            header_bar.visible = (child == home_page);
+            result_header_bar.visible = (child == result_page);
 
             set_busy (busy);
 
             if (child == home_page) {
                 var action = lookup_action ("reload") as SimpleAction;
                 action.set_enabled (false);
-                header_bar.title = _("Devices & Locations");
+                main_stack.transition_type = Gd.StackTransitionType.SLIDE_RIGHT;
             } else {
                 var action = lookup_action ("reload") as SimpleAction;
                 action.set_enabled (true);
-                header_bar.title = active_location.name;
+                result_header_bar.set_title (active_location.name);
+                main_stack.transition_type = Gd.StackTransitionType.SLIDE_LEFT;
             }
 
             main_stack.visible_child = child;
@@ -527,18 +528,22 @@ namespace Baobab {
             }
         }
 
-        void set_chart_model (Gtk.TreeModel model, bool show_allocated_size) {
+        void set_model (Gtk.TreeModel model) {
+            treeview.model = model;
+
+            expand_first_row ();
+
             model.bind_property ("max-depth", rings_chart, "max-depth", BindingFlags.SYNC_CREATE);
             model.bind_property ("max-depth", treemap_chart, "max-depth", BindingFlags.SYNC_CREATE);
             treemap_chart.set_model_with_columns (model,
                                                   Scanner.Columns.DISPLAY_NAME,
-                                                  show_allocated_size ? Scanner.Columns.ALLOC_SIZE : Scanner.Columns.SIZE,
+                                                  Scanner.Columns.ALLOC_SIZE,
                                                   Scanner.Columns.PARSE_NAME,
                                                   Scanner.Columns.PERCENT,
                                                   Scanner.Columns.ELEMENTS, null);
             rings_chart.set_model_with_columns (model,
                                                 Scanner.Columns.DISPLAY_NAME,
-                                                show_allocated_size ? Scanner.Columns.ALLOC_SIZE : Scanner.Columns.SIZE,
+                                                Scanner.Columns.ALLOC_SIZE,
                                                 Scanner.Columns.PARSE_NAME,
                                                 Scanner.Columns.PERCENT,
                                                 Scanner.Columns.ELEMENTS, null);
@@ -558,35 +563,11 @@ namespace Baobab {
                     }
                     return;
                 } catch (Error e) {
-                    Gtk.TreeIter iter;
-                    Scanner.State state;
-                    scanner.get_iter_first (out iter);
-                    scanner.get (iter, Scanner.Columns.STATE, out state);
-                    if (state == Scanner.State.ERROR) {
-                        var primary = _("Could not scan folder “%s”").printf (scanner.directory.get_parse_name ());
-                        message (primary, e.message, Gtk.MessageType.ERROR);
-                    } else {
-                        var primary = _("Could not scan some of the folders contained in “%s”").printf (scanner.directory.get_parse_name ());
-                        message (primary, e.message, Gtk.MessageType.WARNING);
-                    }
+                    var primary = _("Could not scan folder \"%s\" or some of the folders it contains.").printf (scanner.directory.get_parse_name ());
+                    message (primary, e.message, Gtk.MessageType.WARNING);
                 }
-
-                // Use allocated size if available, where available is defined as
-                // alloc_size > 0 for the root element
-                Gtk.TreeIter iter;
-                scanner.get_iter_first (out iter);
-                uint64 alloc_size;
-                scanner.get (iter, Scanner.Columns.ALLOC_SIZE, out alloc_size, -1);
-                bool show_allocated_size = alloc_size > 0;
-                size_column_size_renderer.show_allocated_size = show_allocated_size;
-                size_column.sort_column_id = show_allocated_size ? Scanner.Columns.ALLOC_SIZE : Scanner.Columns.SIZE;
-                set_chart_model (active_location.scanner, show_allocated_size);
 
                 set_ui_state (result_page, false);
-
-                if (!show_allocated_size) {
-                    message (_("Could not detect occupied disk sizes."), _("Apparent sizes are shown instead."), Gtk.MessageType.INFO);
-                }
             });
 
             clear_message ();
@@ -594,21 +575,20 @@ namespace Baobab {
 
             scanner.scan (force);
 
-            treeview.model = scanner;
-            expand_first_row ();
+            set_model (active_location.scanner);
         }
 
-        public void scan_directory (File directory, ScanFlags flags=ScanFlags.NONE) {
-            var location = new Location.for_file (directory, flags);
+        public void scan_directory (File directory) {
+            var location = new Location.for_file (directory);
 
             if (location.info == null) {
-                var primary = _("“%s” is not a valid folder").printf (directory.get_parse_name ());
+                var primary = _("\"%s\" is not a valid folder").printf (directory.get_parse_name ());
                 message (primary, _("Could not analyze disk usage."), Gtk.MessageType.ERROR);
                 return;
             }
 
             if (location.info.get_file_type () != FileType.DIRECTORY/* || is_virtual_filesystem ()*/) {
-                var primary = _("“%s” is not a valid folder").printf (directory.get_parse_name ());
+                var primary = _("\"%s\" is not a valid folder").printf (directory.get_parse_name ());
                 message (primary, _("Could not analyze disk usage."), Gtk.MessageType.ERROR);
                 return;
             }

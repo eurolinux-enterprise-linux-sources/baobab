@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scan-folder" xml:lang="ru">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+    <link type="guide" xref="index#scan"/>
+
+    <credit type="author copyright">
+      <name>Юлита Инка (Julita Inca)</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Майкл Хилл (Michael Hill)</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Сканирование локальной папки, включая все её подпапки.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yuri Myasoedov</mal:name>
+      <mal:email>omerta13@yandex.ru</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Василий Фаронов</mal:name>
+      <mal:email>qvvx@yandex.ru</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Станислав Соловей</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Сканирование папки</title>
+
+  <p>Сканирование отдельных папок выполняется гораздо быстрее, чем сканирование всей системы, поэтому оно может быть более эффективным, если нужна информация лишь об отдельных частях файловой системы.</p>
+
+  <steps>
+    <item>
+      <p>В меню выберите <guiseq><gui>Анализатор</gui><gui>Сканировать папку…</gui></guiseq></p>
+    </item>
+    <item>
+      <p>Используйте окно выбора папки для навигации по файловой системы и выбора нужной папки</p>
+    </item>
+    <item>
+      <p>Нажмите <gui>Открыть</gui>, чтобы начать сканирование</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Выберите <guiseq><gui>Анализатор</gui><gui>Остановить</gui></guiseq>, чтобы остановить текущее сканирование, или <guiseq><gui>Анализатор</gui><gui>Обновить</gui></guiseq>, чтобы повторить последнее сканирование.</p>
+  </note>
+
+  <p>The results may be useful in deciding which folders can be
+  <link href="help:file-roller">archived</link>,
+  <link href="help:gnome-help/files-delete">deleted</link> or
+  <link href="help:gnome-help/files-copy">moved</link> to free up space. You can
+  also use the results to estimate how much space would be needed for a
+  <link href="help:gnome-help/backup-how">backup</link> of specific folders.</p>
+
+  <p>Нажмите правой кнопкой мыши на любую папку и выберите <gui>Открыть папку</gui>, чтобы запустить приложение <app>Файлы</app>, или <gui>Удалить в корзину</gui>, чтобы переместить папку в <file>Корзину</file>.</p>
+
+</page>

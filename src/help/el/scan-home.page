@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scan-home" xml:lang="el">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision version="0.1" date="2011-12-20" status="review"/>
+    <link type="guide" xref="index#scan"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+
+    <desc>Σαρώστε όλα τα προσωπικά σας αρχεία που βρίσκονται στη συσκευή αποθήκευσης.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Σάρωση του <file>Προσωπικού</file> σας φακέλου</title>
+
+  <p>Ο <file>προσωπικός</file> φάκελος είναι το σημείο που βρίσκονται τα περισσότερα αρχεία του χρήστη διότι οι ρυθμίσεις συνήθως αποθηκεύουν ή αντιγράφουν αρχεία μέσα στους υποκαταλόγους του. Αυτό περιλαμβάνει τις λήψεις από το διαδίκτυο, έγγραφα στα οποία εργάζεστε και φωτογραφίες από τη κάμερα σας. Συνήθως, ο <file>προσωπικός</file> φάκελος υπάρχει για κάθε χρήστη σε έναν υπολογιστή.</p>
+
+  <steps>
+    <item>
+      <p>Επιλέξτε από το μενού <guiseq><gui>Αναλυτής</gui><gui>Σάρωση προσωπικού φακέλου</gui></guiseq></p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Επιλέξτε <guiseq><gui>Αναλυτής</gui><gui>Διακοπή</gui></guiseq> για να ακυρώσετε την τρέχουσα σάρωση, ή <guiseq><gui>Αναλυτής</gui><gui>Ανανέωση</gui></guiseq> για να επαναλάβετε τη τελευταία σάρωση.</p>
+  </note>
+
+  <p>Τα αποτελέσματα μπορεί να είναι χρήσιμα για να αποφασίσετε ποιοι φάκελοι μπορούν να <link href="help:file-roller">αρχειοθετηθούν</link>, <link href="help:gnome-help/files-delete">διαγραφούν</link> ή να <link href="help:gnome-help/files-copy">μετακινηθούν</link> για να ελευθερώσετε χώρο. Μπορείτε επίσης να χρησιμοποιήσετε τα αποτελέσματα για να εκτιμήσετε πόσο ελεύθερος χώρος θα χρειαστεί για ένα <link href="help:gnome-help/backup-how">αντίγραφο ασφαλείας</link> του <file>Προσωπικού</file> σας φακέλου.</p>
+
+  <p>Κάντε δεξί κλικ σε οποιοδήποτε φάκελο και επιλέξτε <gui>Άνοιγμα φακέλου</gui> για να εκκινήσετε την εφαρμογή <app>Αρχεία</app>, ή <gui>Μετακίνηση στα απορρίμματα</gui> για να μεταφέρετε τον φάκελο στα <file>απορρίμματα</file>.</p>
+
+  <note style="advanced">
+    <p>Οι προεπιλεγμένοι υποκατάλογοι, μεταξύ των άλλων, συνήθως περιλαμβάνουν την <file>Επιφάνεια εργασία</file>, τα <file>Έγγραφα</file>, τις <file>Λήψεις</file>, τις <file>Φωτογραφίες</file> και τη <file>Μουσική</file>. Μερικοί από αυτούς υπάρχουν ήδη όταν εγκαθίσταται το GNOME, οι υπόλοιποι δημιουργούνται όταν χρειάζονται από τις εφαρμογές.</p>
+  </note>
+
+</page>

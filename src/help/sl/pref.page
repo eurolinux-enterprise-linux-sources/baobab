@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="guide" id="pref" xml:lang="sl">
+
+  <info>
+    <revision pkgversion="3.4" date="2012-02-18" status="review"/>
+    <link type="guide" xref="index#preferences"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Preskoči posamezne naprave in razdelke ob preiskovanju datotečnega sistema.</desc>
+
+  </info>
+
+  <title>Onemogoči preiskovanje posameznih naprav shrambe in razdelkov</title>
+
+  <p><app>Orodje preiskovanja uporabe diska</app>  vam omogča preiskovanje zgolj tistih particij in naprav shrambe, ki ste jih izbrali v oknu <gui>Možnosti</gui>. Privzeto so izbrane vse naprave in razdelki, ampak program bo shranil vaše možnosti, ko ga boste zaprli.</p>
+
+  <steps>
+    <item>
+      <p>Izberite <guiseq><gui>Uredi</gui><gui>Možnosti</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Izberite naprave shrambe in razdelke, ki jih želite preiskati, ali odstranite izbiro tistih, ki jih ne želite preiskati</p>
+    </item>
+    <item>
+      <p>Kliknite <gui>Zapri</gui> za shranjevanje vaših možnosti</p>
+    </item>
+  </steps>
+
+  <note style="bug">
+    <p>Prvi predmet na seznamu, ki je priklopljen na <file>/</file>, ne more biti neizbran</p>
+  </note>
+
+</page>

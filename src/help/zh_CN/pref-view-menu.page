@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="tool-status-bar" xml:lang="zh-CN">
+
+  <info>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>隐藏或显示工具栏和状态栏。</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>tuhaihe</mal:name>
+      <mal:email>1132321739qq@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>工具栏和状态栏</title>
+
+  <p><gui>工具栏</gui> 为各种扫描动作提供快捷方式，而 <gui>状态栏</gui> 提供应用程序的状态(例如，<gui>就绪</gui> 和 <gui>正在扫描…</gui>)。</p>
+
+  <steps>
+    <item>
+      <p>从菜单选择 <guiseq><gui>查看</gui><gui>工具栏</gui></guiseq>，可启用或禁用该选项</p>
+    </item>
+    <item>
+      <p>从菜单选择 <guiseq><gui>查看</gui><gui>状态栏</gui></guiseq>，可启用或禁用该选项</p>
+    </item>
+  </steps>
+
+</page>

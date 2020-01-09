@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="tool-status-bar" xml:lang="hu">
+
+  <info>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Az eszköztár és az állapotsor megjelenítése illetve elrejtése.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lukács Bence</mal:name>
+      <mal:email>lukacs.bence1 at gmail dot com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Eszköztár és állapotsor</title>
+
+  <p>Az <gui>Eszköztár</gui> parancsikonokat biztosít különböző vizsgálati műveletekhez, míg az <gui>állapotsor</gui> az alkalmazás állapotát mutatja (például <gui>Kész</gui> és <gui>Vizsgálat…</gui>).</p>
+
+  <steps>
+    <item>
+      <p>Válassza a <guiseq><gui>Nézet</gui><gui>Eszköztár</gui></guiseq> menüpontot annak be- vagy kikapcsolásához.</p>
+    </item>
+    <item>
+      <p>Válassza a <guiseq><gui>Nézet</gui><gui>Állapotsor</gui></guiseq> menüpontot annak be- vagy kikapcsolásához.</p>
+    </item>
+  </steps>
+
+</page>

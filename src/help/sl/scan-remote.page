@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="scan-remote" xml:lang="sl">
+
+  <info>
+    <revision version="0.1" date="2011-12-19" status="stub"/>
+    <revision pkgversion="3.4" date="2012-02-20" status="review"/>
+    <link type="guide" xref="index#scan" group="#last"/>
+
+    <credit type="author copyright">
+      <name>Julita Inca</name>
+      <email its:translate="no">yrazes@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Michael Hill</name>
+      <email its:translate="no">mdhillca@gmail.com</email>
+    </credit>
+    <credit type="author editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Oddaljeno preiščite mapo preko vašega računalnika.</desc>
+
+  </info>
+
+  <title>Preišči oddaljeno mapo</title>
+
+  <p><app>Orodje za preučevanje porabe diska</app> lahko preišče naprave shrambe, ki so dostopne na daljavo. Za preiskovanje oddaljenega celotnega datotečnega sistema ali izbrane mape:</p>
+
+  <steps>
+    <item>
+      <p>Izberite <guiseq><gui>Preiskovalnik</gui><gui>Preišči oddaljeno mapo...</gui></guiseq> v meniju</p>
+    </item>
+    <item>
+      <p>Izberite protokol, ki ga želite uporabljati</p>
+<!--      <p>Choose one of following protocols, depends of what you want to do:</p>
+      <terms>
+        <item>
+          <title><link xref="ssh">SSH</link></title>
+	  <p>Secure Shell offers you a secure connection because you need to
+	  login with a username and password.</p>
+        </item>
+        <item>
+          <title><link xref="ftp">FTP (with login)</link></title>
+	  <p>File Transfer Protocol with login is reliable because a user
+	  account is required.</p>
+        </item>
+        <item>
+          <title><link xref="windows-share">Windows Share</link></title>
+          <p>Scan between Windows and Linux machines.</p>
+        </item>
+        <item>
+          <title><link xref="web-dav">WebDAV (HTTP)</link></title>
+	  <p>Web-based Distributed Authoring and Versioning methods of
+	  Hypertext Transfer Protocol HTTP scan folders that are stored on
+	  World Wide Web servers.</p>
+        </item>
+        <item>
+          <title><link xref="web-dav">Secure WebDAV (HTTPS)</link></title>
+	  <p>Secure WebDAV,ensures encryption while you are transfering
+	  data.</p>
+        </item>
+
+  <comment>
+    <cite date="2011-12-28" href="mailto:mdhillca@gmail.com">Michael Hill</cite>
+    <p>Custom Location needs a better explanation.</p>
+  </comment>
+        <item>
+          <title><link xref="custom-location">Custom Location</link></title>
+	  <p>Custom Location enables you to access a particular function from
+	  the folder manager.</p>
+        </item>
+      </terms>-->
+    </item>
+    <item>
+      <p>Vnesite v IP naslov oddaljene naprave shrambe v <gui>Strežnik</gui> polje ali URI, odvisno od protokola, ki ga uporabljate.</p>
+<!--      <p>If you are not so sure about the information you have to write into
+      <gui>Port</gui> and <gui>Folder</gui>, left in blank.</p>-->
+    </item>
+    <item>
+      <p>Kliknite <gui>Preišči</gui> za nadaljevanje; lahko boste vprašani za več podrobnosti pred začetkom preiskovanja kot na primer geslo in uporabniško ime.</p>
+    </item>
+  </steps>
+
+  <note>
+    <p>Preiskovanje preko omrežja je lahko počasnejše kot preiskovanje krajevnega datotečnega sistema.</p>
+  </note>
+
+  <note>
+    <p>Desno kliknite na katerokoli mapo in izberite <gui>Odpri mapo</gui> za zagon <app>Datoteke</app> programa, ali <gui>Premakni v smeti</gui> za premik mape v <file>Smeti</file>.</p>
+  </note>
+
+</page>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="guide" id="pref" xml:lang="gl">
+
+  <info>
+    <revision pkgversion="3.4" date="2012-02-18" status="review"/>
+    <link type="guide" xref="index#preferences"/>
+
+    <credit type="author">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <desc>Omitir dispositivos específcios e particións ao analizar o seu sistema de ficheiros.</desc>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Desactivar o análise de dispositivos e particións de almacenamento individuais</title>
+
+  <p><app>Analizador de uso de disco</app> permítelle analizar só as particiósn e dispositivos de almacenamento que seleccione no seu diálogo de <gui>Preferencias</gui>. Por omisión, todos os dispositivos e particións están seleccoinados, pero o aplicativo almacenará as preferencias cando se peche.</p>
+
+  <steps>
+    <item>
+      <p>Seleccione <guiseq><gui>Editar</gui><gui>Preferencias</gui></guiseq></p>
+    </item>
+    <item>
+      <p>Seleccione os dispositivos de almacenamento e particións que quere analizar, ou deseleccionar aqueles que non queira analizar</p>
+    </item>
+    <item>
+      <p>Prema <gui>Pechar</gui> para gardar as súas preferencias</p>
+    </item>
+  </steps>
+
+  <note style="bug">
+    <p>O primeiro elemento na lista, que está montado en <file>/</file>, non pode seleccionarse</p>
+  </note>
+
+</page>
