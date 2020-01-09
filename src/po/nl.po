@@ -1,0 +1,307 @@
+# Dutch translation for baobab
+#
+# This file is distributed under the same license as the baobab package.
+#
+#
+# side bar = side pane = zijpaneel
+#
+#
+# Jan-Willem Harmanny <jwharmanny@hotmail.com>, 2003.
+# Tino Meinen <a.t.meinen@chello.nl>, 2004–2008.
+# Vincent van Adrighem <adrighem@gnome.org>, 2006.
+# Wouter Bolsterlee <wbolster@gnome.org>, 2006–2011.
+# Hannie Dumoleyn <hannie@ubuntu-nl.org>, 2010–2011, 2013, 2014.
+# Erwin Poeze <donnut@outlook.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: baobab.master.nl\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=baobab&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-07-07 02:51+0000\n"
+"PO-Revision-Date: 2014-07-07 16:37+0200\n"
+"Last-Translator: Hannie Dumoleyn <hannie@ubuntu-nl.org>\n"
+"Language-Team: Dutch <vertaling@vrijschrift.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.5\n"
+
+#: ../data/org.gnome.baobab.appdata.xml.in.h:1
+msgid ""
+"A simple application which can scan either specific folders (local or "
+"remote) or volumes and give a graphical representation including each "
+"directory size or percentage."
+msgstr ""
+"Een eenvoudige toepassing die specifieke mappen (lokaal of op afstand) of "
+"volumina scant en hiervan een grafische weergave maakt, inclusief de grootte "
+"van iedere map en het procentuele ruimtegebruik."
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:1 ../src/baobab-main-window.ui.h:6
+msgid "Disk Usage Analyzer"
+msgstr "Schijfgebruik"
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:2
+msgid "Check folder sizes and available disk space"
+msgstr "Mapgroottes en beschikbare schijfruimte bekijken"
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:3
+msgid "storage;space;cleanup;"
+msgstr "storage;opslag;ruimte;schijfgebruik;"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:1
+msgid "Excluded partitions URIs"
+msgstr "Uri's van uitgesloten partities"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:2
+msgid "A list of URIs for partitions to be excluded from scanning."
+msgstr "Een lijst met URI's voor partities die niet doorzocht moeten worden."
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:3
+msgid "Active Chart"
+msgstr "Actieve grafiek"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:4
+msgid "Which type of chart should be displayed."
+msgstr "Welke type grafiek zichtbaar dient te zijn."
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:5
+msgid "Window size"
+msgstr "Venstergrootte"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:6
+msgid "The initial size of the window"
+msgstr "Initiële venstergrootte"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:7
+msgid "Window state"
+msgstr "Vensterstaat"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:8
+msgid "The GdkWindowState of the window"
+msgstr "De GdkWindowState van het venster"
+
+# beschrijving opdrachtregelargument
+#: ../src/baobab-application.vala:29
+msgid "Print version information and exit"
+msgstr "versie-informatie afdrukken en sluiten"
+
+#: ../src/baobab-cellrenderers.vala:91
+#, c-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d item"
+msgstr[1] "%d items"
+
+#. Translators: when the last modified time is unknown
+#: ../src/baobab-cellrenderers.vala:101
+msgid "Unknown"
+msgstr "Onbekend"
+
+#. Translators: when the last modified time is today
+#: ../src/baobab-cellrenderers.vala:110
+msgid "Today"
+msgstr "Vandaag"
+
+#. Translators: when the last modified time is "days" days ago
+#: ../src/baobab-cellrenderers.vala:114
+#, c-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d dag"
+msgstr[1] "%d dagen"
+
+#. Translators: when the last modified time is "months" months ago
+#: ../src/baobab-cellrenderers.vala:118
+#, c-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] "%d maand"
+msgstr[1] "%d maanden"
+
+#. Translators: when the last modified time is "years" years ago
+#: ../src/baobab-cellrenderers.vala:122
+#, c-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] "%d jaar"
+msgstr[1] "%d jaar"
+
+#: ../src/baobab-location.vala:77
+msgid "Home folder"
+msgstr "Persoonlijke map"
+
+#: ../src/baobab-location.vala:123
+msgid "Computer"
+msgstr "Computer"
+
+#: ../src/baobab-main-window.ui.h:1
+msgid "Scan Folder…"
+msgstr "Map scannen…"
+
+#: ../src/baobab-main-window.ui.h:2
+msgid "Scan Remote Folder…"
+msgstr "Map op afstand scannen…"
+
+#: ../src/baobab-main-window.ui.h:3 ../src/baobab-menu.ui.h:4
+msgid "_Open Folder"
+msgstr "Map _openen"
+
+#: ../src/baobab-main-window.ui.h:4 ../src/baobab-menu.ui.h:5
+msgid "_Copy Path to Clipboard"
+msgstr "Pad naar klembord _kopiëren"
+
+#: ../src/baobab-main-window.ui.h:5 ../src/baobab-menu.ui.h:6
+msgid "Mo_ve to Trash"
+msgstr "_Naar prullenbak verplaatsen"
+
+#: ../src/baobab-main-window.ui.h:7
+msgid "Close"
+msgstr "Sluiten"
+
+#: ../src/baobab-main-window.ui.h:8
+msgid "Folder"
+msgstr "Map"
+
+#: ../src/baobab-main-window.ui.h:9
+msgid "Size"
+msgstr "Grootte"
+
+#: ../src/baobab-main-window.ui.h:10
+msgid "Contents"
+msgstr "Inhoud"
+
+#: ../src/baobab-main-window.ui.h:11
+msgid "Modified"
+msgstr "Gewijzigd"
+
+#: ../src/baobab-main-window.ui.h:12
+msgid "Rings Chart"
+msgstr "Ringdiagram"
+
+# Tip van Tino en Vincent (Wouter Bolsterlee)
+#: ../src/baobab-main-window.ui.h:13
+msgid "Treemap Chart"
+msgstr "Hiërarchisch blokdiagram"
+
+#: ../src/baobab-menu.ui.h:1
+msgid "_Help"
+msgstr "_Hulp"
+
+#: ../src/baobab-menu.ui.h:2
+msgid "_About"
+msgstr "I_nfo"
+
+#: ../src/baobab-menu.ui.h:3
+msgid "_Quit"
+msgstr "_Afsluiten"
+
+#: ../src/baobab-menu.ui.h:7
+#| msgid "_Move to parent folder"
+msgid "Go to _parent folder"
+msgstr "Naar _bovenliggende map gaan"
+
+#: ../src/baobab-menu.ui.h:8
+msgid "Zoom _in"
+msgstr "_Inzoomen"
+
+#: ../src/baobab-menu.ui.h:9
+msgid "Zoom _out"
+msgstr "_Uitzoomen"
+
+#: ../src/baobab-window.vala:228
+msgid "Select Folder"
+msgstr "Map selecteren"
+
+#: ../src/baobab-window.vala:230
+msgid "_Cancel"
+msgstr "_Annuleren"
+
+#: ../src/baobab-window.vala:231
+msgid "_Open"
+msgstr "_Openen"
+
+#: ../src/baobab-window.vala:236
+msgid "Recursively analyze mount points"
+msgstr "Koppelpunten recursief analyseren"
+
+#: ../src/baobab-window.vala:283
+msgid "Could not analyze volume."
+msgstr "Volumen analyseren is mislukt."
+
+#: ../src/baobab-window.vala:315
+msgid "Failed to show help"
+msgstr "Hulp tonen is mislukt"
+
+#: ../src/baobab-window.vala:334
+msgid "Baobab"
+msgstr "Baobab"
+
+# schijfgebruik/hardeschijfgebruik
+#: ../src/baobab-window.vala:337
+msgid "A graphical tool to analyze disk usage."
+msgstr "Een grafisch hulpmiddel om schijfgebruik te analyseren."
+
+#: ../src/baobab-window.vala:342
+msgid "translator-credits"
+msgstr ""
+"Tino Meinen\n"
+"Vincent van Adrighem\n"
+"Wouter Bolsterlee\n"
+"Jan-Willem Harmanny\n"
+"Hannie Dumoleyn\n"
+"Erwin Poeze\n"
+"\n"
+"Kijk voor meer informatie op http://nl.gnome.org/"
+
+#: ../src/baobab-window.vala:411
+msgid "Failed to open file"
+msgstr "Bestand openen is mislukt"
+
+#: ../src/baobab-window.vala:431
+msgid "Failed to move file to the trash"
+msgstr "Bestand naar de prullenbak verplaatsen is mislukt"
+
+#: ../src/baobab-window.vala:533
+msgid "Devices and locations"
+msgstr "Apparaten en locaties"
+
+#: ../src/baobab-window.vala:594
+#, c-format
+#| msgid "Could not analyze volume."
+msgid "Could not scan folder \"%s\""
+msgstr "Scannen van map ‘%s’ is mislukt"
+
+#: ../src/baobab-window.vala:597
+#, c-format
+#| msgid "Could not scan folder \"%s\" or some of the folders it contains."
+msgid "Could not scan some of the folders contained in \"%s\""
+msgstr "Sommige van de mappen in ‘%s’ konden niet worden gescand"
+
+#: ../src/baobab-window.vala:616
+msgid "Could not detect occupied disk sizes."
+msgstr "Grootte van gebruikte schijfruimte detecteren is mislukt."
+
+#: ../src/baobab-window.vala:616
+msgid "Apparent sizes are shown instead."
+msgstr "In plaats hiervan worden schijnbare groottes getoond."
+
+#. || is_virtual_filesystem ()
+#: ../src/baobab-window.vala:633 ../src/baobab-window.vala:639
+#, c-format
+msgid "\"%s\" is not a valid folder"
+msgstr "‘%s’ is geen geldige map"
+
+#: ../src/baobab-window.vala:634 ../src/baobab-window.vala:640
+msgid "Could not analyze disk usage."
+msgstr "Schijfgebruik analyseren is mislukt."
+
+#~ msgid "- Disk Usage Analyzer"
+#~ msgstr "- Schijfgebruikanalyse"
+
+#~ msgid "Maximum depth"
+#~ msgstr "Maximumdiepte"
+
+#~ msgid "The maximum depth drawn in the chart from the root"
+#~ msgstr "De maximumdiepte in het ringdiagram vanaf de root"

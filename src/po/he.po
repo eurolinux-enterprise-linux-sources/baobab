@@ -1,0 +1,653 @@
+# translation of gnome-utils.gnome-2-10.he.po to
+# translation of gnome-utils.gnome-2-10.he.po to Hebrew
+# translation of gnome-utils.HEAD.he.po to Hebrew
+# translation of gnome-utils.gnome-2-2.po to Hebrew
+# This file is distributed under the same license as the PACKAGE package.
+# Yuval Tanny, 2005.
+# Yuval Tanny, 2005.
+# Yuval Tanny, 2005.
+# Yuval Tanny, 2005.
+# Yuval Tanny, 2005.
+# Yuval Tanny, 2005.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+# Gil 'Dolfin' Osher <dolfin@rpg.org.il>, 2003, 2005.
+# Yuval Tanny, 2005.
+# Yaron Shahrabani <sh.yaron@gmail.com>, 2013.
+# Yosef Or Boczko <yoseforb@gnome.org>, 2013, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils.HEAD.he\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-18 00:30+0300\n"
+"PO-Revision-Date: 2014-06-18 00:31+0300\n"
+"Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
+"Language-Team: עברית <>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Gtranslator 2.91.6\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n>2||n==0) ? 1 : 2;\n"
+
+#: ../data/baobab.appdata.xml.in.h:1
+msgid ""
+"A simple application which can scan either specific folders (local or "
+"remote) or volumes and give a graphical representation including each "
+"directory size or percentage."
+msgstr ""
+"יישום פשוט אשר יכול לסרוק או תיקיות מסוימות (מקומיות או מרוחקות) או התקנים "
+"ונותן ייצוג גרפי הכולל גודל או שיעור אחוזי כל תיקייה."
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:1 ../src/baobab-main-window.ui.h:6
+msgid "Disk Usage Analyzer"
+msgstr "מנתח השימוש בכונן"
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:2
+msgid "Check folder sizes and available disk space"
+msgstr "בדיקת גדלי התיקיות והמקום פנוי בכונן"
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:3
+msgid "storage;space;cleanup;"
+msgstr "אחסון;מקום;שטח;נפח;ניקוי;"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:1
+msgid "Excluded partitions URIs"
+msgstr "Exluded partitions uris"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:2
+msgid "A list of URIs for partitions to be excluded from scanning."
+msgstr "A list of uri for partitions to be excluded from scanning."
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:3
+msgid "Active Chart"
+msgstr "Active Chart"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:4
+msgid "Which type of chart should be displayed."
+msgstr "Which type of chart should be displayed."
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:5
+msgid "Window size"
+msgstr "Window size"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:6
+msgid "The initial size of the window"
+msgstr "The initial size of the window"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:7
+msgid "Window state"
+msgstr "Window state"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:8
+msgid "The GdkWindowState of the window"
+msgstr "The GdkWindowState of the window"
+
+#: ../src/baobab-application.vala:29
+msgid "Print version information and exit"
+msgstr "הצגת פרטי הגרסה ויציאה"
+
+#: ../src/baobab-cellrenderers.vala:91
+#, c-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "פריט אחד"
+msgstr[1] "%d פריטים"
+msgstr[2] "2 פריטים"
+
+#. Translators: when the last modified time is unknown
+#: ../src/baobab-cellrenderers.vala:101
+msgid "Unknown"
+msgstr "בלתי ידוע"
+
+#. Translators: when the last modified time is today
+#: ../src/baobab-cellrenderers.vala:110
+msgid "Today"
+msgstr "היום"
+
+#. Translators: when the last modified time is "days" days ago
+#: ../src/baobab-cellrenderers.vala:114
+#, c-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "יום אחד"
+msgstr[1] "%d ימים"
+msgstr[2] "יומיים"
+
+#. Translators: when the last modified time is "months" months ago
+#: ../src/baobab-cellrenderers.vala:118
+#, c-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] "חודש אחד"
+msgstr[1] "%d חודשים"
+msgstr[2] "חודשיים"
+
+#. Translators: when the last modified time is "years" years ago
+#: ../src/baobab-cellrenderers.vala:122
+#, c-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] "שנה אחת"
+msgstr[1] "%d שנים"
+msgstr[2] "שנתיים"
+
+#: ../src/baobab-location.vala:77
+msgid "Home folder"
+msgstr "תיקיית הבית"
+
+#: ../src/baobab-location.vala:123
+msgid "Computer"
+msgstr "מחשב"
+
+#: ../src/baobab-main-window.ui.h:1
+msgid "Scan Folder…"
+msgstr "סריקת תיקייה…"
+
+#: ../src/baobab-main-window.ui.h:2
+msgid "Scan Remote Folder…"
+msgstr "סריקת תיקייה מרוחקת…"
+
+#: ../src/baobab-main-window.ui.h:3 ../src/baobab-menu.ui.h:4
+msgid "_Open Folder"
+msgstr "_פתיחת תיקייה"
+
+#: ../src/baobab-main-window.ui.h:4 ../src/baobab-menu.ui.h:5
+msgid "_Copy Path to Clipboard"
+msgstr "העתקת ה_נתיב ללוח הגזירים"
+
+#: ../src/baobab-main-window.ui.h:5 ../src/baobab-menu.ui.h:6
+msgid "Mo_ve to Trash"
+msgstr "ה_עברה לאשפה"
+
+#: ../src/baobab-main-window.ui.h:7
+msgid "Close"
+msgstr "סגירה"
+
+#: ../src/baobab-main-window.ui.h:8
+msgid "Folder"
+msgstr "תיקייה"
+
+#: ../src/baobab-main-window.ui.h:9
+msgid "Size"
+msgstr "גודל"
+
+#: ../src/baobab-main-window.ui.h:10
+msgid "Contents"
+msgstr "תכנים"
+
+#: ../src/baobab-main-window.ui.h:11
+msgid "Modified"
+msgstr "מועד השינוי"
+
+#: ../src/baobab-main-window.ui.h:12
+msgid "Rings Chart"
+msgstr "הצגה כתרשים טבעות"
+
+#: ../src/baobab-main-window.ui.h:13
+msgid "Treemap Chart"
+msgstr "הצגה כתרשים מפת עץ"
+
+#: ../src/baobab-menu.ui.h:1
+msgid "_Help"
+msgstr "ע_זרה"
+
+#: ../src/baobab-menu.ui.h:2
+msgid "_About"
+msgstr "על _אודות"
+
+#: ../src/baobab-menu.ui.h:3
+msgid "_Quit"
+msgstr "י_ציאה"
+
+#: ../src/baobab-menu.ui.h:7
+msgid "Go to _parent folder"
+msgstr "מעבר ל_תיקיית ההורה"
+
+#: ../src/baobab-menu.ui.h:8
+msgid "Zoom _in"
+msgstr "הת_קרבות"
+
+#: ../src/baobab-menu.ui.h:9
+msgid "Zoom _out"
+msgstr "הת_רחקות"
+
+#: ../src/baobab-window.vala:228
+msgid "Select Folder"
+msgstr "בחירת תיקייה"
+
+#: ../src/baobab-window.vala:230
+msgid "_Cancel"
+msgstr "_ביטול"
+
+#: ../src/baobab-window.vala:231
+msgid "_Open"
+msgstr "_פתיחה"
+
+#: ../src/baobab-window.vala:236
+msgid "Recursively analyze mount points"
+msgstr "ניתוח רקורסיבי של נקודות העיגון"
+
+#: ../src/baobab-window.vala:283
+msgid "Could not analyze volume."
+msgstr "לא ניתן לנתח את הכרך."
+
+#: ../src/baobab-window.vala:315
+msgid "Failed to show help"
+msgstr "הצגת העזרה נכשלה"
+
+#: ../src/baobab-window.vala:334
+msgid "Baobab"
+msgstr "‏Baobab"
+
+#: ../src/baobab-window.vala:337
+msgid "A graphical tool to analyze disk usage."
+msgstr "כלי גרפי לניתוח השימוש בכונן."
+
+#: ../src/baobab-window.vala:342
+msgid "translator-credits"
+msgstr ""
+"גיל אשר <dolfin@rpg.org.il>\n"
+"יובל טנאי\n"
+"מארק קרפיבנר <mark125@gmail.com>\n"
+"יאיר הרשקוביץ <yairhr@gmail.com>\n"
+"ירון שהרבני <sh.yaron@gmail.com>\n"
+"יוסף אור בוצ׳קו <yoseforb@gnome.org>\n"
+"\n"
+"פרויקט תרגום GNOME לעברית:\n"
+"‏http://gnome-il.berlios.de"
+
+#: ../src/baobab-window.vala:411
+msgid "Failed to open file"
+msgstr "פתיחת הקובץ נכשלה"
+
+#: ../src/baobab-window.vala:431
+msgid "Failed to move file to the trash"
+msgstr "העברת הקבצים לאשפה נכשלה"
+
+#: ../src/baobab-window.vala:533
+msgid "Devices and locations"
+msgstr "התקנים ומיקומים"
+
+#: ../src/baobab-window.vala:594
+#, c-format
+msgid "Could not scan folder \"%s\""
+msgstr "לא ניתן לסרוק את התיקייה „%s”"
+
+#: ../src/baobab-window.vala:597
+#, c-format
+msgid "Could not scan some of the folders contained in \"%s\""
+msgstr "לא ניתן לסרוק חלק מהתיקיות שהתיקייה „%s“ מכילה."
+
+#: ../src/baobab-window.vala:616
+msgid "Could not detect occupied disk sizes."
+msgstr "לא ניתן לזהות את החלקים התפוסים של הכוננים."
+
+#: ../src/baobab-window.vala:616
+msgid "Apparent sizes are shown instead."
+msgstr "הגדלים הנראים לעין מוצגים במקום."
+
+#. || is_virtual_filesystem ()
+#: ../src/baobab-window.vala:633 ../src/baobab-window.vala:639
+#, c-format
+msgid "\"%s\" is not a valid folder"
+msgstr "\"%s\" אינה תיקייה תקינה"
+
+#: ../src/baobab-window.vala:634 ../src/baobab-window.vala:640
+msgid "Could not analyze disk usage."
+msgstr "לא ניתן לנתח את השימוש בכונן."
+
+#~ msgid "- Disk Usage Analyzer"
+#~ msgstr "- מנתח השימוש בכונן"
+
+#~ msgid "Maximum depth"
+#~ msgstr "עומק מרבי"
+
+#~ msgid "The maximum depth drawn in the chart from the root"
+#~ msgstr "העומק במרבי שיוצג בתרשים החל מתיקיית הבסיס"
+
+#~ msgid "Chart model"
+#~ msgstr "דגם טבלה"
+
+#~ msgid "Set the model of the chart"
+#~ msgstr "הגדרת דגם הטבלה"
+
+#~ msgid "Chart root node"
+#~ msgstr "המיקום הראשי לתרשים"
+
+#~ msgid "Set the root node from the model"
+#~ msgstr "בחירת המיקום הראשי מהדגם"
+
+#~ msgid "Main volume"
+#~ msgstr "הכרך הראשי"
+
+#~ msgid "Usage"
+#~ msgstr "ניצולת"
+
+#~ msgid "_Analyzer"
+#~ msgstr "מ_נתח"
+
+#~ msgid "_Scan Home"
+#~ msgstr "סריקת תיקיית ה_בית"
+
+#~ msgid "Scan F_older…"
+#~ msgstr "סריקת תי_קייה…"
+
+#~ msgid "Scan Remote Fo_lder…"
+#~ msgstr "סריקת תיקייה מ_רוחקת…"
+
+#~ msgid "_View"
+#~ msgstr "תצוגה"
+
+#~ msgid "_Reload"
+#~ msgstr "_רענון"
+
+#~ msgid "_Expand All"
+#~ msgstr "הר_חבת הכול"
+
+#~ msgid "_Collapse All"
+#~ msgstr "_צמצום הכול"
+
+#~ msgid "Monitor Home"
+#~ msgstr "Monitor Home"
+
+#~ msgid "Whether any change to the home directory should be monitored."
+#~ msgstr "Whether any change to the home directory should be monitored."
+
+#~ msgid "Scan a folder"
+#~ msgstr "סריקת תיקייה"
+
+#~ msgid "Scan Folder"
+#~ msgstr "סריקת תיקייה"
+
+#~ msgid "Scan a remote folder"
+#~ msgstr "סריקת תיקייה מרוחקת"
+
+#~ msgid "Scan Remote Folder"
+#~ msgstr "סריקת תיקייה מרוחקת"
+
+#~ msgid "Reload"
+#~ msgstr "רענון"
+
+#~ msgid "label"
+#~ msgstr "תווית"
+
+#~ msgid "_Stop"
+#~ msgstr "ע_צירה"
+
+#~ msgid "_Allocated Space"
+#~ msgstr "מקום מוק_צה"
+
+#~ msgid "Toolbar is Visible"
+#~ msgstr "Toolbar is Visible"
+
+#~ msgid "Whether the toolbar should be visible in main window."
+#~ msgstr "Whether the toolbar should be visible in main window."
+
+#~ msgid "Statusbar is Visible"
+#~ msgstr "Statusbar is Visible"
+
+#~ msgid ""
+#~ "Whether the status bar at the bottom of main window should be visible."
+#~ msgstr ""
+#~ "Whether the status bar at the bottom of main window should be visible."
+
+#~ msgid "Scan"
+#~ msgstr "סריקה"
+
+#~ msgid "Mount and scan"
+#~ msgstr "עיגון וסריקה"
+
+#~ msgid "All locations"
+#~ msgstr "כל המיקומים"
+
+#~ msgid "Stop scanning"
+#~ msgstr "עצירת הסריקה"
+
+#~ msgid "_All locations"
+#~ msgstr "_כל המיקומים"
+
+#~ msgid "Save screenshot"
+#~ msgstr "שמירת צילום המסך"
+
+#~ msgid "Cannot create pixbuf image!"
+#~ msgstr "לא ניתן ליצור תמונת pixbuf!"
+
+#~ msgid "Save Snapshot"
+#~ msgstr "שמירת צילום מפה"
+
+#~ msgid "_Image type:"
+#~ msgstr "_סוג התמונה:"
+
+#~ msgid "_Toolbar"
+#~ msgstr "_סרגל כלים"
+
+#~ msgid "Disk Usage Analyzer Preferences"
+#~ msgstr "העדפות מנתח השימוש בכונן"
+
+#~ msgid "Select _devices to include in file system scan:"
+#~ msgstr "נא לבחור ה_תקנים שיוכללו בסריקת מערכות הקבצים:"
+
+#~ msgid "_Monitor changes to your home folder"
+#~ msgstr "מ_עקב אחר שינויים בתיקיית הבית"
+
+#~ msgid "Refresh"
+#~ msgstr "רענון"
+
+#~ msgid "Scan File System"
+#~ msgstr "סריקת מערכת הקבצים"
+
+#~ msgid "Scan _Filesystem"
+#~ msgstr "סריקת מערכת ה_קבצים"
+
+#~ msgid "Scan _Home Folder"
+#~ msgstr "סריקת תיקיית ה_בית"
+
+#~ msgid "Scan a remote folder or file system"
+#~ msgstr "סריקת תיקייה או מערכת קבצים מרוחקת"
+
+#~ msgid "Scan the file system"
+#~ msgstr "סריקת מערכת הקבצים"
+
+#~ msgid "Scan your home folder"
+#~ msgstr "סריקת תיקיית הבית שלך"
+
+#~ msgid "St_atusbar"
+#~ msgstr "שורת מ_צב"
+
+#~ msgid "_Contents"
+#~ msgstr "_תוכן"
+
+#~ msgid "_Edit"
+#~ msgstr "ע_ריכה"
+
+#~ msgid "Scanning…"
+#~ msgstr "בסריקה…"
+
+#~ msgid "Total filesystem capacity:"
+#~ msgstr "קיבולת מערכת הקבצים:"
+
+#~ msgid "used:"
+#~ msgstr "בשימוש:"
+
+#~ msgid "available:"
+#~ msgstr "פנוי:"
+
+#~ msgid "Calculating percentage bars…"
+#~ msgstr "סרגלי האחוזים בחישוב…"
+
+#~ msgid "Ready"
+#~ msgstr "לאחר הכנות"
+
+#~ msgid "Total filesystem capacity"
+#~ msgstr "קיבולת מערכת הקבצים"
+
+#~ msgid "Total filesystem usage"
+#~ msgstr "שימוש במערכת הקבצים"
+
+#~ msgid "contains hardlinks for:"
+#~ msgstr "מכיל קישורים קשיחים עבור:"
+
+#~ msgid "Could not initialize monitoring"
+#~ msgstr "לא ניתן להפעיל את המעקב"
+
+#~ msgid "Changes to your home folder will not be monitored."
+#~ msgstr "לא יתבצע מעקב אחר שינויים בתיקיית הבית."
+
+#~ msgid "Show version"
+#~ msgstr "הצגת הגרסה"
+
+#~ msgid "[DIRECTORY]"
+#~ msgstr "[DIRECTORY]"
+
+#~ msgid "Too many arguments. Only one directory can be specified."
+#~ msgstr "יותר מדי ארגומנטים. ניתן לציין תיקייה אחת בלבד."
+
+#~ msgid "Without mount points disk usage cannot be analyzed."
+#~ msgstr "ללא נקודות עיגון לא ניתן לנתח את השימוש בכונן."
+
+#~ msgid "Device"
+#~ msgstr "התקן"
+
+#~ msgid "Mount Point"
+#~ msgstr "נקודת עיגון"
+
+#~ msgid "File System Type"
+#~ msgstr "סוג מערכת הקבצים"
+
+#~ msgid "Total Size"
+#~ msgstr "גודל כללי"
+
+#~ msgid "Available"
+#~ msgstr "זמין"
+
+#~ msgid "Custom Location"
+#~ msgstr "מיקום מותאם אישית"
+
+#~ msgid "SSH"
+#~ msgstr "SSH"
+
+#~ msgid "Public FTP"
+#~ msgstr "‏FTP ציבורי"
+
+#~ msgid "FTP (with login)"
+#~ msgstr "‏FTP (עם שם כניסה)"
+
+#~ msgid "WebDAV (HTTP)"
+#~ msgstr "WebDAV (HTTP)"
+
+#~ msgid "Secure WebDAV (HTTPS)"
+#~ msgstr "‏WebDAV מאובטח (HTTPS)"
+
+#~ msgid "Cannot Connect to Server. You must enter a name for the server."
+#~ msgstr "לא ניתן להתחבר לשרת. עליך להזין שם עבור השרת."
+
+#~ msgid "Please enter a name and try again."
+#~ msgstr "נא להכניס שם ולנסות שוב."
+
+#~ msgid "_Location (URI):"
+#~ msgstr "מי_קום:"
+
+#~ msgid "_Server:"
+#~ msgstr "_שרת:"
+
+#~ msgid "Optional information:"
+#~ msgstr "מידע לא הכרחי"
+
+#~ msgid "_Share:"
+#~ msgstr "_שיתוף:"
+
+#~ msgid "_Port:"
+#~ msgstr "_פתחה:"
+
+#~ msgid "_Folder:"
+#~ msgstr "_תיקייה:"
+
+#~ msgid "_User Name:"
+#~ msgstr "שם _משתמש:"
+
+#~ msgid "_Domain Name:"
+#~ msgstr "שם מת_חם:"
+
+#~ msgid "Connect to Server"
+#~ msgstr "התחברות לשרת"
+
+#~ msgid "Service _type:"
+#~ msgstr "_סוג השירות:"
+
+#~ msgid "_Scan"
+#~ msgstr "_סריקה"
+
+#~ msgid "Rescan your home folder?"
+#~ msgstr "האם לסרוק מחדש את תיקיית הבית?"
+
+#~ msgid ""
+#~ "The content of your home folder has changed. Select rescan to update the "
+#~ "disk usage details."
+#~ msgstr ""
+#~ "תוכן תיקיית הבית השתנה. נא לבחור ב\"סריקה מחדש\" כדי לעדכן את פרטי ניצול "
+#~ "הכונן."
+
+#~ msgid "_Rescan"
+#~ msgstr "_סריקה מחדש"
+
+#~ msgid "_Show hidden folders"
+#~ msgstr "הצגת תיקיות _מוסתרות"
+
+#~ msgid "Cannot check an excluded folder!"
+#~ msgstr "לא ניתן לבדוק תיקייה שנופתה!"
+
+#~ msgid "There is no installed viewer capable of displaying the folder."
+#~ msgstr "אין מציג מותקן המסוגל להציג את התיקייה."
+
+#~ msgid "Could not move \"%s\" to the Trash"
+#~ msgstr "לא ניתן להעביר את  \"%s\" לאשפה"
+
+#~ msgid "Details: %s"
+#~ msgstr "פרטים: %s"
+
+#~ msgid "There was an error displaying help."
+#~ msgstr "אירעה שגיאה בהצגת העזרה."
+
+#~ msgid ""
+#~ "This program is free software; you can redistribute it and/or modify it "
+#~ "under the terms of the GNU General Public License as published by the "
+#~ "Free Software Foundation; either version 2 of the License, or (at your "
+#~ "option) any later version."
+#~ msgstr ""
+#~ "This program is free software; you can redistribute it and/or modify it "
+#~ "under the terms of the GNU General Public License as published by the "
+#~ "Free Software Foundation; either version 2 of the License, or (at your "
+#~ "option) any later version."
+
+#~ msgid ""
+#~ "This program is distributed in the hope that it will be useful, but "
+#~ "WITHOUT ANY WARRANTY; without even the implied warranty of "
+#~ "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General "
+#~ "Public License for more details."
+#~ msgstr ""
+#~ "This program is distributed in the hope that it will be useful, but "
+#~ "WITHOUT ANY WARRANTY; without even the implied warranty of "
+#~ "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General "
+#~ "Public License for more details."
+
+#~ msgid ""
+#~ "You should have received a copy of the GNU General Public License along "
+#~ "with this program; if not, write to the Free Software Foundation, Inc., "
+#~ "51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+#~ msgstr ""
+#~ "You should have received a copy of the GNU General Public License along "
+#~ "with this program; if not, write to the Free Software Foundation, Inc., "
+#~ "51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+
+#~ msgid "The document does not exist."
+#~ msgstr "המסמך לא קיים"
+
+#~ msgid "The folder does not exist."
+#~ msgstr "התיקייה לא קיימת."
+
+#~ msgid "S_can Remote Folder..."
+#~ msgstr "ס_ריקת תיקייה מרוחקת..."
+
+#~ msgid "Scan F_older..."
+#~ msgstr "סריקת תי_קייה..."

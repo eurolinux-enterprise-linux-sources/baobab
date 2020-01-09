@@ -1,0 +1,635 @@
+# gnome-utils's Portuguese translation
+# Copyright © 1999, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 gnome-utils
+# Distributed under the same licence as the gnome-utils package
+# Nuno Ferreira <nmrf@rnl.ist.utl.pt>, 1999.
+# Duarte Loreto <happyguy_pt@hotmail.com>, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013.
+# António Lima <amrlima@gmail.com>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 3.8\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=baobab&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-10-02 02:54+0000\n"
+"PO-Revision-Date: 2014-10-02 10:31+0100\n"
+"Last-Translator: Pedro Albuquerque <palbuquerque73@gmail.com>\n"
+"Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: ../data/org.gnome.baobab.appdata.xml.in.h:1
+msgid ""
+"A simple application which can scan either specific folders (local or "
+"remote) or volumes and give a graphical representation including each "
+"directory size or percentage."
+msgstr ""
+"Uma aplicação simples que pode analisar pastas específicas (locais ou "
+"remotas) ou volumes e fornecer uma representação gráfica que inclui o "
+"tamanho de cada diretório ou percentagem."
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:1 ../src/baobab-main-window.ui.h:6
+msgid "Disk Usage Analyzer"
+msgstr "Analisador de Utilização do Disco"
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:2
+msgid "Check folder sizes and available disk space"
+msgstr "Verificar o tamanho das pastas e o espaço disponível em disco"
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:3
+msgid "storage;space;cleanup;"
+msgstr "armazenamento;espaço;limpar;"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:1
+msgid "Excluded partitions URIs"
+msgstr "URIs da partições excluídas"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:2
+msgid "A list of URIs for partitions to be excluded from scanning."
+msgstr "A lista de URIs de partições a serem excluída da análise."
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:3
+msgid "Active Chart"
+msgstr "Gráfico Ativo"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:4
+msgid "Which type of chart should be displayed."
+msgstr "Que tipo de gráfico deverá ser apresentado."
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:5
+msgid "Window size"
+msgstr "Tamanho da janela"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:6
+msgid "The initial size of the window"
+msgstr "O tamanho inicial da janela"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:7
+msgid "Window state"
+msgstr "Estado da janela"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:8
+msgid "The GdkWindowState of the window"
+msgstr "O GdkWindowState da janela"
+
+#: ../src/baobab-application.vala:28
+msgid "Print version information and exit"
+msgstr "Imprimir informação de versão e sair"
+
+#: ../src/baobab-cellrenderers.vala:91
+#, c-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d item"
+msgstr[1] "%d itens"
+
+#. Translators: when the last modified time is unknown
+#: ../src/baobab-cellrenderers.vala:101
+msgid "Unknown"
+msgstr "Desconhecido"
+
+#. Translators: when the last modified time is today
+#: ../src/baobab-cellrenderers.vala:110
+msgid "Today"
+msgstr "Hoje"
+
+#. Translators: when the last modified time is "days" days ago
+#: ../src/baobab-cellrenderers.vala:114
+#, c-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d dia"
+msgstr[1] "% dias"
+
+#. Translators: when the last modified time is "months" months ago
+#: ../src/baobab-cellrenderers.vala:118
+#, c-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] "%d mês"
+msgstr[1] "%d meses"
+
+#. Translators: when the last modified time is "years" years ago
+#: ../src/baobab-cellrenderers.vala:122
+#, c-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] "%d ano"
+msgstr[1] "%d anos"
+
+#: ../src/baobab-location.vala:77
+msgid "Home folder"
+msgstr "Pasta pessoal"
+
+#: ../src/baobab-location.vala:123
+msgid "Computer"
+msgstr "Computador"
+
+#: ../src/baobab-main-window.ui.h:1
+msgid "Scan Folder…"
+msgstr "Analisar Pasta…"
+
+#: ../src/baobab-main-window.ui.h:2
+msgid "Scan Remote Folder…"
+msgstr "Analisar Pasta Remota…"
+
+#: ../src/baobab-main-window.ui.h:3 ../src/menus.ui.h:4
+msgid "_Open Folder"
+msgstr "Abrir _Pasta"
+
+#: ../src/baobab-main-window.ui.h:4 ../src/menus.ui.h:5
+msgid "_Copy Path to Clipboard"
+msgstr "_Copiar Caminho para a Área de Transferência"
+
+#: ../src/baobab-main-window.ui.h:5 ../src/menus.ui.h:6
+msgid "Mo_ve to Trash"
+msgstr "Mo_ver para o Lixo"
+
+#: ../src/baobab-main-window.ui.h:7
+msgid "Close"
+msgstr "Fechar"
+
+#: ../src/baobab-main-window.ui.h:8
+msgid "Folder"
+msgstr "Pasta"
+
+#: ../src/baobab-main-window.ui.h:9
+msgid "Size"
+msgstr "Tamanho"
+
+#: ../src/baobab-main-window.ui.h:10
+msgid "Contents"
+msgstr "Conteúdo"
+
+#: ../src/baobab-main-window.ui.h:11
+msgid "Modified"
+msgstr "Modificado"
+
+#: ../src/baobab-main-window.ui.h:12
+msgid "Rings Chart"
+msgstr "Gráfico de Aneis"
+
+#: ../src/baobab-main-window.ui.h:13
+msgid "Treemap Chart"
+msgstr "Gráfico de Mapa de Grafos"
+
+#: ../src/baobab-window.vala:203
+msgid "Select Folder"
+msgstr "Selecione uma Pasta"
+
+#: ../src/baobab-window.vala:205
+msgid "_Cancel"
+msgstr "_Cancelar"
+
+#: ../src/baobab-window.vala:206
+msgid "_Open"
+msgstr "_Abrir"
+
+#: ../src/baobab-window.vala:211
+msgid "Recursively analyze mount points"
+msgstr "Analisar pontos de montagem recursivamente "
+
+#: ../src/baobab-window.vala:258
+msgid "Could not analyze volume."
+msgstr "Incapaz de analisar a unidade."
+
+#: ../src/baobab-window.vala:290
+msgid "Failed to show help"
+msgstr "Falha ao apresentar a ajuda"
+
+#: ../src/baobab-window.vala:309
+msgid "Baobab"
+msgstr "Baobab"
+
+#: ../src/baobab-window.vala:312
+msgid "A graphical tool to analyze disk usage."
+msgstr "Uma ferramenta gráfica para analisar a utilização do disco."
+
+#: ../src/baobab-window.vala:317
+msgid "translator-credits"
+msgstr "Duarte Loreto <happyguy_pt@hotmail.com>"
+
+#: ../src/baobab-window.vala:386
+msgid "Failed to open file"
+msgstr "Falha ao abrir ficheiro"
+
+#: ../src/baobab-window.vala:406
+msgid "Failed to move file to the trash"
+msgstr "Falha ao mover ficheiro para o lixo"
+
+#: ../src/baobab-window.vala:506
+msgid "Devices and locations"
+msgstr "Dispositivos e localizações"
+
+#: ../src/baobab-window.vala:567
+#, c-format
+#| msgid "Could not open folder \"%s\""
+msgid "Could not scan folder \"%s\""
+msgstr "Impossível analisar a pasta \"%s\""
+
+#: ../src/baobab-window.vala:570
+#, c-format
+#| msgid "Could not scan folder \"%s\" or some of the folders it contains."
+msgid "Could not scan some of the folders contained in \"%s\""
+msgstr "Impossível analisar algumas das pastas contidas em  \"%s\"."
+
+#: ../src/baobab-window.vala:589
+msgid "Could not detect occupied disk sizes."
+msgstr "Incapaz de detetar tamanho ocupado do disco."
+
+#: ../src/baobab-window.vala:589
+msgid "Apparent sizes are shown instead."
+msgstr "Tamanhos aparentes são apresentados alternativamente."
+
+#. || is_virtual_filesystem ()
+#: ../src/baobab-window.vala:606 ../src/baobab-window.vala:612
+#, c-format
+msgid "\"%s\" is not a valid folder"
+msgstr "\"%s\" não é uma pasta válida"
+
+#: ../src/baobab-window.vala:607 ../src/baobab-window.vala:613
+msgid "Could not analyze disk usage."
+msgstr "Incapaz de analisar a utilização do disco."
+
+#: ../src/menus.ui.h:1
+msgid "_Help"
+msgstr "_Ajuda"
+
+#: ../src/menus.ui.h:2
+msgid "_About"
+msgstr "So_bre"
+
+#: ../src/menus.ui.h:3
+msgid "_Quit"
+msgstr "_Sair"
+
+#: ../src/menus.ui.h:7
+#| msgid "_Move to parent folder"
+msgid "Go to _parent folder"
+msgstr "Ir para a pasta _pai"
+
+#: ../src/menus.ui.h:8
+msgid "Zoom _in"
+msgstr "_Aumentar o zoom"
+
+#: ../src/menus.ui.h:9
+msgid "Zoom _out"
+msgstr "_Reduzir o zoom"
+
+#~ msgid "- Disk Usage Analyzer"
+#~ msgstr "- Analisador de Utilização do Disco"
+
+#~ msgid "Maximum depth"
+#~ msgstr "Profundidade máxima"
+
+#~ msgid "The maximum depth drawn in the chart from the root"
+#~ msgstr "A profundidade máxima desenhada no gráfico a partir da raiz"
+
+#~ msgid "Chart model"
+#~ msgstr "Modelo de gráfico"
+
+#~ msgid "Set the model of the chart"
+#~ msgstr "Definir o modelo do gráfico"
+
+#~ msgid "Chart root node"
+#~ msgstr "Nó raiz do gráfico"
+
+#~ msgid "Set the root node from the model"
+#~ msgstr "Definir o nó raiz do modelo"
+
+#~ msgid "Main volume"
+#~ msgstr "Unidade principal"
+
+#~ msgid "Usage"
+#~ msgstr "Utilização"
+
+#~ msgid "_Analyzer"
+#~ msgstr "_Analisador"
+
+#~ msgid "_Scan Home"
+#~ msgstr "Analisar a _Pasta Pessoal"
+
+#~ msgid "Scan F_older…"
+#~ msgstr "Analisar a P_asta…"
+
+#~ msgid "Scan Remote Fo_lder…"
+#~ msgstr "Analisar a Pasta _Remota…"
+
+#~ msgid "_View"
+#~ msgstr "_Ver"
+
+#~ msgid "_Reload"
+#~ msgstr "_Reler"
+
+#~ msgid "_Expand All"
+#~ msgstr "_Expandir Todas"
+
+#~ msgid "_Collapse All"
+#~ msgstr "Re_colher Todas"
+
+#~ msgid "Scan a folder"
+#~ msgstr "Analisar uma pasta"
+
+#~ msgid "Scan Folder"
+#~ msgstr "Analisar a Pasta"
+
+#~ msgid "Scan a remote folder"
+#~ msgstr "Analisar uma pasta remota"
+
+#~ msgid "Scan Remote Folder"
+#~ msgstr "Analisar a Pasta Remota"
+
+#~ msgid "Reload"
+#~ msgstr "Reler"
+
+#~ msgid "label"
+#~ msgstr "etiqueta"
+
+#~ msgid "_Stop"
+#~ msgstr "_Parar"
+
+#~ msgid "_Allocated Space"
+#~ msgstr "Espaço _Alocado"
+
+#~ msgid "Disk Usage Analyzer Preferences"
+#~ msgstr "Preferências do Analisador de Utilização de Disco"
+
+#~ msgid "Select _devices to include in file system scan:"
+#~ msgstr ""
+#~ "Selecionar _dispositivos a incluir na análise do sistema de ficheiros:"
+
+#~ msgid "_Monitor changes to your home folder"
+#~ msgstr "_Monitorizar alterações à sua pasta pessoal"
+
+#~ msgid "Monitor Home"
+#~ msgstr "Página Inicial do Monitor"
+
+#~ msgid "Whether any change to the home directory should be monitored."
+#~ msgstr ""
+#~ "Se qualquer alteração ao diretório pessoal deverá ou não ser monitorizada."
+
+#~ msgid "Toolbar is Visible"
+#~ msgstr "Barra de Ferramentas é Visível"
+
+#~ msgid "Whether the toolbar should be visible in main window."
+#~ msgstr ""
+#~ "Se a barra de ferramentas deverá ou não ser visível na janela principal."
+
+#~ msgid "Statusbar is Visible"
+#~ msgstr "Barra de Estados é Visível"
+
+#~ msgid ""
+#~ "Whether the status bar at the bottom of main window should be visible."
+#~ msgstr ""
+#~ "Se a barra de estados ao fundo da janela principal deverá ou não ser "
+#~ "visível."
+
+#~ msgid "Scan _Home Folder"
+#~ msgstr "_Analisar a Pasta Pessoal"
+
+#~ msgid "Scan _Filesystem"
+#~ msgstr "Analisar o Sistema de _Ficheiros"
+
+#~ msgid "_Edit"
+#~ msgstr "_Editar"
+
+#~ msgid "_Toolbar"
+#~ msgstr "Barra de Ferramen_tas"
+
+#~ msgid "St_atusbar"
+#~ msgstr "Barra de _Estados"
+
+#~ msgid "_Contents"
+#~ msgstr "_Conteúdo"
+
+#~ msgid "Scan your home folder"
+#~ msgstr "Analisar a pasta pessoal"
+
+#~ msgid "Scan the file system"
+#~ msgstr "Analisar o sistema de ficheiros"
+
+#~ msgid "Scan File System"
+#~ msgstr "Analisar o Sistema de Ficheiros"
+
+#~ msgid "Scan a remote folder or file system"
+#~ msgstr "Analisar uma pasta ou sistema de ficheiros remoto"
+
+#~ msgid "Stop scanning"
+#~ msgstr "Parar a análise"
+
+#~ msgid "Refresh"
+#~ msgstr "Atualizar"
+
+#~ msgid "Scanning…"
+#~ msgstr "A analisar…"
+
+#~ msgid "Total filesystem capacity:"
+#~ msgstr "Capacidade total do sistema de ficheiros:"
+
+#~ msgid "used:"
+#~ msgstr "utilizado:"
+
+#~ msgid "available:"
+#~ msgstr "disponível:"
+
+#~ msgid "Calculating percentage bars…"
+#~ msgstr "A calcular as barras de percentagem…"
+
+#~ msgid "Ready"
+#~ msgstr "Disponível"
+
+#~ msgid "Total filesystem capacity"
+#~ msgstr "Capacidade total do sistema de ficheiros"
+
+#~ msgid "Total filesystem usage"
+#~ msgstr "Utilização total do sistema de ficheiros"
+
+#~ msgid "contains hardlinks for:"
+#~ msgstr "Contém atalhos fixos (hardlinks) para:"
+
+#~ msgid "Could not initialize monitoring"
+#~ msgstr "Incapaz de inicializar a monitorização"
+
+#~ msgid "Changes to your home folder will not be monitored."
+#~ msgstr "Alterações à sua pasta pessoal não serão monitorizadas."
+
+#~ msgid "Show version"
+#~ msgstr "Apresentar a versão"
+
+#~ msgid "[DIRECTORY]"
+#~ msgstr "[DIRETÓRIO]"
+
+#~ msgid "Too many arguments. Only one directory can be specified."
+#~ msgstr "Demasiados argumentos. Apenas pode ser especificado um diretório."
+
+#~ msgid "Without mount points disk usage cannot be analyzed."
+#~ msgstr ""
+#~ "Sem pontos de montagem não é possível analisar a utilização de disco."
+
+#~ msgid "Save screenshot"
+#~ msgstr "Gravar a captura de ecrã"
+
+#~ msgid "Cannot create pixbuf image!"
+#~ msgstr "Incapaz de criar imagem pixbuf!"
+
+#~ msgid "Save Snapshot"
+#~ msgstr "Gravar a Captura de Ecrã"
+
+#~ msgid "_Image type:"
+#~ msgstr "Tipo de _imagem:"
+
+#~ msgid "Scan"
+#~ msgstr "Analisar"
+
+#~ msgid "Device"
+#~ msgstr "Dispositivo"
+
+#~ msgid "Mount Point"
+#~ msgstr "Ponto de Montagem"
+
+#~ msgid "File System Type"
+#~ msgstr "Tipo de Sistema de Ficheiros"
+
+#~ msgid "Total Size"
+#~ msgstr "Tamanho Total"
+
+#~ msgid "Available"
+#~ msgstr "Disponível"
+
+#~ msgid "Custom Location"
+#~ msgstr "Localização Personalizada"
+
+#~ msgid "SSH"
+#~ msgstr "SSH"
+
+#~ msgid "Public FTP"
+#~ msgstr "FTP Público"
+
+#~ msgid "FTP (with login)"
+#~ msgstr "FTP (autenticado)"
+
+#~ msgid "WebDAV (HTTP)"
+#~ msgstr "WebDAV (HTTP)"
+
+#~ msgid "Secure WebDAV (HTTPS)"
+#~ msgstr "WebDAV Seguro (HTTPS)"
+
+#~ msgid "Cannot Connect to Server. You must enter a name for the server."
+#~ msgstr ""
+#~ "Incapaz de se Ligar ao Servidor. Tem de introduzir um nome para o "
+#~ "servidor."
+
+#~ msgid "Please enter a name and try again."
+#~ msgstr "Introduza um nome e tente novamente."
+
+#~ msgid "_Location (URI):"
+#~ msgstr "_Localização (URI):"
+
+#~ msgid "_Server:"
+#~ msgstr "_Servidor:"
+
+#~ msgid "Optional information:"
+#~ msgstr "Informação opcional:"
+
+#~ msgid "_Share:"
+#~ msgstr "P_artilha:"
+
+#~ msgid "_Port:"
+#~ msgstr "_Porto:"
+
+#~ msgid "_Folder:"
+#~ msgstr "P_asta:"
+
+#~ msgid "_User Name:"
+#~ msgstr "_Utilizador:"
+
+#~ msgid "_Domain Name:"
+#~ msgstr "Nome de _Domínio:"
+
+#~ msgid "Connect to Server"
+#~ msgstr "Ligar ao Servidor"
+
+#~ msgid "Service _type:"
+#~ msgstr "_Tipo de serviço:"
+
+#~ msgid "_Scan"
+#~ msgstr "_Analisar"
+
+#~ msgid "Rescan your home folder?"
+#~ msgstr "Analisar novamente na pasta pessoal?"
+
+#~ msgid ""
+#~ "The content of your home folder has changed. Select rescan to update the "
+#~ "disk usage details."
+#~ msgstr ""
+#~ "O conteúdo da sua pasta pessoal foi alterado. Selecione analisar "
+#~ "novamente para atualizar os detalhes de utilização de disco."
+
+#~ msgid "_Rescan"
+#~ msgstr "_Analisar Novamente"
+
+#~ msgid "_Show hidden folders"
+#~ msgstr "_Apresentar as pastas escondidas"
+
+#~ msgid "Cannot check an excluded folder!"
+#~ msgstr "Incapaz de verificar uma pasta excluída!"
+
+#~ msgid "There is no installed viewer capable of displaying the folder."
+#~ msgstr ""
+#~ "Não existe nenhum visualizador instalado capaz de apresentar a pasta."
+
+#~ msgid "Could not move \"%s\" to the Trash"
+#~ msgstr "Incapaz de mover \"%s\" para o Lixo"
+
+#~ msgid "Details: %s"
+#~ msgstr "Detalhes: %s"
+
+#~ msgid "There was an error displaying help."
+#~ msgstr "Ocorreu um erro ao apresentar a ajuda."
+
+#~ msgid ""
+#~ "This program is free software; you can redistribute it and/or modify it "
+#~ "under the terms of the GNU General Public License as published by the "
+#~ "Free Software Foundation; either version 2 of the License, or (at your "
+#~ "option) any later version."
+#~ msgstr ""
+#~ "Esta é uma aplicação livre; pode redistribuí-la e/ou alterá-la sob as "
+#~ "condições da Licença Pública Genérica GNU tal como publicada pela Free "
+#~ "Software Foundation; ou a versão 2 da Licença ou (à sua escolha) qualquer "
+#~ "versão posterior."
+
+#~ msgid ""
+#~ "This program is distributed in the hope that it will be useful, but "
+#~ "WITHOUT ANY WARRANTY; without even the implied warranty of "
+#~ "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General "
+#~ "Public License for more details."
+#~ msgstr ""
+#~ "Esta aplicação é distribuído na expectativa de que seja útil, mas SEM "
+#~ "QUALQUER GARANTIA; nem mesmo a garantia implícita de COMERCIABILIDADE ou "
+#~ "ADEQUAÇÃO A UM DETERMINADO PROPÓSITO.  Consulte a Licença Pública "
+#~ "Genérica GNU para mais detalhes."
+
+#~ msgid ""
+#~ "You should have received a copy of the GNU General Public License along "
+#~ "with this program; if not, write to the Free Software Foundation, Inc., "
+#~ "51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+#~ msgstr ""
+#~ "Deverá ter recebido uma cópia da Licença Pública Genérica GNU juntamente "
+#~ "com esta aplicação; caso contrário, escreva para a Free Software "
+#~ "Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, "
+#~ "USA (em inglês)"
+
+#~ msgid "The document does not exist."
+#~ msgstr "O documento não existe."
+
+#~ msgid "The folder does not exist."
+#~ msgstr "A pasta não existe."
+
+#~ msgid "S_can Remote Folder..."
+#~ msgstr "Procurar na Pasta _Remota..."
+
+#~ msgid "Scan F_older..."
+#~ msgstr "_Analisar Pasta..."

@@ -1,0 +1,650 @@
+# translation of gnome-utils.HEAD.ar.po to Arabic
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) 2004 THE PACKAGE'S COPYRIGHT HOLDER
+# Sayed Jaffer Al-Mosawi <mosawi@arabeyes.org>, 2002.
+# Abdulaziz Al-Arfaj <alarfaj0@yahoo.com>, 2004.
+# Djihed Afifi <djihed@gmail.com>, 2006.
+# Khaled Hosny <khaledhosny@eglug.org>, 2006, 2007, 2008, 2010, 2011, 2012, 2013.
+# Anas Afif Emad <anas.e87@gmail.com, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils.gnome-2-16.ar\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-09-16 18:34+0200\n"
+"PO-Revision-Date: 2013-09-16 18:40+0200\n"
+"Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
+"Language-Team: Arabic <doc@arabeyes.org>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Virtaal 0.7.1-rc1\n"
+"X-Project-Style: gnome\n"
+
+#: ../data/baobab.appdata.xml.in.h:1
+msgid ""
+"A simple application which can scan either specific folders (local or "
+"remote) or volumes and give a graphical representation including each "
+"directory size or percentage."
+msgstr ""
+"تطبيق بسيط يتيح لك فحص مجلدات معينة (محلية أو بعيدة) أو أقراص التخزين، "
+"و يعرض تمثيل رسومي لحجم أو نسبة كل مجلد."
+
+#: ../data/baobab.desktop.in.in.h:1 ../src/baobab-main-window.ui.h:6
+msgid "Disk Usage Analyzer"
+msgstr "محلّل استخدام القرص"
+
+#: ../data/baobab.desktop.in.in.h:2
+msgid "Check folder sizes and available disk space"
+msgstr "افحص حجم المجلدات والمساحة المتوفرة"
+
+#: ../data/baobab.desktop.in.in.h:3
+msgid "storage;space;cleanup;"
+msgstr "تخزين;مساحة;تنظيف;"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:1
+msgid "Excluded partitions URIs"
+msgstr "الأقسام المستنثاة"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:2
+msgid "A list of URIs for partitions to be excluded from scanning."
+msgstr "قائمة التقسيمات المستثناة من الفحص."
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:3
+msgid "Active Chart"
+msgstr "الرسم البياني النشط"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:4
+msgid "Which type of chart should be displayed."
+msgstr "أي نوع من الرسوم البيانية يُعرض."
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:5
+msgid "Window size"
+msgstr "حجم النافذة"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:6
+msgid "The initial size of the window"
+msgstr "حجم النافذة الأولي"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:7
+msgid "Window state"
+msgstr "حالة النافذة"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:8
+msgid "The GdkWindowState of the window"
+msgstr "GdkWindowState الخاصة بالنافذة"
+
+#: ../src/baobab-application.vala:30
+msgid "Print version information and exit"
+msgstr "اكتب رقم الإصدار ثم اخرج"
+
+#: ../src/baobab-application.vala:99
+msgid "- Disk Usage Analyzer"
+msgstr "- محلّل استخدام القرص"
+
+#: ../src/baobab-cellrenderers.vala:91
+#, c-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "لا عناصر"
+msgstr[1] "عنصر واحد"
+msgstr[2] "عنصرين"
+msgstr[3] "%d عناصر"
+msgstr[4] "%d عنصرا"
+msgstr[5] "%d عنصر"
+
+#. Translators: when the last modified time is unknown
+#: ../src/baobab-cellrenderers.vala:101
+msgid "Unknown"
+msgstr "غير معروف"
+
+#. Translators: when the last modified time is today
+#: ../src/baobab-cellrenderers.vala:110
+msgid "Today"
+msgstr "اليوم"
+
+#. Translators: when the last modified time is "days" days ago
+#: ../src/baobab-cellrenderers.vala:114
+#, c-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "أقل من يوم"
+msgstr[1] "يوم"
+msgstr[2] "يومين"
+msgstr[3] "%d أيام"
+msgstr[4] "%d يومًا"
+msgstr[5] "%d يوم"
+
+#. Translators: when the last modified time is "months" months ago
+#: ../src/baobab-cellrenderers.vala:118
+#, c-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] "أقلّ من شهر"
+msgstr[1] "شهر"
+msgstr[2] "شهرين"
+msgstr[3] "%d أشهر"
+msgstr[4] "%d شهرًا"
+msgstr[5] "%d شهر"
+
+#. Translators: when the last modified time is "years" years ago
+#: ../src/baobab-cellrenderers.vala:122
+#, c-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] "أقلّ من سنة"
+msgstr[1] "سنة"
+msgstr[2] "سنتين"
+msgstr[3] "%d سنوات"
+msgstr[4] "%d سنة"
+msgstr[5] "%d سنة"
+
+#: ../src/baobab-location.vala:77
+msgid "Home folder"
+msgstr "مجلّد المنزل"
+
+#: ../src/baobab-location.vala:123
+msgid "Computer"
+msgstr "الحاسوب"
+
+#: ../src/baobab-main-window.ui.h:1
+msgid "Scan Folder…"
+msgstr "افحص مجلّدًا…"
+
+#: ../src/baobab-main-window.ui.h:2
+msgid "Scan Remote Folder…"
+msgstr "افحص مجلّدا بعيدا…"
+
+#: ../src/baobab-main-window.ui.h:3 ../src/baobab-menu.ui.h:4
+msgid "_Open Folder"
+msgstr "ا_فتح المجلّد"
+
+#: ../src/baobab-main-window.ui.h:4 ../src/baobab-menu.ui.h:5
+msgid "_Copy Path to Clipboard"
+msgstr "ان_سخ المسار إلى الحافظة"
+
+#: ../src/baobab-main-window.ui.h:5 ../src/baobab-menu.ui.h:6
+msgid "Mo_ve to Trash"
+msgstr "ا_نقل للمهملات"
+
+#: ../src/baobab-main-window.ui.h:7
+msgid "Close"
+msgstr "أغلق"
+
+#: ../src/baobab-main-window.ui.h:8
+msgid "Folder"
+msgstr "مجلد"
+
+#: ../src/baobab-main-window.ui.h:9
+msgid "Size"
+msgstr "الحجم"
+
+#: ../src/baobab-main-window.ui.h:10
+msgid "Contents"
+msgstr "المحتويات"
+
+#: ../src/baobab-main-window.ui.h:11
+msgid "Modified"
+msgstr "آخر تعديل"
+
+#: ../src/baobab-main-window.ui.h:12
+msgid "Rings Chart"
+msgstr "رسم بياني حلقي"
+
+#: ../src/baobab-main-window.ui.h:13
+msgid "Treemap Chart"
+msgstr "رسم بياني شجري"
+
+#: ../src/baobab-menu.ui.h:1
+msgid "_Help"
+msgstr "م_ساعدة"
+
+#: ../src/baobab-menu.ui.h:2
+msgid "_About"
+msgstr "_عن"
+
+#: ../src/baobab-menu.ui.h:3
+msgid "_Quit"
+msgstr "أ_نهِ"
+
+#: ../src/baobab-menu.ui.h:7
+msgid "_Move to parent folder"
+msgstr "ا_نقل للمجلد الأصل"
+
+#: ../src/baobab-menu.ui.h:8
+msgid "Zoom _in"
+msgstr "_قرّب"
+
+#: ../src/baobab-menu.ui.h:9
+msgid "Zoom _out"
+msgstr "ب_عّد"
+
+#: ../src/baobab-window.vala:224
+msgid "Select Folder"
+msgstr "اختر مجلدا"
+
+#: ../src/baobab-window.vala:226
+msgid "_Cancel"
+msgstr "أ_لغِ"
+
+#: ../src/baobab-window.vala:227
+msgid "_Open"
+msgstr "ا_فتح"
+
+#: ../src/baobab-window.vala:232
+msgid "Recursively analyze mount points"
+msgstr "حلل نقاط الضم تتابعيًا"
+
+#: ../src/baobab-window.vala:279
+msgid "Could not analyze volume."
+msgstr "تعذّر تحليل الجزء."
+
+#: ../src/baobab-window.vala:311
+msgid "Failed to show help"
+msgstr "تعذّر عرض المساعدة"
+
+#: ../src/baobab-window.vala:330
+msgid "Baobab"
+msgstr "بوباب"
+
+#: ../src/baobab-window.vala:333
+msgid "A graphical tool to analyze disk usage."
+msgstr "أداة رسوميّة لتحليل استعمال القرص."
+
+#: ../src/baobab-window.vala:338
+msgid "translator-credits"
+msgstr ""
+"فريق عربآيز للترجمة http://www.arabeyes.org:\n"
+"يوسف رفه <yousef@raffah.com>\n"
+"جهاد عفيفي <djihed@gmail.com>\n"
+"خالد حسني <khaledhosny@eglug.org>\n"
+"أنس عفيف عماد <anas.e87@gmail.com>"
+
+#: ../src/baobab-window.vala:407
+msgid "Failed to open file"
+msgstr "تعذّر فتح الملف"
+
+#: ../src/baobab-window.vala:427
+msgid "Failed to move file to the trash"
+msgstr "تعذّر نقل الملف إلى المهملات"
+
+#: ../src/baobab-window.vala:527
+msgid "Devices and locations"
+msgstr "الأجهزة و الأماكن"
+
+#: ../src/baobab-window.vala:583
+#, c-format
+msgid "Could not scan folder \"%s\" or some of the folders it contains."
+msgstr "تعذّر فحص المجلد \"%s\" أو أحد المجلدات التي يحتويها."
+
+#: ../src/baobab-window.vala:601
+msgid "Could not detect occupied disk sizes."
+msgstr "تعذّر تحديد المساحة المستخدمة من القرص."
+
+#: ../src/baobab-window.vala:601
+msgid "Apparent sizes are shown instead."
+msgstr "ستُعرض الأحجام الظاهرة بدلًا منها."
+
+#. || is_virtual_filesystem ()
+#: ../src/baobab-window.vala:618 ../src/baobab-window.vala:624
+#, c-format
+msgid "\"%s\" is not a valid folder"
+msgstr "\"%s\" ليس مجلّدا سليما"
+
+#: ../src/baobab-window.vala:619 ../src/baobab-window.vala:625
+msgid "Could not analyze disk usage."
+msgstr "تعذّر تحليل استعمال القرص."
+
+#~ msgid "Maximum depth"
+#~ msgstr "العمق الأقصى"
+
+#~ msgid "The maximum depth drawn in the chart from the root"
+#~ msgstr "العمق الأقصى من الجذر المرسوم في الرسم البياني"
+
+#~ msgid "Chart model"
+#~ msgstr "نموذج الرسم البياني"
+
+#~ msgid "Set the model of the chart"
+#~ msgstr "اضبط نموذج الرسم البياني"
+
+#~ msgid "Chart root node"
+#~ msgstr "عقدة جذر الرسم البياني"
+
+#~ msgid "Set the root node from the model"
+#~ msgstr "اضبط عقدة الجذر من النموذج"
+
+#~ msgid "Main volume"
+#~ msgstr "الجزء الرئيسي"
+
+#~ msgid "Usage"
+#~ msgstr "الاستخدام"
+
+#~ msgid "_Analyzer"
+#~ msgstr "الم_حلّل"
+
+#~ msgid "_Scan Home"
+#~ msgstr "اف_حص المنزل"
+
+#~ msgid "Scan F_older…"
+#~ msgstr "اف_حص المجلّد…"
+
+#~ msgid "Scan Remote Fo_lder…"
+#~ msgstr "افحص مجلّدا ب_عيدا…"
+
+#~ msgid "_View"
+#~ msgstr "_عرض"
+
+#~ msgid "_Reload"
+#~ msgstr "أ_عد التحميل"
+
+#~ msgid "_Expand All"
+#~ msgstr "_مدّد الكل"
+
+#~ msgid "_Collapse All"
+#~ msgstr "قلّص ال_كل"
+
+#~ msgid "Monitor Home"
+#~ msgstr "راقب المنزل"
+
+#~ msgid "Whether any change to the home directory should be monitored."
+#~ msgstr "إذا وجب مراقبة أي تغيّرات على الدليل المنزلي."
+
+#~ msgid "Scan a folder"
+#~ msgstr "افحص مجلّدا"
+
+#~ msgid "Scan Folder"
+#~ msgstr "افحص المجلّد"
+
+#~ msgid "Scan a remote folder"
+#~ msgstr "افحص مجلّدا بعيدا"
+
+#~ msgid "Scan Remote Folder"
+#~ msgstr "افحص مجلّدا بعيدا"
+
+#~ msgid "Reload"
+#~ msgstr "أعد التحميل"
+
+#~ msgid "label"
+#~ msgstr "العنوان"
+
+#~ msgid "_Stop"
+#~ msgstr "أو_قف"
+
+#~ msgid "_Allocated Space"
+#~ msgstr "ال_مساحة المحصّصة"
+
+#~ msgid "Toolbar is Visible"
+#~ msgstr "شريط الأدوات مرئي"
+
+#~ msgid "Whether the toolbar should be visible in main window."
+#~ msgstr "ما إذا وجب لشريط الأدوات أن يكون مرئيّا في نوافذ التحرير."
+
+#~ msgid "Statusbar is Visible"
+#~ msgstr "شريط الحالة مرئي"
+
+#~ msgid ""
+#~ "Whether the status bar at the bottom of main window should be visible."
+#~ msgstr "ما إذا وجب لعمود الحالة في أسفل نافذة التحرير أن يكون مرئيّا."
+
+#~ msgid "Scan"
+#~ msgstr "افحص"
+
+#~ msgid "Mount and scan"
+#~ msgstr "صِل وافحص"
+
+#~ msgid "All locations"
+#~ msgstr "كل الأماكن"
+
+#~ msgid "Stop scanning"
+#~ msgstr "أوقف الفحص"
+
+#~ msgid "_All locations"
+#~ msgstr "_كل الأماكن"
+
+#~ msgid "_Toolbar"
+#~ msgstr "شريط الأ_دوات"
+
+#~ msgid "Disk Usage Analyzer Preferences"
+#~ msgstr "تفضيلات محلّل استخدام القرص"
+
+#~ msgid "Select _devices to include in file system scan:"
+#~ msgstr "ا_ختر الأجهزة التي ستضمّن أثناء فحص نظام الملفات:"
+
+#~ msgid "_Monitor changes to your home folder"
+#~ msgstr "_راقب التغييرات في مجلّدك المنزلي"
+
+#~ msgid "Scan _Home Folder"
+#~ msgstr "افحص _مجلّد المنزل"
+
+#~ msgid "Scan _Filesystem"
+#~ msgstr "افحص _نظام الملفّات"
+
+#~ msgid "_Edit"
+#~ msgstr "ت_حرير"
+
+#~ msgid "St_atusbar"
+#~ msgstr "شريط ال_حالة"
+
+#~ msgid "_Contents"
+#~ msgstr "الم_حتويات"
+
+#~ msgid "Scan your home folder"
+#~ msgstr "افحص مجلد المنزل"
+
+#~ msgid "Scan the file system"
+#~ msgstr "افحص نظام الملفات"
+
+#~ msgid "Scan File System"
+#~ msgstr "افحص نظام الملفات"
+
+#~ msgid "Scan a remote folder or file system"
+#~ msgstr "افحص مجلّدا أو نظام ملفات بعيد"
+
+#~ msgid "Refresh"
+#~ msgstr "أعِد التّحميل"
+
+#~ msgid "Scanning…"
+#~ msgstr "يفحص…"
+
+#~ msgid "Total filesystem capacity:"
+#~ msgstr "السّعة الكلية لنظام الملفات:"
+
+#~ msgid "used:"
+#~ msgstr "مُسْتخدَم:"
+
+#~ msgid "available:"
+#~ msgstr "متوفّر:"
+
+#~ msgid "Calculating percentage bars…"
+#~ msgstr "يحسب أشرطة النسبة…"
+
+#~ msgid "Ready"
+#~ msgstr "جاهز"
+
+#~ msgid "Total filesystem capacity"
+#~ msgstr "السّعة الكلية لنظام الملفات"
+
+#~ msgid "Total filesystem usage"
+#~ msgstr "الاستخدام الكلي لنظام الملفات"
+
+#~ msgid "contains hardlinks for:"
+#~ msgstr "يحتوي على وصلات صلبة إلى:"
+
+#~ msgid "Could not initialize monitoring"
+#~ msgstr "تعذّر بدأ المراقبة"
+
+#~ msgid "Changes to your home folder will not be monitored."
+#~ msgstr "لن تُراقَب التغيّرات على الدليل المنزلي."
+
+#~ msgid "Show version"
+#~ msgstr "اعرض الإصدار"
+
+#~ msgid "[DIRECTORY]"
+#~ msgstr "[دليل]"
+
+#~ msgid "Too many arguments. Only one directory can be specified."
+#~ msgstr "كثير من المعاملات، يمكنك تحديد دليل واحد فقط."
+
+#~ msgid "Without mount points disk usage cannot be analyzed."
+#~ msgstr "بدون نقاط الوصل لا يمكن تحليل استخدام القرص."
+
+#~ msgid "Save screenshot"
+#~ msgstr "احفظ لقطة الشاشة"
+
+#~ msgid "Cannot create pixbuf image!"
+#~ msgstr "لم أستطع إنشاء صورة pixbuf!"
+
+#~ msgid "Save Snapshot"
+#~ msgstr "احفظ اللقطة"
+
+#~ msgid "_Image type:"
+#~ msgstr "نوع _الصورة:"
+
+#~ msgid "Device"
+#~ msgstr "جهاز"
+
+#~ msgid "Mount Point"
+#~ msgstr "نقطة الوصل"
+
+#~ msgid "File System Type"
+#~ msgstr "نوع نظام الملفات"
+
+#~ msgid "Total Size"
+#~ msgstr "الحجم الكلي"
+
+#~ msgid "Available"
+#~ msgstr "متوفّر"
+
+#~ msgid "Custom Location"
+#~ msgstr "موقع مخصّص"
+
+#~ msgid "SSH"
+#~ msgstr "SSH"
+
+#~ msgid "Public FTP"
+#~ msgstr "‏FTP عام"
+
+#~ msgid "FTP (with login)"
+#~ msgstr "‏FTP (مع تسجيل دخول)"
+
+#~ msgid "WebDAV (HTTP)"
+#~ msgstr "WebDAV (HTTP)"
+
+#~ msgid "Secure WebDAV (HTTPS)"
+#~ msgstr "‏WebDAV آمن (HTTPS)"
+
+#~ msgid "Cannot Connect to Server. You must enter a name for the server."
+#~ msgstr "تعذّر الاتصال بالخادوم. يجب إدخال اسم للخادوم."
+
+#~ msgid "Please enter a name and try again."
+#~ msgstr "الرجاء إدخال اسم و المحاولة مرة أخرى."
+
+#~ msgid "_Location (URI):"
+#~ msgstr "ال_موقع (URI):"
+
+#~ msgid "_Server:"
+#~ msgstr "ال_خادوم:"
+
+#~ msgid "Optional information:"
+#~ msgstr "معلومات اختيارية:"
+
+#~ msgid "_Share:"
+#~ msgstr "_شارِك:"
+
+#~ msgid "_Port:"
+#~ msgstr "ال_منفذ:"
+
+#~ msgid "_Folder:"
+#~ msgstr "ال_مجلد:"
+
+#~ msgid "_User Name:"
+#~ msgstr "ا_سم المستخدم:"
+
+#~ msgid "_Domain Name:"
+#~ msgstr "اسم ال_نطاق:"
+
+#~ msgid "Connect to Server"
+#~ msgstr "اتصل بخادوم"
+
+#~ msgid "Service _type:"
+#~ msgstr "_نوع الخدمة:"
+
+#~ msgid "_Scan"
+#~ msgstr "ا_فحص"
+
+#~ msgid "Rescan your home folder?"
+#~ msgstr "أأعيد فحص مجلّد المنزل؟"
+
+#~ msgid ""
+#~ "The content of your home folder has changed. Select rescan to update the "
+#~ "disk usage details."
+#~ msgstr ""
+#~ "محتويات مجلّدك المنزلي تغيّرت. اختر أعِد الفحص لتحدّث تفاصيل استخدام القرص."
+
+#~ msgid "_Rescan"
+#~ msgstr "أ_عد الفحص"
+
+#~ msgid "_Show hidden folders"
+#~ msgstr "اعرض المجلدات الم_خفية"
+
+#~ msgid "Cannot check an excluded folder!"
+#~ msgstr "لا يمكن فحص مجلد مستبعد!"
+
+#~ msgid "Could not open folder \"%s\""
+#~ msgstr "تعذّر فتح المجلّد \"%s\""
+
+#~ msgid "There is no installed viewer capable of displaying the folder."
+#~ msgstr "لا يوجد عارض مثبّت قادر على عرض المجلّد."
+
+#~ msgid "Could not move \"%s\" to the Trash"
+#~ msgstr "تعذّر نقل \"%s\" إلى المهملات"
+
+#~ msgid "Details: %s"
+#~ msgstr "تفاصيل: %s"
+
+#~ msgid "There was an error displaying help."
+#~ msgstr "حدث خطأ عند عرض المساعدة."
+
+#~ msgid ""
+#~ "This program is free software; you can redistribute it and/or modify it "
+#~ "under the terms of the GNU General Public License as published by the "
+#~ "Free Software Foundation; either version 2 of the License, or (at your "
+#~ "option) any later version."
+#~ msgstr ""
+#~ "هذا البرنامج حر؛ بإمكانك إعادة توزيعه و/أو تعديله تحت شروط الرخصة "
+#~ "العمومية العامة لجنو والتي نشرتها منظمة البرمجيات الحرة؛ سواء الإصدارة 2 "
+#~ "من الرخصة أو أي إصدارة بعدها حسب رغبتك."
+
+#~ msgid ""
+#~ "This program is distributed in the hope that it will be useful, but "
+#~ "WITHOUT ANY WARRANTY; without even the implied warranty of "
+#~ "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General "
+#~ "Public License for more details."
+#~ msgstr ""
+#~ "يوزّع البرنامج على أمل أن يكون مفيدًا لمن يستخدمه دون أدنى مسؤولية؛ ولا حتى "
+#~ "أي ضمان يضمن صلاحية العرض في السوق أو توافقه مع أي استخدام محدد.  يمكنك "
+#~ "مراجعة الرخصة العمومية العامة لجنو لمزيد من التفاصيل."
+
+#~ msgid ""
+#~ "You should have received a copy of the GNU General Public License along "
+#~ "with this program; if not, write to the Free Software Foundation, Inc., "
+#~ "51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+#~ msgstr ""
+#~ "من المفترض أن تكون قد استلمت نسخة من رخصة جنو العامة مع هذا البرنامج؛ في "
+#~ "حال عدم استلامك لذلك، يمكنك مكاتبة:\n"
+#~ "Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, "
+#~ "MA  02110-1301, USA"
+
+#~ msgid "The document does not exist."
+#~ msgstr "المستند غير موجود."
+
+#~ msgid "The folder does not exist."
+#~ msgstr "المجلد غير موجود."
+
+#~ msgid "S_can Remote Folder..."
+#~ msgstr "افحص مجلّدا _بعيدا..."
+
+#~ msgid "Scan F_older..."
+#~ msgstr "افحص مجلّ_دا..."

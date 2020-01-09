@@ -1,0 +1,352 @@
+# Danish Translation of gnome-utils.
+# Copyright (C) 2013, 2014 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-utils package.
+# Kenneth Christiansen <kenneth@ripen.dk>, 1998-2000.
+# Kim Schulz <kim@schulz.dk>, 1999.
+# Birger Langkjer <birger.langkjer@image.dk>, 1999.
+# Keld Simonsen <keld@dkuug.dk>, 2000-2001.
+# Ole Laursen <olau@hardworking.dk>, 2001, 02, 03, 04.
+# Martin Willemoes Hansen <mwh@sysrq.dk>, 2004, 05.
+# Kenneth Nielsen <k.nielsen81@gmail.com>, 2008, 2012.
+# Joe Hansen <joedalton2@yahoo.dk>, 2011, 2013.
+# Ask Hjorth Larsen <asklarsen@gmail.com>, 2007, 08, 09, 10, 11, 14.
+#
+#
+# Husk at tilføje dig i credit-listen (besked id "translator-credits")
+#
+# Konventioner:
+#
+#   bad block -> ugyldig blok
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-09-16 21:09+0200\n"
+"PO-Revision-Date: 2014-09-12 01:16+0200\n"
+"Last-Translator: Ask Hjorth Larsen <asklarsen@gmail.com>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/org.gnome.baobab.appdata.xml.in.h:1
+msgid ""
+"A simple application which can scan either specific folders (local or "
+"remote) or volumes and give a graphical representation including each "
+"directory size or percentage."
+msgstr ""
+"Et simpelt program som kan skanne enten specifikke mapper (lokale eller "
+"fjerne) eller diskenheder og frembringe en grafisk repræsentation, som "
+"inkluderer hver enkelt mappes størrelse og procentdel."
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:1 ../src/baobab-main-window.ui.h:6
+msgid "Disk Usage Analyzer"
+msgstr "Diskforbrugsanalyse"
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:2
+msgid "Check folder sizes and available disk space"
+msgstr "Kontrollér mappestørrelser og tilgængelig diskplads"
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:3
+msgid "storage;space;cleanup;"
+msgstr "lager;plads;oprydning;"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:1
+msgid "Excluded partitions URIs"
+msgstr "URI'er for ekskluderede partitioner"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:2
+msgid "A list of URIs for partitions to be excluded from scanning."
+msgstr "En liste af URI'er for partitioner, der ekskluderes fra scanning."
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:3
+msgid "Active Chart"
+msgstr "Aktivt diagram"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:4
+msgid "Which type of chart should be displayed."
+msgstr "Typen af diagram, der skal vises."
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:5
+msgid "Window size"
+msgstr "Vinduesstørrelse"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:6
+msgid "The initial size of the window"
+msgstr "Startstørrelsen for vinduet"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:7
+msgid "Window state"
+msgstr "Vinduestilstand"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:8
+msgid "The GdkWindowState of the window"
+msgstr "GdkWindowState for vinduet"
+
+#: ../src/baobab-application.vala:28
+msgid "Print version information and exit"
+msgstr "Vis versionsinformation og afslut"
+
+#: ../src/baobab-cellrenderers.vala:91
+#, c-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d objekt"
+msgstr[1] "%d objekter"
+
+#. Translators: when the last modified time is unknown
+#: ../src/baobab-cellrenderers.vala:101
+msgid "Unknown"
+msgstr "Ukendt"
+
+#. Translators: when the last modified time is today
+#: ../src/baobab-cellrenderers.vala:110
+msgid "Today"
+msgstr "I dag"
+
+#. Translators: when the last modified time is "days" days ago
+#: ../src/baobab-cellrenderers.vala:114
+#, c-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d dag"
+msgstr[1] "%d dage"
+
+#. Translators: when the last modified time is "months" months ago
+#: ../src/baobab-cellrenderers.vala:118
+#, c-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] "%d måned"
+msgstr[1] "%d måneder"
+
+#. Translators: when the last modified time is "years" years ago
+#: ../src/baobab-cellrenderers.vala:122
+#, c-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] "%d år"
+msgstr[1] "%d år"
+
+#: ../src/baobab-location.vala:77
+msgid "Home folder"
+msgstr "Hjemmemappe"
+
+#: ../src/baobab-location.vala:123
+msgid "Computer"
+msgstr "Computer"
+
+#: ../src/baobab-main-window.ui.h:1
+msgid "Scan Folder…"
+msgstr "Skan mappe…"
+
+#: ../src/baobab-main-window.ui.h:2
+msgid "Scan Remote Folder…"
+msgstr "Skan fjernmappe…"
+
+#: ../src/baobab-main-window.ui.h:3 ../src/menus.ui.h:4
+msgid "_Open Folder"
+msgstr "_Åbn mappe"
+
+#: ../src/baobab-main-window.ui.h:4 ../src/menus.ui.h:5
+msgid "_Copy Path to Clipboard"
+msgstr "_Kopiér sti til udklipsholder"
+
+#: ../src/baobab-main-window.ui.h:5 ../src/menus.ui.h:6
+msgid "Mo_ve to Trash"
+msgstr "F_lyt til papirkurv"
+
+#: ../src/baobab-main-window.ui.h:7
+msgid "Close"
+msgstr "Luk"
+
+#: ../src/baobab-main-window.ui.h:8
+msgid "Folder"
+msgstr "Mappe"
+
+#: ../src/baobab-main-window.ui.h:9
+msgid "Size"
+msgstr "Størrelse"
+
+#: ../src/baobab-main-window.ui.h:10
+msgid "Contents"
+msgstr "Indhold"
+
+#: ../src/baobab-main-window.ui.h:11
+msgid "Modified"
+msgstr "Ændret"
+
+#: ../src/baobab-main-window.ui.h:12
+msgid "Rings Chart"
+msgstr "Ringdiagram"
+
+#: ../src/baobab-main-window.ui.h:13
+msgid "Treemap Chart"
+msgstr "Træafbildning"
+
+#: ../src/baobab-window.vala:203
+msgid "Select Folder"
+msgstr "Markér mappe"
+
+#: ../src/baobab-window.vala:205
+msgid "_Cancel"
+msgstr "_Annullér"
+
+#: ../src/baobab-window.vala:206
+msgid "_Open"
+msgstr "_Åbn"
+
+#: ../src/baobab-window.vala:211
+msgid "Recursively analyze mount points"
+msgstr "Analysér monteringspunkter rekursivt"
+
+#: ../src/baobab-window.vala:258
+msgid "Could not analyze volume."
+msgstr "Kunne ikke analysere diskenhed."
+
+#: ../src/baobab-window.vala:290
+msgid "Failed to show help"
+msgstr "Kunne ikke vise hjælp"
+
+#: ../src/baobab-window.vala:309
+msgid "Baobab"
+msgstr "Baobab"
+
+#: ../src/baobab-window.vala:312
+msgid "A graphical tool to analyze disk usage."
+msgstr "Et grafisk værktøj til at analysere diskforbrug."
+
+#: ../src/baobab-window.vala:317
+msgid "translator-credits"
+msgstr ""
+"Birger Langkjer\n"
+"Keld Simonsen\n"
+"Kenneth Christiansen\n"
+"Kim Schulz\n"
+"Martin Willemoes Hansen\n"
+"Ole Laursen\n"
+"Ask Hjorth Larsen\n"
+"Kenneth Nielsen\n"
+"Joe Hansen\n"
+"\n"
+"Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
+"Mere info: http://www.dansk-gruppen.dk"
+
+#: ../src/baobab-window.vala:386
+msgid "Failed to open file"
+msgstr "Kunne ikke åbne fil"
+
+#: ../src/baobab-window.vala:406
+msgid "Failed to move file to the trash"
+msgstr "Kunne ikke flytte fil til papirkurven"
+
+#: ../src/baobab-window.vala:506
+msgid "Devices and locations"
+msgstr "Enheder og steder"
+
+#: ../src/baobab-window.vala:567
+#, c-format
+msgid "Could not scan folder \"%s\""
+msgstr "Kunne ikke skanne mappen \"%s\""
+
+#: ../src/baobab-window.vala:570
+#, c-format
+msgid "Could not scan some of the folders contained in \"%s\""
+msgstr "Kunne ikke skanne visse af mapperne indeholdt i \"%s\""
+
+#: ../src/baobab-window.vala:589
+msgid "Could not detect occupied disk sizes."
+msgstr "Kunne ikke detektere opbrugte diskstørrelser."
+
+#: ../src/baobab-window.vala:589
+msgid "Apparent sizes are shown instead."
+msgstr "Tilsyneladende størrelser vises i stedet."
+
+#. || is_virtual_filesystem ()
+#: ../src/baobab-window.vala:606 ../src/baobab-window.vala:612
+#, c-format
+msgid "\"%s\" is not a valid folder"
+msgstr "\"%s\" er ikke en gyldig mappe"
+
+#: ../src/baobab-window.vala:607 ../src/baobab-window.vala:613
+msgid "Could not analyze disk usage."
+msgstr "Kunne ikke analysere diskforbrug."
+
+#: ../src/menus.ui.h:1
+msgid "_Help"
+msgstr "_Hjælp"
+
+#: ../src/menus.ui.h:2
+msgid "_About"
+msgstr "_Om"
+
+#: ../src/menus.ui.h:3
+msgid "_Quit"
+msgstr "_Afslut"
+
+#: ../src/menus.ui.h:7
+msgid "Go to _parent folder"
+msgstr "Gå til mappen et _niveau over"
+
+#: ../src/menus.ui.h:8
+msgid "Zoom _in"
+msgstr "For_stør"
+
+#: ../src/menus.ui.h:9
+msgid "Zoom _out"
+msgstr "For_mindsk"
+
+#~ msgid "- Disk Usage Analyzer"
+#~ msgstr "- Diskforbrugsanalyse"
+
+#~ msgid "Maximum depth"
+#~ msgstr "Maksimal dybde"
+
+#~ msgid "The maximum depth drawn in the chart from the root"
+#~ msgstr "Maksimal dybde der tegnes i diagrammet fra roden"
+
+#~ msgid "Chart model"
+#~ msgstr "Diagrammodel"
+
+#~ msgid "Set the model of the chart"
+#~ msgstr "Angiv modellen for diagrammet"
+
+#~ msgid "Chart root node"
+#~ msgstr "Rodpunkt for diagrammet"
+
+#~ msgid "Set the root node from the model"
+#~ msgstr "Sæt rodpunktet fra modellen"
+
+#~ msgid "Main volume"
+#~ msgstr "Primære diskenhed"
+
+#~ msgid "Usage"
+#~ msgstr "Forbrug"
+
+# Dette er menupunktet længst til venstre i menubaren
+#~ msgid "_Analyzer"
+#~ msgstr "_Analyse"
+
+#~ msgid "_Scan Home"
+#~ msgstr "_Skan hjemmemappe"
+
+#~ msgid "Scan F_older…"
+#~ msgstr "Skan _mappe…"
+
+#~ msgid "Scan Remote Fo_lder…"
+#~ msgstr "S_kan fjernmappe…"
+
+#~ msgid "_View"
+#~ msgstr "_Vis"
+
+#~ msgid "_Reload"
+#~ msgstr "_Genindlæs"
+
+#~ msgid "_Expand All"
+#~ msgstr "_Udfold alle"
+
+#~ msgid "_Collapse All"
+#~ msgstr "_Sammenfold alle"

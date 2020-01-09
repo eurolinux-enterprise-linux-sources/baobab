@@ -1,0 +1,660 @@
+# Hungarian translation of baobab.
+# Copyright (C) 1999 - 2006, 2007, 2008, 2009, 2010, 2011, 2012 Free Software Foundation, Inc.
+# This file is distributed under the same license as the baobab package.
+#
+# Szabolcs Ban <shooby at gnome dot hu>, 1999, 2000.
+# Gergely Nagy <greg at gnome dot hu>, 2001.
+# Andras Timar <timar at gnome dot hu>, 2001, 2002, 2003.
+# Gabor Sari <saga at gnome dot hu>, 2003, 2004.
+# Laszlo Dvornik <dvornik at gnome dot hu>, 2004.
+# Gabor Kelemen <kelemeng at gnome dot hu>, 2004, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013.
+# Mate ORY <orymate at gmail d0t com>, 2006.
+# Lukács Bence <lukacs.bence1 at gmail dot com>, 2012.
+# Balázs Úr <urbalazs at gmail dot com>, 2012, 2013.
+# Balázs Úr <urbalazs@gmail.com>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: baobab master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=baobab&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-06-22 02:51+0000\n"
+"PO-Revision-Date: 2014-06-22 12:13+0200\n"
+"Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
+"Language-Team: Hungarian <openscope at googlegroups dot com>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.2\n"
+
+#: ../data/baobab.appdata.xml.in.h:1
+msgid ""
+"A simple application which can scan either specific folders (local or "
+"remote) or volumes and give a graphical representation including each "
+"directory size or percentage."
+msgstr ""
+"Egy egyszerű alkalmazás, amely adott (helyi vagy távoli) mappákat vagy "
+"köteteket képes átvizsgálni és minden könyvtárméretet vagy százalékos "
+"megjelenítést tartalmazó grafikus ábrázolást nyújt."
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:1 ../src/baobab-main-window.ui.h:6
+msgid "Disk Usage Analyzer"
+msgstr "Lemezhasználat-elemző"
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:2
+msgid "Check folder sizes and available disk space"
+msgstr "Mappaméretek és elérhető lemezterület vizsgálata"
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:3
+msgid "storage;space;cleanup;"
+msgstr "tároló;lemezterület;takarítás;"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:1
+msgid "Excluded partitions URIs"
+msgstr "Kihagyott partíciók URI-címei"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:2
+msgid "A list of URIs for partitions to be excluded from scanning."
+msgstr "A vizsgálatból kihagyandó partíciók URI-címeinek listája."
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:3
+msgid "Active Chart"
+msgstr "Aktív diagram"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:4
+msgid "Which type of chart should be displayed."
+msgstr "Melyik diagramtípus legyen látható."
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:5
+msgid "Window size"
+msgstr "Ablakméret"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:6
+msgid "The initial size of the window"
+msgstr "Az ablak kezdeti mérete"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:7
+msgid "Window state"
+msgstr "Ablakállapot"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:8
+msgid "The GdkWindowState of the window"
+msgstr "Az ablak GdkWindowState állapota"
+
+#: ../src/baobab-application.vala:29
+msgid "Print version information and exit"
+msgstr "Verzióinformációk kiírása és kilépés"
+
+#: ../src/baobab-cellrenderers.vala:91
+#, c-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d elem"
+msgstr[1] "%d elem"
+
+#. Translators: when the last modified time is unknown
+#: ../src/baobab-cellrenderers.vala:101
+msgid "Unknown"
+msgstr "Ismeretlen"
+
+#. Translators: when the last modified time is today
+#: ../src/baobab-cellrenderers.vala:110
+msgid "Today"
+msgstr "Ma"
+
+#. Translators: when the last modified time is "days" days ago
+#: ../src/baobab-cellrenderers.vala:114
+#, c-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d nap"
+msgstr[1] "%d nap"
+
+#. Translators: when the last modified time is "months" months ago
+#: ../src/baobab-cellrenderers.vala:118
+#, c-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] "%d hónap"
+msgstr[1] "%d hónap"
+
+#. Translators: when the last modified time is "years" years ago
+#: ../src/baobab-cellrenderers.vala:122
+#, c-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] "%d év"
+msgstr[1] "%d év"
+
+#: ../src/baobab-location.vala:77
+msgid "Home folder"
+msgstr "Saját mappa"
+
+#: ../src/baobab-location.vala:123
+msgid "Computer"
+msgstr "Számítógép"
+
+#: ../src/baobab-main-window.ui.h:1
+msgid "Scan Folder…"
+msgstr "Mappa vizsgálata…"
+
+#: ../src/baobab-main-window.ui.h:2
+msgid "Scan Remote Folder…"
+msgstr "Távoli mappa vizsgálata…"
+
+#: ../src/baobab-main-window.ui.h:3 ../src/baobab-menu.ui.h:4
+msgid "_Open Folder"
+msgstr "Mappa _megnyitása"
+
+#: ../src/baobab-main-window.ui.h:4 ../src/baobab-menu.ui.h:5
+msgid "_Copy Path to Clipboard"
+msgstr "Út_vonal másolása a vágólapra"
+
+#: ../src/baobab-main-window.ui.h:5 ../src/baobab-menu.ui.h:6
+msgid "Mo_ve to Trash"
+msgstr "Át_helyezés a Kukába"
+
+#: ../src/baobab-main-window.ui.h:7
+msgid "Close"
+msgstr "Bezárás"
+
+#: ../src/baobab-main-window.ui.h:8
+msgid "Folder"
+msgstr "Mappa"
+
+#: ../src/baobab-main-window.ui.h:9
+msgid "Size"
+msgstr "Méret"
+
+#: ../src/baobab-main-window.ui.h:10
+msgid "Contents"
+msgstr "Tartalom"
+
+#: ../src/baobab-main-window.ui.h:11
+msgid "Modified"
+msgstr "Módosítva"
+
+#: ../src/baobab-main-window.ui.h:12
+msgid "Rings Chart"
+msgstr "Gyűrűdiagram"
+
+#: ../src/baobab-main-window.ui.h:13
+msgid "Treemap Chart"
+msgstr "Fadiagram"
+
+#: ../src/baobab-menu.ui.h:1
+msgid "_Help"
+msgstr "_Súgó"
+
+#: ../src/baobab-menu.ui.h:2
+msgid "_About"
+msgstr "_Névjegy"
+
+#: ../src/baobab-menu.ui.h:3
+msgid "_Quit"
+msgstr "_Kilépés"
+
+#: ../src/baobab-menu.ui.h:7
+#| msgid "_Move to parent folder"
+msgid "Go to _parent folder"
+msgstr "Ugrás a _szülőmappába"
+
+#: ../src/baobab-menu.ui.h:8
+msgid "Zoom _in"
+msgstr "_Nagyítás"
+
+#: ../src/baobab-menu.ui.h:9
+msgid "Zoom _out"
+msgstr "_Kicsinyítés"
+
+#: ../src/baobab-window.vala:228
+msgid "Select Folder"
+msgstr "Mappa kiválasztása"
+
+#: ../src/baobab-window.vala:230
+msgid "_Cancel"
+msgstr "Mé_gse"
+
+#: ../src/baobab-window.vala:231
+msgid "_Open"
+msgstr "_Megnyitás"
+
+#: ../src/baobab-window.vala:236
+msgid "Recursively analyze mount points"
+msgstr "Csatolási pontok rekurzív elemzése"
+
+#: ../src/baobab-window.vala:283
+msgid "Could not analyze volume."
+msgstr "A kötet nem elemezhető."
+
+#: ../src/baobab-window.vala:315
+msgid "Failed to show help"
+msgstr "A súgó megjelenítése meghiúsult"
+
+#: ../src/baobab-window.vala:334
+msgid "Baobab"
+msgstr "Baobab"
+
+#: ../src/baobab-window.vala:337
+msgid "A graphical tool to analyze disk usage."
+msgstr "Grafikus lemezhasználat-elemző eszköz."
+
+#: ../src/baobab-window.vala:342
+msgid "translator-credits"
+msgstr ""
+"Bán Szabolcs <shooby at gnome dot hu>\n"
+"Dvornik László <dvornik at gnome dot hu>\n"
+"Kelemen Gábor <kelemeng at gnome dot hu>\n"
+"Lukács Bence <lukacs.bence1 at gmail dot com>\n"
+"Nagy Gergely <greg at gnome dot hu>\n"
+"Őry Máté <orymate at gmail dot com>\n"
+"Sári Gábor <saga at gnome dot hu>\n"
+"Tímár András <timar at gnome dot hu>"
+
+#: ../src/baobab-window.vala:411
+msgid "Failed to open file"
+msgstr "A fájl megnyitása meghiúsult"
+
+#: ../src/baobab-window.vala:431
+msgid "Failed to move file to the trash"
+msgstr "A fájl nem helyezhető át a Kukába"
+
+#: ../src/baobab-window.vala:533
+msgid "Devices and locations"
+msgstr "Eszközök és helyek"
+
+#: ../src/baobab-window.vala:594
+#, c-format
+#| msgid "Could not open folder \"%s\""
+msgid "Could not scan folder \"%s\""
+msgstr "Nem vizsgálható a(z) „%s” mappa"
+
+#: ../src/baobab-window.vala:597
+#, c-format
+#| msgid "Could not scan folder \"%s\" or some of the folders it contains."
+msgid "Could not scan some of the folders contained in \"%s\""
+msgstr "„%s” mappa néhány almappájának vizsgálata nem sikerült"
+
+#: ../src/baobab-window.vala:616
+msgid "Could not detect occupied disk sizes."
+msgstr "Nem észlelhetők foglalt lemezméretek."
+
+#: ../src/baobab-window.vala:616
+msgid "Apparent sizes are shown instead."
+msgstr "Helyette a látszólagos méretek vannak megjelenítve."
+
+#. || is_virtual_filesystem ()
+#: ../src/baobab-window.vala:633 ../src/baobab-window.vala:639
+#, c-format
+msgid "\"%s\" is not a valid folder"
+msgstr "„%s” nem érvényes mappa"
+
+#: ../src/baobab-window.vala:634 ../src/baobab-window.vala:640
+msgid "Could not analyze disk usage."
+msgstr "A lemezhasználat nem elemezhető."
+
+#~ msgid "- Disk Usage Analyzer"
+#~ msgstr "– Lemezhasználat-elemző"
+
+#~ msgid "Maximum depth"
+#~ msgstr "Legnagyobb mélység"
+
+#~ msgid "The maximum depth drawn in the chart from the root"
+#~ msgstr "A diagramon a gyökértől megrajzolandó legnagyobb mélység"
+
+#~ msgid "Chart model"
+#~ msgstr "Diagram típusa"
+
+#~ msgid "Set the model of the chart"
+#~ msgstr "A diagram típusának beállítása"
+
+#~ msgid "Chart root node"
+#~ msgstr "Diagram gyökércsomópontja"
+
+#~ msgid "Set the root node from the model"
+#~ msgstr "A típus gyökércsomópontjának beállítása"
+
+#~ msgid "Main volume"
+#~ msgstr "Fő kötet"
+
+#~ msgid "Usage"
+#~ msgstr "Használat"
+
+#~ msgid "_Analyzer"
+#~ msgstr "_Elemző"
+
+#~ msgid "_Scan Home"
+#~ msgstr "Saját mappa vizsgálata"
+
+#~ msgid "Scan F_older…"
+#~ msgstr "Ma_ppa vizsgálata…"
+
+#~ msgid "Scan Remote Fo_lder…"
+#~ msgstr "_Távoli mappa vizsgálata..."
+
+#~ msgid "_View"
+#~ msgstr "_Nézet"
+
+#~ msgid "_Reload"
+#~ msgstr "Új_ratöltés"
+
+#~ msgid "_Expand All"
+#~ msgstr "Összes _kibontása"
+
+#~ msgid "_Collapse All"
+#~ msgstr "Összes össze_csukása"
+
+#~ msgid "Scan a folder"
+#~ msgstr "Egy mappa vizsgálata"
+
+#~ msgid "Scan Folder"
+#~ msgstr "Mappa"
+
+#~ msgid "Scan a remote folder"
+#~ msgstr "Távoli mappa vizsgálata"
+
+#~ msgid "Scan Remote Folder"
+#~ msgstr "Távoli mappa"
+
+#~ msgid "Reload"
+#~ msgstr "Újratöltés"
+
+#~ msgid "label"
+#~ msgstr "címke"
+
+#~ msgid "_Stop"
+#~ msgstr "_Leállítás"
+
+#~ msgid "_Allocated Space"
+#~ msgstr "_Lefoglalt terület"
+
+#~ msgid "Monitor Home"
+#~ msgstr "Saját mappa figyelése"
+
+#~ msgid "Whether any change to the home directory should be monitored."
+#~ msgstr "A saját mappájának változásai megfigyelendők-e?"
+
+#~ msgid "Toolbar is Visible"
+#~ msgstr "Eszköztár látható"
+
+#~ msgid "Whether the toolbar should be visible in main window."
+#~ msgstr "A főablakban megjelenjen-e az eszköztár?"
+
+#~ msgid "Statusbar is Visible"
+#~ msgstr "Állapotsor látható"
+
+#~ msgid ""
+#~ "Whether the status bar at the bottom of main window should be visible."
+#~ msgstr "A főablak alján megjelenjen-e az állapotsor?"
+
+#~ msgid "Scan"
+#~ msgstr "Vizsgálat"
+
+#~| msgid "Mount and scan"
+#~ msgid "Mount and Scan"
+#~ msgstr "Csatolás és vizsgálat"
+
+#~ msgid "All locations"
+#~ msgstr "Összes hely"
+
+#~| msgid "_All locations"
+#~ msgid "_All Locations"
+#~ msgstr "Összes _hely"
+
+#~| msgid "All locations"
+#~ msgid "All Locations"
+#~ msgstr "Összes hely"
+
+#~ msgid "Stop scanning"
+#~ msgstr "Vizsgálat leállítása"
+
+#~ msgid "_Toolbar"
+#~ msgstr "_Eszköztár"
+
+#~ msgid "Disk Usage Analyzer Preferences"
+#~ msgstr "Lemezhasználat-elemző beállításai"
+
+#~| msgid "Select _devices to include in filesystem scan:"
+#~ msgid "Select _devices to include in file system scan:"
+#~ msgstr "Válasszon eszközöket a _fájlrendszer-vizsgálatba való felvételhez:"
+
+#~ msgid "_Monitor changes to your home folder"
+#~ msgstr "Saját mappám _változásainak figyelése"
+
+#~ msgid "Scan _Home Folder"
+#~ msgstr "S_aját mappa vizsgálata"
+
+#~ msgid "Scan _Filesystem"
+#~ msgstr "_Fájlrendszer vizsgálata"
+
+#~ msgid "St_atusbar"
+#~ msgstr "Álla_potsor"
+
+#~ msgid "_Contents"
+#~ msgstr "_Tartalom"
+
+#~| msgid "Rescan your home folder?"
+#~ msgid "Scan your home folder"
+#~ msgstr "Saját mappa vizsgálata"
+
+#~| msgid "Scan filesystem"
+#~ msgid "Scan the file system"
+#~ msgstr "Fájlrendszer vizsgálata"
+
+#~| msgid "Scan Filesystem"
+#~ msgid "Scan File System"
+#~ msgstr "Fájlrendszer vizsgálata"
+
+#~| msgid "Scan a remote folder"
+#~ msgid "Scan a remote folder or file system"
+#~ msgstr "Távoli mappa vagy fájlrendszer vizsgálata"
+
+#~ msgid "Refresh"
+#~ msgstr "Frissítés"
+
+#~| msgid "Scanning..."
+#~ msgid "Scanning…"
+#~ msgstr "Vizsgálat…"
+
+#~ msgid "Total filesystem capacity:"
+#~ msgstr "Fájlrendszer kapacitása összesen:"
+
+#~ msgid "used:"
+#~ msgstr "használt:"
+
+#~ msgid "available:"
+#~ msgstr "rendelkezésre álló:"
+
+#~| msgid "Calculating percentage bars..."
+#~ msgid "Calculating percentage bars…"
+#~ msgstr "Százaléksávok kiszámítása…"
+
+#~ msgid "Total filesystem capacity"
+#~ msgstr "Fájlrendszer teljes kapacitása"
+
+#~ msgid "Total filesystem usage"
+#~ msgstr "Teljes fájlrendszerhasználat"
+
+#~ msgid "contains hardlinks for:"
+#~ msgstr "hard linkeket tartalmaz ennyire:"
+
+#~ msgid "Could not initialize monitoring"
+#~ msgstr "A megfigyelés nem készíthető elő"
+
+#~ msgid "Changes to your home folder will not be monitored."
+#~ msgstr "A saját mappájának változásai nem lesznek megfigyelve."
+
+#~ msgid "Show version"
+#~ msgstr "Verziószám megjelenítése"
+
+#~ msgid "[DIRECTORY]"
+#~ msgstr "[KÖNYVTÁR]"
+
+#~ msgid "Too many arguments. Only one directory can be specified."
+#~ msgstr "Túl sok paraméter. Csak egy könyvtár adható meg."
+
+#~ msgid "Without mount points disk usage cannot be analyzed."
+#~ msgstr "Csatolási pontok nélkül a lemezhasználat nem elemezhető."
+
+#~ msgid "Save screenshot"
+#~ msgstr "Képernyőkép mentése"
+
+#~ msgid "Cannot create pixbuf image!"
+#~ msgstr "Nem hozható létre a pixbuf kép!"
+
+#~ msgid "Save Snapshot"
+#~ msgstr "Pillanatkép mentése"
+
+#~ msgid "_Image type:"
+#~ msgstr "Ké_ptípus:"
+
+#~ msgid "Device"
+#~ msgstr "Eszköz"
+
+#~ msgid "Mount Point"
+#~ msgstr "Csatolási pont"
+
+#~| msgid "Filesystem Type"
+#~ msgid "File System Type"
+#~ msgstr "Fájlrendszer típusa"
+
+#~ msgid "Total Size"
+#~ msgstr "Teljes méret"
+
+#~ msgid "Available"
+#~ msgstr "Elérhető"
+
+#~ msgid "Custom Location"
+#~ msgstr "Egyéni hely"
+
+#~ msgid "SSH"
+#~ msgstr "SSH"
+
+#~ msgid "Public FTP"
+#~ msgstr "Nyilvános FTP"
+
+#~ msgid "FTP (with login)"
+#~ msgstr "FTP (bejelentkezéssel)"
+
+#~ msgid "WebDAV (HTTP)"
+#~ msgstr "WebDAV (HTTP)"
+
+#~ msgid "Secure WebDAV (HTTPS)"
+#~ msgstr "Biztonságos WebDAV (HTTPS)"
+
+#~ msgid "Cannot Connect to Server. You must enter a name for the server."
+#~ msgstr ""
+#~ "Nem lehet a kiszolgálóhoz kapcsolódni. Meg kell adnia egy nevet a "
+#~ "kiszolgálónak."
+
+#~ msgid "Please enter a name and try again."
+#~ msgstr "Írjon be egy nevet és próbálja meg újra."
+
+#~ msgid "_Location (URI):"
+#~ msgstr "He_ly (URI):"
+
+#~ msgid "_Server:"
+#~ msgstr "_Kiszolgáló:"
+
+#~ msgid "Optional information:"
+#~ msgstr "Opcionális információk:"
+
+#~ msgid "_Share:"
+#~ msgstr "Meg_osztás:"
+
+#~ msgid "_Port:"
+#~ msgstr "_Port:"
+
+#~ msgid "_Folder:"
+#~ msgstr "_Mappa:"
+
+#~ msgid "_User Name:"
+#~ msgstr "_Felhasználónév:"
+
+#~ msgid "_Domain Name:"
+#~ msgstr "_Tartománynév:"
+
+#~ msgid "Connect to Server"
+#~ msgstr "Kapcsolódás kiszolgálóhoz"
+
+#~ msgid "Service _type:"
+#~ msgstr "Szolgáltatás _típusa:"
+
+#~ msgid "_Scan"
+#~ msgstr "_Vizsgálat"
+
+#~ msgid "Rescan your home folder?"
+#~ msgstr "Megismétli a saját mappájának vizsgálatát?"
+
+#~ msgid ""
+#~ "The content of your home folder has changed. Select rescan to update the "
+#~ "disk usage details."
+#~ msgstr ""
+#~ "A saját mappájának tartalma megváltozott. A lemezhasználat részleteinek "
+#~ "frissítése érdekében válassza az újraolvasás lehetőséget."
+
+#~ msgid "_Rescan"
+#~ msgstr "Új_raolvasás"
+
+#~ msgid "_Show hidden folders"
+#~ msgstr "_Rejtett mappák megjelenítése"
+
+#~ msgid "Cannot check an excluded folder!"
+#~ msgstr "A kihagyott mappa nem vizsgálható"
+
+#~ msgid "There is no installed viewer capable of displaying the folder."
+#~ msgstr ""
+#~ "Nincs telepítve olyan megjelenítőprogram, amely képes lenne megjeleníteni "
+#~ "a mappát."
+
+#~ msgid "Could not move \"%s\" to the Trash"
+#~ msgstr "„%s” nem helyezhető át a Kukába"
+
+#~ msgid "Details: %s"
+#~ msgstr "Részletek: %s"
+
+#~ msgid "There was an error displaying help."
+#~ msgstr "Hiba történt a súgó megjelenítése közben."
+
+#~ msgid ""
+#~ "This program is free software; you can redistribute it and/or modify it "
+#~ "under the terms of the GNU General Public License as published by the "
+#~ "Free Software Foundation; either version 2 of the License, or (at your "
+#~ "option) any later version."
+#~ msgstr ""
+#~ "Ez egy szabad szoftver, terjesztheti és/vagy módosíthatja a Free Software "
+#~ "Foundation által kiadott GNU General Public License második (vagy bármely "
+#~ "későbbi) változatában foglaltak alapján."
+
+#~ msgid ""
+#~ "This program is distributed in the hope that it will be useful, but "
+#~ "WITHOUT ANY WARRANTY; without even the implied warranty of "
+#~ "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General "
+#~ "Public License for more details."
+#~ msgstr ""
+#~ "Ezt a programot abban a reményben terjesztjük, hogy hasznos lesz, de nem "
+#~ "vállalunk SEMMIFÉLE GARANCIÁT, még olyan értelemben sem, hogy a program "
+#~ "alkalmas-e a KÖZREADÁSRA vagy EGY BIZONYOS FELADAT ELVÉGZÉSÉRE. További "
+#~ "részletekért tanulmányozza a GNU GPL licencet."
+
+#~ msgid ""
+#~ "You should have received a copy of the GNU General Public License along "
+#~ "with this program; if not, write to the Free Software Foundation, Inc., "
+#~ "51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+#~ msgstr ""
+#~ "A programhoz a GNU General Public License egy példánya is jár, ha nem "
+#~ "kapta meg, írjon a Free Software Foundation Inc.-nek. Levélcímük: 51 "
+#~ "Franklin St, Fifth Floor, Boston, MA 02110-1301, USA."
+
+#~ msgid "The document does not exist."
+#~ msgstr "A dokumentum nem létezik."
+
+#~ msgid "The folder does not exist."
+#~ msgstr "A mappa nem létezik."
+
+#~ msgid "S_can Remote Folder..."
+#~ msgstr "_Távoli mappa vizsgálata…"
+
+#~ msgid "Scan F_older..."
+#~ msgstr "Ma_ppa vizsgálata…"

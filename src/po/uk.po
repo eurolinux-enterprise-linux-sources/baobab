@@ -1,0 +1,632 @@
+# Ukrainian translation of the gnome-utils module.
+# Copyright (C) 1999 Free Software Foundation, Inc.
+# Yuri Syrota <rasta@renome.rovno.ua>, 1999.
+# Maxim Dziumanenko <dziumanenko@gmail.com>, 2002-2010
+# wanderlust <wanderlust@ukr.net>, 2009.
+# int_ua <xintx.ua@gmail.com>, 2010.
+# Daniel Korostil <ted.korostiled@gmail.com>, 2012, 2013, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=baobab"
+"&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-09-18 02:51+0000\n"
+"PO-Revision-Date: 2014-09-18 17:29+0300\n"
+"Last-Translator: Daniel Korostil <ted.korostiled@gmail.com>\n"
+"Language-Team: linux.org.ua\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Project-Style: gnome\n"
+
+#: ../data/org.gnome.baobab.appdata.xml.in.h:1
+msgid ""
+"A simple application which can scan either specific folders (local or "
+"remote) or volumes and give a graphical representation including each "
+"directory size or percentage."
+msgstr ""
+"Проста програма, яка може сканувати як певні теки (локальні та віддалені), "
+"так і томи, показувати графічно розмір або відсотки кожної теки. "
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:1 ../src/baobab-main-window.ui.h:6
+msgid "Disk Usage Analyzer"
+msgstr "Аналізатор використання диску"
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:2
+msgid "Check folder sizes and available disk space"
+msgstr "Перевірте розміри тек та дисковий простір"
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:3
+msgid "storage;space;cleanup;"
+msgstr "пам'ять;місце;очистити;"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:1
+msgid "Excluded partitions URIs"
+msgstr "URI вимкнення розділів"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:2
+msgid "A list of URIs for partitions to be excluded from scanning."
+msgstr "Список URI для розділів, що не включаються у сканування."
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:3
+msgid "Active Chart"
+msgstr "Активна діаграма"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:4
+msgid "Which type of chart should be displayed."
+msgstr "Тип діаграми, яку буде показано."
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:5
+msgid "Window size"
+msgstr "Розмір вікна"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:6
+msgid "The initial size of the window"
+msgstr "Початковий розмір вікна"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:7
+msgid "Window state"
+msgstr "Стан вікна"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:8
+msgid "The GdkWindowState of the window"
+msgstr "GdkWindowState вікна"
+
+#: ../src/baobab-application.vala:28
+msgid "Print version information and exit"
+msgstr "Показати версію та вийти"
+
+#: ../src/baobab-cellrenderers.vala:91
+#, c-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d об'єкт"
+msgstr[1] "%d об'єкти"
+msgstr[2] "%d об'єктів"
+
+#. Translators: when the last modified time is unknown
+#: ../src/baobab-cellrenderers.vala:101
+msgid "Unknown"
+msgstr "Невідомо"
+
+#. Translators: when the last modified time is today
+#: ../src/baobab-cellrenderers.vala:110
+msgid "Today"
+msgstr "Сьогодні"
+
+#. Translators: when the last modified time is "days" days ago
+#: ../src/baobab-cellrenderers.vala:114
+#, c-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d день"
+msgstr[1] "%d дні"
+msgstr[2] "%d днів"
+
+#. Translators: when the last modified time is "months" months ago
+#: ../src/baobab-cellrenderers.vala:118
+#, c-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] "%d місяць"
+msgstr[1] "%d місяці"
+msgstr[2] "%d місяців"
+
+#. Translators: when the last modified time is "years" years ago
+#: ../src/baobab-cellrenderers.vala:122
+#, c-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] "%d рік"
+msgstr[1] "%d роки"
+msgstr[2] "%d років"
+
+#: ../src/baobab-location.vala:77
+msgid "Home folder"
+msgstr "Домашня тека"
+
+#: ../src/baobab-location.vala:123
+msgid "Computer"
+msgstr "Комп'ютер"
+
+#: ../src/baobab-main-window.ui.h:1
+msgid "Scan Folder…"
+msgstr "Просканувати теку…"
+
+#: ../src/baobab-main-window.ui.h:2
+msgid "Scan Remote Folder…"
+msgstr "Просканувати віддалену теку…"
+
+#: ../src/baobab-main-window.ui.h:3 ../src/menus.ui.h:4
+msgid "_Open Folder"
+msgstr "Відкрити _теку"
+
+#: ../src/baobab-main-window.ui.h:4 ../src/menus.ui.h:5
+msgid "_Copy Path to Clipboard"
+msgstr "_Скопіювати шлях до кишені"
+
+#: ../src/baobab-main-window.ui.h:5 ../src/menus.ui.h:6
+msgid "Mo_ve to Trash"
+msgstr "Пере_містити у смітник"
+
+#: ../src/baobab-main-window.ui.h:7
+msgid "Close"
+msgstr "Закрити"
+
+#: ../src/baobab-main-window.ui.h:8
+msgid "Folder"
+msgstr "Тека"
+
+#: ../src/baobab-main-window.ui.h:9
+msgid "Size"
+msgstr "Розмір"
+
+#: ../src/baobab-main-window.ui.h:10
+msgid "Contents"
+msgstr "Зміст"
+
+#: ../src/baobab-main-window.ui.h:11
+msgid "Modified"
+msgstr "Змінено"
+
+#: ../src/baobab-main-window.ui.h:12
+msgid "Rings Chart"
+msgstr "Кільцева діаграма"
+
+#: ../src/baobab-main-window.ui.h:13
+msgid "Treemap Chart"
+msgstr "Дерево"
+
+#: ../src/baobab-window.vala:203
+msgid "Select Folder"
+msgstr "Виберіть теку"
+
+#: ../src/baobab-window.vala:205
+msgid "_Cancel"
+msgstr "_Скасувати"
+
+#: ../src/baobab-window.vala:206
+msgid "_Open"
+msgstr "_Відкрити"
+
+#: ../src/baobab-window.vala:211
+msgid "Recursively analyze mount points"
+msgstr "Рекурсивно аналізувати точки монтуванн"
+
+#: ../src/baobab-window.vala:258
+msgid "Could not analyze volume."
+msgstr "Неможливо проаналізувати том."
+
+#: ../src/baobab-window.vala:290
+msgid "Failed to show help"
+msgstr "Не вдалося показати довідку"
+
+#: ../src/baobab-window.vala:309
+msgid "Baobab"
+msgstr "Baobab"
+
+#: ../src/baobab-window.vala:312
+msgid "A graphical tool to analyze disk usage."
+msgstr "Графічна утиліта для аналізу використання дисків."
+
+#: ../src/baobab-window.vala:317
+msgid "translator-credits"
+msgstr ""
+"Юрій Сирота <yuriy@beer.com>\n"
+"Максим Дзюманенко <dziumanenko@gmail.com>\n"
+"Daniel Korostil <ted.korostiled@gmail.com>"
+
+#: ../src/baobab-window.vala:386
+msgid "Failed to open file"
+msgstr "Не вдалося відкрити файл"
+
+#: ../src/baobab-window.vala:406
+msgid "Failed to move file to the trash"
+msgstr "Не вдалося перенести файл у смітник"
+
+#: ../src/baobab-window.vala:506
+msgid "Devices and locations"
+msgstr "Пристрої і місця"
+
+#: ../src/baobab-window.vala:567
+#, c-format
+#| msgid "Could not open folder \"%s\""
+msgid "Could not scan folder \"%s\""
+msgstr "Неможливо просканувати теку «%s»"
+
+#: ../src/baobab-window.vala:570
+#, c-format
+#| msgid "Could not scan folder \"%s\" or some of the folders it contains."
+msgid "Could not scan some of the folders contained in \"%s\""
+msgstr "Неможливо просканувати деякі теки у «%s»."
+
+#: ../src/baobab-window.vala:589
+msgid "Could not detect occupied disk sizes."
+msgstr "Неможливо виявити займані розміри диска."
+
+#: ../src/baobab-window.vala:589
+msgid "Apparent sizes are shown instead."
+msgstr "Показано натомість очевидний розмір."
+
+#. || is_virtual_filesystem ()
+#: ../src/baobab-window.vala:606 ../src/baobab-window.vala:612
+#, c-format
+msgid "\"%s\" is not a valid folder"
+msgstr "\"%s\" не є правильною текою"
+
+#: ../src/baobab-window.vala:607 ../src/baobab-window.vala:613
+msgid "Could not analyze disk usage."
+msgstr "Не вдалось проаналізувати використання дисків."
+
+#: ../src/menus.ui.h:1
+msgid "_Help"
+msgstr "_Довідка"
+
+#: ../src/menus.ui.h:2
+msgid "_About"
+msgstr "_Про програму"
+
+#: ../src/menus.ui.h:3
+msgid "_Quit"
+msgstr "Ви_йти"
+
+#: ../src/menus.ui.h:7
+#| msgid "_Move to parent folder"
+msgid "Go to _parent folder"
+msgstr "Перейти до _верхньої теки"
+
+#: ../src/menus.ui.h:8
+msgid "Zoom _in"
+msgstr "На_близити"
+
+#: ../src/menus.ui.h:9
+msgid "Zoom _out"
+msgstr "Від_далити"
+
+#~ msgid "- Disk Usage Analyzer"
+#~ msgstr "— Аналізатор використання дисків"
+
+#~ msgid "Maximum depth"
+#~ msgstr "Максимальна глибина"
+
+#~ msgid "The maximum depth drawn in the chart from the root"
+#~ msgstr "Максимальна глибина кілець, що виводяться у діаграмі від кореня"
+
+#~ msgid "Chart model"
+#~ msgstr "Модель діаграми"
+
+#~ msgid "Set the model of the chart"
+#~ msgstr "Встановити модель діаграми"
+
+#~ msgid "Chart root node"
+#~ msgstr "Кореневий вузол діаграми"
+
+#~ msgid "Set the root node from the model"
+#~ msgstr "Встановити кореневий вузол діаграми"
+
+#~ msgid "Main volume"
+#~ msgstr "Головний том"
+
+#~ msgid "Usage"
+#~ msgstr "Використання"
+
+#~ msgid "_Analyzer"
+#~ msgstr "_Аналізатор"
+
+#~ msgid "_Scan Home"
+#~ msgstr "_Сканувати домівку"
+
+#~ msgid "Scan F_older…"
+#~ msgstr "Сканувати _теку…"
+
+#~ msgid "Scan Remote Fo_lder…"
+#~ msgstr "Сканувати віддалену _теку…"
+
+#~ msgid "_View"
+#~ msgstr "П_ерегляд"
+
+#~ msgid "_Reload"
+#~ msgstr "_Оновити"
+
+#~ msgid "_Expand All"
+#~ msgstr "_Розгорнути все"
+
+#~ msgid "_Collapse All"
+#~ msgstr "З_горнути все"
+
+#~ msgid "Scan a folder"
+#~ msgstr "Сканувати теку"
+
+#~ msgid "Scan Folder"
+#~ msgstr "Сканувати теку"
+
+#~ msgid "Scan a remote folder"
+#~ msgstr "Сканувати віддалену теку"
+
+#~ msgid "Scan Remote Folder"
+#~ msgstr "Сканувати віддалену теку"
+
+#~ msgid "Reload"
+#~ msgstr "Перезавантажити"
+
+#~ msgid "_Stop"
+#~ msgstr "З_упинити"
+
+#~ msgid "_Allocated Space"
+#~ msgstr "_Зайнятий простір"
+
+#~ msgid "Disk Usage Analyzer Preferences"
+#~ msgstr "Налаштування аналізатора використання диска"
+
+#~ msgid "Select _devices to include in file system scan:"
+#~ msgstr "Вибрати _пристрій, щоб внести його до сканування файлової системи:"
+
+#~ msgid "_Monitor changes to your home folder"
+#~ msgstr "_Спостерігати за змінами в домашній теці"
+
+#~ msgid "Monitor Home"
+#~ msgstr "_Слідкувати за змінами у домашній теці"
+
+#~ msgid "Whether any change to the home directory should be monitored."
+#~ msgstr "Чи контролювати зміни у домашньому каталозі."
+
+#~ msgid "Toolbar is Visible"
+#~ msgstr "Панель видима"
+
+#~ msgid "Whether the toolbar should be visible in main window."
+#~ msgstr "Чи видима панель інструментів головного вікна."
+
+#~ msgid "Statusbar is Visible"
+#~ msgstr "Панель стану видимий̆"
+
+#~ msgid ""
+#~ "Whether the status bar at the bottom of main window should be visible."
+#~ msgstr "Чи видимий рядок стану знизу головного вікна."
+
+#~ msgid "Scan _Home Folder"
+#~ msgstr "Сканувати _домашню теку"
+
+#~ msgid "Scan _Filesystem"
+#~ msgstr "Сканувати _файлову систему"
+
+#~ msgid "_Edit"
+#~ msgstr "З_міни"
+
+#~ msgid "_Toolbar"
+#~ msgstr "_Панель інструментів"
+
+#~ msgid "St_atusbar"
+#~ msgstr "Рядок с_тану"
+
+#~ msgid "_Contents"
+#~ msgstr "_Зміст"
+
+#~ msgid "Scan your home folder"
+#~ msgstr "Сканувати домашню теку"
+
+#~ msgid "Scan the file system"
+#~ msgstr "Сканувати файлову систему"
+
+#~ msgid "Scan File System"
+#~ msgstr "Сканувати файлову систему"
+
+#~ msgid "Scan a remote folder or file system"
+#~ msgstr "Сканувати віддалену теку або файлову систему"
+
+#~ msgid "Stop scanning"
+#~ msgstr "Зупинити сканування"
+
+#~ msgid "Refresh"
+#~ msgstr "Оновити"
+
+#~ msgid "Scanning…"
+#~ msgstr "Сканування…"
+
+#~ msgid "Total filesystem capacity:"
+#~ msgstr "Загальна ємність файлової системи:"
+
+#~ msgid "used:"
+#~ msgstr "використано:"
+
+#~ msgid "available:"
+#~ msgstr "доступно:"
+
+#~ msgid "Calculating percentage bars…"
+#~ msgstr "Обчислення процентного відношення…"
+
+#~ msgid "Ready"
+#~ msgstr "Завершено"
+
+#~ msgid "Total filesystem capacity"
+#~ msgstr "Загальна ємкість файлової системи:"
+
+#~ msgid "Total filesystem usage"
+#~ msgstr "Загальне використання ФС"
+
+#~ msgid "contains hardlinks for:"
+#~ msgstr "містяться жорсткі посилання на:"
+
+#~ msgid "Could not initialize monitoring"
+#~ msgstr "Не вдалось почати стеження за файлами"
+
+#~ msgid "Changes to your home folder will not be monitored."
+#~ msgstr "Зміни у вашому домашньому каталозі не будуть відстежувати."
+
+#~ msgid "Show version"
+#~ msgstr "Показати версію"
+
+#~ msgid "[DIRECTORY]"
+#~ msgstr "[ТЕКА]"
+
+#~ msgid "Too many arguments. Only one directory can be specified."
+#~ msgstr "Надто багато параметрів. Одночасно можна вказувати лише одну теку."
+
+#~ msgid "Without mount points disk usage cannot be analyzed."
+#~ msgstr "Неможливо проаналізувати використання диску без точки підключення."
+
+#~ msgid "Save screenshot"
+#~ msgstr "Зберегти знімок екрану"
+
+#~ msgid "Cannot create pixbuf image!"
+#~ msgstr "Не вдалось створити растрове зображення!"
+
+#~ msgid "Save Snapshot"
+#~ msgstr "Зберегти знімок екрану"
+
+#~ msgid "_Image type:"
+#~ msgstr "Тип _зображення:"
+
+#~ msgid "Scan"
+#~ msgstr "Сканувати"
+
+#~ msgid "Device"
+#~ msgstr "Пристрій"
+
+#~ msgid "Mount Point"
+#~ msgstr "Точка підключення"
+
+#~ msgid "File System Type"
+#~ msgstr "Тип файлової системи"
+
+#~ msgid "Total Size"
+#~ msgstr "Загальний розмір"
+
+#~ msgid "Available"
+#~ msgstr "Доступно"
+
+#~ msgid "Custom Location"
+#~ msgstr "Інший шлях"
+
+#~ msgid "SSH"
+#~ msgstr "SSH"
+
+#~ msgid "Public FTP"
+#~ msgstr "Публічний FTP"
+
+#~ msgid "FTP (with login)"
+#~ msgstr "FTP (з реєстрацією)"
+
+#~ msgid "WebDAV (HTTP)"
+#~ msgstr "WebDAV (HTTP)"
+
+#~ msgid "Secure WebDAV (HTTPS)"
+#~ msgstr "Безпечний WebDAV (HTTPS)"
+
+#~ msgid "Cannot Connect to Server. You must enter a name for the server."
+#~ msgstr "Не вдалось з'єднатися з сервером. Треба ввести його назву."
+
+#~ msgid "Please enter a name and try again."
+#~ msgstr "Введіть назву та спробуйте ще раз."
+
+#~ msgid "_Location (URI):"
+#~ msgstr "_Адреса (URI):"
+
+#~ msgid "_Server:"
+#~ msgstr "_Сервер:"
+
+#~ msgid "Optional information:"
+#~ msgstr "Необов'язкова інформація:"
+
+#~ msgid "_Share:"
+#~ msgstr "_Ресурс:"
+
+#~ msgid "_Port:"
+#~ msgstr "_Порт:"
+
+#~ msgid "_Folder:"
+#~ msgstr "_Тека:"
+
+#~ msgid "_User Name:"
+#~ msgstr "_Ім'я користувача:"
+
+#~ msgid "_Domain Name:"
+#~ msgstr "_Доменна назва:"
+
+#~ msgid "Connect to Server"
+#~ msgstr "З'єднатися з сервером"
+
+#~ msgid "Service _type:"
+#~ msgstr "_Тип служби:"
+
+#~ msgid "_Scan"
+#~ msgstr "_Сканувати"
+
+#~ msgid "Rescan your home folder?"
+#~ msgstr "Пересканувати віддалену теку?"
+
+#~ msgid ""
+#~ "The content of your home folder has changed. Select rescan to update the "
+#~ "disk usage details."
+#~ msgstr ""
+#~ "Зміст вашого домашнього каталогу змінився. Для оновлення інформації про "
+#~ "використання диску потрібне повторне сканування."
+
+#~ msgid "_Rescan"
+#~ msgstr "Пе_ресканувати"
+
+#~ msgid "_Show hidden folders"
+#~ msgstr "Показувати при_ховані теки"
+
+#~ msgid "Cannot check an excluded folder!"
+#~ msgstr "Не можу перевірити виключену теку!"
+
+#~ msgid "There is no installed viewer capable of displaying the folder."
+#~ msgstr "Немає програми здатної показати цю теку."
+
+#~ msgid "Could not move \"%s\" to the Trash"
+#~ msgstr "Не вдалось перемістити документ \"%s\" у смітник."
+
+#~ msgid "Details: %s"
+#~ msgstr "Подробиці: %s"
+
+#~ msgid "There was an error displaying help."
+#~ msgstr "Помилка при показі довідки."
+
+#~ msgid ""
+#~ "This program is free software; you can redistribute it and/or modify it "
+#~ "under the terms of the GNU General Public License as published by the "
+#~ "Free Software Foundation; either version 2 of the License, or (at your "
+#~ "option) any later version."
+#~ msgstr ""
+#~ "Ця програма є вільним програмним забезпеченням. Ви можете поширювати та/"
+#~ "або змінювати її, відповідно до умов Загальної ліцензії GNU (GNU General "
+#~ "Public License), яка опублікована Фундацією вільного програмного "
+#~ "забезпечення (Free Software Foundation) під версією 2 або новішою (на Ваш "
+#~ "розсуд)."
+
+#~ msgid ""
+#~ "This program is distributed in the hope that it will be useful, but "
+#~ "WITHOUT ANY WARRANTY; without even the implied warranty of "
+#~ "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General "
+#~ "Public License for more details."
+#~ msgstr ""
+#~ "Ця програма поширюється з надією на те, що може бути корисною, однак БЕЗ "
+#~ "ЖОДНИХ ГАРАНТІЙ; навіть без ймовірної гарантії про МОЖЛИВІСТЬ ПРОДАЖУ чи "
+#~ "ВІДПОВІДНІСТЬ ВИРІШЕННЯ ПОСТАВЛЕНИХ ЗАДАЧ. Для уточнення деталей "
+#~ "зверніться до Загальної ліцензії GNU (GNU General Public License)."
+
+#~ msgid ""
+#~ "You should have received a copy of the GNU General Public License along "
+#~ "with this program; if not, write to the Free Software Foundation, Inc., "
+#~ "51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+#~ msgstr ""
+#~ "Ви могли отримати копію Загальної ліцензії GNU (GNU General Public "
+#~ "License) разом з цією програмою; якщо ж цього не сталося, зверніться за "
+#~ "адресою: Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, "
+#~ "Boston, MA  02110-1301, USA"
+
+#~ msgid "The document does not exist."
+#~ msgstr "Документ не існує."
+
+#~ msgid "The folder does not exist."
+#~ msgstr "Тека не існує."
+
+#~ msgid "S_can Remote Folder..."
+#~ msgstr "Сканувати _віддалену теку..."
+
+#~ msgid "Scan F_older..."
+#~ msgstr "Сканувати _теку"

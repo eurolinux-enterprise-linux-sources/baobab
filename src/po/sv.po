@@ -1,0 +1,503 @@
+# Swedish messages for gnome-utils.
+# Copyright (C) 2000-2014 Free Software Foundation, Inc.
+# Martin Norbäck <d95mback@dtek.chalmers.se>, 2000.
+# Andreas Hyden <a.hyden@cyberpoint.se>.
+# Christian Rose <menthos@menthos.com>, 2001, 2002, 2003, 2004, 2005.
+# Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009, 2010, 2011, 2012.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2014.
+#
+# $Id: sv.po,v 1.161 2006/12/11 21:18:20 dnylande Exp $
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=baobab&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-08-27 02:50+0000\n"
+"PO-Revision-Date: 2014-08-27 06:39+0100\n"
+"Last-Translator: Mattias Eriksson <snaggen@gmail.com>\n"
+"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: ../data/org.gnome.baobab.appdata.xml.in.h:1
+msgid ""
+"A simple application which can scan either specific folders (local or "
+"remote) or volumes and give a graphical representation including each "
+"directory size or percentage."
+msgstr ""
+"Ett enkelt program som kan söka av antingen specifika mappar (lokala eller "
+"fjärr) eller volymer och ger en grafisk representation med varje mapps "
+"storlek eller procentandel."
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:1 ../src/baobab-main-window.ui.h:6
+msgid "Disk Usage Analyzer"
+msgstr "Diskanvändningsanalysator"
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:2
+msgid "Check folder sizes and available disk space"
+msgstr "Kontrollera mappstorlekar och tillgängligt diskutrymme"
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:3
+msgid "storage;space;cleanup;"
+msgstr "lagring;utrymme;rensning;"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:1
+msgid "Excluded partitions URIs"
+msgstr "Undantagna partitions-URI:er"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:2
+msgid "A list of URIs for partitions to be excluded from scanning."
+msgstr "En lista över URI:er för partitioner som ska undantas från avsökning."
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:3
+msgid "Active Chart"
+msgstr "Aktivt diagram"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:4
+msgid "Which type of chart should be displayed."
+msgstr "Vilken typ av diagram som ska visas."
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:5
+msgid "Window size"
+msgstr "Fönsterstorlek"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:6
+msgid "The initial size of the window"
+msgstr "Fönstrets ursprungliga storlek"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:7
+msgid "Window state"
+msgstr "Fönstertillstånd"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:8
+msgid "The GdkWindowState of the window"
+msgstr "Fönstrets GdkWindowState-tillstånd"
+
+#: ../src/baobab-application.vala:28
+msgid "Print version information and exit"
+msgstr "Skriv ut versionsinformation och avsluta"
+
+#: ../src/baobab-cellrenderers.vala:91
+#, c-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d objekt"
+msgstr[1] "%d objekt"
+
+#. Translators: when the last modified time is unknown
+#: ../src/baobab-cellrenderers.vala:101
+msgid "Unknown"
+msgstr "Okänt"
+
+#. Translators: when the last modified time is today
+#: ../src/baobab-cellrenderers.vala:110
+msgid "Today"
+msgstr "Idag"
+
+#. Translators: when the last modified time is "days" days ago
+#: ../src/baobab-cellrenderers.vala:114
+#, c-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d dag"
+msgstr[1] "%d dagar"
+
+#. Translators: when the last modified time is "months" months ago
+#: ../src/baobab-cellrenderers.vala:118
+#, c-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] "%d månad"
+msgstr[1] "%d månader"
+
+#. Translators: when the last modified time is "years" years ago
+#: ../src/baobab-cellrenderers.vala:122
+#, c-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] "%d år"
+msgstr[1] "%d år"
+
+#: ../src/baobab-location.vala:77
+msgid "Home folder"
+msgstr "Hemmapp"
+
+#: ../src/baobab-location.vala:123
+msgid "Computer"
+msgstr "Dator"
+
+#: ../src/baobab-main-window.ui.h:1
+msgid "Scan Folder…"
+msgstr "Sök av mapp…"
+
+#: ../src/baobab-main-window.ui.h:2
+msgid "Scan Remote Folder…"
+msgstr "Sök av fjärrmapp…"
+
+#: ../src/baobab-main-window.ui.h:3 ../src/menus.ui.h:4
+msgid "_Open Folder"
+msgstr "_Öppna mapp"
+
+#: ../src/baobab-main-window.ui.h:4 ../src/menus.ui.h:5
+msgid "_Copy Path to Clipboard"
+msgstr "_Kopiera sökväg till urklipp"
+
+#: ../src/baobab-main-window.ui.h:5 ../src/menus.ui.h:6
+msgid "Mo_ve to Trash"
+msgstr "_Flytta till papperskorgen"
+
+#: ../src/baobab-main-window.ui.h:7
+msgid "Close"
+msgstr "Stäng"
+
+#: ../src/baobab-main-window.ui.h:8
+msgid "Folder"
+msgstr "Mapp"
+
+#: ../src/baobab-main-window.ui.h:9
+msgid "Size"
+msgstr "Storlek"
+
+#: ../src/baobab-main-window.ui.h:10
+msgid "Contents"
+msgstr "Innehåll"
+
+#: ../src/baobab-main-window.ui.h:11
+msgid "Modified"
+msgstr "Ändrad"
+
+#: ../src/baobab-main-window.ui.h:12
+msgid "Rings Chart"
+msgstr "Ringdiagram"
+
+#: ../src/baobab-main-window.ui.h:13
+msgid "Treemap Chart"
+msgstr "Trädkartsdiagram"
+
+#: ../src/baobab-window.vala:203
+msgid "Select Folder"
+msgstr "Välj mapp"
+
+#: ../src/baobab-window.vala:205
+msgid "_Cancel"
+msgstr "_Avbryt"
+
+#: ../src/baobab-window.vala:206
+msgid "_Open"
+msgstr "_Öppna"
+
+#: ../src/baobab-window.vala:211
+msgid "Recursively analyze mount points"
+msgstr "Analysera monteringspunkter rekursivt"
+
+#: ../src/baobab-window.vala:258
+msgid "Could not analyze volume."
+msgstr "Kunde inte analysera volymen."
+
+#: ../src/baobab-window.vala:290
+msgid "Failed to show help"
+msgstr "Kunde inte visa hjälp"
+
+#: ../src/baobab-window.vala:309
+msgid "Baobab"
+msgstr "Baobab"
+
+#: ../src/baobab-window.vala:312
+msgid "A graphical tool to analyze disk usage."
+msgstr "Ett grafiskt verktyg för att analysera diskanvändning."
+
+#: ../src/baobab-window.vala:317
+msgid "translator-credits"
+msgstr ""
+"Daniel Nylander <po@danielnylander.se>\n"
+"Christian Rose\n"
+"Martin Norbäck\n"
+"Andreas Hydén\n"
+"Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
+"\n"
+"Skicka synpunkter på översättningen till\n"
+"<tp-sv@listor.tp-sv.se>."
+
+#: ../src/baobab-window.vala:386
+msgid "Failed to open file"
+msgstr "Kunde inte öppna fil"
+
+#: ../src/baobab-window.vala:406
+msgid "Failed to move file to the trash"
+msgstr "Kunde inte flytta filen till papperskorgen"
+
+#: ../src/baobab-window.vala:506
+msgid "Devices and locations"
+msgstr "Enheter och platser"
+
+#: ../src/baobab-window.vala:567
+#, c-format
+#| msgid "Cannot scan location \"%s\""
+msgid "Could not scan folder \"%s\""
+msgstr "Kunde inte söka av mappen ”%s”"
+
+#: ../src/baobab-window.vala:570
+#, c-format
+#| msgid "Could not scan folder \"%s\" or some of the folders it contains."
+msgid "Could not scan some of the folders contained in \"%s\""
+msgstr "Kunde inte söka av några av mapparna i ”%s”"
+
+#: ../src/baobab-window.vala:589
+msgid "Could not detect occupied disk sizes."
+msgstr "Kunde inte avgöra använda diskstorlekar."
+
+#: ../src/baobab-window.vala:589
+msgid "Apparent sizes are shown instead."
+msgstr "Visar istället skenbara storlekar."
+
+#. || is_virtual_filesystem ()
+#: ../src/baobab-window.vala:606 ../src/baobab-window.vala:612
+#, c-format
+msgid "\"%s\" is not a valid folder"
+msgstr "”%s” är inte en giltig mapp"
+
+#: ../src/baobab-window.vala:607 ../src/baobab-window.vala:613
+msgid "Could not analyze disk usage."
+msgstr "Kunde inte analysera diskanvändningen."
+
+#: ../src/menus.ui.h:1
+msgid "_Help"
+msgstr "_Hjälp"
+
+#: ../src/menus.ui.h:2
+msgid "_About"
+msgstr "_Om"
+
+#: ../src/menus.ui.h:3
+msgid "_Quit"
+msgstr "_Avsluta"
+
+#: ../src/menus.ui.h:7
+#| msgid "_Move to parent folder"
+msgid "Go to _parent folder"
+msgstr "_Gå till föräldramapp"
+
+#: ../src/menus.ui.h:8
+msgid "Zoom _in"
+msgstr "Zooma _in"
+
+#: ../src/menus.ui.h:9
+msgid "Zoom _out"
+msgstr "Zooma _ut"
+
+#~ msgid "Disk Usage Analyzer Preferences"
+#~ msgstr "Inställningar för diskanvändningsanalysator"
+
+#~ msgid "Select _devices to include in file system scan:"
+#~ msgstr "Välj _enheter att inkludera vid filsystemavsökning:"
+
+#~ msgid "_Monitor changes to your home folder"
+#~ msgstr "_Övervaka ändringar i din hemmapp"
+
+#~ msgid "Monitor Home"
+#~ msgstr "Övervaka hemkatalog"
+
+#~ msgid "Whether any change to the home directory should be monitored."
+#~ msgstr "Huruvida ändringar i hemkatalogen ska övervakas."
+
+#~ msgid "Toolbar is Visible"
+#~ msgstr "Verktygsraden är synlig"
+
+#~ msgid "Whether the toolbar should be visible in main window."
+#~ msgstr "Huruvida verktygsraden ska vara synlig i huvudfönstret."
+
+#~ msgid "Statusbar is Visible"
+#~ msgstr "Statusraden är synlig"
+
+#~ msgid ""
+#~ "Whether the status bar at the bottom of main window should be visible."
+#~ msgstr ""
+#~ "Huruvida statusraden i nedre delen av huvudfönstret ska vara synlig."
+
+#~ msgid "_Analyzer"
+#~ msgstr "_Analysator"
+
+#~ msgid "Scan _Home Folder"
+#~ msgstr "Sök av _hemmapp"
+
+#~ msgid "Scan _Filesystem"
+#~ msgstr "Sök av _filsystem"
+
+#~ msgid "_Edit"
+#~ msgstr "_Redigera"
+
+#~ msgid "_Expand All"
+#~ msgstr "Fäll _ut alla"
+
+#~ msgid "_Collapse All"
+#~ msgstr "_Fäll in alla"
+
+#~ msgid "_View"
+#~ msgstr "_Visa"
+
+#~ msgid "_Toolbar"
+#~ msgstr "_Verktygsrad"
+
+#~ msgid "St_atusbar"
+#~ msgstr "St_atusrad"
+
+#~ msgid "All_ocated Space"
+#~ msgstr "All_okerat utrymme"
+
+#~ msgid "_Contents"
+#~ msgstr "_Innehåll"
+
+#~ msgid "Scan your home folder"
+#~ msgstr "Sök av din hemmapp"
+
+#~ msgid "Scan Home"
+#~ msgstr "Sök av hem"
+
+#~ msgid "Scan the file system"
+#~ msgstr "Sök av filsystemet"
+
+#~ msgid "Scan File System"
+#~ msgstr "Sök av filsystem"
+
+#~ msgid "Scan a folder"
+#~ msgstr "Sök av en mapp"
+
+#~ msgid "Scan Folder"
+#~ msgstr "Sök av mapp"
+
+#~ msgid "Scan a remote folder or file system"
+#~ msgstr "Sök av en fjärrmapp eller filsystem"
+
+#~ msgid "Scan Remote Folder"
+#~ msgstr "Sök av fjärrmapp"
+
+#~ msgid "Stop scanning"
+#~ msgstr "Stoppa avsökning"
+
+#~ msgid "Refresh"
+#~ msgstr "Uppdatera"
+
+#~ msgid "Scanning…"
+#~ msgstr "Söker av..."
+
+#~ msgid "Total filesystem capacity:"
+#~ msgstr "Total filsystemskapacitet:"
+
+#~ msgid "used:"
+#~ msgstr "använt:"
+
+#~ msgid "available:"
+#~ msgstr "tillgängligt:"
+
+#~ msgid "Calculating percentage bars…"
+#~ msgstr "Beräknar procentstaplar..."
+
+#~ msgid "Ready"
+#~ msgstr "Redo"
+
+#~ msgid "Total filesystem capacity"
+#~ msgstr "Total filsystemskapacitet"
+
+#~ msgid "Total filesystem usage"
+#~ msgstr "Total filsystemsanvändning"
+
+#~ msgid "contains hardlinks for:"
+#~ msgstr "innehåller hårda länkar för:"
+
+#~ msgid "Could not initialize monitoring"
+#~ msgstr "Kunde inte initiera övervakning"
+
+#~ msgid "Changes to your home folder will not be monitored."
+#~ msgstr "Ändringar i din hemmapp kommer inte att övervakas."
+
+#~ msgid "Show version"
+#~ msgstr "Visa version"
+
+#~ msgid "[DIRECTORY]"
+#~ msgstr "[KATALOG]"
+
+#~ msgid "Too many arguments. Only one directory can be specified."
+#~ msgstr "För många argument. Endast en katalog kan anges."
+
+#~ msgid "Without mount points disk usage cannot be analyzed."
+#~ msgstr "Utan monteringspunkter kan inte diskanvändningen analyseras."
+
+#~ msgid "Maximum depth"
+#~ msgstr "Maximalt djup"
+
+#~ msgid "The maximum depth drawn in the chart from the root"
+#~ msgstr "Det maximala djupet ritat i diagrammet från roten"
+
+#~ msgid "Chart model"
+#~ msgstr "Diagrammodell"
+
+#~ msgid "Set the model of the chart"
+#~ msgstr "Ställ in modellen för diagrammet"
+
+#~ msgid "Chart root node"
+#~ msgstr "Rotnod för diagram"
+
+#~ msgid "Set the root node from the model"
+#~ msgstr "Ställ in rotnoden från modellen"
+
+#~ msgid "Save screenshot"
+#~ msgstr "Spara skärmbild"
+
+#~ msgid "Cannot create pixbuf image!"
+#~ msgstr "Kan inte skapa pixbuf-bild!"
+
+#~ msgid "Save Snapshot"
+#~ msgstr "Spara skärmbild"
+
+#~ msgid "_Image type:"
+#~ msgstr "_Bildtyp:"
+
+#~ msgid "Scan"
+#~ msgstr "Sök av"
+
+#~ msgid "Device"
+#~ msgstr "Enhet"
+
+#~ msgid "Mount Point"
+#~ msgstr "Monteringspunkt"
+
+#~ msgid "File System Type"
+#~ msgstr "Filsystemstyp"
+
+#~ msgid "Total Size"
+#~ msgstr "Total storlek"
+
+#~ msgid "Available"
+#~ msgstr "Tillgängligt"
+
+#~ msgid "Custom Location"
+#~ msgstr "Anpassad plats"
+
+#~ msgid "SSH"
+#~ msgstr "SSH"
+
+#~ msgid "Public FTP"
+#~ msgstr "Publik FTP"
+
+#~ msgid "FTP (with login)"
+#~ msgstr "FTP (med inloggning)"
+
+#~ msgid "WebDAV (HTTP)"
+#~ msgstr "WebDAV (HTTP)"
+
+#~ msgid "Secure WebDAV (HTTPS)"
+#~ msgstr "Säker WebDAV (HTTPS)"
+
+#~ msgid "Cannot Connect to Server. You must enter a name for the server."
+#~ msgstr "Kan inte ansluta till servern. Du måste ange ett namn för servern."
+
+#~ msgid "Please enter a name and try again."
+#~ msgstr "Ange ett namn och försök igen."
+
+#~ msgid "_Location (URI):"
+#~ msgstr "_Plats (URI):"

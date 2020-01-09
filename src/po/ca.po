@@ -1,0 +1,284 @@
+# Traducció del mòdul gnome-utils de Softcatalà
+# Copyright © 2000-2010 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-utils package.
+# Softcatalà <tradgnome@softcatala.org>, 2000, 2002.
+# Jordi Mallach <jordi@sindominio.net>, 2002, 2003, 2004, 2005.
+# Josep Puigdemont <josep.puigdemont@gmail.com>, 2005, 2006, 2007.
+# Gil Forcada <gilforcada@guifi.net>, 2006, 2008, 2012, 2014.
+# Joan Duran <jodufi@gmail.com>, 2008-2013.
+# Josep Sanchez Mesegue <papapep@gmx.com>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-utils\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=baobab&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-08-16 14:50+0000\n"
+"PO-Revision-Date: 2014-08-17 01:13+0200\n"
+"Last-Translator: Gil Forcada <gilforcada@guifi.net>\n"
+"Language-Team: Catalan <tradgnome@softcatala.org>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bits\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../data/org.gnome.baobab.appdata.xml.in.h:1
+msgid ""
+"A simple application which can scan either specific folders (local or "
+"remote) or volumes and give a graphical representation including each "
+"directory size or percentage."
+msgstr ""
+"Un programa senzill que escaneja tant carpetes específiques (locals o "
+"remotes) com volums i en fa una representació gràfica, incloent la mida o "
+"percentatge de cada directori."
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:1 ../src/baobab-main-window.ui.h:6
+msgid "Disk Usage Analyzer"
+msgstr "Analitzador de l'ús dels discs"
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:2
+msgid "Check folder sizes and available disk space"
+msgstr "Comprova la mida de les carpetes i l'espai disponible al disc"
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:3
+msgid "storage;space;cleanup;"
+msgstr "emmagatzemament;espai;neteja;"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:1
+msgid "Excluded partitions URIs"
+msgstr "URI de les particions excloses"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:2
+msgid "A list of URIs for partitions to be excluded from scanning."
+msgstr "Una llista d'URI de les particions que s'exclouran durant l'escaneig."
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:3
+msgid "Active Chart"
+msgstr "Diagrama actiu"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:4
+msgid "Which type of chart should be displayed."
+msgstr "Quin tipus de diagrama s'hauria de mostrar."
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:5
+msgid "Window size"
+msgstr "Mida de la finestra"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:6
+msgid "The initial size of the window"
+msgstr "La mida inicial de la finestra"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:7
+msgid "Window state"
+msgstr "Estat de la finestra"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:8
+msgid "The GdkWindowState of the window"
+msgstr "El GdkWindowState de la finestra"
+
+#: ../src/baobab-application.vala:28
+msgid "Print version information and exit"
+msgstr "Mostra la informació de la versió i surt"
+
+#: ../src/baobab-cellrenderers.vala:91
+#, c-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d element"
+msgstr[1] "%d elements"
+
+#. Translators: when the last modified time is unknown
+#: ../src/baobab-cellrenderers.vala:101
+msgid "Unknown"
+msgstr "Desconegut"
+
+#. Translators: when the last modified time is today
+#: ../src/baobab-cellrenderers.vala:110
+msgid "Today"
+msgstr "Avui"
+
+#. Translators: when the last modified time is "days" days ago
+#: ../src/baobab-cellrenderers.vala:114
+#, c-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d dia"
+msgstr[1] "%d dies"
+
+#. Translators: when the last modified time is "months" months ago
+#: ../src/baobab-cellrenderers.vala:118
+#, c-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] "%d mes"
+msgstr[1] "%d mesos"
+
+#. Translators: when the last modified time is "years" years ago
+#: ../src/baobab-cellrenderers.vala:122
+#, c-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] "%d any"
+msgstr[1] "%d anys"
+
+#: ../src/baobab-location.vala:77
+msgid "Home folder"
+msgstr "Carpeta d'usuari"
+
+#: ../src/baobab-location.vala:123
+msgid "Computer"
+msgstr "Ordinador"
+
+#: ../src/baobab-main-window.ui.h:1
+msgid "Scan Folder…"
+msgstr "Escaneja una carpeta…"
+
+#: ../src/baobab-main-window.ui.h:2
+msgid "Scan Remote Folder…"
+msgstr "Escaneja una carpeta remota…"
+
+#: ../src/baobab-main-window.ui.h:3 ../src/menus.ui.h:4
+msgid "_Open Folder"
+msgstr "O_bre la carpeta"
+
+#: ../src/baobab-main-window.ui.h:4 ../src/menus.ui.h:5
+msgid "_Copy Path to Clipboard"
+msgstr "_Copia el camí al porta-retalls"
+
+#: ../src/baobab-main-window.ui.h:5 ../src/menus.ui.h:6
+msgid "Mo_ve to Trash"
+msgstr "Mo_u a la paperera"
+
+#: ../src/baobab-main-window.ui.h:7
+msgid "Close"
+msgstr "Tanca"
+
+#: ../src/baobab-main-window.ui.h:8
+msgid "Folder"
+msgstr "Carpeta"
+
+#: ../src/baobab-main-window.ui.h:9
+msgid "Size"
+msgstr "Mida"
+
+#: ../src/baobab-main-window.ui.h:10
+msgid "Contents"
+msgstr "Continguts"
+
+#: ../src/baobab-main-window.ui.h:11
+msgid "Modified"
+msgstr "Modificat"
+
+#: ../src/baobab-main-window.ui.h:12
+msgid "Rings Chart"
+msgstr "Diagrama d'anells"
+
+#: ../src/baobab-main-window.ui.h:13
+msgid "Treemap Chart"
+msgstr "Diagrama de mapa d'arbre"
+
+#: ../src/baobab-window.vala:203
+msgid "Select Folder"
+msgstr "Seleccioneu una carpeta"
+
+#: ../src/baobab-window.vala:205
+msgid "_Cancel"
+msgstr "_Cancel·la"
+
+#: ../src/baobab-window.vala:206
+msgid "_Open"
+msgstr "_Obre"
+
+#: ../src/baobab-window.vala:211
+msgid "Recursively analyze mount points"
+msgstr "Analitza recursivament els punts de muntatge"
+
+#: ../src/baobab-window.vala:258
+msgid "Could not analyze volume."
+msgstr "No s'ha pogut analitzar el volum."
+
+#: ../src/baobab-window.vala:290
+msgid "Failed to show help"
+msgstr "S'ha produït un error en mostrar l'ajuda"
+
+#: ../src/baobab-window.vala:309
+msgid "Baobab"
+msgstr "Baobab"
+
+#: ../src/baobab-window.vala:312
+msgid "A graphical tool to analyze disk usage."
+msgstr "Una eina gràfica per analitzar la utilització dels discs."
+
+#: ../src/baobab-window.vala:317
+msgid "translator-credits"
+msgstr ""
+"Softcatalà <info@softcatala.org>\n"
+"Jordi Mallach <jordi@sindominio.net>\n"
+"Josep Puigdemont <josep.puigdemont@gmail.com>\n"
+"Gil Forcada <gilforcada@guifi.net>\n"
+"Joan Duran <jodufi@gmail.com>"
+
+#: ../src/baobab-window.vala:386
+msgid "Failed to open file"
+msgstr "S'ha produït un error en obrir el fitxer"
+
+#: ../src/baobab-window.vala:406
+msgid "Failed to move file to the trash"
+msgstr "S'ha produït un error en moure el fitxer a la paperera"
+
+#: ../src/baobab-window.vala:506
+msgid "Devices and locations"
+msgstr "Dispositius i ubicacions"
+
+#: ../src/baobab-window.vala:567
+#, c-format
+msgid "Could not scan folder \"%s\""
+msgstr "No s'ha pogut escanejar la carpeta «%s»"
+
+#: ../src/baobab-window.vala:570
+#, c-format
+msgid "Could not scan some of the folders contained in \"%s\""
+msgstr "No s'ha pogut escanejar algunes carpetes dins de la carpeta «%s»"
+
+#: ../src/baobab-window.vala:589
+msgid "Could not detect occupied disk sizes."
+msgstr "No s'ha pogut detectar l'espai ocupat del disc."
+
+#: ../src/baobab-window.vala:589
+msgid "Apparent sizes are shown instead."
+msgstr "En el seu lloc es mostren les mides aparents."
+
+#. || is_virtual_filesystem ()
+#: ../src/baobab-window.vala:606 ../src/baobab-window.vala:612
+#, c-format
+msgid "\"%s\" is not a valid folder"
+msgstr "«%s» no és una carpeta vàlida"
+
+#: ../src/baobab-window.vala:607 ../src/baobab-window.vala:613
+msgid "Could not analyze disk usage."
+msgstr "No s'ha pogut analitzar l'ús del disc."
+
+#: ../src/menus.ui.h:1
+msgid "_Help"
+msgstr "A_juda"
+
+#: ../src/menus.ui.h:2
+msgid "_About"
+msgstr "_Quant a"
+
+#: ../src/menus.ui.h:3
+msgid "_Quit"
+msgstr "_Surt"
+
+#: ../src/menus.ui.h:7
+msgid "Go to _parent folder"
+msgstr "Vés a la carpeta _pare"
+
+#: ../src/menus.ui.h:8
+msgid "Zoom _in"
+msgstr "_Amplia"
+
+#: ../src/menus.ui.h:9
+msgid "Zoom _out"
+msgstr "_Redueix"

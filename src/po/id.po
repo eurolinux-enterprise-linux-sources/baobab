@@ -1,0 +1,278 @@
+# Indonesian translation of baobab.
+# Copyright (C) 2003 THE baobab'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the baobab package.
+#
+# Mohammad DAMT <mdamt@bisnisweb.com>, 2003-2005.
+# Andika Triwidada <andika@gmail.com>, 2010-2014.
+# Dirgita <dirgitadevina@yahoo.co.id>, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: baobab master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=baobab&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-06-26 02:51+0000\n"
+"PO-Revision-Date: 2014-06-26 18:56+0700\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"Language-Team: Indonesian <gnome@i15n.org>\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.6.5\n"
+
+#: ../data/baobab.appdata.xml.in.h:1
+msgid ""
+"A simple application which can scan either specific folders (local or "
+"remote) or volumes and give a graphical representation including each "
+"directory size or percentage."
+msgstr ""
+"Aplikasi sederhana yang dapat memindai folder tertentu (lokal atau remote) "
+"atau volume dan memberikan suatu representasi grafis termasuk ukuran atau "
+"persentase setiap direktori."
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:1 ../src/baobab-main-window.ui.h:6
+msgid "Disk Usage Analyzer"
+msgstr "Penganalisa Penggunaan Disk"
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:2
+msgid "Check folder sizes and available disk space"
+msgstr "Periksa ukuran folder dan ruang disk yang tersedia"
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:3
+msgid "storage;space;cleanup;"
+msgstr "penyimpanan;ruang;pembersihan;"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:1
+msgid "Excluded partitions URIs"
+msgstr "URI partisi yang dikecualikan"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:2
+msgid "A list of URIs for partitions to be excluded from scanning."
+msgstr "Daftar URI partisi yang dikeluarkan dari pemindaian."
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:3
+msgid "Active Chart"
+msgstr "Bagan Aktif"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:4
+msgid "Which type of chart should be displayed."
+msgstr "Jenis bagan mana yang mesti ditampilkan."
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:5
+msgid "Window size"
+msgstr "Ukuran jendela"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:6
+msgid "The initial size of the window"
+msgstr "Ukuran awal dari jendela"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:7
+msgid "Window state"
+msgstr "Keadaan jendela"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:8
+msgid "The GdkWindowState of the window"
+msgstr "GdkWindowState dari jendela"
+
+#: ../src/baobab-application.vala:29
+msgid "Print version information and exit"
+msgstr "Menampilkan informasi versi dan keluar"
+
+#: ../src/baobab-cellrenderers.vala:91
+#, c-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d butir"
+
+#. Translators: when the last modified time is unknown
+#: ../src/baobab-cellrenderers.vala:101
+msgid "Unknown"
+msgstr "Tak diketahui"
+
+#. Translators: when the last modified time is today
+#: ../src/baobab-cellrenderers.vala:110
+msgid "Today"
+msgstr "Hari ini"
+
+#. Translators: when the last modified time is "days" days ago
+#: ../src/baobab-cellrenderers.vala:114
+#, c-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d hari"
+
+#. Translators: when the last modified time is "months" months ago
+#: ../src/baobab-cellrenderers.vala:118
+#, c-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] "%d bulan"
+
+#. Translators: when the last modified time is "years" years ago
+#: ../src/baobab-cellrenderers.vala:122
+#, c-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] "%d tahun"
+
+#: ../src/baobab-location.vala:77
+msgid "Home folder"
+msgstr "Folder rumah"
+
+#: ../src/baobab-location.vala:123
+msgid "Computer"
+msgstr "Komputer"
+
+#: ../src/baobab-main-window.ui.h:1
+msgid "Scan Folder…"
+msgstr "Pindai Folder…"
+
+#: ../src/baobab-main-window.ui.h:2
+msgid "Scan Remote Folder…"
+msgstr "Pindai Folder Jauh…"
+
+#: ../src/baobab-main-window.ui.h:3 ../src/baobab-menu.ui.h:4
+msgid "_Open Folder"
+msgstr "Buka F_older"
+
+#: ../src/baobab-main-window.ui.h:4 ../src/baobab-menu.ui.h:5
+msgid "_Copy Path to Clipboard"
+msgstr "_Salin Lokasi ke Papan Klip"
+
+#: ../src/baobab-main-window.ui.h:5 ../src/baobab-menu.ui.h:6
+msgid "Mo_ve to Trash"
+msgstr "Buang ke _Tong Sampah"
+
+#: ../src/baobab-main-window.ui.h:7
+msgid "Close"
+msgstr "Tutup"
+
+#: ../src/baobab-main-window.ui.h:8
+msgid "Folder"
+msgstr "Folder"
+
+#: ../src/baobab-main-window.ui.h:9
+msgid "Size"
+msgstr "Ukuran"
+
+#: ../src/baobab-main-window.ui.h:10
+msgid "Contents"
+msgstr "Isi"
+
+#: ../src/baobab-main-window.ui.h:11
+msgid "Modified"
+msgstr "Diubah"
+
+#: ../src/baobab-main-window.ui.h:12
+msgid "Rings Chart"
+msgstr "Bagan Cincin"
+
+#: ../src/baobab-main-window.ui.h:13
+msgid "Treemap Chart"
+msgstr "Bagan Peta Pohon"
+
+#: ../src/baobab-menu.ui.h:1
+msgid "_Help"
+msgstr "Ba_ntuan"
+
+#: ../src/baobab-menu.ui.h:2
+msgid "_About"
+msgstr "Tent_ang"
+
+#: ../src/baobab-menu.ui.h:3
+msgid "_Quit"
+msgstr "_Keluar"
+
+#: ../src/baobab-menu.ui.h:7
+msgid "Go to _parent folder"
+msgstr "_Pergi ke folder induk"
+
+#: ../src/baobab-menu.ui.h:8
+msgid "Zoom _in"
+msgstr "Per_besar"
+
+#: ../src/baobab-menu.ui.h:9
+msgid "Zoom _out"
+msgstr "Per_kecil"
+
+#: ../src/baobab-window.vala:228
+msgid "Select Folder"
+msgstr "Pilih Folder"
+
+#: ../src/baobab-window.vala:230
+msgid "_Cancel"
+msgstr "_Batal"
+
+#: ../src/baobab-window.vala:231
+msgid "_Open"
+msgstr "_Buka"
+
+#: ../src/baobab-window.vala:236
+msgid "Recursively analyze mount points"
+msgstr "Analisis secara rekursif titik kait"
+
+#: ../src/baobab-window.vala:283
+msgid "Could not analyze volume."
+msgstr "Tak bisa menganalisa volume."
+
+#: ../src/baobab-window.vala:315
+msgid "Failed to show help"
+msgstr "Gagal menampilkan bantuan"
+
+#: ../src/baobab-window.vala:334
+msgid "Baobab"
+msgstr "Baobab"
+
+#: ../src/baobab-window.vala:337
+msgid "A graphical tool to analyze disk usage."
+msgstr "Alat grafis untuk menganalisa penggunaan disk."
+
+#: ../src/baobab-window.vala:342
+msgid "translator-credits"
+msgstr ""
+"Ahmad Riza H Nst  <rizahnst@gnome.org>\n"
+"Mohammad DAMT <mdamt@bisnisweb.com>\n"
+"Andika Triwidada <andika@gmail.com>, 2010, 2011, 2012, 2013.\n"
+"Dirgita <dirgitadevina@yahoo.co.id>, 2011, 2012."
+
+#: ../src/baobab-window.vala:411
+msgid "Failed to open file"
+msgstr "Gagal membuka berkas"
+
+#: ../src/baobab-window.vala:431
+msgid "Failed to move file to the trash"
+msgstr "Gagal memindah berkas ke tong sampah"
+
+#: ../src/baobab-window.vala:533
+msgid "Devices and locations"
+msgstr "Perangkat dan lokasi"
+
+#: ../src/baobab-window.vala:594
+#, c-format
+msgid "Could not scan folder \"%s\""
+msgstr "Tak bisa memindai folder “%s”"
+
+#: ../src/baobab-window.vala:597
+#, c-format
+msgid "Could not scan some of the folders contained in \"%s\""
+msgstr "Tak bisa memindai beberapa folder yang dikandung dalam “%s”"
+
+#: ../src/baobab-window.vala:616
+msgid "Could not detect occupied disk sizes."
+msgstr "Tak bisa mendeteksi ukuran disk yang ditempati."
+
+#: ../src/baobab-window.vala:616
+msgid "Apparent sizes are shown instead."
+msgstr "Ukuran yang nampak saja yang ditampilkan sebagai gantinya."
+
+#. || is_virtual_filesystem ()
+#: ../src/baobab-window.vala:633 ../src/baobab-window.vala:639
+#, c-format
+msgid "\"%s\" is not a valid folder"
+msgstr "\"%s\" bukan folder yang valid"
+
+#: ../src/baobab-window.vala:634 ../src/baobab-window.vala:640
+msgid "Could not analyze disk usage."
+msgstr "Tak bisa menganalisa penggunaan disk."

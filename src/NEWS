@@ -1,0 +1,260 @@
+3.14.1
+======
+
+  * Fix url in manpage
+  * Updated translations (br, fa, fur, gd, it, hi, kk, lv, pt, zh_CN)
+  * Updated documentation translations (el, hu, pt_BR)
+
+3.14.0
+======
+
+  * Misc fixes
+  * Updated translations (bg, bn_IN, da, fi, gu, ja, ko, ml, mr, ne, pa, pl,
+    sl, sk, sr, sv, ta, te, uk)
+
+3.13.91
+=======
+
+  * Add X-GNOME-Utilities category to .desktop file
+  * Updated translations (as, ca, ca@valencia, cs, eu, fr, gu, kn, or, zh_HK, zh_TW)
+
+3.13.2
+======
+
+  * Import custom CSS, use icon as resources, various other adaptation to GTK+ changes
+  * Visual fixes for the ringschart and the chart switcher
+  * Updated translations (de, el, es, gl, he, hu, id, lt, nb, nl, pt_BR, ru, sl, tr)
+
+3.13.1
+======
+
+  * Use more specific error messages (bug 686136)
+  * Adapt to recent GTK+ changes
+  * Updated translations (cs, es, he, id, lt, pt_BR sv)
+  * Updated documentation translations (el, fi)
+
+3.12.1
+======
+
+  * Make DBus-activatable
+  * Fix a problem at startup with treemap as default chart
+  * Misc bugfixes
+  * Updated translations (id, pt_BR)
+
+3.12.0
+======
+
+  * Misc bugfixes (make sure to clear the hardlink list before rescanning,
+    fix a warning)
+  * Updated translations (cs, de, es, fr, hu, id, pt_BR)
+
+3.11.90
+=======
+
+  * Minor UI fixes and updates
+  * Adapt to new Vala
+  * Updated translations (cs, el)
+
+3.11.1
+======
+
+  * Updated help pages
+  * Minor fixes
+  * Updated translations (an, el, es, kn, or, nl, pt_BR, ta, zh_CN)
+
+3.10.1
+======
+
+  * Updated translations (ca@valencia, fa, tr, zh_CN)
+
+3.10
+====
+
+  * Updated translations (as, ar, be, ca, cs, da, de, es, et, eu, fi, fr,
+    ga, gl, he, hu, id, it, ja, kk, ko, lt, lv, nb, pa, pl, pt, pt_BR, ru,
+    sk, sl, sr, tg, uk, zh_HK, zh_TW)
+
+3.9.91
+======
+
+  * Add an appdata file for gnome-software
+  * Minor fixes
+  * Update translations (be, eo, fr, gl, hu, id, lt, nl, pt_BR, sk)
+
+3.9.90
+=====
+
+ * Use latest GTK+ features
+ * Show a message when allocated size is not available
+ * Misc build system cleanups
+ * Update translations (br, cs, de, es, fr, he, hu, it, nb, pt_BR,
+   sl, tg, zh_HK, zh_TW)
+
+3.9.3
+=====
+
+ * Adapt to the latest GTK+ and Vala changes
+ * Misc bugfixes
+ * Updated translations (br, gl, he, lt, nb, tg, zh_HK, zh_TW, cs, es)
+
+3.9.2
+=====
+
+ * The treeview now shows the last modified time
+ * Always exclude mounts by default
+ * Misc bugfixes
+ * Updated help pages
+ * Updated translations (cs, de, es, pt_BR, sk, tg, zh_CN)
+
+3.9.1
+=====
+
+ * Use the latest Gtk and Vala features
+ * Port chart widgets to Vala
+ * Minor bugfixes
+ * Updated translations (cs, es, nb, tg, cs, da, en_GB, eu, fi, it, oc, pl,
+   pt_BR, sv, uk, zh_HK, zh_TW, 
+
+3.8.2
+=====
+
+ * Updated translations (ar, ca, zh_CN)
+
+3.8.1
+=====
+
+ * Updated translations (crh, fi, ja, uk, zh_CN)
+
+3.8.0
+=====
+
+ * Updated translations (fa, fr, hi, kn, nl, or, te, tg, fi, fr, hu)
+
+3.7.92
+======
+
+ * Minor bugfixes
+ * Updated translations (ar, ca, ca@valencia, da, de, fi, id, ko, mr,
+   pt, el)
+
+3.7.91
+======
+
+ * Use the newest libgd to animate tranistion to and from the
+   results page
+ * Updated translations (de, pa, pt, pt_BR)
+
+3.7.90
+======
+
+ * Update to the latest libgd and egglistbox
+ * Add an High Contrast icon
+ * Updated translations (be, cs, el, eu, fur, it, lv, ml, sk, sr,
+   sr@latin, ta, ug, zh_HK, zh_TW, ru)
+
+3.7.4
+=====
+
+ * Use a menu button instead of toolbar items
+ * Updated translations (an, as, bg, el, es, et, fur, gl, gu, he, hu,
+   lt, nb, pl, pt_BR, ru, sk, sl, ta, ug, el, es)
+
+3.6.2
+=====
+
+ * Fix linking error on OpenBSD
+
+3.6.1
+=====
+
+ * Minor tweaks to the UI
+ * Updated translations (it, sk, uk, gl)
+
+3.6.0
+=====
+
+ * Updated translations (bg, bn_IN, ca, ca@valencia, el, et, it, ja,
+   pt_BR, ta, th, el)
+
+3.5.92
+======
+
+ * Updated translations (be, cs, da, en_GB, fa, fi, gl, gu, hi, hu,
+   id, ko, lv, ml, or, pt_BR, tr, zh_CN)
+
+3.5.91
+======
+
+ * Updated translations (as, de, fr, id, lt, nb, pl, pt, ta, vi)
+
+3.5.90
+======
+
+ * Updated translations (ar, as, el, es, gl, he, ja, kn, mr, pa, ru,
+   sl zh_HK, zh_TW)
+
+3.5.5
+=====
+
+ * Yet more work on the new user interface
+
+ * Updated translations (as, sr@latin, sr, te)
+
+3.5.4
+=====
+
+ * More work on the new user interface (mainly to the "All locations"
+   page)
+
+ * Updated translations (be, el, es, gl, gu, he, hu, id, ja, lt, nb,
+   sl, sr@latin, sr, te, vi, zh_CN, zh_HK, zh_TW)
+
+3.5.3
+=====
+
+ * Near-complete rewrite in Vala (with substantial internal
+   reorganisation)
+
+ * Completely new user interface concept (with more changes to come)
+
+ * Updated translations (ar, be, el, es, es, fr, gl, he, hi, ja, nb, nn,
+   nn, nn, nn, sl)
+
+3.4.1
+=====
+
+ * Fix a problem with chart tooltips
+ * Updated translations (ar, fr, id)
+
+3.4.0
+=====
+
+ * Updated translations (ca, ca@valencia, crh, da, eo, it, ja, km, ml,
+   pa, sl, vi, zh_CN)
+
+3.3.4
+=====
+
+ * Misc bugfixes.
+ * Updated translations (cs, en_GB, fa, fi, hu, kn, lt, lv, pt, te, uk)
+
+3.3.3
+=====
+
+ * Misc bugfixes.
+ * Updated translations (as, bg, de, es, et, eu, fr, gl, he, hu, ko,
+   pl, pt_BR, ru, sl, sv, ta, ug, zh_HK, zh_TW)
+
+3.3.2
+=====
+
+ * Misc bugfixes.
+ * New user documentation using Mallard.
+ * Updated translations (be, gl, nb, sr@latin, sr, te)
+
+3.3.1
+=====
+
+ * First release a standalone module after gnome-utils was split
+ * Misc bugfixes.
+
