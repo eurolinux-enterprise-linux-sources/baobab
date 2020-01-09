@@ -78,6 +78,10 @@ namespace Baobab {
             }
         }
 
+        static construct {
+            set_css_name ("ringschart");
+        }
+
         construct {
             notify["max-depth"].connect (subtips_update);
             notify["highlighted-item"].connect (subtips_update);
@@ -94,9 +98,9 @@ namespace Baobab {
             }
 
             var context = get_style_context ();
+            var context_state = context.get_state ();
             context.save ();
             context.add_class ("subfolder-tip");
-            context.add_class ("tooltip");
 
             Gtk.Allocation allocation;
             get_allocation (out allocation);
@@ -107,7 +111,7 @@ namespace Baobab {
 
             Gdk.Rectangle last_rect = Gdk.Rectangle ();
 
-            var padding = context.get_padding (Gtk.StateFlags.NORMAL);
+            var padding = context.get_padding (context_state);
             var vpadding = padding.top + padding.bottom;
             var hpadding = padding.left + padding.right;
 
@@ -194,7 +198,7 @@ namespace Baobab {
                     cr.rectangle (tooltip_rect.x + tooltip_rect.width, tooltip_rect.y, -tooltip_rect.width, tooltip_rect.height);
                     cr.clip ();
 
-                    var bg_color = context.get_background_color (Gtk.StateFlags.NORMAL);
+                    var bg_color = context.get_background_color (context_state);
                     cr.set_line_width (1);
                     cr.move_to (sector_center_x, sector_center_y);
                     Gdk.cairo_set_source_rgba (cr, bg_color);
@@ -235,8 +239,14 @@ namespace Baobab {
             get_allocation (out allocation);
 
             var context = get_style_context ();
+            var context_state = context.get_state ();
+            context.save ();
 
-            var border_color = context.get_border_color (Gtk.StateFlags.NORMAL);
+            var toplevel_context = get_toplevel ().get_style_context ();
+            var toplevel_context_state = toplevel_context.get_state ();
+
+            var border_color = context.get_border_color (context_state);
+            var bg_color = toplevel_context.get_background_color (toplevel_context_state);
 
             var center_x = allocation.width / 2;
             var center_y = allocation.height / 2;
@@ -273,11 +283,8 @@ namespace Baobab {
 
                 Gdk.cairo_set_source_rgba (cr, fill_color);
                 cr.fill_preserve ();
-
-                cr.set_operator (Cairo.Operator.CLEAR);
+                Gdk.cairo_set_source_rgba (cr, bg_color);
                 cr.stroke ();
-
-                cr.set_operator (Cairo.Operator.OVER);
 
                 if (ringsitem.continued) {
                     Gdk.cairo_set_source_rgba (cr, border_color);
@@ -286,6 +293,8 @@ namespace Baobab {
                     cr.stroke ();
                 }
             }
+
+            context.restore ();
         }
 
         protected override void calculate_item_geometry (ChartItem item) {
@@ -297,7 +306,10 @@ namespace Baobab {
             Gtk.Allocation allocation;
             get_allocation (out allocation);
 
-            var padding = get_style_context ().get_padding (Gtk.StateFlags.NORMAL);
+            var context = get_style_context ();
+            var context_state = context.get_state ();
+
+            var padding = context.get_padding (context_state);
             var max_radius = int.min (allocation.width / 2, allocation.height / 2) - padding.left; // Assuming that padding is the same for all sides
             var thickness = max_radius / (max_depth + 1);
 

@@ -6,8 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.gnome-2-14\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-06 14:29-0400\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=baobab\n"
+"POT-Creation-Date: 2016-11-07 17:00+0100\n"
 "PO-Revision-Date: 2006-03-14 00:56+0100\n"
 "Last-Translator: Vladimer Sichinava <alinux@siena.linux.it>\n"
 "Language-Team: Georgian <gnome@inet.ge>\n"
@@ -17,570 +18,437 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
 
-#: ../data/baobab.desktop.in.in.h:1
-msgid "Check folder sizes and available disk space"
-msgstr ""
-
-#: ../data/baobab.desktop.in.in.h:2 ../data/baobab-main-window.ui.h:2
+#: data/org.gnome.baobab.appdata.xml.in:6 data/org.gnome.baobab.desktop.in.in:3
+#: src/baobab-main-window.ui:44
 msgid "Disk Usage Analyzer"
 msgstr ""
 
-#: ../data/baobab-preferences-dialog.ui.h:1
-#, fuzzy
-msgid "Disk Usage Analyzer Preferences"
-msgstr "ლექსიკონის პარამეტრები"
-
-#: ../data/baobab-preferences-dialog.ui.h:2
-#, fuzzy
-msgid "Select _devices to include in filesystem scan:"
-msgstr "ძებნა პირობით: \"სხვა ფაილური სისტემების ჩათვლით\""
-
-#: ../data/baobab-preferences-dialog.ui.h:3
-msgid "_Monitor changes to your home folder"
+#: data/org.gnome.baobab.appdata.xml.in:7 data/org.gnome.baobab.desktop.in.in:4
+msgid "Check folder sizes and available disk space"
 msgstr ""
 
-#: ../data/org.gnome.baobab.gschema.xml.in.h:1
-msgid "A list of URIs for partitions to be excluded from scanning."
+#: data/org.gnome.baobab.appdata.xml.in:9
+msgid ""
+"A simple application to keep your disk usage and available space under "
+"control."
 msgstr ""
 
-#: ../data/org.gnome.baobab.gschema.xml.in.h:2
-msgid "Active Chart"
+#: data/org.gnome.baobab.appdata.xml.in:12
+msgid ""
+"Disk Usage Analyzer can scan specific folders, storage devices and online "
+"accounts. It provides both a tree and a graphical representation showing the "
+"size of each folder, making it easy to identify where disk space is wasted."
 msgstr ""
 
-#: ../data/org.gnome.baobab.gschema.xml.in.h:3
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.baobab.desktop.in.in:6
+msgid "storage;space;cleanup;"
+msgstr ""
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/org.gnome.baobab.desktop.in.in:10
+msgid "baobab"
+msgstr ""
+
+#: data/org.gnome.baobab.gschema.xml.in:9
 msgid "Excluded partitions URIs"
 msgstr ""
 
-#: ../data/org.gnome.baobab.gschema.xml.in.h:4
-#, fuzzy
-msgid "Monitor Home"
-msgstr "მონი_ტორი"
-
-#: ../data/org.gnome.baobab.gschema.xml.in.h:5
-#, fuzzy
-msgid "Statusbar is Visible"
-msgstr "_სტატუსის პანელი"
-
-#: ../data/org.gnome.baobab.gschema.xml.in.h:6
-msgid "Toolbar is Visible"
+#: data/org.gnome.baobab.gschema.xml.in:10
+msgid "A list of URIs for partitions to be excluded from scanning."
 msgstr ""
 
-#: ../data/org.gnome.baobab.gschema.xml.in.h:7
-msgid "Whether any change to the home directory should be monitored."
+#: data/org.gnome.baobab.gschema.xml.in:20
+msgid "Active Chart"
 msgstr ""
 
-#: ../data/org.gnome.baobab.gschema.xml.in.h:8
-#, fuzzy
-msgid "Whether the status bar at the bottom of main window should be visible."
-msgstr "უნდა იყოს·თუ·არა პროგრამის·ფანჯარა მაქსიმიზებული"
-
-#: ../data/org.gnome.baobab.gschema.xml.in.h:9
-#, fuzzy
-msgid "Whether the toolbar should be visible in main window."
-msgstr "უნდა იყოს·თუ·არა პროგრამის·ფანჯარა მაქსიმიზებული"
-
-#: ../data/org.gnome.baobab.gschema.xml.in.h:10
+#: data/org.gnome.baobab.gschema.xml.in:21
 msgid "Which type of chart should be displayed."
 msgstr ""
 
-#: ../data/baobab-main-window.ui.h:1
-msgid "All_ocated Space"
+#: data/org.gnome.baobab.gschema.xml.in:25
+msgid "Window size"
 msgstr ""
 
-#: ../data/baobab-main-window.ui.h:3
-msgid "Refresh"
+#: data/org.gnome.baobab.gschema.xml.in:26
+msgid "The initial size of the window"
 msgstr ""
 
-#: ../data/baobab-main-window.ui.h:4
-msgid "S_can Remote Folder..."
+#: data/org.gnome.baobab.gschema.xml.in:30
+msgid "Window state"
 msgstr ""
 
-#: ../data/baobab-main-window.ui.h:5
-#, fuzzy
-msgid "Scan F_older..."
-msgstr "შენახვა _დასტაში:"
-
-#: ../data/baobab-main-window.ui.h:6
-#, fuzzy
-msgid "Scan Filesystem"
-msgstr "ფაილური სისტემის _ტიპი:"
-
-#: ../data/baobab-main-window.ui.h:7
-#, fuzzy
-msgid "Scan Folder"
-msgstr "დასტა"
-
-#: ../data/baobab-main-window.ui.h:8
-msgid "Scan Home"
+#: data/org.gnome.baobab.gschema.xml.in:31
+msgid "The GdkWindowState of the window"
 msgstr ""
 
-#: ../data/baobab-main-window.ui.h:9
-msgid "Scan Remote Folder"
+#: src/baobab-application.vala:28
+msgid "Print version information and exit"
 msgstr ""
 
-#: ../data/baobab-main-window.ui.h:10
-msgid "Scan _Filesystem"
-msgstr ""
-
-#: ../data/baobab-main-window.ui.h:11
-#, fuzzy
-msgid "Scan _Home Folder"
-msgstr "_დასტის გახსნა"
-
-#: ../data/baobab-main-window.ui.h:12
-#, fuzzy
-msgid "Scan a folder"
-msgstr "შენახვა _დასტაში:"
-
-#: ../data/baobab-main-window.ui.h:13
-msgid "Scan a remote folder"
-msgstr ""
-
-#: ../data/baobab-main-window.ui.h:14
-#, fuzzy
-msgid "Scan filesystem"
-msgstr "ფაილური სისტემის ნაგულისხმევი·ტიპი"
-
-#: ../data/baobab-main-window.ui.h:15
-#, fuzzy
-msgid "Scan home folder"
-msgstr "შენახვა _დასტაში:"
-
-#: ../data/baobab-main-window.ui.h:16
-#, fuzzy
-msgid "St_atusbar"
-msgstr "_სტატუსის პანელი"
-
-#: ../data/baobab-main-window.ui.h:17
-msgid "Stop scanning"
-msgstr ""
-
-#: ../data/baobab-main-window.ui.h:18
-msgid "_Analyzer"
-msgstr ""
-
-#: ../data/baobab-main-window.ui.h:19
-#, fuzzy
-msgid "_Collapse All"
-msgstr "ყველას ჩაკეცვა"
-
-#: ../data/baobab-main-window.ui.h:20
-msgid "_Contents"
-msgstr "_შინაარსი"
-
-#: ../data/baobab-main-window.ui.h:21
-msgid "_Edit"
-msgstr "_დამუშავება"
-
-#: ../data/baobab-main-window.ui.h:22
-msgid "_Expand All"
-msgstr ""
-
-#: ../data/baobab-main-window.ui.h:23
-msgid "_Help"
-msgstr "_დახმარება"
-
-#: ../data/baobab-main-window.ui.h:24
-msgid "_Toolbar"
-msgstr ""
-
-#: ../data/baobab-main-window.ui.h:25
-msgid "_View"
-msgstr "_ხედი"
-
-#: ../src/baobab.c:136 ../src/baobab.c:388
-#, fuzzy
-msgid "Scanning..."
-msgstr "ძებნა..."
-
-#: ../src/baobab.c:182
-#, fuzzy
-msgid "Total filesystem capacity:"
-msgstr "ფაილური სისტემის ნაგულისხმევი·ტიპი"
-
-#: ../src/baobab.c:183
-msgid "used:"
-msgstr ""
-
-#: ../src/baobab.c:184
-#, fuzzy
-msgid "available:"
-msgstr "_დაშვებული პარამეტრები:"
-
-#. set statusbar, percentage and allocated/normal size
-#: ../src/baobab.c:273 ../src/baobab.c:330 ../src/callbacks.c:265
-msgid "Calculating percentage bars..."
-msgstr ""
-
-#: ../src/baobab.c:284 ../src/baobab.c:1325 ../src/callbacks.c:269
-msgid "Ready"
-msgstr ""
-
-#: ../src/baobab.c:421
-#, fuzzy
-msgid "Total filesystem capacity"
-msgstr "ფაილური სისტემის ნაგულისხმევი·ტიპი"
-
-#: ../src/baobab.c:443
-#, fuzzy
-msgid "Total filesystem usage"
-msgstr "ფაილური სისტემის ნაგულისხმევი·ტიპი"
-
-#: ../src/baobab.c:484
-msgid "contains hardlinks for:"
-msgstr ""
-
-#: ../src/baobab.c:493
+#: src/baobab-cellrenderers.vala:91
 #, c-format
-msgid "%5d item"
-msgid_plural "%5d items"
+msgid "%d item"
+msgid_plural "%d items"
 msgstr[0] ""
 
-#: ../src/baobab.c:620
-#, fuzzy
-msgid "Could not initialize monitoring"
-msgstr "მოწყობილობა არ ინიციალიზდება"
-
-#: ../src/baobab.c:621
-#, fuzzy
-msgid "Changes to your home folder will not be monitored."
-msgstr "ფაილის მონიტორინგი შეუძლებელია."
-
-#: ../src/baobab.c:945
-#, fuzzy
-msgid "Move to parent folder"
-msgstr "ნახვა ·დასტაში"
-
-#: ../src/baobab.c:949
-msgid "Zoom in"
+#. Translators: when the last modified time is unknown
+#: src/baobab-cellrenderers.vala:101 src/baobab-location-list.vala:70
+msgid "Unknown"
 msgstr ""
 
-#: ../src/baobab.c:953
-msgid "Zoom out"
+#. Translators: when the last modified time is today
+#: src/baobab-cellrenderers.vala:110
+msgid "Today"
 msgstr ""
 
-#: ../src/baobab.c:957
-#, fuzzy
-msgid "Save screenshot"
-msgstr "ეკრანის ანაბეჭდის დამახსოვრება"
+#. Translators: when the last modified time is "days" days ago
+#: src/baobab-cellrenderers.vala:114
+#, c-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
 
-#: ../src/baobab.c:1143
-msgid "View as Rings Chart"
+#. Translators: when the last modified time is "months" months ago
+#: src/baobab-cellrenderers.vala:118
+#, c-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] ""
+
+#. Translators: when the last modified time is "years" years ago
+#: src/baobab-cellrenderers.vala:122
+#, c-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] ""
+
+#: src/baobab-location-list.ui:17
+msgid "This Computer"
 msgstr ""
 
-#: ../src/baobab.c:1145
-msgid "View as Treemap Chart"
+#: src/baobab-location-list.ui:47
+msgid "Remote Locations"
 msgstr ""
 
-#: ../src/baobab.c:1250
-msgid "Show version"
+#: src/baobab-location-list.vala:58
+#, c-format
+msgid "%s Total"
 msgstr ""
 
-#: ../src/baobab.c:1251
-msgid "[DIRECTORY]"
-msgstr ""
-
-#: ../src/baobab.c:1281
-msgid "Too many arguments. Only one directory can be specified."
-msgstr ""
-
-#: ../src/baobab.c:1298
-#, fuzzy
-msgid "Could not detect any mount point."
-msgstr "თქვენ დოკუმენტის სახელი არ მიგითითებიათ."
-
-#: ../src/baobab.c:1300
-msgid "Without mount points disk usage cannot be analyzed."
-msgstr ""
-
-#: ../src/baobab-chart.c:205
-msgid "Maximum depth"
-msgstr ""
-
-#: ../src/baobab-chart.c:206
-msgid "The maximum depth drawn in the chart from the root"
-msgstr ""
-
-#: ../src/baobab-chart.c:215
-msgid "Chart model"
-msgstr ""
-
-#: ../src/baobab-chart.c:216
-msgid "Set the model of the chart"
-msgstr ""
-
-#: ../src/baobab-chart.c:223
-msgid "Chart root node"
-msgstr ""
-
-#: ../src/baobab-chart.c:224
-msgid "Set the root node from the model"
-msgstr ""
-
-#: ../src/baobab-chart.c:1690
-msgid "Cannot create pixbuf image!"
-msgstr ""
-
-#. Popup the File chooser dialog
-#: ../src/baobab-chart.c:1700
-#, fuzzy
-msgid "Save Snapshot"
-msgstr "ეკრანის ანაბეჭდის დამახსოვრება"
-
-#: ../src/baobab-chart.c:1727
-msgid "_Image type:"
-msgstr ""
-
-#: ../src/baobab-prefs.c:172
-msgid "Scan"
-msgstr ""
-
-#: ../src/baobab-prefs.c:179
-msgid "Device"
-msgstr ""
-
-#: ../src/baobab-prefs.c:187
-msgid "Mount Point"
-msgstr ""
-
-#: ../src/baobab-prefs.c:195
-#, fuzzy
-msgid "Filesystem Type"
-msgstr "ფაილური სისტემის _ტიპი:"
-
-#: ../src/baobab-prefs.c:203
-msgid "Total Size"
-msgstr ""
-
-#: ../src/baobab-prefs.c:212
-#, fuzzy
-msgid "Available"
+#: src/baobab-location-list.vala:61
+#, fuzzy, c-format
+msgid "%s Available"
 msgstr "დაშვებული პარამეტრები"
 
-#: ../src/baobab-remote-connect-dialog.c:77
+#. useful for some remote mounts where we don't know the
+#. size but do have a usage figure
+#: src/baobab-location-list.vala:75
 #, c-format
-msgid "Cannot scan location \"%s\""
+msgid "%s Used"
 msgstr ""
 
-#: ../src/baobab-remote-connect-dialog.c:175
-msgid "Custom Location"
-msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:177
-msgid "SSH"
-msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:180
-msgid "Public FTP"
-msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:182
-msgid "FTP (with login)"
-msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:185
-msgid "Windows share"
-msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:187
-msgid "WebDAV (HTTP)"
-msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:189
-msgid "Secure WebDAV (HTTPS)"
-msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:249
-msgid "Cannot Connect to Server. You must enter a name for the server."
-msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:252
-msgid "Please enter a name and try again."
-msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:441
-msgid "_Location (URI):"
-msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:463
-msgid "_Server:"
-msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:482
-msgid "Optional information:"
-msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:494
-msgid "_Share:"
-msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:515
-msgid "_Port:"
-msgstr "_პორტი:"
-
-#: ../src/baobab-remote-connect-dialog.c:535
+#: src/baobab-location.vala:72
 #, fuzzy
-msgid "_Folder:"
+msgid "Home folder"
+msgstr "შენახვა _დასტაში:"
+
+#: src/baobab-location.vala:108
+msgid "Computer"
+msgstr ""
+
+#: src/baobab-main-window.ui:7
+#, fuzzy
+msgid "Scan Folder…"
 msgstr "დასტა"
 
-#: ../src/baobab-remote-connect-dialog.c:555
-#, fuzzy
-msgid "_User Name:"
-msgstr "_სახელი:"
-
-#: ../src/baobab-remote-connect-dialog.c:576
-#, fuzzy
-msgid "_Domain Name:"
-msgstr "შრიფტის სახელი"
-
-#: ../src/baobab-remote-connect-dialog.c:643
-msgid "Connect to Server"
-msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:659
-msgid "Service _type:"
-msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:778
-msgid "_Scan"
-msgstr ""
-
-#: ../src/baobab-treeview.c:82
-msgid "Rescan your home folder?"
-msgstr ""
-
-#: ../src/baobab-treeview.c:83
-msgid ""
-"The content of your home folder has changed. Select rescan to update the "
-"disk usage details."
-msgstr ""
-
-#: ../src/baobab-treeview.c:84
-msgid "_Rescan"
-msgstr ""
-
-#: ../src/baobab-treeview.c:222
-msgid "Folder"
-msgstr "დასტა"
-
-#: ../src/baobab-treeview.c:244
-msgid "Usage"
-msgstr ""
-
-#: ../src/baobab-treeview.c:258
-msgid "Size"
-msgstr "ზომა"
-
-#: ../src/baobab-treeview.c:274
-#, fuzzy
-msgid "Contents"
-msgstr "_შინაარსი"
-
-#: ../src/baobab-utils.c:72
-#, fuzzy
-msgid "Select Folder"
-msgstr "მონიშნე _ყველა"
-
-#. add extra widget
-#: ../src/baobab-utils.c:84
-#, fuzzy
-msgid "_Show hidden folders"
-msgstr "დამალული და სარეზერვო ფაილების ჩვენება"
-
-#: ../src/baobab-utils.c:263
-msgid "Cannot check an excluded folder!"
-msgstr ""
-
-#: ../src/baobab-utils.c:287
-#, fuzzy, c-format
-msgid "\"%s\" is not a valid folder"
-msgstr "%s არ არის ლოგ-ფაილი."
-
-#: ../src/baobab-utils.c:290
-#, fuzzy
-msgid "Could not analyze disk usage."
-msgstr "დოკუმენტი ვერ ინახება."
-
-#: ../src/baobab-utils.c:326
+#: src/baobab-main-window.ui:20 src/menus.ui:25
 #, fuzzy
 msgid "_Open Folder"
 msgstr "_დასტის გახსნა"
 
-#: ../src/baobab-utils.c:332
+#: src/baobab-main-window.ui:29 src/menus.ui:29
+msgid "_Copy Path to Clipboard"
+msgstr ""
+
+#: src/baobab-main-window.ui:38 src/menus.ui:33
 msgid "Mo_ve to Trash"
 msgstr "სანაგვე _ურნაში გადატანა"
 
-#: ../src/baobab-utils.c:362
-#, fuzzy, c-format
-msgid "Could not open folder \"%s\""
-msgstr "ვერ·იხსნება·დასტა·\"%s\"."
+#: src/baobab-main-window.ui:168
+msgid "Close"
+msgstr ""
 
-#: ../src/baobab-utils.c:365
+#: src/baobab-main-window.ui:224
+msgid "Folder"
+msgstr "დასტა"
+
+#: src/baobab-main-window.ui:251
+msgid "Size"
+msgstr "ზომა"
+
+#: src/baobab-main-window.ui:271
 #, fuzzy
-msgid "There is no installed viewer capable of displaying the folder."
+msgid "Contents"
+msgstr "_შინაარსი"
+
+#: src/baobab-main-window.ui:289
+msgid "Modified"
 msgstr ""
-"არ არის დაყენებული სანახავი პროგრამა, რომელსაც შეეძლოს ამ დოკუმენტის ჩვენება."
 
-#: ../src/baobab-utils.c:433
-#, fuzzy, c-format
-msgid "Could not move \"%s\" to the Trash"
-msgstr "\"%s\"-ს  ურნაში გადატანა შეუძლებელია."
+#: src/baobab-main-window.ui:334
+msgid "Rings Chart"
+msgstr ""
 
-#: ../src/baobab-utils.c:441
+#: src/baobab-main-window.ui:346
+msgid "Treemap Chart"
+msgstr ""
+
+#: src/baobab-window.vala:189
 #, fuzzy
-msgid "Could not move file to the Trash"
-msgstr "\"%s\"-ს  ურნაში გადატანა შეუძლებელია."
+msgid "Select Folder"
+msgstr "მონიშნე _ყველა"
 
-#: ../src/baobab-utils.c:443
-#, c-format
-msgid "Details: %s"
+#: src/baobab-window.vala:191
+msgid "_Cancel"
 msgstr ""
 
-#: ../src/baobab-utils.c:479
-msgid "There was an error displaying help."
-msgstr "შეცდომა დახმარების ჩვენებისას."
-
-#: ../src/callbacks.c:76
-msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version."
+#: src/baobab-window.vala:192
+msgid "_Open"
 msgstr ""
 
-#: ../src/callbacks.c:81
-msgid ""
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
-"more details."
+#: src/baobab-window.vala:198
+msgid "Recursively analyze mount points"
 msgstr ""
 
-#: ../src/callbacks.c:86
-msgid ""
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 51 "
-"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+#: src/baobab-window.vala:233
+#, fuzzy
+msgid "Could not analyze volume."
+msgstr "დოკუმენტი ვერ ინახება."
+
+#: src/baobab-window.vala:265
+msgid "Failed to show help"
 msgstr ""
 
-#: ../src/callbacks.c:101
+#: src/baobab-window.vala:284
 msgid "Baobab"
 msgstr ""
 
-#: ../src/callbacks.c:102
+#: src/baobab-window.vala:287
 msgid "A graphical tool to analyze disk usage."
 msgstr ""
 
-#: ../src/callbacks.c:110
+#: src/baobab-window.vala:292
 msgid "translator-credits"
 msgstr ""
 "Malkhaz Barkalaya <maxo127@mail.ru>Vladimer Sichinava <alinux@siena.linux.it>"
 
-#: ../src/callbacks.c:208
-msgid "The document does not exist."
-msgstr "დოკუმენტი არ არსებობს"
-
-#: ../src/callbacks.c:289
+#: src/baobab-window.vala:361
 #, fuzzy
-msgid "The folder does not exist."
-msgstr "დოკუმენტი არ არსებობს"
+msgid "Failed to open file"
+msgstr "ნახვა ·დასტაში"
+
+#: src/baobab-window.vala:381
+#, fuzzy
+msgid "Failed to move file to the trash"
+msgstr "\"%s\"-ს  ურნაში გადატანა შეუძლებელია."
+
+#: src/baobab-window.vala:485
+msgid "Devices & Locations"
+msgstr ""
+
+#: src/baobab-window.vala:546
+#, fuzzy, c-format
+msgid "Could not scan folder \"%s\""
+msgstr "ვერ·იხსნება·დასტა·\"%s\"."
+
+#: src/baobab-window.vala:549
+#, fuzzy, c-format
+msgid "Could not scan some of the folders contained in \"%s\""
+msgstr "ვერ·იხსნება·დასტა·\"%s\"."
+
+#: src/baobab-window.vala:568
+#, fuzzy
+msgid "Could not detect occupied disk sizes."
+msgstr "თქვენ დოკუმენტის სახელი არ მიგითითებიათ."
+
+#: src/baobab-window.vala:568
+msgid "Apparent sizes are shown instead."
+msgstr ""
+
+#. || is_virtual_filesystem ()
+#: src/baobab-window.vala:585 src/baobab-window.vala:591
+#, fuzzy, c-format
+msgid "\"%s\" is not a valid folder"
+msgstr "%s არ არის ლოგ-ფაილი."
+
+#: src/baobab-window.vala:586 src/baobab-window.vala:592
+#, fuzzy
+msgid "Could not analyze disk usage."
+msgstr "დოკუმენტი ვერ ინახება."
+
+#: src/menus.ui:7
+msgid "_Help"
+msgstr "_დახმარება"
+
+#: src/menus.ui:12
+msgid "_About"
+msgstr ""
+
+#: src/menus.ui:16
+msgid "_Quit"
+msgstr ""
+
+#: src/menus.ui:39
+#, fuzzy
+msgid "Go to _parent folder"
+msgstr "ნახვა ·დასტაში"
+
+#: src/menus.ui:45
+msgid "Zoom _in"
+msgstr ""
+
+#: src/menus.ui:49
+msgid "Zoom _out"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Disk Usage Analyzer Preferences"
+#~ msgstr "ლექსიკონის პარამეტრები"
+
+#, fuzzy
+#~ msgid "Select _devices to include in filesystem scan:"
+#~ msgstr "ძებნა პირობით: \"სხვა ფაილური სისტემების ჩათვლით\""
+
+#, fuzzy
+#~ msgid "Monitor Home"
+#~ msgstr "მონი_ტორი"
+
+#, fuzzy
+#~ msgid "Statusbar is Visible"
+#~ msgstr "_სტატუსის პანელი"
+
+#, fuzzy
+#~ msgid ""
+#~ "Whether the status bar at the bottom of main window should be visible."
+#~ msgstr "უნდა იყოს·თუ·არა პროგრამის·ფანჯარა მაქსიმიზებული"
+
+#, fuzzy
+#~ msgid "Whether the toolbar should be visible in main window."
+#~ msgstr "უნდა იყოს·თუ·არა პროგრამის·ფანჯარა მაქსიმიზებული"
+
+#, fuzzy
+#~ msgid "Scan F_older..."
+#~ msgstr "შენახვა _დასტაში:"
+
+#, fuzzy
+#~ msgid "Scan Filesystem"
+#~ msgstr "ფაილური სისტემის _ტიპი:"
+
+#, fuzzy
+#~ msgid "Scan _Home Folder"
+#~ msgstr "_დასტის გახსნა"
+
+#, fuzzy
+#~ msgid "Scan a folder"
+#~ msgstr "შენახვა _დასტაში:"
+
+#, fuzzy
+#~ msgid "Scan filesystem"
+#~ msgstr "ფაილური სისტემის ნაგულისხმევი·ტიპი"
+
+#, fuzzy
+#~ msgid "St_atusbar"
+#~ msgstr "_სტატუსის პანელი"
+
+#, fuzzy
+#~ msgid "_Collapse All"
+#~ msgstr "ყველას ჩაკეცვა"
+
+#~ msgid "_Contents"
+#~ msgstr "_შინაარსი"
+
+#~ msgid "_Edit"
+#~ msgstr "_დამუშავება"
+
+#~ msgid "_View"
+#~ msgstr "_ხედი"
+
+#, fuzzy
+#~ msgid "Scanning..."
+#~ msgstr "ძებნა..."
+
+#, fuzzy
+#~ msgid "Total filesystem capacity:"
+#~ msgstr "ფაილური სისტემის ნაგულისხმევი·ტიპი"
+
+#, fuzzy
+#~ msgid "available:"
+#~ msgstr "_დაშვებული პარამეტრები:"
+
+#, fuzzy
+#~ msgid "Total filesystem capacity"
+#~ msgstr "ფაილური სისტემის ნაგულისხმევი·ტიპი"
+
+#, fuzzy
+#~ msgid "Total filesystem usage"
+#~ msgstr "ფაილური სისტემის ნაგულისხმევი·ტიპი"
+
+#, fuzzy
+#~ msgid "Could not initialize monitoring"
+#~ msgstr "მოწყობილობა არ ინიციალიზდება"
+
+#, fuzzy
+#~ msgid "Changes to your home folder will not be monitored."
+#~ msgstr "ფაილის მონიტორინგი შეუძლებელია."
+
+#, fuzzy
+#~ msgid "Save screenshot"
+#~ msgstr "ეკრანის ანაბეჭდის დამახსოვრება"
+
+#, fuzzy
+#~ msgid "Save Snapshot"
+#~ msgstr "ეკრანის ანაბეჭდის დამახსოვრება"
+
+#, fuzzy
+#~ msgid "Filesystem Type"
+#~ msgstr "ფაილური სისტემის _ტიპი:"
+
+#~ msgid "_Port:"
+#~ msgstr "_პორტი:"
+
+#, fuzzy
+#~ msgid "_Folder:"
+#~ msgstr "დასტა"
+
+#, fuzzy
+#~ msgid "_User Name:"
+#~ msgstr "_სახელი:"
+
+#, fuzzy
+#~ msgid "_Domain Name:"
+#~ msgstr "შრიფტის სახელი"
+
+#, fuzzy
+#~ msgid "_Show hidden folders"
+#~ msgstr "დამალული და სარეზერვო ფაილების ჩვენება"
+
+#, fuzzy
+#~ msgid "There is no installed viewer capable of displaying the folder."
+#~ msgstr ""
+#~ "არ არის დაყენებული სანახავი პროგრამა, რომელსაც შეეძლოს ამ დოკუმენტის "
+#~ "ჩვენება."
+
+#, fuzzy
+#~ msgid "Could not move \"%s\" to the Trash"
+#~ msgstr "\"%s\"-ს  ურნაში გადატანა შეუძლებელია."
+
+#~ msgid "There was an error displaying help."
+#~ msgstr "შეცდომა დახმარების ჩვენებისას."
+
+#~ msgid "The document does not exist."
+#~ msgstr "დოკუმენტი არ არსებობს"
+
+#, fuzzy
+#~ msgid "The folder does not exist."
+#~ msgstr "დოკუმენტი არ არსებობს"

@@ -20,7 +20,9 @@
       <email its:translate="no">kittykat3756@gmail.com</email>
     </credit>
 
-    <desc>Die Ergebnisse als Kreisdiagramm oder als Kacheldiagramm betrachten</desc>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <desc>Die Ergebnisse als Kreisdiagramm oder als Kacheldiagramm betrachten.</desc>
 
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -33,6 +35,12 @@
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
       <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
     </mal:credit>
   </info>
 

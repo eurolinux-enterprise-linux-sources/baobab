@@ -20,6 +20,8 @@
       <email its:translate="no">kittykat3756@gmail.com</email>
     </credit>
 
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
     <desc>Einen nicht auf Ihrem lokalen Rechner befindlichen Ordner einlesen.</desc>
 
   
@@ -34,6 +36,12 @@
       <mal:email>christian.kirbach@gmail.com</mal:email>
       <mal:years>2013, 2014</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
   </info>
 
   <title>Einen entfernten Ordner einlesen</title>
@@ -42,7 +50,7 @@
 
   <steps>
     <item>
-      <p>Klicken Sie auf den Knopf oben rechts im Hauptfensters und wählen Sie <gui style="menuitem">Entfernten Ordner einlesen …</gui>.</p>
+      <p>Klicken Sie auf den Knopf oben rechts im Hauptfenster und wählen Sie <gui style="menuitem">Entfernten Ordner einlesen …</gui>.</p>
     </item>
     <item>
       <p>Geben Sie die Adresse im Feld <gui>Server-Adresse</gui> ein. Sie enthält normalerweise einen Protokollnamen, gefolgt von einem Doppelpunkt und zwei Schrägstrichen. Sie hängt vom jeweils verwendeten <link xref="help:gnome-help/nautilus-connect#types">Protokoll</link> ab.</p>
@@ -56,6 +64,6 @@
     <p>Das Einlesen über ein Netzwerk kann langsamer sein als innerhalb des lokalen Dateisystems.</p>
   </note>
 
-  <p>Sie können auch einen zuletzt verwendeten Server wählen anstatt eine neue Adresse einzutippen. Wenn Sie eine ungültige Adresse eingeben, können Sie nicht auf <gui>Fortsetzen</gui> klicken. Wenn die Adresse zwar gültig aber nicht richtig ist, so wird die Verbindung ohne Warnungen fehlschlagen.</p>
+  <p>Sie können auch einen zuletzt verwendeten Server wählen, anstatt eine neue Adresse einzutippen. Wenn Sie eine ungültige Adresse eingeben, können Sie nicht auf <gui>Fortsetzen</gui> klicken. Wenn die Adresse zwar gültig, aber nicht richtig ist, so wird die Verbindung ohne Warnungen fehlschlagen.</p>
 
 </page>

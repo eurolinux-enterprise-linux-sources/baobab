@@ -19,6 +19,8 @@
       <email its:translate="no">mdhillca@gmail.com</email>
     </credit>
 
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
     <desc>Σαρώστε τις εσωτερικές συσκευές αποθήκευσης.</desc>
 
   
@@ -37,7 +39,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Θάνος Τρυφωνίδης</mal:name>
       <mal:email>tomtryf@gmail.com</mal:email>
-      <mal:years>2012</mal:years>
+      <mal:years>2012, 2015</mal:years>
     </mal:credit>
   </info>
 

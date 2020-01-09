@@ -1,3 +1,92 @@
+3.22.1
+======
+
+  * Updated translations and fixes (da, eu, hr, it, nb, oc, pt, zh_CN)
+  * Updated documentation translations (da)
+
+3.22.0
+======
+
+  * Updated translations (fa, nl, ru, uk)
+  * updated documentation translations (sv)
+
+3.21.92
+=======
+  * Updated translations (da, de, en_GB, el, fi, fr, fur, gl, hu, id, kk,
+    ko, lt, lv, pl, pt_BR, sk, sr, sv, vi)
+  * Updated documentation translations (hu, pt)
+
+3.21.90
+=======
+
+  * Stop using intltool
+  * Rejig 'devices and locations' UI
+  * Updated AppData
+  * Misc bugfixes
+  * Updated translations (cs, es, fi, he, oc, pt, sk)
+  * Updated documentations translations (id, pt_BR)
+
+3.20.1
+======
+
+  * Updated AppData
+  * Updated translations (fur)
+
+3.20.0
+======
+
+  * Updated translations (da, ko)
+
+3.19.91
+=======
+
+  * Updated CSS to recent GTK+ changes
+  * Updated AppData file with tags for GNOME Software
+  * Updated translations (oc, pt, ro)
+
+3.18.1
+======
+
+  * Remove scan-remote action
+  * Updated translations (ar, el)
+
+3.18.0
+======
+
+  * New stable version
+
+3.17.90
+=======
+
+  * Remove unused scan-home action
+  * Exclude mounts when scanning recent locations
+  * In Ringchart, always use the correct state when getting colors
+  * Fixes for contex menu
+  * Updated translations (fur, is, oc, pl, pt)
+  * Updated documentation translations (de, es, fr)
+
+3.16.1
+======
+
+  * Ship symbolic variant for application icon
+  * Updated translations (et)
+  * Updated documentation translations (cs, el, hu)
+
+3.16.0
+======
+
+  * Updated translations (bs, ru, sv, tg)
+  * Updated documentation translations (el, fr)
+
+3.15.90
+=======
+
+  * Exclude mountpoints when handling commandline arguments
+  * Fix HiDPI issues in the charts
+  * Misc fixes and updates for help pages
+  * Updated translations (an, br, eo, fi, vi)
+  * Updated documentation translations (cs, de, es, hu, id)
+
 3.14.1
 ======
 

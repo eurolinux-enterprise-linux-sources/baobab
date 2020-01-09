@@ -1,33 +1,20 @@
-%global gtk3_version 3.13.2
+%global gtk3_version 3.19.1
 
 Name:           baobab
-Version:        3.14.1
-Release:        5%{?dist}
+Version:        3.22.1
+Release:        1%{?dist}
 Summary:        A graphical directory tree analyzer
 
-Group:          Applications/System
 License:        GPLv2+ and GFDL
-URL:            https://live.gnome.org/Baobab
-Source0:        http://download.gnome.org/sources/baobab/3.14/%{name}-%{version}.tar.xz
+URL:            https://wiki.gnome.org/Apps/Baobab
+Source0:        https://download.gnome.org/sources/baobab/3.22/%{name}-%{version}.tar.xz
 
-# https://bugzilla.redhat.com/show_bug.cgi?id=1174557
-Patch0:         baobab-3.14.2-Translation-updates.patch
-Patch1:         baobab-translations-3.14.patch
-Patch2:         baobab-3.14.2-Exclude-mountpoints-when-handling-cmd-args.patch
-# https://bugzilla.redhat.com/show_bug.cgi?id=1233656
-Patch3:         baobab-3.14.2-Fix-context-menu-items-sensitivity.patch
-Patch4:         baobab-3.14.2-Fix-Zoom-out-item-sensitivity-for-treemap-chart.patch
-# https://bugzilla.redhat.com/show_bug.cgi?id=840427
-Patch5:         baobab-3.17.90-Exclude-mounts-when-scanning-recent-locations.patch
-
-BuildRequires:  chrpath
-BuildRequires:  gobject-introspection-devel
-BuildRequires:  gtk3-devel >= %{gtk3_version}
-BuildRequires:  libgtop2-devel
-BuildRequires:  intltool
+BuildRequires:  pkgconfig(gtk+-3.0) >= %{gtk3_version}
+BuildRequires:  /usr/bin/appstream-util
 BuildRequires:  desktop-file-utils
+BuildRequires:  gettext
 BuildRequires:  itstool
-BuildRequires:  vala-tools
+BuildRequires:  vala
 
 Requires: gtk3%{?_isa} >= %{gtk3_version}
 
@@ -43,12 +30,6 @@ any change made to your home folder as far as any mounted/unmounted device.
 
 %prep
 %setup -q
-%patch0 -p1 -b .translation-updates
-%patch1 -p1 -b .translation-updates2
-%patch2 -p1 -b .exclude-mountpoints
-%patch3 -p1
-%patch4 -p1
-%patch5 -p1 -b .exclude-mountpoints-recent
 
 
 %build
@@ -57,52 +38,51 @@ make %{?_smp_mflags}
 
 
 %install
-make install DESTDIR=$RPM_BUILD_ROOT
-
-chrpath --delete $RPM_BUILD_ROOT%{_bindir}/baobab
+%make_install
 
 %find_lang %{name} --with-gnome
 
 
 %check
-desktop-file-validate $RPM_BUILD_ROOT%{_datadir}/applications/org.gnome.baobab.desktop
+appstream-util validate-relax --nonet %{buildroot}/%{_datadir}/appdata/org.gnome.baobab.appdata.xml
+desktop-file-validate %{buildroot}/%{_datadir}/applications/org.gnome.baobab.desktop
 
 
 %post
-for d in hicolor HighContrast ; do
-  touch --no-create %{_datadir}/icons/$d >&/dev/null || :
-done
+touch --no-create %{_datadir}/icons/hicolor >&/dev/null || :
 
 
 %postun
 if [ $1 -eq 0 ]; then
   glib-compile-schemas %{_datadir}/glib-2.0/schemas >&/dev/null || :
-  for d in hicolor HighContrast ; do
-    touch --no-create %{_datadir}/icons/$d >&/dev/null || :
-    gtk-update-icon-cache %{_datadir}/icons/$d >&/dev/null || :
-  done
+  touch --no-create %{_datadir}/icons/hicolor >&/dev/null || :
+  gtk-update-icon-cache %{_datadir}/icons/hicolor >&/dev/null || :
 fi
 
 
 %posttrans
 glib-compile-schemas %{_datadir}/glib-2.0/schemas >&/dev/null || :
-for d in hicolor HighContrast ; do
-  gtk-update-icon-cache %{_datadir}/icons/$d >&/dev/null || :
-done
+gtk-update-icon-cache %{_datadir}/icons/hicolor >&/dev/null || :
 
 
 %files -f %{name}.lang
-%doc AUTHORS COPYING NEWS README COPYING.docs
+%doc AUTHORS NEWS README
+%license COPYING COPYING.docs
 %{_bindir}/baobab
 %{_datadir}/appdata/org.gnome.baobab.appdata.xml
 %{_datadir}/applications/org.gnome.baobab.desktop
 %{_datadir}/dbus-1/services/org.gnome.baobab.service
 %{_datadir}/icons/hicolor/*/apps/baobab.png
-%{_datadir}/icons/HighContrast/*/apps/baobab.png
+%{_datadir}/icons/hicolor/scalable/apps/baobab-symbolic.svg
 %{_datadir}/glib-2.0/schemas/org.gnome.baobab.gschema.xml
-%{_mandir}/man1/baobab.1.gz
+%{_mandir}/man1/baobab.1*
+
 
 %changelog
+* Thu Feb 16 2017 Ondrej Holy <oholy@redhat.com> - 3.22.1-1
+- Update to 3.22.1
+- Resolves: #1386818
+
 * Fri Sep 11 2015 Ondrej Holy <oholy@redhat.com> - 3.14.1-5
 - Exclude mountpoints when scanning recent locations
 - Resolves: #840427

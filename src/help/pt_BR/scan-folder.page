@@ -20,6 +20,8 @@
       <email its:translate="no">kittykat3756@gmail.com</email>
     </credit>
 
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
     <desc>Varre uma pasta local, incluindo todas as subpastas.</desc>
 
   
@@ -30,15 +32,27 @@
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013, 2014, 2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Rafael Ferreira</mal:name>
       <mal:email>rafael.f.f1@gmail.com</mal:email>
       <mal:years>2013, 2014</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Felipe Braga</mal:name>
+      <mal:email>fbobraga@gmail.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
   </info>
 
-  <title>Vendo um pasta</title>
+  <title>Varrendo uma pasta</title>
 
-  <p>As varreduras de pastas individuais são mais rápidas do que o sistema de arquivos completo. Então, elas podem ser mais eficiente se você deseja informação de apenas sobre uma parte específica do seu sistema de arquivos.</p>
+  <p>As varreduras de pastas individuais são mais rápidas do que do sistema de arquivos completo, então, pode ser mais eficiente varrer apenas uma parte específica do seu sistema de arquivos em busca de informações.</p>
 
   <steps>
     <item>

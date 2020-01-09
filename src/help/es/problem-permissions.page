@@ -18,7 +18,7 @@
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
       <mal:name>Daniel Mustieles</mal:name>
       <mal:email>daniel.mustieles@gmail.com</mal:email>
-      <mal:years>2012, 2014</mal:years>
+      <mal:years>2012 - 2015</mal:years>
     </mal:credit>
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -40,7 +40,7 @@
 
   <p>No tener acceso a todos los archivos y carpetas es perfectamente normal y no hay nada que pueda hacer para solventar este error.</p>
 
-  <note style="info"><p>El <app>Analizador de uso del disco</app> usa el comando <cmd>du</cmd> para crear una vista detallada del uso del almacenamiento, y necesita que tenga permisos de lectura y de ejecución sobre las carpetas.</p>
+  <note style="info"><p>El <app>Analizador de uso del disco</app> usa el comando <cmd>du</cmd> para crear una vista detallada del uso del almacenamiento, y necesita que tenga permisos de lectura sobre los archivos y de ejecución sobre las carpetas.</p>
 
   <p>Por otro lado, el uso del sistema de archivos se conoce con el comando <cmd>df</cmd> sobre el sistema de archivos de la ventana principal, y no sobre los permisos de los archivos.</p></note>
 </page>

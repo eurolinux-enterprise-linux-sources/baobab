@@ -48,8 +48,6 @@ namespace Baobab {
         [GtkChild]
         private Gtk.Button infobar_close_button;
         [GtkChild]
-        private Gtk.ScrolledWindow location_scrolled_window;
-        [GtkChild]
         private LocationList location_list;
         [GtkChild]
         private Gtk.TreeView treeview;
@@ -85,9 +83,7 @@ namespace Baobab {
         private const GLib.ActionEntry[] action_entries = {
             { "gear-menu", on_show_gear_menu_activate , null, "false", null},
             { "show-home-page", on_show_home_page_activate },
-            { "scan-home", on_scan_home_activate },
             { "scan-folder", on_scan_folder_activate },
-            { "scan-remote", on_scan_remote_activate },
             { "reload", on_reload_activate },
             { "show-allocated", on_show_allocated },
             { "expand-all", on_expand_all },
@@ -102,9 +98,7 @@ namespace Baobab {
         }
 
         private const ActionState[] actions_while_scanning = {
-            { "scan-home", false },
             { "scan-folder", false },
-            { "scan-remote", false },
             { "show-allocated", false },
             { "expand-all", false },
             { "collapse-all", false }
@@ -122,7 +116,7 @@ namespace Baobab {
             Object (application: app);
 
             if (busy_cursor == null) {
-                busy_cursor = new Gdk.Cursor (Gdk.CursorType.WATCH);
+                busy_cursor = new Gdk.Cursor.for_display (get_display(), Gdk.CursorType.WATCH);
             }
 
             ui_settings = Application.get_default ().ui_settings;
@@ -131,11 +125,7 @@ namespace Baobab {
             var action = ui_settings.create_action ("active-chart");
             add_action (action);
 
-            location_list.set_adjustment (location_scrolled_window.get_vadjustment ());
             location_list.set_action (on_scan_location_activate);
-            location_list.update ();
-
-            (lookup_action ("scan-remote") as SimpleAction).set_enabled (ConnectServer.available ());
 
             setup_treeview ();
 
@@ -195,16 +185,13 @@ namespace Baobab {
             set_ui_state (home_page, false);
         }
 
-        void on_scan_home_activate () {
-            scan_directory (File.new_for_path (GLib.Environment.get_home_dir ()));
-        }
-
         void on_scan_folder_activate () {
             var file_chooser = new Gtk.FileChooserDialog (_("Select Folder"), this,
                                                           Gtk.FileChooserAction.SELECT_FOLDER,
                                                           _("_Cancel"), Gtk.ResponseType.CANCEL,
                                                           _("_Open"), Gtk.ResponseType.ACCEPT);
 
+            file_chooser.local_only = false;
             file_chooser.create_folders = false;
             file_chooser.modal = true;
 
@@ -220,18 +207,6 @@ namespace Baobab {
             });
 
             file_chooser.show ();
-        }
-
-        void on_scan_remote_activate () {
-            var connect_server = new ConnectServer ();
-
-            connect_server.selected.connect ((uri) => {
-                if (uri != null) {
-                    scan_directory (File.new_for_uri (uri));
-                }
-            });
-
-            connect_server.show ();
         }
 
         void set_active_location (Location location) {
@@ -410,7 +385,11 @@ namespace Baobab {
         void setup_treeview () {
             treeview.button_press_event.connect ((event) => {
                 if (event.triggers_context_menu ()) {
-                    return show_treeview_popup (treeview_popup_menu, event);
+                    Gtk.TreePath path;
+                    if (treeview.get_path_at_pos ((int)event.x, (int)event.y, out path, null, null, null)) {
+                        treeview.get_selection ().select_path (path);
+                        return show_treeview_popup (treeview_popup_menu, event);
+                    }
                 }
 
                 return false;
@@ -457,8 +436,8 @@ namespace Baobab {
 
         void message (string primary_msg, string secondary_msg, Gtk.MessageType type) {
             infobar.message_type = type;
-            infobar_primary_label.label = "<b>%s</b>".printf (_(primary_msg));
-            infobar_secondary_label.label = "<small>%s</small>".printf (_(secondary_msg));
+            infobar_primary_label.label = "<b>%s</b>".printf (primary_msg);
+            infobar_secondary_label.label = "<small>%s</small>".printf (secondary_msg);
             infobar.show ();
         }
 
@@ -503,7 +482,7 @@ namespace Baobab {
             if (child == home_page) {
                 var action = lookup_action ("reload") as SimpleAction;
                 action.set_enabled (false);
-                header_bar.title = _("Devices and locations");
+                header_bar.title = _("Devices & Locations");
             } else {
                 var action = lookup_action ("reload") as SimpleAction;
                 action.set_enabled (true);

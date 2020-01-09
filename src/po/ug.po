@@ -7,251 +7,362 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=baobab&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-02-12 03:42+0000\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=baobab\n"
+"POT-Creation-Date: 2016-11-07 17:00+0100\n"
 "PO-Revision-Date: 2013-02-13 19:47+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
-"Language: \n"
+"Language: ug\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../data/baobab.desktop.in.in.h:1 ../src/baobab-window.vala:188
+#: data/org.gnome.baobab.appdata.xml.in:6 data/org.gnome.baobab.desktop.in.in:3
+#: src/baobab-main-window.ui:44
 msgid "Disk Usage Analyzer"
 msgstr "دىسكا ئىشلىتىش تەھلىلچىسى"
 
-#: ../data/baobab.desktop.in.in.h:2
+#: data/org.gnome.baobab.appdata.xml.in:7 data/org.gnome.baobab.desktop.in.in:4
 msgid "Check folder sizes and available disk space"
 msgstr "قىسقۇچ چوڭلۇقى ۋە ئىشلىتىشكە بولىدىغان دىسكا بوشلۇقىنى تەكشۈر"
 
-#: ../data/baobab.desktop.in.in.h:3
+#: data/org.gnome.baobab.appdata.xml.in:9
+msgid ""
+"A simple application to keep your disk usage and available space under "
+"control."
+msgstr ""
+
+#: data/org.gnome.baobab.appdata.xml.in:12
+msgid ""
+"Disk Usage Analyzer can scan specific folders, storage devices and online "
+"accounts. It provides both a tree and a graphical representation showing the "
+"size of each folder, making it easy to identify where disk space is wasted."
+msgstr ""
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.baobab.desktop.in.in:6
 msgid "storage;space;cleanup;"
 msgstr "storage;space;cleanup;ساقلىغۇچ;بوشلۇق;تازىلاش;"
 
-#: ../data/org.gnome.baobab.gschema.xml.in.h:1
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/org.gnome.baobab.desktop.in.in:10
+#, fuzzy
+msgid "baobab"
+msgstr "Baobab"
+
+#: data/org.gnome.baobab.gschema.xml.in:9
 msgid "Excluded partitions URIs"
 msgstr "سىرتتا قالدۇرۇلىدىغان دىسكا رايونىنىڭ URI سى"
 
-#: ../data/org.gnome.baobab.gschema.xml.in.h:2
+#: data/org.gnome.baobab.gschema.xml.in:10
 msgid "A list of URIs for partitions to be excluded from scanning."
 msgstr "تەكشۈرگەندە سىرتتا قالدۇرۇلىدىغان دىسكا رايونىنىڭ URI سى كۆرسىتىلىدۇ."
 
-#: ../data/org.gnome.baobab.gschema.xml.in.h:3
+#: data/org.gnome.baobab.gschema.xml.in:20
 msgid "Active Chart"
 msgstr "ئاكتىپ دىئاگرامما"
 
-#: ../data/org.gnome.baobab.gschema.xml.in.h:4
+#: data/org.gnome.baobab.gschema.xml.in:21
 msgid "Which type of chart should be displayed."
 msgstr "قايسى تىپتىكى دىئاگرامما كۆرسىتىلىدۇ."
 
-#: ../data/org.gnome.baobab.gschema.xml.in.h:5
+#: data/org.gnome.baobab.gschema.xml.in:25
 msgid "Window size"
 msgstr "كۆزنەك چوڭلۇقى"
 
-#: ../data/org.gnome.baobab.gschema.xml.in.h:6
+#: data/org.gnome.baobab.gschema.xml.in:26
 msgid "The initial size of the window"
 msgstr "كۆزنەكنىڭ دەسلەپكى چوڭلۇقى"
 
-#: ../data/org.gnome.baobab.gschema.xml.in.h:7
+#: data/org.gnome.baobab.gschema.xml.in:30
 msgid "Window state"
 msgstr "كۆزنەك ھالىتى"
 
-#: ../data/org.gnome.baobab.gschema.xml.in.h:8
+#: data/org.gnome.baobab.gschema.xml.in:31
 msgid "The GdkWindowState of the window"
 msgstr "كۆزنەكنىڭ GdkWindowState ھالىتى"
 
-#: ../src/baobab-application.vala:30
+#: src/baobab-application.vala:28
 msgid "Print version information and exit"
 msgstr "نەشر ئۇچۇرىنى كۆرسىتىپ ئاخىرلىشىدۇ"
 
-#: ../src/baobab-application.vala:104
-msgid "- Disk Usage Analyzer"
-msgstr "- دىسكا ئىشلىتىش تەھلىلچىسى"
-
-#: ../src/baobab-cellrenderers.vala:100
+#: src/baobab-cellrenderers.vala:91
 #, c-format
 msgid "%d item"
 msgid_plural "%d items"
 msgstr[0] "‏‏%d تۈر"
 
-#: ../src/baobab-chart.c:186
-msgid "Maximum depth"
-msgstr "ئەڭ يۇقىرى چوڭقۇرلۇقى"
+#. Translators: when the last modified time is unknown
+#: src/baobab-cellrenderers.vala:101 src/baobab-location-list.vala:70
+msgid "Unknown"
+msgstr ""
 
-#: ../src/baobab-chart.c:187
-msgid "The maximum depth drawn in the chart from the root"
-msgstr "غول مۇندەرىجىدىن باشلانغان ئەڭ يۇقىرى چوڭقۇرلۇقى"
+#. Translators: when the last modified time is today
+#: src/baobab-cellrenderers.vala:110
+msgid "Today"
+msgstr ""
 
-#: ../src/baobab-chart.c:196
-msgid "Chart model"
-msgstr "دىئاگرامما مودېلى"
+#. Translators: when the last modified time is "days" days ago
+#: src/baobab-cellrenderers.vala:114
+#, c-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
 
-#: ../src/baobab-chart.c:197
-msgid "Set the model of the chart"
-msgstr "دىئاگرامما مودېل تەڭشىكى"
+#. Translators: when the last modified time is "months" months ago
+#: src/baobab-cellrenderers.vala:118
+#, c-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] ""
 
-#: ../src/baobab-chart.c:204
-msgid "Chart root node"
-msgstr "دىئاگرامما غول تۈگۈنى"
+#. Translators: when the last modified time is "years" years ago
+#: src/baobab-cellrenderers.vala:122
+#, c-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] ""
 
-#: ../src/baobab-chart.c:205
-msgid "Set the root node from the model"
-msgstr "مودېلنىڭ غول تۈگۈنىنى تەڭشىمەك"
+#: src/baobab-location-list.ui:17
+msgid "This Computer"
+msgstr ""
 
-#: ../src/baobab-chart.c:898
-msgid "_Move to parent folder"
-msgstr "ئاتا قىسقۇچقا يۆتكە(_M)"
+#: src/baobab-location-list.ui:47
+#, fuzzy
+msgid "Remote Locations"
+msgstr "ئۆزلەشتۈرگەن ئورۇن"
 
-#: ../src/baobab-chart.c:902
-msgid "Zoom _in"
-msgstr "چوڭايت(_I)"
+#: src/baobab-location-list.vala:58
+#, c-format
+msgid "%s Total"
+msgstr ""
 
-#: ../src/baobab-chart.c:906
-msgid "Zoom _out"
-msgstr "كىچىكلەت(_O)"
+#: src/baobab-location-list.vala:61
+#, fuzzy, c-format
+msgid "%s Available"
+msgstr "ئىشلىتىلىشچان"
 
-#: ../src/baobab-location.vala:77
+#. useful for some remote mounts where we don't know the
+#. size but do have a usage figure
+#: src/baobab-location-list.vala:75
+#, c-format
+msgid "%s Used"
+msgstr ""
+
+#: src/baobab-location.vala:72
 msgid "Home folder"
 msgstr "ماكان مۇندەرىجە"
 
-#: ../src/baobab-location.vala:123
-msgid "Main volume"
-msgstr "ئاساسىي دىسكا"
+#: src/baobab-location.vala:108
+msgid "Computer"
+msgstr ""
 
-#: ../src/baobab-main-window.ui.h:1
+#: src/baobab-main-window.ui:7
 msgid "Scan Folder…"
 msgstr "قىسقۇچ تەكشۈر…"
 
-#: ../src/baobab-main-window.ui.h:2
-msgid "Scan Remote Folder…"
-msgstr "يىراقتىكى قىسقۇچنى تەكشۈر…"
-
-#: ../src/baobab-main-window.ui.h:3
-msgid "Close"
-msgstr "ياپ"
-
-#: ../src/baobab-main-window.ui.h:4
-msgid "Folder"
-msgstr "قىسقۇچ"
-
-#: ../src/baobab-main-window.ui.h:5
-msgid "Usage"
-msgstr "ئىشلىتىلىشى"
-
-#: ../src/baobab-main-window.ui.h:6
-msgid "Size"
-msgstr "چوڭلۇقى"
-
-#: ../src/baobab-main-window.ui.h:7
-msgid "Contents"
-msgstr "مەزمۇنلار"
-
-#: ../src/baobab-main-window.ui.h:8
-msgid "Rings Chart"
-msgstr "چەمبەرسىمان دىئاگرامما"
-
-#: ../src/baobab-main-window.ui.h:9
-msgid "Treemap Chart"
-msgstr "شاخسىمان دىئاگرامما"
-
-#: ../src/baobab-main-window.ui.h:10
+#: src/baobab-main-window.ui:20 src/menus.ui:25
 msgid "_Open Folder"
 msgstr "قىسقۇچ ئاچ(_O)"
 
-#: ../src/baobab-main-window.ui.h:11
+#: src/baobab-main-window.ui:29 src/menus.ui:29
 msgid "_Copy Path to Clipboard"
 msgstr "يولنى چاپلاش تاختىسىغا كۆچۈر(_C)"
 
-#: ../src/baobab-main-window.ui.h:12
+#: src/baobab-main-window.ui:38 src/menus.ui:33
 msgid "Mo_ve to Trash"
 msgstr "ئەخلەتخانىغا يۆتكە(_V)"
 
-#: ../src/baobab-menu.ui.h:1
-msgid "_Help"
-msgstr "ياردەم(_H)"
+#: src/baobab-main-window.ui:168
+msgid "Close"
+msgstr "ياپ"
 
-#: ../src/baobab-menu.ui.h:2
-msgid "_About"
-msgstr "ھەققىدە(_A)"
+#: src/baobab-main-window.ui:224
+msgid "Folder"
+msgstr "قىسقۇچ"
 
-#: ../src/baobab-menu.ui.h:3
-msgid "_Quit"
-msgstr "ئاخىرلاشتۇر(_Q)"
+#: src/baobab-main-window.ui:251
+msgid "Size"
+msgstr "چوڭلۇقى"
 
-#: ../src/baobab-menu.ui.h:4
-msgid "_Analyzer"
-msgstr "تەھلىلچى(_A)"
+#: src/baobab-main-window.ui:271
+msgid "Contents"
+msgstr "مەزمۇنلار"
 
-#: ../src/baobab-menu.ui.h:5
-msgid "_Scan Home"
-msgstr "ماكان مۇندەرىجىنى تەكشۈر(_S)"
+#: src/baobab-main-window.ui:289
+msgid "Modified"
+msgstr ""
 
-#: ../src/baobab-menu.ui.h:6
-msgid "Scan F_older…"
-msgstr "قىسقۇچ تەكشۈر(_O)…"
+#: src/baobab-main-window.ui:334
+msgid "Rings Chart"
+msgstr "چەمبەرسىمان دىئاگرامما"
 
-#: ../src/baobab-menu.ui.h:7
-msgid "Scan Remote Fo_lder…"
-msgstr "يىراقتىكى قىسقۇچنى تەكشۈر(_L)…"
+#: src/baobab-main-window.ui:346
+msgid "Treemap Chart"
+msgstr "شاخسىمان دىئاگرامما"
 
-#: ../src/baobab-menu.ui.h:8
-msgid "_View"
-msgstr "كۆرۈنۈش(_V)"
-
-#: ../src/baobab-menu.ui.h:9
-msgid "_Reload"
-msgstr "قايتا يۈكلە(_R)"
-
-#: ../src/baobab-menu.ui.h:10
-msgid "_Expand All"
-msgstr "ھەممىنى ياي(_E)"
-
-#: ../src/baobab-menu.ui.h:11
-msgid "_Collapse All"
-msgstr "ھەممىنى قاتلا(_C)"
-
-#: ../src/baobab-window.vala:131
-msgid "Devices and locations"
-msgstr "ئۈسكۈنىلەر ۋە ئورۇنلار"
-
-#: ../src/baobab-window.vala:229
+#: src/baobab-window.vala:189
 msgid "Select Folder"
 msgstr "قىسقۇچ تاللا"
 
-#: ../src/baobab-window.vala:279
+#: src/baobab-window.vala:191
+msgid "_Cancel"
+msgstr ""
+
+#: src/baobab-window.vala:192
+msgid "_Open"
+msgstr ""
+
+#: src/baobab-window.vala:198
+msgid "Recursively analyze mount points"
+msgstr ""
+
+#: src/baobab-window.vala:233
 msgid "Could not analyze volume."
 msgstr "دىسكىنى تەھلىل قىلالمىدى."
 
-#: ../src/baobab-window.vala:330
+#: src/baobab-window.vala:265
+msgid "Failed to show help"
+msgstr ""
+
+#: src/baobab-window.vala:284
 msgid "Baobab"
 msgstr "Baobab"
 
-#: ../src/baobab-window.vala:333
+#: src/baobab-window.vala:287
 msgid "A graphical tool to analyze disk usage."
 msgstr "دىسكا ئىشلىتىش ئەھۋالى تەھلىلىگە ئىشلىتىلىدىغان كۆزنەكلىك قورال."
 
-#: ../src/baobab-window.vala:338
+#: src/baobab-window.vala:292
 msgid "translator-credits"
-msgstr "Gheyret Kenji <gheyret@gmail.com>\n"
+msgstr ""
+"Gheyret Kenji <gheyret@gmail.com>\n"
 "Sahran<sahran@live.com>\n"
 "Muhemmed Erdem <misran_erdem@hotmail.com>"
 
-#: ../src/baobab-window.vala:580
-#, c-format
-msgid "Could not scan folder \"%s\" or some of the folders it contains."
+#: src/baobab-window.vala:361
+msgid "Failed to open file"
+msgstr ""
+
+#: src/baobab-window.vala:381
+#, fuzzy
+msgid "Failed to move file to the trash"
+msgstr "ھۆججەتنى ئەخلەتخانىغا يۆتكىيەلمەيدۇ"
+
+#: src/baobab-window.vala:485
+#, fuzzy
+msgid "Devices & Locations"
+msgstr "ئۈسكۈنىلەر ۋە ئورۇنلار"
+
+#: src/baobab-window.vala:546
+#, fuzzy, c-format
+msgid "Could not scan folder \"%s\""
+msgstr "\"%s\" قىسقۇچنى ئاچالمايدۇ"
+
+#: src/baobab-window.vala:549
+#, fuzzy, c-format
+msgid "Could not scan some of the folders contained in \"%s\""
 msgstr "قىسقۇچ «%s» نى ياكى ئۇنىڭ ئىچىدىكى بەزى بىر قىسقۇچلارنى تەكشۈرەلمىدى."
 
+#: src/baobab-window.vala:568
+#, fuzzy
+msgid "Could not detect occupied disk sizes."
+msgstr "ھېچقانداق ئېگەرلەش نۇقتىسى بايقالمىدى."
+
+#: src/baobab-window.vala:568
+msgid "Apparent sizes are shown instead."
+msgstr ""
+
 #. || is_virtual_filesystem ()
-#: ../src/baobab-window.vala:599 ../src/baobab-window.vala:605
+#: src/baobab-window.vala:585 src/baobab-window.vala:591
 #, c-format
 msgid "\"%s\" is not a valid folder"
 msgstr "«%s» ئىناۋەتلىك قىسقۇچ ئەمەس"
 
-#: ../src/baobab-window.vala:600 ../src/baobab-window.vala:606
+#: src/baobab-window.vala:586 src/baobab-window.vala:592
 msgid "Could not analyze disk usage."
 msgstr "دىسكا ئىشلىتىلىشىنى تەھلىل قىلالمىدى."
+
+#: src/menus.ui:7
+msgid "_Help"
+msgstr "ياردەم(_H)"
+
+#: src/menus.ui:12
+msgid "_About"
+msgstr "ھەققىدە(_A)"
+
+#: src/menus.ui:16
+msgid "_Quit"
+msgstr "ئاخىرلاشتۇر(_Q)"
+
+#: src/menus.ui:39
+#, fuzzy
+msgid "Go to _parent folder"
+msgstr "ئاتا قىسقۇچقا يۆتكە(_M)"
+
+#: src/menus.ui:45
+msgid "Zoom _in"
+msgstr "چوڭايت(_I)"
+
+#: src/menus.ui:49
+msgid "Zoom _out"
+msgstr "كىچىكلەت(_O)"
+
+#~ msgid "- Disk Usage Analyzer"
+#~ msgstr "- دىسكا ئىشلىتىش تەھلىلچىسى"
+
+#~ msgid "Maximum depth"
+#~ msgstr "ئەڭ يۇقىرى چوڭقۇرلۇقى"
+
+#~ msgid "The maximum depth drawn in the chart from the root"
+#~ msgstr "غول مۇندەرىجىدىن باشلانغان ئەڭ يۇقىرى چوڭقۇرلۇقى"
+
+#~ msgid "Chart model"
+#~ msgstr "دىئاگرامما مودېلى"
+
+#~ msgid "Set the model of the chart"
+#~ msgstr "دىئاگرامما مودېل تەڭشىكى"
+
+#~ msgid "Chart root node"
+#~ msgstr "دىئاگرامما غول تۈگۈنى"
+
+#~ msgid "Set the root node from the model"
+#~ msgstr "مودېلنىڭ غول تۈگۈنىنى تەڭشىمەك"
+
+#~ msgid "Main volume"
+#~ msgstr "ئاساسىي دىسكا"
+
+#~ msgid "Scan Remote Folder…"
+#~ msgstr "يىراقتىكى قىسقۇچنى تەكشۈر…"
+
+#~ msgid "Usage"
+#~ msgstr "ئىشلىتىلىشى"
+
+#~ msgid "_Analyzer"
+#~ msgstr "تەھلىلچى(_A)"
+
+#~ msgid "_Scan Home"
+#~ msgstr "ماكان مۇندەرىجىنى تەكشۈر(_S)"
+
+#~ msgid "Scan F_older…"
+#~ msgstr "قىسقۇچ تەكشۈر(_O)…"
+
+#~ msgid "Scan Remote Fo_lder…"
+#~ msgstr "يىراقتىكى قىسقۇچنى تەكشۈر(_L)…"
+
+#~ msgid "_View"
+#~ msgstr "كۆرۈنۈش(_V)"
+
+#~ msgid "_Reload"
+#~ msgstr "قايتا يۈكلە(_R)"
+
+#~ msgid "_Expand All"
+#~ msgstr "ھەممىنى ياي(_E)"
+
+#~ msgid "_Collapse All"
+#~ msgstr "ھەممىنى قاتلا(_C)"
 
 #~ msgid "Disk Usage Analyzer Preferences"
 #~ msgstr "دىسكا ئىشلىتىش تەھلىلچىسى مايىللىقى"
@@ -378,9 +489,6 @@ msgstr "دىسكا ئىشلىتىلىشىنى تەھلىل قىلالمىدى."
 #~ msgid "Too many arguments. Only one directory can be specified."
 #~ msgstr "پارامېتىرلار بەك كۆپ. پەقەت بىرلا مۇندەرىجە بەلگىلىگىلى بولىدۇ."
 
-#~ msgid "Could not detect any mount point."
-#~ msgstr "ھېچقانداق ئېگەرلەش نۇقتىسى بايقالمىدى."
-
 #~ msgid "Without mount points disk usage cannot be analyzed."
 #~ msgstr ""
 #~ "ئېگەرلەش نۇقتىسى بولمىسا دىسكا ئىشلىتىش ئەھۋالىنى تەھلىل قىلغىلى بولمايدۇ."
@@ -413,14 +521,8 @@ msgstr "دىسكا ئىشلىتىلىشىنى تەھلىل قىلالمىدى."
 #~ msgid "Total Size"
 #~ msgstr "ئومۇمىي سىغىمى"
 
-#~ msgid "Available"
-#~ msgstr "ئىشلىتىلىشچان"
-
 #~ msgid "Cannot scan location \"%s\""
 #~ msgstr "\"%s\"ئورۇننى تەكشۈرەلمىدى"
-
-#~ msgid "Custom Location"
-#~ msgstr "ئۆزلەشتۈرگەن ئورۇن"
 
 #~ msgid "SSH"
 #~ msgstr "SSH"
@@ -497,17 +599,11 @@ msgstr "دىسكا ئىشلىتىلىشىنى تەھلىل قىلالمىدى."
 #~ msgid "Cannot check an excluded folder!"
 #~ msgstr "شاللىۋەتكەن قىسقۇچنى تەكشۈرەلمىدى!"
 
-#~ msgid "Could not open folder \"%s\""
-#~ msgstr "\"%s\" قىسقۇچنى ئاچالمايدۇ"
-
 #~ msgid "There is no installed viewer capable of displaying the folder."
 #~ msgstr "قىسقۇچنى كۆرسىتەلەيدىغان كۆرگۈچ ئورنىتىلمىغان."
 
 #~ msgid "Could not move \"%s\" to the Trash"
 #~ msgstr "\"%s\" نى ئەخلەتخانىغا يۆتكىيەلمەيدۇ"
-
-#~ msgid "Could not move file to the Trash"
-#~ msgstr "ھۆججەتنى ئەخلەتخانىغا يۆتكىيەلمەيدۇ"
 
 #~ msgid "Details: %s"
 #~ msgstr "تەپسىلاتى: %s"

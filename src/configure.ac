@@ -2,7 +2,7 @@ dnl -*- mode: m4 -*-
 AC_PREREQ(2.63)
 
 AC_INIT([baobab],
-        [3.14.1],
+        [3.22.1],
         [http://bugzilla.gnome.org/enter_bug.cgi?product=baobab],
         [baobab])
 
@@ -13,16 +13,6 @@ AC_CONFIG_MACRO_DIR([m4])
 AM_INIT_AUTOMAKE([1.11 tar-ustar dist-xz no-dist-gzip -Wno-portability foreign])
 AM_MAINTAINER_MODE([enable])
 AM_SILENT_RULES([yes])
-
-# i18n stuff
-IT_PROG_INTLTOOL(0.40.0)
-
-AM_GNU_GETTEXT([external])
-AM_GNU_GETTEXT_VERSION([0.17])
-
-GETTEXT_PACKAGE=AC_PACKAGE_NAME
-AC_SUBST([GETTEXT_PACKAGE])
-AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE",[The name of the gettext domain])
 
 AC_PROG_CC
 AC_PROG_INSTALL
@@ -41,8 +31,14 @@ AC_PATH_PROG(GLIB_COMPILE_RESOURCES, glib-compile-resources)
 # Mallard help
 YELP_HELP_INIT
 
+APPSTREAM_XML
+
+AM_GNU_GETTEXT([external])
+AM_GNU_GETTEXT_VERSION([0.19.8])
+AC_SUBST([GETTEXT_PACKAGE], [baobab])
+
 PKG_CHECK_MODULES(BAOBAB, [
-    gtk+-3.0 >= 3.13.2
+    gtk+-3.0 >= 3.19.1
     glib-2.0 >= 2.39.90
     gio-2.0 >= 2.30.0
 ])
@@ -50,7 +46,7 @@ PKG_CHECK_MODULES(BAOBAB, [
 AC_CONFIG_FILES([
 Makefile
 data/Makefile
-data/org.gnome.baobab.gschema.xml.in
+data/org.gnome.baobab.gschema.xml
 help/Makefile
 pixmaps/Makefile
 src/Makefile

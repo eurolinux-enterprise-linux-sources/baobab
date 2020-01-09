@@ -20,6 +20,8 @@
       <email its:translate="no">mdhillca@gmail.com</email>
     </credit>
 
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
     <desc>Analyzujte své osobní soubory, které jsou na vašem počítači.</desc>
 
   

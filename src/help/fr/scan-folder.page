@@ -20,6 +20,8 @@
       <email its:translate="no">kittykat3756@gmail.com</email>
     </credit>
 
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
     <desc>Analyser un dossier local, y compris tous les sous-dossiers.</desc>
 
   
@@ -76,6 +78,6 @@
     </item>
   </steps>
 
-  <p>Le dossier qui vient d'être analysé sera maintenant ajouté à votre liste de <gui>Périphériques et emplacements</gui>. Si le dossier est renomé ou supprimé, il sera retiré de la liste lors du prochain démarrage de l'<app>analyseur d'utilisation des disques</app>.</p>
+  <p>Le dossier qui vient d'être analysé sera maintenant ajouté à votre liste de <gui>Périphériques et emplacements</gui>. Si le dossier est renommé ou supprimé, il sera retiré de la liste lors du prochain démarrage de l'<app>analyseur d'utilisation des disques</app>.</p>
 
 </page>

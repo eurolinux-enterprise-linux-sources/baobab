@@ -20,6 +20,8 @@
       <email its:translate="no">kittykat3756@gmail.com</email>
     </credit>
 
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
     <desc>Einen lokalen Ordner einschließlich dessen Unterordnern einlesen.</desc>
 
   
@@ -33,6 +35,12 @@
       <mal:name>Christian Kirbach</mal:name>
       <mal:email>christian.kirbach@gmail.com</mal:email>
       <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
     </mal:credit>
   </info>
 
@@ -48,10 +56,10 @@
       <p>Daraufhin öffnet sich ein Dateiöffner-Dialog. Wählen Sie den Ordner, den Sie einlesen möchten.</p>
     </item>
     <item>
-      <p>Klicken Sie auf <gui>Öffnen</gui>, um mit dem Einlesen zu beginnen</p>
+      <p>Klicken Sie auf <gui>Öffnen</gui>, um mit dem Einlesen zu beginnen.</p>
     </item>
   </steps>
 
-  <p>Der Ordner, den Sie soeben eingelesen haben, wird nun zu Ihrer Liste der <gui>Geräte und Orte</gui> hinzugefügt. Wenn der Ordner umbenannt oder gelöscht wird, so wird er beim nächsten Start von <app>Festplattenbelegungsanalyse</app> aus der Liste entfernt.</p>
+  <p>Der Ordner, den Sie soeben eingelesen haben, wird nun zu Ihrer Liste der <gui>Geräte und Orte</gui> hinzugefügt. Wenn der Ordner umbenannt oder gelöscht wird, so wird er beim nächsten Start der <app>Festplattenbelegungsanalyse</app> aus der Liste entfernt.</p>
 
 </page>

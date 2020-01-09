@@ -6,274 +6,393 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-27 00:34-0500\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=baobab\n"
+"POT-Creation-Date: 2016-11-07 17:00+0100\n"
 "PO-Revision-Date: 2013-03-27 00:49-0500\n"
 "Last-Translator: Reşat SABIQ <tilde.birlik@gmail.com>\n"
 "Language-Team: QIRIMTATARCA (Qırım Türkçesi) <tilde-birlik-meydan@lists."
 "sourceforge.net>\n"
-"Language: \n"
+"Language: crh\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: UTF-8\n"
 "Plural-Forms: nplurals=1; plural=0\n"
 
-#: ../data/baobab.desktop.in.in.h:1 ../src/baobab-window.vala:170
+#: data/org.gnome.baobab.appdata.xml.in:6 data/org.gnome.baobab.desktop.in.in:3
+#: src/baobab-main-window.ui:44
 msgid "Disk Usage Analyzer"
 msgstr "Disk Qullanımı Tahlilcisi"
 
-#: ../data/baobab.desktop.in.in.h:2
+#: data/org.gnome.baobab.appdata.xml.in:7 data/org.gnome.baobab.desktop.in.in:4
 msgid "Check folder sizes and available disk space"
 msgstr "Cilbent ölçülerini ve faydalanışlı disk fezasını teşker"
 
-#: ../data/baobab.desktop.in.in.h:3
+#: data/org.gnome.baobab.appdata.xml.in:9
+msgid ""
+"A simple application to keep your disk usage and available space under "
+"control."
+msgstr ""
+
+#: data/org.gnome.baobab.appdata.xml.in:12
+msgid ""
+"Disk Usage Analyzer can scan specific folders, storage devices and online "
+"accounts. It provides both a tree and a graphical representation showing the "
+"size of each folder, making it easy to identify where disk space is wasted."
+msgstr ""
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.baobab.desktop.in.in:6
 msgid "storage;space;cleanup;"
 msgstr "mağaz;feza;temizlik;temizle;"
 
-#: ../data/org.gnome.baobab.gschema.xml.in.h:1
+# tr
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/org.gnome.baobab.desktop.in.in:10
+#, fuzzy
+msgid "baobab"
+msgstr "Baobab"
+
+#: data/org.gnome.baobab.gschema.xml.in:9
 msgid "Excluded partitions URIs"
 msgstr "Haric tutulğan taqsimler URI'ları"
 
-#: ../data/org.gnome.baobab.gschema.xml.in.h:2
+#: data/org.gnome.baobab.gschema.xml.in:10
 msgid "A list of URIs for partitions to be excluded from scanning."
 msgstr "Taramada haric tutulacaq taqsimler içün bir URI listesi."
 
-#: ../data/org.gnome.baobab.gschema.xml.in.h:3
+#: data/org.gnome.baobab.gschema.xml.in:20
 msgid "Active Chart"
 msgstr "Faal Grafik"
 
-#: ../data/org.gnome.baobab.gschema.xml.in.h:4
+#: data/org.gnome.baobab.gschema.xml.in:21
 msgid "Which type of chart should be displayed."
 msgstr "Qaysı grafik türüniñ kösterilecegi."
 
-#: ../data/org.gnome.baobab.gschema.xml.in.h:5
+#: data/org.gnome.baobab.gschema.xml.in:25
 msgid "Window size"
 msgstr "Pencere ölçüsi"
 
-#: ../data/org.gnome.baobab.gschema.xml.in.h:6
+#: data/org.gnome.baobab.gschema.xml.in:26
 msgid "The initial size of the window"
 msgstr "Pencereniñ başlanğıç ölçüsi"
 
-#: ../data/org.gnome.baobab.gschema.xml.in.h:7
+#: data/org.gnome.baobab.gschema.xml.in:30
 msgid "Window state"
 msgstr "Pencere durumı"
 
 # tüklü
-#: ../data/org.gnome.baobab.gschema.xml.in.h:8
+#: data/org.gnome.baobab.gschema.xml.in:31
 msgid "The GdkWindowState of the window"
 msgstr "Pencereni içün GdkWindowState"
 
-#: ../src/baobab-application.vala:30
+#: src/baobab-application.vala:28
 msgid "Print version information and exit"
 msgstr "Sürüm malümatını bastır ve çıq"
 
-#: ../src/baobab-application.vala:106
-msgid "- Disk Usage Analyzer"
-msgstr "- Disk Qullanımı Tahlilcisi"
-
-#: ../src/baobab-cellrenderers.vala:100
+#: src/baobab-cellrenderers.vala:91
 #, c-format
 msgid "%d item"
 msgid_plural "%d items"
 msgstr[0] "%d aded"
 
-# tr
-#: ../src/baobab-chart.c:186
-msgid "Maximum depth"
-msgstr "Azami derinlik"
+#. Translators: when the last modified time is unknown
+#: src/baobab-cellrenderers.vala:101 src/baobab-location-list.vala:70
+msgid "Unknown"
+msgstr ""
+
+#. Translators: when the last modified time is today
+#: src/baobab-cellrenderers.vala:110
+msgid "Today"
+msgstr ""
+
+#. Translators: when the last modified time is "days" days ago
+#: src/baobab-cellrenderers.vala:114
+#, c-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+
+#. Translators: when the last modified time is "months" months ago
+#: src/baobab-cellrenderers.vala:118
+#, c-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] ""
+
+#. Translators: when the last modified time is "years" years ago
+#: src/baobab-cellrenderers.vala:122
+#, c-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] ""
+
+#: src/baobab-location-list.ui:17
+msgid "This Computer"
+msgstr ""
 
 # tr
-#: ../src/baobab-chart.c:187
-msgid "The maximum depth drawn in the chart from the root"
-msgstr "Kökten çizelgenin çizileceği azami derinlik"
+#: src/baobab-location-list.ui:47
+#, fuzzy
+msgid "Remote Locations"
+msgstr "Özel Konum"
+
+#: src/baobab-location-list.vala:58
+#, c-format
+msgid "%s Total"
+msgstr ""
 
 # tr
-#: ../src/baobab-chart.c:196
-msgid "Chart model"
-msgstr "Çizelge modeli"
+#: src/baobab-location-list.vala:61
+#, fuzzy, c-format
+msgid "%s Available"
+msgstr "Mevcut"
+
+#. useful for some remote mounts where we don't know the
+#. size but do have a usage figure
+#: src/baobab-location-list.vala:75
+#, c-format
+msgid "%s Used"
+msgstr ""
 
 # tr
-#: ../src/baobab-chart.c:197
-msgid "Set the model of the chart"
-msgstr "Çizelgenin modelini ayarlayın"
-
-# tr
-#: ../src/baobab-chart.c:204
-msgid "Chart root node"
-msgstr "Çizelge kök düğümü"
-
-# tr
-#: ../src/baobab-chart.c:205
-msgid "Set the root node from the model"
-msgstr "Modelden kök düğümü atan"
-
-#: ../src/baobab-chart.c:898
-msgid "_Move to parent folder"
-msgstr "Baba cilbentke _avuştır"
-
-# tr
-#: ../src/baobab-chart.c:902
-msgid "Zoom _in"
-msgstr "_Yaqınlaştır"
-
-# tr
-#: ../src/baobab-chart.c:906
-msgid "Zoom _out"
-msgstr "_Uzaqlaştır"
-
-# tr
-#: ../src/baobab-location.vala:77
+#: src/baobab-location.vala:72
 msgid "Home folder"
 msgstr "Ev cilbenti"
 
-#: ../src/baobab-location.vala:123
-msgid "Main volume"
-msgstr "Ana cılt"
+#: src/baobab-location.vala:108
+msgid "Computer"
+msgstr ""
 
-#: ../src/baobab-main-window.ui.h:1
+#: src/baobab-main-window.ui:7
 msgid "Scan Folder…"
 msgstr "Cilbentni Tara…"
 
-#: ../src/baobab-main-window.ui.h:2
-msgid "Scan Remote Folder…"
-msgstr "Uzaqtaki Cilbentni Tara…"
+# tr
+#: src/baobab-main-window.ui:20 src/menus.ui:25
+msgid "_Open Folder"
+msgstr "_Klasör Aç"
 
-#: ../src/baobab-main-window.ui.h:3
-msgid "Devices and locations"
-msgstr "Cihazlar ve Qonumlar"
+#: src/baobab-main-window.ui:29 src/menus.ui:29
+msgid "_Copy Path to Clipboard"
+msgstr "Yolaqnı Tüyreme-tahtasına _Kopiyala"
 
-#: ../src/baobab-main-window.ui.h:4
+#: src/baobab-main-window.ui:38 src/menus.ui:33
+msgid "Mo_ve to Trash"
+msgstr "Çöp'ke _Avuştır"
+
+#: src/baobab-main-window.ui:168
 msgid "Close"
 msgstr "Qapat"
 
 # tr
-#: ../src/baobab-main-window.ui.h:5
+#: src/baobab-main-window.ui:224
 msgid "Folder"
 msgstr "Cilbent"
 
 # tr
-#: ../src/baobab-main-window.ui.h:6
-msgid "Usage"
-msgstr "Kullanım"
-
-# tr
-#: ../src/baobab-main-window.ui.h:7
+#: src/baobab-main-window.ui:251
 msgid "Size"
 msgstr "Boyut"
 
 # tr
-#: ../src/baobab-main-window.ui.h:8
+#: src/baobab-main-window.ui:271
 msgid "Contents"
 msgstr "İçindekiler"
 
+#: src/baobab-main-window.ui:289
+#, fuzzy
+msgid "Modified"
+msgstr "Deñiştirilgeni Tarih"
+
 # tr
-#: ../src/baobab-main-window.ui.h:9
+#: src/baobab-main-window.ui:334
 msgid "Rings Chart"
 msgstr "Halqalar Çizelgesi"
 
 # tüklü
-#: ../src/baobab-main-window.ui.h:10
+#: src/baobab-main-window.ui:346
 msgid "Treemap Chart"
 msgstr "Terek Haritası Çizelgesi"
 
 # tr
-#: ../src/baobab-main-window.ui.h:11
-msgid "_Open Folder"
-msgstr "_Klasör Aç"
-
-#: ../src/baobab-main-window.ui.h:12
-msgid "_Copy Path to Clipboard"
-msgstr "Yolaqnı Tüyreme-tahtasına _Kopiyala"
-
-#: ../src/baobab-main-window.ui.h:13
-msgid "Mo_ve to Trash"
-msgstr "Çöp'ke _Avuştır"
-
-#: ../src/baobab-menu.ui.h:1
-msgid "_Help"
-msgstr "_Yardım"
-
-#: ../src/baobab-menu.ui.h:2
-msgid "_About"
-msgstr "_Haqqında"
-
-#: ../src/baobab-menu.ui.h:3
-msgid "_Quit"
-msgstr "_Çıq"
-
-#: ../src/baobab-menu.ui.h:4
-msgid "_Analyzer"
-msgstr "_Tahlilci"
-
-# tr
-#: ../src/baobab-menu.ui.h:5
-msgid "_Scan Home"
-msgstr "Evni _Tara"
-
-#: ../src/baobab-menu.ui.h:6
-msgid "Scan F_older…"
-msgstr "_Cilbentni Tara…"
-
-#: ../src/baobab-menu.ui.h:7
-msgid "Scan Remote Fo_lder…"
-msgstr "Uzaqtaki _Cilbentni Tara…"
-
-#: ../src/baobab-menu.ui.h:8
-msgid "_View"
-msgstr "_Körünim"
-
-#: ../src/baobab-menu.ui.h:9
-msgid "_Reload"
-msgstr "Ke_ne yükle"
-
-#: ../src/baobab-menu.ui.h:10
-msgid "_Expand All"
-msgstr "Hepsini _Cayıldır"
-
-# tüklü
-#: ../src/baobab-menu.ui.h:11
-msgid "_Collapse All"
-msgstr "Hepsini _Eştir"
-
-# tr
-#: ../src/baobab-window.vala:216
+#: src/baobab-window.vala:189
 msgid "Select Folder"
 msgstr "Bir Klasör Seçin"
 
-#: ../src/baobab-window.vala:266
+#: src/baobab-window.vala:191
+msgid "_Cancel"
+msgstr ""
+
+#: src/baobab-window.vala:192
+msgid "_Open"
+msgstr "_Aç"
+
+#: src/baobab-window.vala:198
+msgid "Recursively analyze mount points"
+msgstr ""
+
+#: src/baobab-window.vala:233
 msgid "Could not analyze volume."
 msgstr "Cılt tahlil etilamadı."
 
+#: src/baobab-window.vala:265
+msgid "Failed to show help"
+msgstr ""
+
 # tr
-#: ../src/baobab-window.vala:317
+#: src/baobab-window.vala:284
 msgid "Baobab"
 msgstr "Baobab"
 
 # tr
-#: ../src/baobab-window.vala:320
+#: src/baobab-window.vala:287
 msgid "A graphical tool to analyze disk usage."
 msgstr "Disk kullanımını analiz etmek için grafiksel bir araç."
 
-#: ../src/baobab-window.vala:325
+#: src/baobab-window.vala:292
 msgid "translator-credits"
 msgstr "Reşat SABIQ <tilde.birlik@gmail.com>"
 
-#: ../src/baobab-window.vala:569
-#, c-format
-msgid "Could not scan folder \"%s\" or some of the folders it contains."
+# tr
+#: src/baobab-window.vala:361
+#, fuzzy
+msgid "Failed to open file"
+msgstr "%s dosyasını açmak imkansız"
+
+# tr
+#: src/baobab-window.vala:381
+#, fuzzy
+msgid "Failed to move file to the trash"
+msgstr "Dosya Çöpe taşınamadı"
+
+#: src/baobab-window.vala:485
+#, fuzzy
+msgid "Devices & Locations"
+msgstr "Cihazlar ve Qonumlar"
+
+# tr
+#: src/baobab-window.vala:546
+#, fuzzy, c-format
+msgid "Could not scan folder \"%s\""
+msgstr "\"%s\" klasörü açılamadı"
+
+#: src/baobab-window.vala:549
+#, fuzzy, c-format
+msgid "Could not scan some of the folders contained in \"%s\""
 msgstr "Cilbent \"%s\" yaki ihtiva etkeni bazı cilbentler taranamadı."
 
 # tr
+#: src/baobab-window.vala:568
+#, fuzzy
+msgid "Could not detect occupied disk sizes."
+msgstr "Hiçbir bağlama noktası tespit edilemedi."
+
+#: src/baobab-window.vala:568
+msgid "Apparent sizes are shown instead."
+msgstr ""
+
+# tr
 #. || is_virtual_filesystem ()
-#: ../src/baobab-window.vala:588 ../src/baobab-window.vala:594
+#: src/baobab-window.vala:585 src/baobab-window.vala:591
 #, c-format
 msgid "\"%s\" is not a valid folder"
 msgstr "\"%s\" geçerli bir klasör değil"
 
 # tr
-#: ../src/baobab-window.vala:589 ../src/baobab-window.vala:595
+#: src/baobab-window.vala:586 src/baobab-window.vala:592
 msgid "Could not analyze disk usage."
 msgstr "Disk kullanımını analiz edilemedi."
+
+#: src/menus.ui:7
+msgid "_Help"
+msgstr "_Yardım"
+
+#: src/menus.ui:12
+msgid "_About"
+msgstr "_Haqqında"
+
+#: src/menus.ui:16
+msgid "_Quit"
+msgstr "_Çıq"
+
+#: src/menus.ui:39
+#, fuzzy
+msgid "Go to _parent folder"
+msgstr "Baba cilbentke _avuştır"
+
+# tr
+#: src/menus.ui:45
+msgid "Zoom _in"
+msgstr "_Yaqınlaştır"
+
+# tr
+#: src/menus.ui:49
+msgid "Zoom _out"
+msgstr "_Uzaqlaştır"
+
+#~ msgid "- Disk Usage Analyzer"
+#~ msgstr "- Disk Qullanımı Tahlilcisi"
+
+# tr
+#~ msgid "Maximum depth"
+#~ msgstr "Azami derinlik"
+
+# tr
+#~ msgid "The maximum depth drawn in the chart from the root"
+#~ msgstr "Kökten çizelgenin çizileceği azami derinlik"
+
+# tr
+#~ msgid "Chart model"
+#~ msgstr "Çizelge modeli"
+
+# tr
+#~ msgid "Set the model of the chart"
+#~ msgstr "Çizelgenin modelini ayarlayın"
+
+# tr
+#~ msgid "Chart root node"
+#~ msgstr "Çizelge kök düğümü"
+
+# tr
+#~ msgid "Set the root node from the model"
+#~ msgstr "Modelden kök düğümü atan"
+
+#~ msgid "Main volume"
+#~ msgstr "Ana cılt"
+
+#~ msgid "Scan Remote Folder…"
+#~ msgstr "Uzaqtaki Cilbentni Tara…"
+
+# tr
+#~ msgid "Usage"
+#~ msgstr "Kullanım"
+
+#~ msgid "_Analyzer"
+#~ msgstr "_Tahlilci"
+
+# tr
+#~ msgid "_Scan Home"
+#~ msgstr "Evni _Tara"
+
+#~ msgid "Scan F_older…"
+#~ msgstr "_Cilbentni Tara…"
+
+#~ msgid "Scan Remote Fo_lder…"
+#~ msgstr "Uzaqtaki _Cilbentni Tara…"
+
+#~ msgid "_View"
+#~ msgstr "_Körünim"
+
+#~ msgid "_Reload"
+#~ msgstr "Ke_ne yükle"
+
+#~ msgid "_Expand All"
+#~ msgstr "Hepsini _Cayıldır"
+
+# tüklü
+#~ msgid "_Collapse All"
+#~ msgstr "Hepsini _Eştir"
 
 #~ msgid "Disk Usage Analyzer Preferences"
 #~ msgstr "Disk Qullanımı Tahlilcisi Tercihleri"
@@ -421,10 +540,6 @@ msgstr "Disk kullanımını analiz edilemedi."
 #~ msgstr "Çok fazla argüman. Sadece bir dizin belirtilebilir."
 
 # tr
-#~ msgid "Could not detect any mount point."
-#~ msgstr "Hiçbir bağlama noktası tespit edilemedi."
-
-# tr
 #~ msgid "Without mount points disk usage cannot be analyzed."
 #~ msgstr "Bağlama noktaları olmadan disk kullanımı analiz edilemez."
 
@@ -464,16 +579,8 @@ msgstr "Disk kullanımını analiz edilemedi."
 #~ msgstr "Toplum Boyut"
 
 # tr
-#~ msgid "Available"
-#~ msgstr "Mevcut"
-
-# tr
 #~ msgid "Cannot scan location \"%s\""
 #~ msgstr "Konum \"%s\" taranamadı"
-
-# tr
-#~ msgid "Custom Location"
-#~ msgstr "Özel Konum"
 
 # tr
 #~ msgid "SSH"
@@ -572,20 +679,12 @@ msgstr "Disk kullanımını analiz edilemedi."
 #~ msgstr "Dışlanan bir klasörü kontrol edilemez!"
 
 # tr
-#~ msgid "Could not open folder \"%s\""
-#~ msgstr "\"%s\" klasörü açılamadı"
-
-# tr
 #~ msgid "There is no installed viewer capable of displaying the folder."
 #~ msgstr "Klasörü gösterebilecek bir görüntüleyici yüklü değil."
 
 # tr
 #~ msgid "Could not move \"%s\" to the Trash"
 #~ msgstr "\"%s\" Çöpe taşınamadı"
-
-# tr
-#~ msgid "Could not move file to the Trash"
-#~ msgstr "Dosya Çöpe taşınamadı"
 
 # tr
 #~ msgid "Details: %s"
@@ -2220,9 +2319,6 @@ msgstr "Disk kullanımını analiz edilemedi."
 #~ msgid "Moving \"%s\" failed: %s."
 #~ msgstr "\"%s\" taşınamadı: %s."
 
-#~ msgid "_Open"
-#~ msgstr "_Aç"
-
 #~ msgid "_Open with %s"
 #~ msgstr "%s ile _Aç"
 
@@ -2596,9 +2692,6 @@ msgstr "Disk kullanımını analiz edilemedi."
 #~ msgid "Type"
 #~ msgstr "Tür"
 
-#~ msgid "Date Modified"
-#~ msgstr "Deñiştirilgeni Tarih"
-
 #~ msgid "_Name contains:"
 #~ msgstr "_İsim ihtiva ete:"
 
@@ -2789,10 +2882,6 @@ msgstr "Disk kullanımını analiz edilemedi."
 
 #~ msgid "_Regular Expression:"
 #~ msgstr "_Muntazam İfade:"
-
-# tr
-#~ msgid "Impossible to open the file %s"
-#~ msgstr "%s dosyasını açmak imkansız"
 
 # tr
 #~ msgid "Filter name is empty!"

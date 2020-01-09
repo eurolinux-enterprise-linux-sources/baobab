@@ -14,8 +14,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 2.12\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-06 14:29-0400\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=baobab\n"
+"POT-Creation-Date: 2016-11-07 17:00+0100\n"
 "PO-Revision-Date: 2005-03-28 19:35-0700\n"
 "Last-Translator: Steve Murphy <murf@e-tools.com>\n"
 "Language-Team: Kinyarwanda <translation-team-rw@lists.sourceforge.net>\n"
@@ -25,494 +26,184 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../data/baobab.desktop.in.in.h:1
-msgid "Check folder sizes and available disk space"
-msgstr ""
-
-#: ../data/baobab.desktop.in.in.h:2 ../data/baobab-main-window.ui.h:2
+#: data/org.gnome.baobab.appdata.xml.in:6 data/org.gnome.baobab.desktop.in.in:3
+#: src/baobab-main-window.ui:44
 msgid "Disk Usage Analyzer"
 msgstr ""
 
-#: ../data/baobab-preferences-dialog.ui.h:1
-msgid "Disk Usage Analyzer Preferences"
+#: data/org.gnome.baobab.appdata.xml.in:7 data/org.gnome.baobab.desktop.in.in:4
+msgid "Check folder sizes and available disk space"
 msgstr ""
 
-#: ../data/baobab-preferences-dialog.ui.h:2
-#, fuzzy
-msgid "Select _devices to include in filesystem scan:"
-msgstr "Gushaka Ihitamo Ikindi"
-
-#: ../data/baobab-preferences-dialog.ui.h:3
-msgid "_Monitor changes to your home folder"
+#: data/org.gnome.baobab.appdata.xml.in:9
+msgid ""
+"A simple application to keep your disk usage and available space under "
+"control."
 msgstr ""
 
-#: ../data/org.gnome.baobab.gschema.xml.in.h:1
-msgid "A list of URIs for partitions to be excluded from scanning."
+#: data/org.gnome.baobab.appdata.xml.in:12
+msgid ""
+"Disk Usage Analyzer can scan specific folders, storage devices and online "
+"accounts. It provides both a tree and a graphical representation showing the "
+"size of each folder, making it easy to identify where disk space is wasted."
 msgstr ""
 
-#: ../data/org.gnome.baobab.gschema.xml.in.h:2
-msgid "Active Chart"
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.baobab.desktop.in.in:6
+msgid "storage;space;cleanup;"
 msgstr ""
 
-#: ../data/org.gnome.baobab.gschema.xml.in.h:3
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/org.gnome.baobab.desktop.in.in:10
+msgid "baobab"
+msgstr ""
+
+#: data/org.gnome.baobab.gschema.xml.in:9
 msgid "Excluded partitions URIs"
 msgstr ""
 
-#: ../data/org.gnome.baobab.gschema.xml.in.h:4
-msgid "Monitor Home"
+#: data/org.gnome.baobab.gschema.xml.in:10
+msgid "A list of URIs for partitions to be excluded from scanning."
 msgstr ""
 
-#: ../data/org.gnome.baobab.gschema.xml.in.h:5
-msgid "Statusbar is Visible"
+#: data/org.gnome.baobab.gschema.xml.in:20
+msgid "Active Chart"
 msgstr ""
 
-#: ../data/org.gnome.baobab.gschema.xml.in.h:6
-msgid "Toolbar is Visible"
-msgstr ""
-
-#: ../data/org.gnome.baobab.gschema.xml.in.h:7
-msgid "Whether any change to the home directory should be monitored."
-msgstr ""
-
-#: ../data/org.gnome.baobab.gschema.xml.in.h:8
-msgid "Whether the status bar at the bottom of main window should be visible."
-msgstr ""
-
-#: ../data/org.gnome.baobab.gschema.xml.in.h:9
-msgid "Whether the toolbar should be visible in main window."
-msgstr ""
-
-#: ../data/org.gnome.baobab.gschema.xml.in.h:10
+#: data/org.gnome.baobab.gschema.xml.in:21
 msgid "Which type of chart should be displayed."
 msgstr ""
 
-#: ../data/baobab-main-window.ui.h:1
-msgid "All_ocated Space"
+#: data/org.gnome.baobab.gschema.xml.in:25
+msgid "Window size"
 msgstr ""
 
-#: ../data/baobab-main-window.ui.h:3
-msgid "Refresh"
+#: data/org.gnome.baobab.gschema.xml.in:26
+msgid "The initial size of the window"
 msgstr ""
 
-#: ../data/baobab-main-window.ui.h:4
-msgid "S_can Remote Folder..."
+#: data/org.gnome.baobab.gschema.xml.in:30
+msgid "Window state"
 msgstr ""
 
-#: ../data/baobab-main-window.ui.h:5
-#, fuzzy
-msgid "Scan F_older..."
-msgstr "Kubika in Ububiko"
-
-#: ../data/baobab-main-window.ui.h:6
-#, fuzzy
-msgid "Scan Filesystem"
-msgstr "Idosiye Sisitemu Ubwoko"
-
-# sfx2/source\explorer\explorer.src:STR_SFX_FOLDER.text
-#: ../data/baobab-main-window.ui.h:7
-#, fuzzy
-msgid "Scan Folder"
-msgstr "Ububiko"
-
-#: ../data/baobab-main-window.ui.h:8
-msgid "Scan Home"
+#: data/org.gnome.baobab.gschema.xml.in:31
+msgid "The GdkWindowState of the window"
 msgstr ""
 
-#: ../data/baobab-main-window.ui.h:9
-msgid "Scan Remote Folder"
+#: src/baobab-application.vala:28
+msgid "Print version information and exit"
 msgstr ""
 
-#: ../data/baobab-main-window.ui.h:10
-msgid "Scan _Filesystem"
-msgstr ""
-
-#: ../data/baobab-main-window.ui.h:11
-#, fuzzy
-msgid "Scan _Home Folder"
-msgstr "Kubika in Ububiko"
-
-#: ../data/baobab-main-window.ui.h:12
-#, fuzzy
-msgid "Scan a folder"
-msgstr "Kubika in Ububiko"
-
-#: ../data/baobab-main-window.ui.h:13
-msgid "Scan a remote folder"
-msgstr ""
-
-#: ../data/baobab-main-window.ui.h:14
-#, fuzzy
-msgid "Scan filesystem"
-msgstr "Ubwoko"
-
-#: ../data/baobab-main-window.ui.h:15
-#, fuzzy
-msgid "Scan home folder"
-msgstr "Kubika in Ububiko"
-
-#: ../data/baobab-main-window.ui.h:16
-msgid "St_atusbar"
-msgstr ""
-
-#: ../data/baobab-main-window.ui.h:17
-msgid "Stop scanning"
-msgstr ""
-
-#: ../data/baobab-main-window.ui.h:18
-msgid "_Analyzer"
-msgstr ""
-
-#: ../data/baobab-main-window.ui.h:19
-#, fuzzy
-msgid "_Collapse All"
-msgstr "Byose Imbariro"
-
-# #-#-#-#-#  sc.pot (Gnome 2.12)  #-#-#-#-#
-# sc/source\ui\dbgui\validate.src:TP_VALIDATION_INPUTHELP.FL_CONTENT.text
-# #-#-#-#-#  sc.pot (Gnome 2.12)  #-#-#-#-#
-# sc/source\ui\dbgui\validate.src:TP_VALIDATION_ERROR.FL_CONTENT.text
-# #-#-#-#-#  sc.pot (Gnome 2.12)  #-#-#-#-#
-# sc/source\ui\navipi\navipi.src:RID_SCDLG_NAVIGATOR.TBX_CMD.IID_ZOOMOUT.text
-# #-#-#-#-#  sc.pot (Gnome 2.12)  #-#-#-#-#
-# sc/source\ui\navipi\navipi.src:SCSTR_CONTENT_ROOT.text
-#: ../data/baobab-main-window.ui.h:20
-#, fuzzy
-msgid "_Contents"
-msgstr "Ibigize"
-
-# #-#-#-#-#  basctl.pot (Gnome 2.12)  #-#-#-#-#
-# basctl/source\basicide\basidesh.src:RID_BASICMENU.MN_EDIT.text
-# #-#-#-#-#  basctl.pot (Gnome 2.12)  #-#-#-#-#
-# basctl/source\basicide\basidesh.src:RID_BASICPLUGINMENU.MN_PLEDIT.text
-# #-#-#-#-#  basctl.pot (Gnome 2.12)  #-#-#-#-#
-# basctl/source\basicide\macrodlg.src:RID_MACROCHOOSER.RID_PB_EDIT.text
-# #-#-#-#-#  basctl.pot (Gnome 2.12)  #-#-#-#-#
-# basctl/source\basicide\moduldlg.src:RID_TP_MODULS.RID_PB_EDIT.text
-# #-#-#-#-#  basctl.pot (Gnome 2.12)  #-#-#-#-#
-# basctl/source\basicide\moduldlg.src:RID_TP_LIBS.RID_PB_EDIT.text
-#: ../data/baobab-main-window.ui.h:21
-#, fuzzy
-msgid "_Edit"
-msgstr "Guhindura"
-
-#: ../data/baobab-main-window.ui.h:22
-msgid "_Expand All"
-msgstr ""
-
-#: ../data/baobab-main-window.ui.h:23
-#, fuzzy
-msgid "_Help"
-msgstr "Ifashayobora"
-
-#: ../data/baobab-main-window.ui.h:24
-msgid "_Toolbar"
-msgstr ""
-
-# #-#-#-#-#  basctl.pot (Gnome 2.12)  #-#-#-#-#
-# basctl/source\basicide\basidesh.src:RID_BASICMENU.MN_VIEW.text
-# #-#-#-#-#  basctl.pot (Gnome 2.12)  #-#-#-#-#
-# basctl/source\basicide\basidesh.src:RID_BASICPLUGINMENU.MN_PLVIEW.text
-#: ../data/baobab-main-window.ui.h:25
-#, fuzzy
-msgid "_View"
-msgstr "Kureba"
-
-# 5374
-#: ../src/baobab.c:136 ../src/baobab.c:388
-#, fuzzy
-msgid "Scanning..."
-msgstr "Gushakisha..."
-
-#: ../src/baobab.c:182
-#, fuzzy
-msgid "Total filesystem capacity:"
-msgstr "Ubwoko"
-
-#: ../src/baobab.c:183
-msgid "used:"
-msgstr ""
-
-#: ../src/baobab.c:184
-#, fuzzy
-msgid "available:"
-msgstr "Amahitamo"
-
-#. set statusbar, percentage and allocated/normal size
-#: ../src/baobab.c:273 ../src/baobab.c:330 ../src/callbacks.c:265
-msgid "Calculating percentage bars..."
-msgstr ""
-
-#: ../src/baobab.c:284 ../src/baobab.c:1325 ../src/callbacks.c:269
-msgid "Ready"
-msgstr ""
-
-#: ../src/baobab.c:421
-#, fuzzy
-msgid "Total filesystem capacity"
-msgstr "Ubwoko"
-
-#: ../src/baobab.c:443
-#, fuzzy
-msgid "Total filesystem usage"
-msgstr "Ubwoko"
-
-#: ../src/baobab.c:484
-msgid "contains hardlinks for:"
-msgstr ""
-
-#: ../src/baobab.c:493
+#: src/baobab-cellrenderers.vala:91
 #, c-format
-msgid "%5d item"
-msgid_plural "%5d items"
+msgid "%d item"
+msgid_plural "%d items"
 msgstr[0] ""
 msgstr[1] ""
 
-#: ../src/baobab.c:620
-#, fuzzy
-msgid "Could not initialize monitoring"
-msgstr "gutangiza"
-
-#: ../src/baobab.c:621
-msgid "Changes to your home folder will not be monitored."
+#. Translators: when the last modified time is unknown
+#: src/baobab-cellrenderers.vala:101 src/baobab-location-list.vala:70
+msgid "Unknown"
 msgstr ""
 
-#: ../src/baobab.c:945
-#, fuzzy
-msgid "Move to parent folder"
-msgstr "in Ububiko"
-
-#: ../src/baobab.c:949
-msgid "Zoom in"
+#. Translators: when the last modified time is today
+#: src/baobab-cellrenderers.vala:110
+msgid "Today"
 msgstr ""
 
-#: ../src/baobab.c:953
-msgid "Zoom out"
+#. Translators: when the last modified time is "days" days ago
+#: src/baobab-cellrenderers.vala:114
+#, c-format
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Translators: when the last modified time is "months" months ago
+#: src/baobab-cellrenderers.vala:118
+#, c-format
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Translators: when the last modified time is "years" years ago
+#: src/baobab-cellrenderers.vala:122
+#, c-format
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/baobab-location-list.ui:17
+msgid "This Computer"
 msgstr ""
 
-#: ../src/baobab.c:957
-#, fuzzy
-msgid "Save screenshot"
-msgstr "Kubika"
-
-#: ../src/baobab.c:1143
-msgid "View as Rings Chart"
+#: src/baobab-location-list.ui:47
+msgid "Remote Locations"
 msgstr ""
 
-#: ../src/baobab.c:1145
-msgid "View as Treemap Chart"
+#: src/baobab-location-list.vala:58
+#, c-format
+msgid "%s Total"
 msgstr ""
 
-#: ../src/baobab.c:1250
-msgid "Show version"
-msgstr ""
-
-#: ../src/baobab.c:1251
-msgid "[DIRECTORY]"
-msgstr ""
-
-#: ../src/baobab.c:1281
-msgid "Too many arguments. Only one directory can be specified."
-msgstr ""
-
-#: ../src/baobab.c:1298
-#, fuzzy
-msgid "Could not detect any mount point."
-msgstr "OYA Guhitamo a Inyandiko Izina:"
-
-#: ../src/baobab.c:1300
-msgid "Without mount points disk usage cannot be analyzed."
-msgstr ""
-
-#: ../src/baobab-chart.c:205
-msgid "Maximum depth"
-msgstr ""
-
-#: ../src/baobab-chart.c:206
-msgid "The maximum depth drawn in the chart from the root"
-msgstr ""
-
-#: ../src/baobab-chart.c:215
-msgid "Chart model"
-msgstr ""
-
-#: ../src/baobab-chart.c:216
-msgid "Set the model of the chart"
-msgstr ""
-
-#: ../src/baobab-chart.c:223
-msgid "Chart root node"
-msgstr ""
-
-#: ../src/baobab-chart.c:224
-msgid "Set the root node from the model"
-msgstr ""
-
-#: ../src/baobab-chart.c:1690
-msgid "Cannot create pixbuf image!"
-msgstr ""
-
-#. Popup the File chooser dialog
-#: ../src/baobab-chart.c:1700
-#, fuzzy
-msgid "Save Snapshot"
-msgstr "Kubika"
-
-#: ../src/baobab-chart.c:1727
-msgid "_Image type:"
-msgstr ""
-
-#: ../src/baobab-prefs.c:172
-msgid "Scan"
-msgstr ""
-
-#: ../src/baobab-prefs.c:179
-msgid "Device"
-msgstr ""
-
-#: ../src/baobab-prefs.c:187
-msgid "Mount Point"
-msgstr ""
-
-#: ../src/baobab-prefs.c:195
-#, fuzzy
-msgid "Filesystem Type"
-msgstr "Idosiye Sisitemu Ubwoko"
-
-#: ../src/baobab-prefs.c:203
-msgid "Total Size"
-msgstr ""
-
-#: ../src/baobab-prefs.c:212
-#, fuzzy
-msgid "Available"
+#: src/baobab-location-list.vala:61
+#, fuzzy, c-format
+msgid "%s Available"
 msgstr "Amahitamo"
 
-#: ../src/baobab-remote-connect-dialog.c:77
+#. useful for some remote mounts where we don't know the
+#. size but do have a usage figure
+#: src/baobab-location-list.vala:75
 #, c-format
-msgid "Cannot scan location \"%s\""
+msgid "%s Used"
 msgstr ""
 
-#: ../src/baobab-remote-connect-dialog.c:175
-msgid "Custom Location"
-msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:177
-msgid "SSH"
-msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:180
-msgid "Public FTP"
-msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:182
-msgid "FTP (with login)"
-msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:185
-msgid "Windows share"
-msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:187
-msgid "WebDAV (HTTP)"
-msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:189
-msgid "Secure WebDAV (HTTPS)"
-msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:249
-msgid "Cannot Connect to Server. You must enter a name for the server."
-msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:252
-msgid "Please enter a name and try again."
-msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:441
-msgid "_Location (URI):"
-msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:463
+#: src/baobab-location.vala:72
 #, fuzzy
-msgid "_Server:"
-msgstr "Seriveri"
+msgid "Home folder"
+msgstr "Kubika in Ububiko"
 
-#: ../src/baobab-remote-connect-dialog.c:482
-msgid "Optional information:"
+#: src/baobab-location.vala:108
+msgid "Computer"
 msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:494
-msgid "_Share:"
-msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:515
-#, fuzzy
-msgid "_Port:"
-msgstr "Impagikiro:"
 
 # sfx2/source\explorer\explorer.src:STR_SFX_FOLDER.text
-#: ../src/baobab-remote-connect-dialog.c:535
+#: src/baobab-main-window.ui:7
 #, fuzzy
-msgid "_Folder:"
+msgid "Scan Folder…"
 msgstr "Ububiko"
 
-# basctl/source\basicide\moduldlg.src:RID_DLG_NEWLIB.RID_FT_NEWLIB.text
-#: ../src/baobab-remote-connect-dialog.c:555
+# sfx2/source\explorer\explorer.src:STR_SFX_FOLDER.text
+#: src/baobab-main-window.ui:20 src/menus.ui:25
 #, fuzzy
-msgid "_User Name:"
-msgstr "Izina:"
+msgid "_Open Folder"
+msgstr "Ububiko"
 
-# basctl/source\basicide\moduldlg.src:RID_DLG_NEWLIB.RID_FT_NEWLIB.text
-#: ../src/baobab-remote-connect-dialog.c:576
+#: src/baobab-main-window.ui:29 src/menus.ui:29
+msgid "_Copy Path to Clipboard"
+msgstr ""
+
+#: src/baobab-main-window.ui:38 src/menus.ui:33
 #, fuzzy
-msgid "_Domain Name:"
-msgstr "Izina:"
+msgid "Mo_ve to Trash"
+msgstr "Kuri"
 
-# # @name CONNECT_ERROR
-# # @loc none
-#: ../src/baobab-remote-connect-dialog.c:643
-#, fuzzy
-msgid "Connect to Server"
-msgstr "Kwihuza na seriveri ntibishobotse"
-
-#: ../src/baobab-remote-connect-dialog.c:659
-msgid "Service _type:"
-msgstr ""
-
-#: ../src/baobab-remote-connect-dialog.c:778
-msgid "_Scan"
-msgstr ""
-
-#: ../src/baobab-treeview.c:82
-msgid "Rescan your home folder?"
-msgstr ""
-
-#: ../src/baobab-treeview.c:83
-msgid ""
-"The content of your home folder has changed. Select rescan to update the "
-"disk usage details."
-msgstr ""
-
-#: ../src/baobab-treeview.c:84
-msgid "_Rescan"
+#: src/baobab-main-window.ui:168
+msgid "Close"
 msgstr ""
 
 # sfx2/source\explorer\explorer.src:STR_SFX_FOLDER.text
-#: ../src/baobab-treeview.c:222
+#: src/baobab-main-window.ui:224
 msgid "Folder"
 msgstr "Ububiko"
-
-# sfx2/source\doc\doc.src:STR_DOCTYPENAME_MESSAGE.text
-#: ../src/baobab-treeview.c:244
-#, fuzzy
-msgid "Usage"
-msgstr "Ubutumwa"
 
 # #-#-#-#-#  goodies.pot (Gnome 2.12)  #-#-#-#-#
 # goodies/source\filter.vcl\eos2met\dlgeos2.src:DLG_EXPORT_EMET.GRP_SIZE.text
 # #-#-#-#-#  goodies.pot (Gnome 2.12)  #-#-#-#-#
 # goodies/source\filter.vcl\epict\dlgepct.src:DLG_EXPORT_EPCT.GRP_SIZE.text
-#: ../src/baobab-treeview.c:258
+#: src/baobab-main-window.ui:251
 msgid "Size"
 msgstr "Ingano"
 
@@ -524,120 +215,286 @@ msgstr "Ingano"
 # sc/source\ui\navipi\navipi.src:RID_SCDLG_NAVIGATOR.TBX_CMD.IID_ZOOMOUT.text
 # #-#-#-#-#  sc.pot (Gnome 2.12)  #-#-#-#-#
 # sc/source\ui\navipi\navipi.src:SCSTR_CONTENT_ROOT.text
-#: ../src/baobab-treeview.c:274
+#: src/baobab-main-window.ui:271
 #, fuzzy
 msgid "Contents"
 msgstr "Ibigize"
 
+#: src/baobab-main-window.ui:289
+msgid "Modified"
+msgstr ""
+
+#: src/baobab-main-window.ui:334
+msgid "Rings Chart"
+msgstr ""
+
+#: src/baobab-main-window.ui:346
+msgid "Treemap Chart"
+msgstr ""
+
 # sfx2/sdi\sfxslots.src:SID_SELECTALL.text
-#: ../src/baobab-utils.c:72
+#: src/baobab-window.vala:189
 #, fuzzy
 msgid "Select Folder"
 msgstr "Guhitamo Byose"
 
-#. add extra widget
-#: ../src/baobab-utils.c:84
-#, fuzzy
-msgid "_Show hidden folders"
-msgstr "gihishwe Na Inyibutsa Idosiye"
-
-#: ../src/baobab-utils.c:263
-msgid "Cannot check an excluded folder!"
+#: src/baobab-window.vala:191
+msgid "_Cancel"
 msgstr ""
 
-#: ../src/baobab-utils.c:287
-#, fuzzy, c-format
-msgid "\"%s\" is not a valid folder"
-msgstr "%sOYA a LOG IDOSIYE"
+#: src/baobab-window.vala:192
+msgid "_Open"
+msgstr ""
 
-#: ../src/baobab-utils.c:290
+#: src/baobab-window.vala:198
+msgid "Recursively analyze mount points"
+msgstr ""
+
+#: src/baobab-window.vala:233
 #, fuzzy
-msgid "Could not analyze disk usage."
+msgid "Could not analyze volume."
 msgstr "OYA Kubika Inyandiko"
 
-# sfx2/source\explorer\explorer.src:STR_SFX_FOLDER.text
-#: ../src/baobab-utils.c:326
-#, fuzzy
-msgid "_Open Folder"
-msgstr "Ububiko"
-
-#: ../src/baobab-utils.c:332
-#, fuzzy
-msgid "Mo_ve to Trash"
-msgstr "Kuri"
-
-#: ../src/baobab-utils.c:362
-#, fuzzy, c-format
-msgid "Could not open folder \"%s\""
-msgstr "OYA Gufungura Ububiko"
-
-#: ../src/baobab-utils.c:365
-#, fuzzy
-msgid "There is no installed viewer capable of displaying the folder."
-msgstr "ni Oya Bya Inyandiko"
-
-#: ../src/baobab-utils.c:433
-#, fuzzy, c-format
-msgid "Could not move \"%s\" to the Trash"
-msgstr "OYA Kwimura Kuri"
-
-#: ../src/baobab-utils.c:441
-#, fuzzy
-msgid "Could not move file to the Trash"
-msgstr "OYA Kwimura Kuri"
-
-#: ../src/baobab-utils.c:443
-#, c-format
-msgid "Details: %s"
+#: src/baobab-window.vala:265
+msgid "Failed to show help"
 msgstr ""
 
-#: ../src/baobab-utils.c:479
-#, fuzzy
-msgid "There was an error displaying help."
-msgstr "Ikosa Ifashayobora"
-
-#: ../src/callbacks.c:76
-msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version."
-msgstr ""
-
-#: ../src/callbacks.c:81
-msgid ""
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
-"more details."
-msgstr ""
-
-#: ../src/callbacks.c:86
-msgid ""
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 51 "
-"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
-msgstr ""
-
-#: ../src/callbacks.c:101
+#: src/baobab-window.vala:284
 msgid "Baobab"
 msgstr ""
 
-#: ../src/callbacks.c:102
+#: src/baobab-window.vala:287
 msgid "A graphical tool to analyze disk usage."
 msgstr ""
 
-#: ../src/callbacks.c:110
+#: src/baobab-window.vala:292
 #, fuzzy
 msgid "translator-credits"
 msgstr "Umusemuzi"
 
-#: ../src/callbacks.c:208
+#: src/baobab-window.vala:361
 #, fuzzy
-msgid "The document does not exist."
-msgstr "Inyandiko OYA"
+msgid "Failed to open file"
+msgstr "in Ububiko"
 
-#: ../src/callbacks.c:289
+#: src/baobab-window.vala:381
 #, fuzzy
-msgid "The folder does not exist."
-msgstr "Inyandiko OYA"
+msgid "Failed to move file to the trash"
+msgstr "OYA Kwimura Kuri"
+
+#: src/baobab-window.vala:485
+msgid "Devices & Locations"
+msgstr ""
+
+#: src/baobab-window.vala:546
+#, fuzzy, c-format
+msgid "Could not scan folder \"%s\""
+msgstr "OYA Gufungura Ububiko"
+
+#: src/baobab-window.vala:549
+#, fuzzy, c-format
+msgid "Could not scan some of the folders contained in \"%s\""
+msgstr "OYA Gufungura Ububiko"
+
+#: src/baobab-window.vala:568
+#, fuzzy
+msgid "Could not detect occupied disk sizes."
+msgstr "OYA Guhitamo a Inyandiko Izina:"
+
+#: src/baobab-window.vala:568
+msgid "Apparent sizes are shown instead."
+msgstr ""
+
+#. || is_virtual_filesystem ()
+#: src/baobab-window.vala:585 src/baobab-window.vala:591
+#, fuzzy, c-format
+msgid "\"%s\" is not a valid folder"
+msgstr "%sOYA a LOG IDOSIYE"
+
+#: src/baobab-window.vala:586 src/baobab-window.vala:592
+#, fuzzy
+msgid "Could not analyze disk usage."
+msgstr "OYA Kubika Inyandiko"
+
+#: src/menus.ui:7
+#, fuzzy
+msgid "_Help"
+msgstr "Ifashayobora"
+
+#: src/menus.ui:12
+msgid "_About"
+msgstr ""
+
+#: src/menus.ui:16
+msgid "_Quit"
+msgstr ""
+
+#: src/menus.ui:39
+#, fuzzy
+msgid "Go to _parent folder"
+msgstr "in Ububiko"
+
+#: src/menus.ui:45
+msgid "Zoom _in"
+msgstr ""
+
+#: src/menus.ui:49
+msgid "Zoom _out"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Select _devices to include in filesystem scan:"
+#~ msgstr "Gushaka Ihitamo Ikindi"
+
+#, fuzzy
+#~ msgid "Scan F_older..."
+#~ msgstr "Kubika in Ububiko"
+
+#, fuzzy
+#~ msgid "Scan Filesystem"
+#~ msgstr "Idosiye Sisitemu Ubwoko"
+
+#, fuzzy
+#~ msgid "Scan _Home Folder"
+#~ msgstr "Kubika in Ububiko"
+
+#, fuzzy
+#~ msgid "Scan a folder"
+#~ msgstr "Kubika in Ububiko"
+
+#, fuzzy
+#~ msgid "Scan filesystem"
+#~ msgstr "Ubwoko"
+
+#, fuzzy
+#~ msgid "_Collapse All"
+#~ msgstr "Byose Imbariro"
+
+# #-#-#-#-#  sc.pot (Gnome 2.12)  #-#-#-#-#
+# sc/source\ui\dbgui\validate.src:TP_VALIDATION_INPUTHELP.FL_CONTENT.text
+# #-#-#-#-#  sc.pot (Gnome 2.12)  #-#-#-#-#
+# sc/source\ui\dbgui\validate.src:TP_VALIDATION_ERROR.FL_CONTENT.text
+# #-#-#-#-#  sc.pot (Gnome 2.12)  #-#-#-#-#
+# sc/source\ui\navipi\navipi.src:RID_SCDLG_NAVIGATOR.TBX_CMD.IID_ZOOMOUT.text
+# #-#-#-#-#  sc.pot (Gnome 2.12)  #-#-#-#-#
+# sc/source\ui\navipi\navipi.src:SCSTR_CONTENT_ROOT.text
+#, fuzzy
+#~ msgid "_Contents"
+#~ msgstr "Ibigize"
+
+# #-#-#-#-#  basctl.pot (Gnome 2.12)  #-#-#-#-#
+# basctl/source\basicide\basidesh.src:RID_BASICMENU.MN_EDIT.text
+# #-#-#-#-#  basctl.pot (Gnome 2.12)  #-#-#-#-#
+# basctl/source\basicide\basidesh.src:RID_BASICPLUGINMENU.MN_PLEDIT.text
+# #-#-#-#-#  basctl.pot (Gnome 2.12)  #-#-#-#-#
+# basctl/source\basicide\macrodlg.src:RID_MACROCHOOSER.RID_PB_EDIT.text
+# #-#-#-#-#  basctl.pot (Gnome 2.12)  #-#-#-#-#
+# basctl/source\basicide\moduldlg.src:RID_TP_MODULS.RID_PB_EDIT.text
+# #-#-#-#-#  basctl.pot (Gnome 2.12)  #-#-#-#-#
+# basctl/source\basicide\moduldlg.src:RID_TP_LIBS.RID_PB_EDIT.text
+#, fuzzy
+#~ msgid "_Edit"
+#~ msgstr "Guhindura"
+
+# #-#-#-#-#  basctl.pot (Gnome 2.12)  #-#-#-#-#
+# basctl/source\basicide\basidesh.src:RID_BASICMENU.MN_VIEW.text
+# #-#-#-#-#  basctl.pot (Gnome 2.12)  #-#-#-#-#
+# basctl/source\basicide\basidesh.src:RID_BASICPLUGINMENU.MN_PLVIEW.text
+#, fuzzy
+#~ msgid "_View"
+#~ msgstr "Kureba"
+
+# 5374
+#, fuzzy
+#~ msgid "Scanning..."
+#~ msgstr "Gushakisha..."
+
+#, fuzzy
+#~ msgid "Total filesystem capacity:"
+#~ msgstr "Ubwoko"
+
+#, fuzzy
+#~ msgid "available:"
+#~ msgstr "Amahitamo"
+
+#, fuzzy
+#~ msgid "Total filesystem capacity"
+#~ msgstr "Ubwoko"
+
+#, fuzzy
+#~ msgid "Total filesystem usage"
+#~ msgstr "Ubwoko"
+
+#, fuzzy
+#~ msgid "Could not initialize monitoring"
+#~ msgstr "gutangiza"
+
+#, fuzzy
+#~ msgid "Save screenshot"
+#~ msgstr "Kubika"
+
+#, fuzzy
+#~ msgid "Save Snapshot"
+#~ msgstr "Kubika"
+
+#, fuzzy
+#~ msgid "Filesystem Type"
+#~ msgstr "Idosiye Sisitemu Ubwoko"
+
+#, fuzzy
+#~ msgid "_Server:"
+#~ msgstr "Seriveri"
+
+#, fuzzy
+#~ msgid "_Port:"
+#~ msgstr "Impagikiro:"
+
+# sfx2/source\explorer\explorer.src:STR_SFX_FOLDER.text
+#, fuzzy
+#~ msgid "_Folder:"
+#~ msgstr "Ububiko"
+
+# basctl/source\basicide\moduldlg.src:RID_DLG_NEWLIB.RID_FT_NEWLIB.text
+#, fuzzy
+#~ msgid "_User Name:"
+#~ msgstr "Izina:"
+
+# basctl/source\basicide\moduldlg.src:RID_DLG_NEWLIB.RID_FT_NEWLIB.text
+#, fuzzy
+#~ msgid "_Domain Name:"
+#~ msgstr "Izina:"
+
+# # @name CONNECT_ERROR
+# # @loc none
+#, fuzzy
+#~ msgid "Connect to Server"
+#~ msgstr "Kwihuza na seriveri ntibishobotse"
+
+# sfx2/source\doc\doc.src:STR_DOCTYPENAME_MESSAGE.text
+#, fuzzy
+#~ msgid "Usage"
+#~ msgstr "Ubutumwa"
+
+#, fuzzy
+#~ msgid "_Show hidden folders"
+#~ msgstr "gihishwe Na Inyibutsa Idosiye"
+
+#, fuzzy
+#~ msgid "There is no installed viewer capable of displaying the folder."
+#~ msgstr "ni Oya Bya Inyandiko"
+
+#, fuzzy
+#~ msgid "Could not move \"%s\" to the Trash"
+#~ msgstr "OYA Kwimura Kuri"
+
+#, fuzzy
+#~ msgid "There was an error displaying help."
+#~ msgstr "Ikosa Ifashayobora"
+
+#, fuzzy
+#~ msgid "The document does not exist."
+#~ msgstr "Inyandiko OYA"
+
+#, fuzzy
+#~ msgid "The folder does not exist."
+#~ msgstr "Inyandiko OYA"

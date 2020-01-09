@@ -2,8 +2,8 @@
 <page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="index" xml:lang="cs">
 
   <info>
-    <title type="text">Disk Usage Analyzer help</title>
-    <title type="link">Disk Usage Analyzer</title>
+    <title type="text">Analyzátor využítí disku</title>
+    <title type="link">Analyzátor využítí disku</title>
 
     <revision pkgversion="3.8" date="2013-07-24" status="final"/>
     <revision pkgversion="3.14" date="2014-10-01" status="final"/>
@@ -19,8 +19,7 @@
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
 
-    <desc><app>Disk Usage Analyzer</app> is a graphical storage device
-    scanner.</desc>
+    <desc><app>Analyzátor využití disku</app> je grafický nástroj sloužící ke zkoumání uložných zařízení.</desc>
 
   
     <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
@@ -30,10 +29,7 @@
     </mal:credit>
   </info>
 
-  <title>
-    <media type="image" mime="image/png" its:translate="no" src="media/hicolor_apps_48x48_baobab.png"/>
-    Disk Usage Analyzer
-  </title>
+  <title><media type="image" mime="image/png" its:translate="no" src="media/hicolor_apps_48x48_baobab.png"/> Analyzátor využítí disku</title>
 
   <section id="scan" style="2column">
     <title>Analyzování</title>

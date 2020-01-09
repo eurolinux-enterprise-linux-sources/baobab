@@ -7,11 +7,16 @@ baobabapp_DATA = $(baobabapp_in_files:.desktop.in=.desktop)
 $(baobabapp_in_files): $(baobabapp_in_files:.desktop.in=.desktop.in.in)
 	sed -e "s|\@VERSION\@|@VERSION@|" $< > $@
 
-@INTLTOOL_DESKTOP_RULE@
+$(baobabapp_DATA): $(baobabapp_in_files)
+	$(AM_V_GEN) $(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
 
-appdatadir = $(datadir)/appdata
-appdata_in_files = org.gnome.baobab.appdata.xml.in
-appdata_DATA = $(appdata_in_files:.xml.in=.xml)
+
+appstream_in_files = org.gnome.baobab.appdata.xml.in
+appstream_XML = $(appstream_in_files:.appdata.xml.in=.appdata.xml)
+@APPSTREAM_XML_RULES@
+
+$(appstream_XML): $(appstream_in_files)
+	$(AM_V_GEN) $(MSGFMT) --xml --template $< -d $(top_srcdir)/po -o $@
 
 dbusservicedir = $(datadir)/dbus-1/services
 dbusservice_DATA = org.gnome.baobab.service
@@ -24,10 +29,6 @@ org.gnome.baobab.service: Makefile
 
 gsettingsschema_in_files = org.gnome.baobab.gschema.xml.in
 gsettings_SCHEMAS = $(gsettingsschema_in_files:.xml.in=.xml)
-.PRECIOUS: $(gsettings_SCHEMAS)
-
-@INTLTOOL_XML_NOMERGE_RULE@
-
 @GSETTINGS_RULES@
 
 man_MANS = baobab.1
@@ -37,14 +38,14 @@ EXTRA_DIST = 				\
 	$(gsettingsschema_in_files)	\
 	$(man_MANS)			\
 	$(baobabicon_DATA)		\
-	$(appdata_in_files)		\
+	$(appstream_in_files)		\
 	$(NULL)
 
 CLEANFILES =	 			\
 	$(baobabapp_in_files)		\
 	$(baobabapp_DATA)		\
 	$(gsettings_SCHEMAS)		\
-	$(appdata_DATA)			\
+	$(appstream_XML)		\
 	org.gnome.baobab.service	\
 	$(NULL)
 

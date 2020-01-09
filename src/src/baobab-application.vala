@@ -43,7 +43,7 @@ namespace Baobab {
         protected override void open (File[] files, string hint) {
             foreach (var file in files) {
                 var window = new Window (this);
-                window.scan_directory (file);
+                window.scan_directory (file, ScanFlags.EXCLUDE_MOUNTS);
             }
         }
 
@@ -51,8 +51,8 @@ namespace Baobab {
             return (Application) GLib.Application.get_default ();
         }
 
-        public HashTable<File, unowned File> get_excluded_locations () {
-            var excluded_locations = new HashTable<File, unowned File> (File.hash, File.equal);
+        public GenericSet<File> get_excluded_locations () {
+            var excluded_locations = new GenericSet<File> (File.hash, File.equal);
             excluded_locations.add (File.new_for_path ("/proc"));
             excluded_locations.add (File.new_for_path ("/sys"));
             excluded_locations.add (File.new_for_path ("/selinux"));

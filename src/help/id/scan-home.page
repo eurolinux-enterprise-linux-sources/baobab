@@ -20,6 +20,8 @@
       <email its:translate="no">mdhillca@gmail.com</email>
     </credit>
 
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
     <desc>Pindai semua berkas pribadi Anda yang ada pada komputer Anda.</desc>
 
   

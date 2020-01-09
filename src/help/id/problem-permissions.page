@@ -28,7 +28,7 @@
 
   <p>Tak memiliki akses ke semua berkas dan direktori adalah hal yang sepenuhnya umum sehingga tak ada yang dapat Anda lakukan atas kesalahan ini.</p>
 
-  <note style="info"><p><app>Penganalisis Penggunaan Disk</app> memakai perintah <cmd>du</cmd> untuk membuat tilikan terrinci dari pemakaian penyimpanan, dan perlu agar Anda punya hak baca pada berkas dan hak eksekusi pada direktori.</p>
+  <note style="info"><p><app>Penganalisis Penggunaan Disk</app> memakai perintah <cmd>du</cmd> untuk membuat tilikan terrinci dari pemakaian penyimpanan, dan memerlukan Anda punya hak baca pada berkas dan hak eksekusi pada direktori.</p>
 
   <p>Di sisi lain, pemakaian disk sistem berkas pada penggunaan perintah <cmd>df</cmd> untuk utilisasi disk pada jendela utama yang mengandalkan sistem berkas dan bukan hak berkas.</p></note>
 </page>

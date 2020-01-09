@@ -59,7 +59,7 @@ namespace Baobab {
 
         public signal void completed();
 
-        static const string ATTRIBUTES =
+        const string ATTRIBUTES =
             FileAttribute.STANDARD_NAME + "," +
             FileAttribute.STANDARD_DISPLAY_NAME + "," +
             FileAttribute.STANDARD_TYPE + "," +
@@ -85,7 +85,7 @@ namespace Baobab {
         uint process_result_idle = 0;
 
         HardLink[] hardlinks;
-        HashTable<File, unowned File> excluded_locations;
+        GenericSet<File> excluded_locations;
 
         bool successful = false;
 
@@ -243,7 +243,11 @@ namespace Baobab {
             }
 
             foreach (unowned Results child_results in results_array.results) {
-                child_results.percent = 100 * ((double) child_results.size) / ((double) results.size);
+                if (results.size > 0) {
+                    child_results.percent = 100 * ((double) child_results.size) / ((double) results.size);
+                } else {
+                    child_results.percent = 0;
+                }
             }
 
             // No early exit: in order to avoid a potential crash, we absolutely *must* push this onto the

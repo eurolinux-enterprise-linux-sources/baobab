@@ -19,6 +19,8 @@
       <email its:translate="no">mdhillca@gmail.com</email>
     </credit>
 
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
     <desc>Ihre internen Datenträger einlesen.</desc>
 
   
@@ -33,11 +35,17 @@
       <mal:email>christian.kirbach@gmail.com</mal:email>
       <mal:years>2013, 2014</mal:years>
     </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
   </info>
 
   <title>Das Dateisystem einlesen</title>
 
-  <p>Wählen Sie zum Einlesen Ihres Rechners den Namen Ihres rechners aus der Liste der <gui>Geräte und Orte</gui>. Alle Ordner, auf die Sie Zugriffsrechte besitzen, werden eingelesen. Es ist üblich, dass Sie für einige Ordner Ihres Rechners keine Leseberechtigung haben.</p>
+  <p>Wählen Sie zum Einlesen Ihres Rechners den Namen Ihres Rechners aus der Liste der <gui>Geräte und Orte</gui>. Alle Ordner, für die Sie Zugriffsrechte besitzen, werden eingelesen. Es ist üblich, dass Sie für einige Ordner Ihres Rechners keine Leseberechtigung haben.</p>
 
   <note style="tip">
     <p>Falls das einzulesende Dateisystem groß ist, kann es einige Minuten dauern, bis der Vorgang abgeschlossen ist. Klicken Sie auf den Knopf in der linken oberen Ecke des Bildschirms, um das Einlesen abzubrechen und zur Geräteliste zurückzukehren.</p>
