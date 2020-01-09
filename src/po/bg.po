@@ -10,15 +10,16 @@
 # Alexander Shopov <ash@kambanaria.org>, 2006, 2007, 2008, 2009, 2011, 2012, 2013.
 # Krasimir Chonov <mk2616@abv.bg>, 2011.
 # Ivaylo Valkov <ivaylo@e-valkov.org>, 2014.
+# Lyubomir Vasilev <lyubomirv@abv.bg>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: baobab master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=baobab\n"
-"POT-Creation-Date: 2016-11-07 17:00+0100\n"
-"PO-Revision-Date: 2014-09-07 17:48+0300\n"
-"Last-Translator: Ivaylo Valkov <ivaylo@e-valkov.org>\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
+"product=baobab&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-09-10 06:47+0000\n"
+"PO-Revision-Date: 2017-09-10 11:24+0300\n"
+"Last-Translator: Lyubomir Vasilev <lyubomirv@abv.bg>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
@@ -40,6 +41,7 @@ msgid ""
 "A simple application to keep your disk usage and available space under "
 "control."
 msgstr ""
+"Лесно за употреба приложение за преглед на използваното дисково пространство."
 
 #: data/org.gnome.baobab.appdata.xml.in:12
 msgid ""
@@ -47,6 +49,14 @@ msgid ""
 "accounts. It provides both a tree and a graphical representation showing the "
 "size of each folder, making it easy to identify where disk space is wasted."
 msgstr ""
+"С „Анализатора на ползването на диска“ може да преглеждате папки, устройства "
+"и регистрации онлайн. Програмата има графично и дървовидно представяния на "
+"използваното дисково пространство на всяка папка, което спомага да откриете "
+"къде то се губи."
+
+#: data/org.gnome.baobab.appdata.xml.in:34
+msgid "The GNOME Project"
+msgstr "Проектът GNOME"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.baobab.desktop.in.in:6
@@ -57,9 +67,8 @@ msgstr ""
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/org.gnome.baobab.desktop.in.in:10
-#, fuzzy
 msgid "baobab"
-msgstr "Baobab"
+msgstr "baobab"
 
 #: data/org.gnome.baobab.gschema.xml.in:9
 msgid "Excluded partitions URIs"
@@ -75,7 +84,7 @@ msgstr "Активна графика"
 
 #: data/org.gnome.baobab.gschema.xml.in:21
 msgid "Which type of chart should be displayed."
-msgstr "Кой тип графика да се ползва."
+msgstr "Кой вид графика да се ползва."
 
 #: data/org.gnome.baobab.gschema.xml.in:25
 msgid "Window size"
@@ -117,58 +126,57 @@ msgstr "Днес"
 #. Translators: when the last modified time is "days" days ago
 #: src/baobab-cellrenderers.vala:114
 #, c-format
-msgid "%d day"
-msgid_plural "%d days"
-msgstr[0] "%d ден"
-msgstr[1] "%d дни"
+msgid "%lu day"
+msgid_plural "%lu days"
+msgstr[0] "%lu ден"
+msgstr[1] "%lu дни"
 
 #. Translators: when the last modified time is "months" months ago
 #: src/baobab-cellrenderers.vala:118
 #, c-format
-msgid "%d month"
-msgid_plural "%d months"
-msgstr[0] "%d месец"
-msgstr[1] "%d месеца"
+msgid "%lu month"
+msgid_plural "%lu months"
+msgstr[0] "%lu месец"
+msgstr[1] "%lu месеца"
 
 #. Translators: when the last modified time is "years" years ago
 #: src/baobab-cellrenderers.vala:122
 #, c-format
-msgid "%d year"
-msgid_plural "%d years"
-msgstr[0] "%d година"
-msgstr[1] "%d години"
+msgid "%lu year"
+msgid_plural "%lu years"
+msgstr[0] "%lu година"
+msgstr[1] "%lu години"
 
 #: src/baobab-location-list.ui:17
-#, fuzzy
 msgid "This Computer"
 msgstr "Този компютър"
 
 #: src/baobab-location-list.ui:47
 msgid "Remote Locations"
-msgstr ""
+msgstr "Устройства и местоположения"
 
 #: src/baobab-location-list.vala:58
 #, c-format
 msgid "%s Total"
-msgstr ""
+msgstr "Общо: %s"
 
 #: src/baobab-location-list.vala:61
 #, c-format
 msgid "%s Available"
-msgstr ""
+msgstr "Свободно: %s"
 
 #. useful for some remote mounts where we don't know the
 #. size but do have a usage figure
 #: src/baobab-location-list.vala:75
 #, c-format
 msgid "%s Used"
-msgstr ""
+msgstr "Използвано: %s"
 
-#: src/baobab-location.vala:72
+#: src/baobab-location.vala:73
 msgid "Home folder"
 msgstr "Домашна папка"
 
-#: src/baobab-location.vala:108
+#: src/baobab-location.vala:109
 msgid "Computer"
 msgstr "Този компютър"
 
@@ -246,7 +254,7 @@ msgstr "Baobab"
 
 #: src/baobab-window.vala:287
 msgid "A graphical tool to analyze disk usage."
-msgstr "Графичен инструмент за анализиране на ползването на диска"
+msgstr "Графичен инструмент за анализиране на ползването на диска."
 
 #: src/baobab-window.vala:292
 msgid "translator-credits"
@@ -256,6 +264,7 @@ msgstr ""
 "Петър „Peshka“ Славов <pslavov@i-space.org>\n"
 "Явор Доганов <yavor@doganov.org>\n"
 "Александър Шопов <ash@kambanaria.org>\n"
+"Любомир Василев <lyubomirv@abv.bg>\n"
 "\n"
 "Проектът за превод на GNOME има нужда от подкрепа.\n"
 "Научете повече за нас на <a href=\"http://gnome.cult.bg\">http://gnome.cult."
@@ -272,19 +281,18 @@ msgid "Failed to move file to the trash"
 msgstr "Неуспешно преместване на файла в кошчето"
 
 #: src/baobab-window.vala:485
-#, fuzzy
 msgid "Devices & Locations"
 msgstr "Устройства и местоположения"
 
 #: src/baobab-window.vala:546
 #, c-format
-msgid "Could not scan folder \"%s\""
-msgstr "Папката „%s“ не може да бъде претърсена."
+msgid "Could not scan folder “%s”"
+msgstr "Папката „%s“ не може да бъде претърсена"
 
 #: src/baobab-window.vala:549
 #, c-format
-msgid "Could not scan some of the folders contained in \"%s\""
-msgstr "Някоя от подпапките на „%s“ не може да бъде претърсена."
+msgid "Could not scan some of the folders contained in “%s”"
+msgstr "Някои от подпапките на „%s“ не може да бъдат претърсени"
 
 #: src/baobab-window.vala:568
 msgid "Could not detect occupied disk sizes."
@@ -297,7 +305,7 @@ msgstr "Показани са ориентировъчни размери."
 #. || is_virtual_filesystem ()
 #: src/baobab-window.vala:585 src/baobab-window.vala:591
 #, c-format
-msgid "\"%s\" is not a valid folder"
+msgid "“%s” is not a valid folder"
 msgstr "„%s“ не е валидна папка"
 
 #: src/baobab-window.vala:586 src/baobab-window.vala:592
@@ -327,15 +335,3 @@ msgstr "_Увеличаване"
 #: src/menus.ui:49
 msgid "Zoom _out"
 msgstr "_Намаляване"
-
-#~ msgid ""
-#~ "A simple application which can scan either specific folders (local or "
-#~ "remote) or volumes and give a graphical representation including each "
-#~ "directory size or percentage."
-#~ msgstr ""
-#~ "Малка програма за графично изобразяване на размерите и процентното "
-#~ "използване на свободно пространство за различни ресурси. Може да "
-#~ "претърсва папки (местни и отдалечени) и томове."
-
-#~ msgid "Scan Remote Folder…"
-#~ msgstr "Претърсване на отдалечена папка…"

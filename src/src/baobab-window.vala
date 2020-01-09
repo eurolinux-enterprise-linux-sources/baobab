@@ -24,15 +24,16 @@ namespace Baobab {
 
     [GtkTemplate (ui = "/org/gnome/baobab/ui/baobab-main-window.ui")]
     public class Window : Gtk.ApplicationWindow {
-        private Settings ui_settings;
+        [GtkChild]
+        private Gtk.Box vbox;
         [GtkChild]
         private Gtk.HeaderBar header_bar;
+        [GtkChild]
+        private Gtk.Button scan_button;
         [GtkChild]
         private Gtk.Button back_button;
         [GtkChild]
         private Gtk.Button reload_button;
-        [GtkChild]
-        private Gtk.MenuButton menu_button;
         [GtkChild]
         private Gtk.Stack main_stack;
         [GtkChild]
@@ -81,7 +82,6 @@ namespace Baobab {
         static Gdk.Cursor busy_cursor;
 
         private const GLib.ActionEntry[] action_entries = {
-            { "gear-menu", on_show_gear_menu_activate , null, "false", null},
             { "show-home-page", on_show_home_page_activate },
             { "scan-folder", on_scan_folder_activate },
             { "reload", on_reload_activate },
@@ -116,10 +116,11 @@ namespace Baobab {
             Object (application: app);
 
             if (busy_cursor == null) {
-                busy_cursor = new Gdk.Cursor.for_display (get_display(), Gdk.CursorType.WATCH);
+                busy_cursor = new Gdk.Cursor.from_name (get_display(), "wait");
             }
 
-            ui_settings = Application.get_default ().ui_settings;
+            var ui_settings = new Settings ("org.gnome.baobab.ui");
+            ui_settings.delay ();
 
             add_action_entries (action_entries, this);
             var action = ui_settings.create_action ("active-chart");
@@ -158,22 +159,41 @@ namespace Baobab {
 
             configure_event.connect ((event) => {
                 if (!(Gdk.WindowState.MAXIMIZED in get_window ().get_state ())) {
-                    ui_settings.set ("window-size", "(ii)", event.width, event.height);
+                    get_size (out width, out height);
+                    ui_settings.set ("window-size", "(ii)", width, height);
                 }
                 return false;
+            });
+
+            destroy.connect (() => {
+                ui_settings.apply ();
             });
 
             active_location = null;
             scan_completed_handler = 0;
 
+            var desktop = Environment.get_variable ("XDG_CURRENT_DESKTOP");
+
+            if (desktop == null || !desktop.contains ("Unity")) {
+                this.set_titlebar (header_bar);
+            } else {
+                header_bar.show_close_button = false;
+                header_bar.get_style_context ().remove_class ("titlebar");
+                vbox.pack_start (header_bar, false, false, 0);
+            }
+
             set_ui_state (home_page, false);
 
-            show ();
-        }
+            button_press_event.connect ((event) => {
+                // mouse back button
+                if (event.button == 8) {
+                    lookup_action ("show-home-page").activate (null);
+                    return Gdk.EVENT_STOP;
+                }
+                return Gdk.EVENT_PROPAGATE;
+            });
 
-        void on_show_gear_menu_activate (SimpleAction action) {
-            var state = action.get_state ().get_boolean ();
-            action.set_state (new Variant.boolean (!state));
+            show ();
         }
 
         void on_show_home_page_activate () {
@@ -473,7 +493,7 @@ namespace Baobab {
         }
 
         void set_ui_state (Gtk.Widget child, bool busy) {
-            menu_button.visible = (child == home_page);
+            scan_button.visible = (child == home_page);
             reload_button.visible = (child == result_page);
             back_button.visible = (child == result_page);
 
@@ -543,10 +563,10 @@ namespace Baobab {
                     scanner.get_iter_first (out iter);
                     scanner.get (iter, Scanner.Columns.STATE, out state);
                     if (state == Scanner.State.ERROR) {
-                        var primary = _("Could not scan folder \"%s\"").printf (scanner.directory.get_parse_name ());
+                        var primary = _("Could not scan folder “%s”").printf (scanner.directory.get_parse_name ());
                         message (primary, e.message, Gtk.MessageType.ERROR);
                     } else {
-                        var primary = _("Could not scan some of the folders contained in \"%s\"").printf (scanner.directory.get_parse_name ());
+                        var primary = _("Could not scan some of the folders contained in “%s”").printf (scanner.directory.get_parse_name ());
                         message (primary, e.message, Gtk.MessageType.WARNING);
                     }
                 }
@@ -582,13 +602,13 @@ namespace Baobab {
             var location = new Location.for_file (directory, flags);
 
             if (location.info == null) {
-                var primary = _("\"%s\" is not a valid folder").printf (directory.get_parse_name ());
+                var primary = _("“%s” is not a valid folder").printf (directory.get_parse_name ());
                 message (primary, _("Could not analyze disk usage."), Gtk.MessageType.ERROR);
                 return;
             }
 
             if (location.info.get_file_type () != FileType.DIRECTORY/* || is_virtual_filesystem ()*/) {
-                var primary = _("\"%s\" is not a valid folder").printf (directory.get_parse_name ());
+                var primary = _("“%s” is not a valid folder").printf (directory.get_parse_name ());
                 message (primary, _("Could not analyze disk usage."), Gtk.MessageType.ERROR);
                 return;
             }

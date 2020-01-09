@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: baobab\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=baobab\n"
-"POT-Creation-Date: 2016-11-07 17:00+0100\n"
+"POT-Creation-Date: 2016-09-03 17:32+0200\n"
 "PO-Revision-Date: 2016-09-03 17:37+0200\n"
 "Last-Translator: David King <amigadave@amigadave.com>\n"
 "Language-Team: British English <en@li.org>\n"
@@ -48,12 +48,10 @@ msgstr ""
 "accounts. It provides both a tree and a graphical representation showing the "
 "size of each folder, making it easy to identify where disk space is wasted."
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.baobab.desktop.in.in:6
 msgid "storage;space;cleanup;"
 msgstr "storage;space;cleanup;"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/org.gnome.baobab.desktop.in.in:10
 msgid "baobab"
 msgstr "baobab"
@@ -101,17 +99,14 @@ msgid_plural "%d items"
 msgstr[0] "%d item"
 msgstr[1] "%d items"
 
-#. Translators: when the last modified time is unknown
 #: src/baobab-cellrenderers.vala:101 src/baobab-location-list.vala:70
 msgid "Unknown"
 msgstr "Unknown"
 
-#. Translators: when the last modified time is today
 #: src/baobab-cellrenderers.vala:110
 msgid "Today"
 msgstr "Today"
 
-#. Translators: when the last modified time is "days" days ago
 #: src/baobab-cellrenderers.vala:114
 #, c-format
 msgid "%d day"
@@ -119,7 +114,6 @@ msgid_plural "%d days"
 msgstr[0] "%d day"
 msgstr[1] "%d days"
 
-#. Translators: when the last modified time is "months" months ago
 #: src/baobab-cellrenderers.vala:118
 #, c-format
 msgid "%d month"
@@ -127,7 +121,6 @@ msgid_plural "%d months"
 msgstr[0] "%d month"
 msgstr[1] "%d months"
 
-#. Translators: when the last modified time is "years" years ago
 #: src/baobab-cellrenderers.vala:122
 #, c-format
 msgid "%d year"
@@ -153,8 +146,6 @@ msgstr "%s Total"
 msgid "%s Available"
 msgstr "%s Available"
 
-#. useful for some remote mounts where we don't know the
-#. size but do have a usage figure
 #: src/baobab-location-list.vala:75
 #, c-format
 msgid "%s Used"
@@ -284,7 +275,6 @@ msgstr "Could not detect occupied disk sizes."
 msgid "Apparent sizes are shown instead."
 msgstr "Apparent sizes are shown instead."
 
-#. || is_virtual_filesystem ()
 #: src/baobab-window.vala:585 src/baobab-window.vala:591
 #, c-format
 msgid "\"%s\" is not a valid folder"

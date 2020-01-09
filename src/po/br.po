@@ -8,89 +8,78 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Baobab\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=baobab\n"
-"POT-Creation-Date: 2016-11-07 17:00+0100\n"
+"product=baobab&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-09-30 14:54+0000\n"
 "PO-Revision-Date: 2014-09-30 22:07+0100\n"
 "Last-Translator: Denis Arnaud <denisarnuad@yahoo.fr>\n"
 "Language-Team: \n"
-"Language: br\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Launchpad-Export-Date: 2014-09-30 18:44+0000\n"
 "X-Generator: Poedit 1.5.4\n"
+"Language: br\n"
 
-#: data/org.gnome.baobab.appdata.xml.in:6 data/org.gnome.baobab.desktop.in.in:3
-#: src/baobab-main-window.ui:44
+#: ../data/org.gnome.baobab.appdata.xml.in.h:1
+msgid ""
+"A simple application which can scan either specific folders (local or "
+"remote) or volumes and give a graphical representation including each "
+"directory size or percentage."
+msgstr ""
+"Un arload eeun evit furchal teuliadoù spesadel (lec'hel pe pell) pe "
+"pezhiennoù ha skrammañ un derc'hennadur gant ment an holl teuliadoù pe "
+"dregentad."
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:1 ../src/baobab-main-window.ui.h:6
 msgid "Disk Usage Analyzer"
 msgstr "Dezranner arver ar c'hantennoù"
 
-#: data/org.gnome.baobab.appdata.xml.in:7 data/org.gnome.baobab.desktop.in.in:4
+#: ../data/org.gnome.baobab.desktop.in.in.h:2
 msgid "Check folder sizes and available disk space"
 msgstr "Gwiriañ mentoù an teuliadoù ha plas hegerz war ar gantennad"
 
-#: data/org.gnome.baobab.appdata.xml.in:9
-msgid ""
-"A simple application to keep your disk usage and available space under "
-"control."
-msgstr ""
-
-#: data/org.gnome.baobab.appdata.xml.in:12
-msgid ""
-"Disk Usage Analyzer can scan specific folders, storage devices and online "
-"accounts. It provides both a tree and a graphical representation showing the "
-"size of each folder, making it easy to identify where disk space is wasted."
-msgstr ""
-
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.baobab.desktop.in.in:6
+#: ../data/org.gnome.baobab.desktop.in.in.h:3
 msgid "storage;space;cleanup;"
 msgstr "kadaviñ;egor;naetaat;"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.baobab.desktop.in.in:10
-#, fuzzy
-msgid "baobab"
-msgstr "Baobab"
-
-#: data/org.gnome.baobab.gschema.xml.in:9
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:1
 msgid "Excluded partitions URIs"
 msgstr "URIoù ar parzhioù ezlakaet"
 
-#: data/org.gnome.baobab.gschema.xml.in:10
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:2
 msgid "A list of URIs for partitions to be excluded from scanning."
 msgstr "Ur roll URIoù evit ar parzhioù a vo ezlakaet diouzh ar c'hwilervañ."
 
-#: data/org.gnome.baobab.gschema.xml.in:20
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:3
 msgid "Active Chart"
 msgstr "Gwel oberiat"
 
-#: data/org.gnome.baobab.gschema.xml.in:21
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:4
 msgid "Which type of chart should be displayed."
 msgstr "Rizh ar gwel da vezañ skrammet"
 
-#: data/org.gnome.baobab.gschema.xml.in:25
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:5
 msgid "Window size"
 msgstr "Ment ar prenestr"
 
-#: data/org.gnome.baobab.gschema.xml.in:26
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:6
 msgid "The initial size of the window"
 msgstr "Ment a-gent ar prenestr"
 
-#: data/org.gnome.baobab.gschema.xml.in:30
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:7
 msgid "Window state"
 msgstr "Stad ar prenestr"
 
-#: data/org.gnome.baobab.gschema.xml.in:31
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:8
 msgid "The GdkWindowState of the window"
 msgstr "Stad GdkWindow ar prenestr"
 
-#: src/baobab-application.vala:28
+#: ../src/baobab-application.vala:28
 msgid "Print version information and exit"
 msgstr "Moullañ titouroù an handelv ha kuitaat"
 
-#: src/baobab-cellrenderers.vala:91
+#: ../src/baobab-cellrenderers.vala:91
 #, c-format
 msgid "%d item"
 msgid_plural "%d items"
@@ -98,17 +87,17 @@ msgstr[0] "%d elfenn"
 msgstr[1] "%d elfenn"
 
 #. Translators: when the last modified time is unknown
-#: src/baobab-cellrenderers.vala:101 src/baobab-location-list.vala:70
+#: ../src/baobab-cellrenderers.vala:101
 msgid "Unknown"
 msgstr "Dianav"
 
 #. Translators: when the last modified time is today
-#: src/baobab-cellrenderers.vala:110
+#: ../src/baobab-cellrenderers.vala:110
 msgid "Today"
 msgstr "Hiziv"
 
 #. Translators: when the last modified time is "days" days ago
-#: src/baobab-cellrenderers.vala:114
+#: ../src/baobab-cellrenderers.vala:114
 #, c-format
 msgid "%d day"
 msgid_plural "%d days"
@@ -116,7 +105,7 @@ msgstr[0] "%d deiz"
 msgstr[1] "%d a zeizioù"
 
 #. Translators: when the last modified time is "months" months ago
-#: src/baobab-cellrenderers.vala:118
+#: ../src/baobab-cellrenderers.vala:118
 #, c-format
 msgid "%d month"
 msgid_plural "%d months"
@@ -124,124 +113,102 @@ msgstr[0] "%d miz"
 msgstr[1] "%d a vizioù"
 
 #. Translators: when the last modified time is "years" years ago
-#: src/baobab-cellrenderers.vala:122
+#: ../src/baobab-cellrenderers.vala:122
 #, c-format
 msgid "%d year"
 msgid_plural "%d years"
 msgstr[0] "%d bloaz"
 msgstr[1] "%d a vloazioù"
 
-#: src/baobab-location-list.ui:17
-#, fuzzy
-msgid "This Computer"
-msgstr "Urzhiataer"
-
-#: src/baobab-location-list.ui:47
-msgid "Remote Locations"
-msgstr ""
-
-#: src/baobab-location-list.vala:58
-#, c-format
-msgid "%s Total"
-msgstr ""
-
-#: src/baobab-location-list.vala:61
-#, c-format
-msgid "%s Available"
-msgstr ""
-
-#. useful for some remote mounts where we don't know the
-#. size but do have a usage figure
-#: src/baobab-location-list.vala:75
-#, c-format
-msgid "%s Used"
-msgstr ""
-
-#: src/baobab-location.vala:72
+#: ../src/baobab-location.vala:77
 msgid "Home folder"
 msgstr "Teuliad ar gêr"
 
-#: src/baobab-location.vala:108
+#: ../src/baobab-location.vala:123
 msgid "Computer"
 msgstr "Urzhiataer"
 
-#: src/baobab-main-window.ui:7
+#: ../src/baobab-main-window.ui.h:1
 msgid "Scan Folder…"
 msgstr "Furchal teulioù..."
 
-#: src/baobab-main-window.ui:20 src/menus.ui:25
+#: ../src/baobab-main-window.ui.h:2
+msgid "Scan Remote Folder…"
+msgstr "Furchal teulioù a-bell..."
+
+#: ../src/baobab-main-window.ui.h:3 ../src/menus.ui.h:4
 msgid "_Open Folder"
 msgstr "_Digeriñ un teuliad"
 
-#: src/baobab-main-window.ui:29 src/menus.ui:29
+#: ../src/baobab-main-window.ui.h:4 ../src/menus.ui.h:5
 msgid "_Copy Path to Clipboard"
 msgstr "Eilañ an treug d'ar golver"
 
-#: src/baobab-main-window.ui:38 src/menus.ui:33
+#: ../src/baobab-main-window.ui.h:5 ../src/menus.ui.h:6
 msgid "Mo_ve to Trash"
 msgstr "Ka_s d'al Lastez"
 
-#: src/baobab-main-window.ui:168
+#: ../src/baobab-main-window.ui.h:7
 msgid "Close"
 msgstr "Serriñ"
 
-#: src/baobab-main-window.ui:224
+#: ../src/baobab-main-window.ui.h:8
 msgid "Folder"
 msgstr "Teuliad"
 
-#: src/baobab-main-window.ui:251
+#: ../src/baobab-main-window.ui.h:9
 msgid "Size"
 msgstr "Ment"
 
-#: src/baobab-main-window.ui:271
+#: ../src/baobab-main-window.ui.h:10
 msgid "Contents"
 msgstr "Endalc'hadoù"
 
-#: src/baobab-main-window.ui:289
+#: ../src/baobab-main-window.ui.h:11
 msgid "Modified"
 msgstr "Kemmet"
 
-#: src/baobab-main-window.ui:334
+#: ../src/baobab-main-window.ui.h:12
 msgid "Rings Chart"
 msgstr "Evel ur walenn"
 
-#: src/baobab-main-window.ui:346
+#: ../src/baobab-main-window.ui.h:13
 msgid "Treemap Chart"
 msgstr "Evel ur wezenn"
 
-#: src/baobab-window.vala:189
+#: ../src/baobab-window.vala:203
 msgid "Select Folder"
 msgstr "Diuzañ un teuliad"
 
-#: src/baobab-window.vala:191
+#: ../src/baobab-window.vala:205
 msgid "_Cancel"
 msgstr "_Nullañ"
 
-#: src/baobab-window.vala:192
+#: ../src/baobab-window.vala:206
 msgid "_Open"
 msgstr "_Digeriñ"
 
-#: src/baobab-window.vala:198
+#: ../src/baobab-window.vala:211
 msgid "Recursively analyze mount points"
 msgstr "Dezrannañ ar poentoù savadenn gant un doare askizat"
 
-#: src/baobab-window.vala:233
+#: ../src/baobab-window.vala:258
 msgid "Could not analyze volume."
 msgstr "N'haller ket dezrannañ ar gantenn."
 
-#: src/baobab-window.vala:265
+#: ../src/baobab-window.vala:290
 msgid "Failed to show help"
 msgstr "C'hwitadenn war ziskouez ar skoazell"
 
-#: src/baobab-window.vala:284
+#: ../src/baobab-window.vala:309
 msgid "Baobab"
 msgstr "Baobab"
 
-#: src/baobab-window.vala:287
+#: ../src/baobab-window.vala:312
 msgid "A graphical tool to analyze disk usage."
 msgstr "Un arload kevregat da zezrannañ arver ar gantennad."
 
-#: src/baobab-window.vala:292
+#: ../src/baobab-window.vala:317
 msgid "translator-credits"
 msgstr ""
 "Denis\n"
@@ -250,82 +217,69 @@ msgstr ""
 "  Denis https://launchpad.net/~bibar\n"
 "  Martin Pitt https://launchpad.net/~pitti"
 
-#: src/baobab-window.vala:361
+#: ../src/baobab-window.vala:386
 msgid "Failed to open file"
 msgstr "C'hwitadenn war zigeriñ ar restr"
 
-#: src/baobab-window.vala:381
+#: ../src/baobab-window.vala:406
 msgid "Failed to move file to the trash"
 msgstr "C'hwitadenn war kas ar restr d'al lastez"
 
-#: src/baobab-window.vala:485
-#, fuzzy
-msgid "Devices & Locations"
+#: ../src/baobab-window.vala:506
+msgid "Devices and locations"
 msgstr "Trobarzhelloù ha lec'hiadurioù"
 
-#: src/baobab-window.vala:546
+#: ../src/baobab-window.vala:567
 #, c-format
 msgid "Could not scan folder \"%s\""
 msgstr "N'haller ket furchal an teuliad \"%s\""
 
-#: src/baobab-window.vala:549
+#: ../src/baobab-window.vala:570
 #, c-format
 msgid "Could not scan some of the folders contained in \"%s\""
 msgstr "N'haller ket furchal teuliadoù a zo e  \"%s\""
 
-#: src/baobab-window.vala:568
+#: ../src/baobab-window.vala:589
 msgid "Could not detect occupied disk sizes."
 msgstr "N'hall ket dinoiñ ment ar c'hantenn arveret."
 
-#: src/baobab-window.vala:568
+#: ../src/baobab-window.vala:589
 msgid "Apparent sizes are shown instead."
 msgstr "Ar mentoù war a weler a zo skrammet en e lec'h."
 
 #. || is_virtual_filesystem ()
-#: src/baobab-window.vala:585 src/baobab-window.vala:591
+#: ../src/baobab-window.vala:606 ../src/baobab-window.vala:612
 #, c-format
 msgid "\"%s\" is not a valid folder"
 msgstr "\"%s\" n'eo ket un teuliad talvoudek"
 
-#: src/baobab-window.vala:586 src/baobab-window.vala:592
+#: ../src/baobab-window.vala:607 ../src/baobab-window.vala:613
 msgid "Could not analyze disk usage."
 msgstr "N'hall ket dezrannañ arver ar c'hantenn."
 
-#: src/menus.ui:7
+#: ../src/menus.ui.h:1
 msgid "_Help"
 msgstr "_Skoazell"
 
-#: src/menus.ui:12
+#: ../src/menus.ui.h:2
 msgid "_About"
 msgstr "Diw_ar-benn"
 
-#: src/menus.ui:16
+#: ../src/menus.ui.h:3
 msgid "_Quit"
 msgstr "_Kuitaat"
 
-#: src/menus.ui:39
+#: ../src/menus.ui.h:7
 msgid "Go to _parent folder"
 msgstr "_Kaz d'ar teuliad kar"
 
-#: src/menus.ui:45
+#: ../src/menus.ui.h:8
 msgid "Zoom _in"
 msgstr "Zoum_añ"
 
-#: src/menus.ui:49
+#: ../src/menus.ui.h:9
 msgid "Zoom _out"
 msgstr "Bi_hanaat"
-
-#~ msgid ""
-#~ "A simple application which can scan either specific folders (local or "
-#~ "remote) or volumes and give a graphical representation including each "
-#~ "directory size or percentage."
-#~ msgstr ""
-#~ "Un arload eeun evit furchal teuliadoù spesadel (lec'hel pe pell) pe "
-#~ "pezhiennoù ha skrammañ un derc'hennadur gant ment an holl teuliadoù pe "
-#~ "dregentad."
-
-#~ msgid "Scan Remote Folder…"
-#~ msgstr "Furchal teulioù a-bell..."
 
 #~ msgid "- Disk Usage Analyzer"
 #~ msgstr "- Dezranner arver ar kantennoù"

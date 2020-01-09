@@ -1,0 +1,25 @@
+From 5848e8d544dd975454d4ef671c5b8b7ef91ccc83 Mon Sep 17 00:00:00 2001
+From: Ondrej Holy <oholy@redhat.com>
+Date: Thu, 14 Jun 2018 14:48:45 +0200
+Subject: [PATCH 1/2] build: Install also 24x24 icons
+
+After the meson port, 24x24 icons are not installed. Let's add missing
+24x24 icon size in meson.build to install them.
+---
+ data/meson.build | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/data/meson.build b/data/meson.build
+index a2d22ed..5b1ef00 100644
+--- a/data/meson.build
++++ b/data/meson.build
+@@ -1,5 +1,5 @@
+ icondir = join_paths(get_option('datadir'), 'icons/hicolor')
+-foreach size: ['16x16', '22x22', '32x32', '48x48', '256x256', 'symbolic']
++foreach size: ['16x16', '22x22', '24x24', '32x32', '48x48', '256x256', 'symbolic']
+   install_subdir('icons/hicolor/' + size, install_dir: icondir)
+ endforeach
+ 
+-- 
+2.17.1
+

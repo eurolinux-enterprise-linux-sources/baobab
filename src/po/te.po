@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: te\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=baobab\n"
-"POT-Creation-Date: 2016-11-07 17:00+0100\n"
+"product=baobab&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-09-09 02:51+0000\n"
 "PO-Revision-Date: 2014-09-09 15:19+0530\n"
 "Last-Translator: Krishnababu Krothapalli <kkrothap@redhat.com>\n"
 "Language-Team: Telugu <Fedora-trans-te@redhat.com>\n"
@@ -26,76 +26,64 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: Lokalize 1.5\n"
 
-#: data/org.gnome.baobab.appdata.xml.in:6 data/org.gnome.baobab.desktop.in.in:3
-#: src/baobab-main-window.ui:44
+#: ../data/org.gnome.baobab.appdata.xml.in.h:1
+msgid ""
+"A simple application which can scan either specific folders (local or "
+"remote) or volumes and give a graphical representation including each "
+"directory size or percentage."
+msgstr ""
+"ఒక సాధారణ అనువర్తనం ఇది ఫలానా సంచయాలను(స్థానిక లేదా రిమోట్) లేదా వాల్యూమ్లను "
+"స్కాన్ చేసి మరియు ప్రతి సంచయం పరిమాణం లేదా శాతాన్ని గ్రాఫికల్‌గా చూపును."
+
+#: ../data/org.gnome.baobab.desktop.in.in.h:1 ../src/baobab-main-window.ui.h:6
 msgid "Disk Usage Analyzer"
 msgstr "డిస్క్ వినిమయ విశ్లేషకం"
 
-#: data/org.gnome.baobab.appdata.xml.in:7 data/org.gnome.baobab.desktop.in.in:4
+#: ../data/org.gnome.baobab.desktop.in.in.h:2
 msgid "Check folder sizes and available disk space"
 msgstr "అందుబాటులోవున్న డిస్క్ స్థలం మరియు సంచయపు పరిమాణాలను తనిఖీచేయి"
 
-#: data/org.gnome.baobab.appdata.xml.in:9
-msgid ""
-"A simple application to keep your disk usage and available space under "
-"control."
-msgstr ""
-
-#: data/org.gnome.baobab.appdata.xml.in:12
-msgid ""
-"Disk Usage Analyzer can scan specific folders, storage devices and online "
-"accounts. It provides both a tree and a graphical representation showing the "
-"size of each folder, making it easy to identify where disk space is wasted."
-msgstr ""
-
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.baobab.desktop.in.in:6
+#: ../data/org.gnome.baobab.desktop.in.in.h:3
 msgid "storage;space;cleanup;"
 msgstr "storage;space;cleanup;"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.baobab.desktop.in.in:10
-#, fuzzy
-msgid "baobab"
-msgstr "బవోబాబ్"
-
-#: data/org.gnome.baobab.gschema.xml.in:9
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:1
 msgid "Excluded partitions URIs"
 msgstr "మినహాయించబడిన విభజనల uriలు"
 
-#: data/org.gnome.baobab.gschema.xml.in:10
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:2
 msgid "A list of URIs for partitions to be excluded from scanning."
 msgstr "స్కానింగ్ నుండి విభజనల కొరకు uri జాబితాను మినహాయించవలసినవి."
 
-#: data/org.gnome.baobab.gschema.xml.in:20
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:3
 msgid "Active Chart"
 msgstr "క్రియాశీల పటం"
 
-#: data/org.gnome.baobab.gschema.xml.in:21
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:4
 msgid "Which type of chart should be displayed."
 msgstr "ఏ రకపు పటాన్ని ప్రదర్శించాలి."
 
-#: data/org.gnome.baobab.gschema.xml.in:25
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:5
 msgid "Window size"
 msgstr "విండో పరిమాణం"
 
-#: data/org.gnome.baobab.gschema.xml.in:26
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:6
 msgid "The initial size of the window"
 msgstr "విండో యొక్క ప్రాధమిక పరిమాణం"
 
-#: data/org.gnome.baobab.gschema.xml.in:30
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:7
 msgid "Window state"
 msgstr "విండో స్థితి"
 
-#: data/org.gnome.baobab.gschema.xml.in:31
+#: ../data/org.gnome.baobab.gschema.xml.in.in.h:8
 msgid "The GdkWindowState of the window"
 msgstr "విండో యొక్క GdkWindowState"
 
-#: src/baobab-application.vala:28
+#: ../src/baobab-application.vala:28
 msgid "Print version information and exit"
 msgstr "రూపాంతర సమాచారం ముద్రించి నిష్క్రమించు"
 
-#: src/baobab-cellrenderers.vala:91
+#: ../src/baobab-cellrenderers.vala:91
 #, c-format
 msgid "%d item"
 msgid_plural "%d items"
@@ -103,17 +91,18 @@ msgstr[0] "%d అంశం"
 msgstr[1] "%d అంశాలు"
 
 #. Translators: when the last modified time is unknown
-#: src/baobab-cellrenderers.vala:101 src/baobab-location-list.vala:70
+#: ../src/baobab-cellrenderers.vala:101
+#| msgid "Usage unknown"
 msgid "Unknown"
 msgstr "తెలియని"
 
 #. Translators: when the last modified time is today
-#: src/baobab-cellrenderers.vala:110
+#: ../src/baobab-cellrenderers.vala:110
 msgid "Today"
 msgstr "ఈరోజు"
 
 #. Translators: when the last modified time is "days" days ago
-#: src/baobab-cellrenderers.vala:114
+#: ../src/baobab-cellrenderers.vala:114
 #, c-format
 msgid "%d day"
 msgid_plural "%d days"
@@ -121,7 +110,7 @@ msgstr[0] "%d రోజు"
 msgstr[1] "%d రోజులు"
 
 #. Translators: when the last modified time is "months" months ago
-#: src/baobab-cellrenderers.vala:118
+#: ../src/baobab-cellrenderers.vala:118
 #, c-format
 msgid "%d month"
 msgid_plural "%d months"
@@ -129,206 +118,176 @@ msgstr[0] "%d నెల"
 msgstr[1] "%d నెలలు"
 
 #. Translators: when the last modified time is "years" years ago
-#: src/baobab-cellrenderers.vala:122
+#: ../src/baobab-cellrenderers.vala:122
 #, c-format
 msgid "%d year"
 msgid_plural "%d years"
 msgstr[0] "%d సంవత్సరం"
 msgstr[1] "%d సంవత్సరాలు"
 
-#: src/baobab-location-list.ui:17
-#, fuzzy
-msgid "This Computer"
-msgstr "కంప్యూటర్"
-
-#: src/baobab-location-list.ui:47
-#, fuzzy
-msgid "Remote Locations"
-msgstr "అన్ని స్థానములు"
-
-#: src/baobab-location-list.vala:58
-#, c-format
-msgid "%s Total"
-msgstr ""
-
-#: src/baobab-location-list.vala:61
-#, c-format
-msgid "%s Available"
-msgstr ""
-
-#. useful for some remote mounts where we don't know the
-#. size but do have a usage figure
-#: src/baobab-location-list.vala:75
-#, c-format
-msgid "%s Used"
-msgstr ""
-
-#: src/baobab-location.vala:72
+#: ../src/baobab-location.vala:77
 msgid "Home folder"
 msgstr "నివాస సంచయం"
 
-#: src/baobab-location.vala:108
+#: ../src/baobab-location.vala:123
 msgid "Computer"
 msgstr "కంప్యూటర్"
 
-#: src/baobab-main-window.ui:7
+#: ../src/baobab-main-window.ui.h:1
 msgid "Scan Folder…"
 msgstr "ఫోల్డర్ స్కాన్ చేయి ..."
 
-#: src/baobab-main-window.ui:20 src/menus.ui:25
+#: ../src/baobab-main-window.ui.h:2
+msgid "Scan Remote Folder…"
+msgstr "రిమోట్ ఫోల్డర్ స్కాన్ చేయి ..."
+
+#: ../src/baobab-main-window.ui.h:3 ../src/menus.ui.h:4
 msgid "_Open Folder"
 msgstr "సంచయాన్ని తెరువు (_O)"
 
-#: src/baobab-main-window.ui:29 src/menus.ui:29
+#: ../src/baobab-main-window.ui.h:4 ../src/menus.ui.h:5
 msgid "_Copy Path to Clipboard"
 msgstr "బాటను క్లిప్‌బోర్డుకి నకలించు (_C)"
 
-#: src/baobab-main-window.ui:38 src/menus.ui:33
+#: ../src/baobab-main-window.ui.h:5 ../src/menus.ui.h:6
 msgid "Mo_ve to Trash"
 msgstr "చెత్తబుట్టకు తరలించు (_v)"
 
-#: src/baobab-main-window.ui:168
+#: ../src/baobab-main-window.ui.h:7
 msgid "Close"
 msgstr "మూసివేయి"
 
-#: src/baobab-main-window.ui:224
+#: ../src/baobab-main-window.ui.h:8
 msgid "Folder"
 msgstr "సంచయము"
 
-#: src/baobab-main-window.ui:251
+#: ../src/baobab-main-window.ui.h:9
 msgid "Size"
 msgstr "పరిమాణం"
 
-#: src/baobab-main-window.ui:271
+#: ../src/baobab-main-window.ui.h:10
 msgid "Contents"
 msgstr "విషయసూచిక"
 
-#: src/baobab-main-window.ui:289
+#: ../src/baobab-main-window.ui.h:11
 msgid "Modified"
 msgstr "సవరించిన"
 
-#: src/baobab-main-window.ui:334
+#: ../src/baobab-main-window.ui.h:12
 msgid "Rings Chart"
 msgstr "వలయాల పటం"
 
-#: src/baobab-main-window.ui:346
+#: ../src/baobab-main-window.ui.h:13
 msgid "Treemap Chart"
 msgstr "వృక్ష పటం"
 
-#: src/baobab-window.vala:189
+#: ../src/baobab-window.vala:203
 msgid "Select Folder"
 msgstr "సంచయమును ఎంచుకోండి"
 
-#: src/baobab-window.vala:191
+#: ../src/baobab-window.vala:205
+#| msgid "Cancel"
 msgid "_Cancel"
 msgstr "రద్దు (_C)"
 
-#: src/baobab-window.vala:192
+#: ../src/baobab-window.vala:206
 msgid "_Open"
 msgstr "తెరువుము (_O)"
 
-#: src/baobab-window.vala:198
+#: ../src/baobab-window.vala:211
 msgid "Recursively analyze mount points"
 msgstr "మౌంట్ స్థానాలను పునరావృతంగా విశ్లేషించు"
 
-#: src/baobab-window.vala:233
+#: ../src/baobab-window.vala:258
 msgid "Could not analyze volume."
 msgstr "పరిమాణం విశ్లేషించడానికి సాధ్యం కాలేదు."
 
-#: src/baobab-window.vala:265
+#: ../src/baobab-window.vala:290
 msgid "Failed to show help"
 msgstr "సహాయం చూపుటకు విఫలమైంది"
 
-#: src/baobab-window.vala:284
+#: ../src/baobab-window.vala:309
 msgid "Baobab"
 msgstr "బవోబాబ్"
 
-#: src/baobab-window.vala:287
+#: ../src/baobab-window.vala:312
 msgid "A graphical tool to analyze disk usage."
 msgstr "డిస్కు వినిమయ విశ్లేషణకు ఒక చిత్రాంశ పనిముట్టు."
 
-#: src/baobab-window.vala:292
+#: ../src/baobab-window.vala:317
 msgid "translator-credits"
 msgstr ""
 "Pramod <pramodfsf@gmail.com>\n"
 "Krishna Babu K <kkrothap@redhat.com>\n"
 "Praveen Illa <mail2ipn@gmail.com>, 2011-12."
 
-#: src/baobab-window.vala:361
+#: ../src/baobab-window.vala:386
 msgid "Failed to open file"
 msgstr "ఫైలు తెరుచుటకు విఫలమైంది"
 
-#: src/baobab-window.vala:381
+#: ../src/baobab-window.vala:406
 msgid "Failed to move file to the trash"
 msgstr "ఫైలును చెత్తకుండీకు కదుల్చుటకు విఫలమైంది"
 
-#: src/baobab-window.vala:485
-#, fuzzy
-msgid "Devices & Locations"
+#: ../src/baobab-window.vala:506
+msgid "Devices and locations"
 msgstr "పరికరాలు మరియు స్థానములు"
 
-#: src/baobab-window.vala:546
+#: ../src/baobab-window.vala:567
 #, c-format
+#| msgid "Could not analyze volume."
 msgid "Could not scan folder \"%s\""
 msgstr "\"%s\" సంచయాన్ని స్కాన్ చేయలేక పోయింది"
 
-#: src/baobab-window.vala:549
+#: ../src/baobab-window.vala:570
 #, c-format
+#| msgid "Could not scan folder \"%s\" or some of the folders it contains."
 msgid "Could not scan some of the folders contained in \"%s\""
 msgstr "\"%s\" నందు కలిగివున్న సంచయాలలో కొన్నిటిని స్కాన్ చేయలేక పోయింది"
 
-#: src/baobab-window.vala:568
+#: ../src/baobab-window.vala:589
+#| msgid "Could not analyze disk usage."
 msgid "Could not detect occupied disk sizes."
 msgstr "ఆక్రమించిన డిస్కు పరిమాణాలను గుర్తించలేక పోయెను."
 
-#: src/baobab-window.vala:568
+#: ../src/baobab-window.vala:589
 msgid "Apparent sizes are shown instead."
 msgstr "కనిపించే పరిణామాలు చూపబడెను."
 
 #. || is_virtual_filesystem ()
-#: src/baobab-window.vala:585 src/baobab-window.vala:591
+#: ../src/baobab-window.vala:606 ../src/baobab-window.vala:612
 #, c-format
 msgid "\"%s\" is not a valid folder"
 msgstr "\"%s\" సరైన సంచయము కాదు"
 
-#: src/baobab-window.vala:586 src/baobab-window.vala:592
+#: ../src/baobab-window.vala:607 ../src/baobab-window.vala:613
 msgid "Could not analyze disk usage."
 msgstr "డిస్కు వాడుకను విశ్లేషించలేదు."
 
-#: src/menus.ui:7
+#: ../src/menus.ui.h:1
 msgid "_Help"
 msgstr "సహాయం (_H)"
 
-#: src/menus.ui:12
+#: ../src/menus.ui.h:2
 msgid "_About"
 msgstr "గురించి (_A)"
 
-#: src/menus.ui:16
+#: ../src/menus.ui.h:3
 msgid "_Quit"
 msgstr "నిష్క్రమించు (_Q)"
 
-#: src/menus.ui:39
+#: ../src/menus.ui.h:7
+#| msgid "_Move to parent folder"
 msgid "Go to _parent folder"
 msgstr "పేరెంట్ సంచయానికి వెళ్ళు (_p)"
 
-#: src/menus.ui:45
+#: ../src/menus.ui.h:8
 msgid "Zoom _in"
 msgstr "అతిరూపించు (_i)"
 
-#: src/menus.ui:49
+#: ../src/menus.ui.h:9
 msgid "Zoom _out"
 msgstr "అవరూపించు (_o)"
-
-#~ msgid ""
-#~ "A simple application which can scan either specific folders (local or "
-#~ "remote) or volumes and give a graphical representation including each "
-#~ "directory size or percentage."
-#~ msgstr ""
-#~ "ఒక సాధారణ అనువర్తనం ఇది ఫలానా సంచయాలను(స్థానిక లేదా రిమోట్) లేదా వాల్యూమ్లను స్కాన్ చేసి మరియు ప్రతి "
-#~ "సంచయం పరిమాణం లేదా శాతాన్ని గ్రాఫికల్‌గా చూపును."
-
-#~ msgid "Scan Remote Folder…"
-#~ msgstr "రిమోట్ ఫోల్డర్ స్కాన్ చేయి ..."
 
 #~ msgid "- Disk Usage Analyzer"
 #~ msgstr "- డిస్క్ వినిమయ విశ్లేషకం"
@@ -412,6 +371,9 @@ msgstr "అవరూపించు (_o)"
 #~ msgstr "కేటాయించబడిన స్థలం (_A)"
 
 #~ msgid "All locations"
+#~ msgstr "అన్ని స్థానములు"
+
+#~ msgid "All Locations"
 #~ msgstr "అన్ని స్థానములు"
 
 #~ msgid "Toolbar is Visible"

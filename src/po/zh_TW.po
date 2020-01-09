@@ -12,25 +12,25 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils 3.1.90\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=baobab\n"
-"POT-Creation-Date: 2016-11-07 17:00+0100\n"
-"PO-Revision-Date: 2014-08-19 14:25+0800\n"
-"Last-Translator: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
+"product=baobab&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2018-02-20 22:25+0000\n"
+"PO-Revision-Date: 2018-02-24 21:09+0800\n"
+"Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (traditional)\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.6.5\n"
+"X-Generator: Poedit 2.0.3\n"
 
-#: data/org.gnome.baobab.appdata.xml.in:6 data/org.gnome.baobab.desktop.in.in:3
-#: src/baobab-main-window.ui:44
+#: data/org.gnome.baobab.appdata.xml.in:6 data/org.gnome.baobab.desktop.in:3
+#: src/baobab-main-window.ui:93
 msgid "Disk Usage Analyzer"
 msgstr "磁碟用量分析器"
 
-#: data/org.gnome.baobab.appdata.xml.in:7 data/org.gnome.baobab.desktop.in.in:4
+#: data/org.gnome.baobab.appdata.xml.in:7 data/org.gnome.baobab.desktop.in:4
 msgid "Check folder sizes and available disk space"
 msgstr "檢查資料夾大小與可用的磁碟空間"
 
@@ -38,7 +38,7 @@ msgstr "檢查資料夾大小與可用的磁碟空間"
 msgid ""
 "A simple application to keep your disk usage and available space under "
 "control."
-msgstr ""
+msgstr "讓您可以控制磁碟使用量及可用空間的簡單應用程式。"
 
 #: data/org.gnome.baobab.appdata.xml.in:12
 msgid ""
@@ -46,17 +46,22 @@ msgid ""
 "accounts. It provides both a tree and a graphical representation showing the "
 "size of each folder, making it easy to identify where disk space is wasted."
 msgstr ""
+"磁碟用量分析器可以掃描特定資料夾、儲存裝置與線上帳號。它提供樹狀與圖形表示法"
+"來顯示每個資料夾的空量，讓我們更容易分辨磁碟空間是否被浪費。"
+
+#: data/org.gnome.baobab.appdata.xml.in:34
+msgid "The GNOME Project"
+msgstr "GNOME 計畫"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.baobab.desktop.in.in:6
+#: data/org.gnome.baobab.desktop.in:6
 msgid "storage;space;cleanup;"
 msgstr "storage;space;cleanup;儲存區;空間;清理;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.baobab.desktop.in.in:10
-#, fuzzy
+#: data/org.gnome.baobab.desktop.in:10
 msgid "baobab"
-msgstr "Baobab"
+msgstr "baobab"
 
 #: data/org.gnome.baobab.gschema.xml.in:9
 msgid "Excluded partitions URIs"
@@ -72,7 +77,7 @@ msgstr "使用圖表"
 
 #: data/org.gnome.baobab.gschema.xml.in:21
 msgid "Which type of chart should be displayed."
-msgstr "要顯示哪一種類型的圖表"
+msgstr "要顯示哪一種類型的圖表。"
 
 #: data/org.gnome.baobab.gschema.xml.in:25
 msgid "Window size"
@@ -101,7 +106,7 @@ msgid_plural "%d items"
 msgstr[0] "%d 個項目"
 
 #. Translators: when the last modified time is unknown
-#: src/baobab-cellrenderers.vala:101 src/baobab-location-list.vala:70
+#: src/baobab-cellrenderers.vala:101 src/baobab-location-list.vala:79
 msgid "Unknown"
 msgstr "不明"
 
@@ -113,136 +118,138 @@ msgstr "今天"
 #. Translators: when the last modified time is "days" days ago
 #: src/baobab-cellrenderers.vala:114
 #, c-format
-msgid "%d day"
-msgid_plural "%d days"
-msgstr[0] "%d 日"
+msgid "%lu day"
+msgid_plural "%lu days"
+msgstr[0] "%lu 日"
 
 #. Translators: when the last modified time is "months" months ago
 #: src/baobab-cellrenderers.vala:118
 #, c-format
-msgid "%d month"
-msgid_plural "%d months"
-msgstr[0] "%d 個月"
+msgid "%lu month"
+msgid_plural "%lu months"
+msgstr[0] "%lu 個月"
 
 #. Translators: when the last modified time is "years" years ago
 #: src/baobab-cellrenderers.vala:122
 #, c-format
-msgid "%d year"
-msgid_plural "%d years"
-msgstr[0] "%d 年"
+msgid "%lu year"
+msgid_plural "%lu years"
+msgstr[0] "%lu 年"
 
 #: src/baobab-location-list.ui:17
-#, fuzzy
 msgid "This Computer"
-msgstr "電腦"
+msgstr "這臺電腦"
 
 #: src/baobab-location-list.ui:47
-#, fuzzy
 msgid "Remote Locations"
-msgstr "所有的位置"
+msgstr "遠端位置"
 
-#: src/baobab-location-list.vala:58
+#: src/baobab-location-list.vala:66
 #, c-format
 msgid "%s Total"
-msgstr ""
+msgstr "總計：%s"
 
-#: src/baobab-location-list.vala:61
-#, fuzzy, c-format
+#: src/baobab-location-list.vala:70
+#, c-format
 msgid "%s Available"
-msgstr "剩餘："
+msgstr "剩餘：%s"
 
 #. useful for some remote mounts where we don't know the
 #. size but do have a usage figure
-#: src/baobab-location-list.vala:75
+#: src/baobab-location-list.vala:84
 #, c-format
 msgid "%s Used"
-msgstr ""
+msgstr "已使用：%s"
 
-#: src/baobab-location.vala:72
+#: src/baobab-location-list.vala:86
+msgid "Unmounted"
+msgstr "未掛載"
+
+#: src/baobab-location.vala:73
 msgid "Home folder"
 msgstr "個人資料夾"
 
-#: src/baobab-location.vala:108
+#: src/baobab-location.vala:113
 msgid "Computer"
 msgstr "電腦"
 
-#: src/baobab-main-window.ui:7
-msgid "Scan Folder…"
-msgstr "掃描資料夾…"
-
-#: src/baobab-main-window.ui:20 src/menus.ui:25
+#: src/baobab-main-window.ui:12 src/menus.ui:25
 msgid "_Open Folder"
 msgstr "開啟資料夾(_O)"
 
-#: src/baobab-main-window.ui:29 src/menus.ui:29
+#: src/baobab-main-window.ui:21 src/menus.ui:29
 msgid "_Copy Path to Clipboard"
 msgstr "複製路徑至剪貼簿(_C)"
 
-#: src/baobab-main-window.ui:38 src/menus.ui:33
+#: src/baobab-main-window.ui:30 src/menus.ui:33
 msgid "Mo_ve to Trash"
 msgstr "丟進回收筒(_V)"
 
-#: src/baobab-main-window.ui:168
+#: src/baobab-main-window.ui:45
+msgid "Scan Folder…"
+msgstr "掃描資料夾…"
+
+#: src/baobab-main-window.ui:157
 msgid "Close"
 msgstr "關閉"
 
-#: src/baobab-main-window.ui:224
+#: src/baobab-main-window.ui:212
 msgid "Folder"
 msgstr "資料夾"
 
-#: src/baobab-main-window.ui:251
+#: src/baobab-main-window.ui:239
 msgid "Size"
 msgstr "大小"
 
-#: src/baobab-main-window.ui:271
+#: src/baobab-main-window.ui:259
 msgid "Contents"
 msgstr "內容"
 
-#: src/baobab-main-window.ui:289
+#: src/baobab-main-window.ui:277
 msgid "Modified"
 msgstr "已修改"
 
-#: src/baobab-main-window.ui:334
+#: src/baobab-main-window.ui:322
 msgid "Rings Chart"
 msgstr "環狀圖表"
 
-#: src/baobab-main-window.ui:346
+#: src/baobab-main-window.ui:334
 msgid "Treemap Chart"
 msgstr "樹狀圖表"
 
-#: src/baobab-window.vala:189
+#: src/baobab-window.vala:209
 msgid "Select Folder"
 msgstr "選擇資料夾"
 
-#: src/baobab-window.vala:191
+#: src/baobab-window.vala:211
 msgid "_Cancel"
 msgstr "取消(_C)"
 
-#: src/baobab-window.vala:192
+#: src/baobab-window.vala:212
 msgid "_Open"
 msgstr "開啟(_O)"
 
-#: src/baobab-window.vala:198
+#: src/baobab-window.vala:218
 msgid "Recursively analyze mount points"
 msgstr "遞迴分析掛載點"
 
-#: src/baobab-window.vala:233
+#: src/baobab-window.vala:253
 msgid "Could not analyze volume."
 msgstr "無法分析儲存區。"
 
-#: src/baobab-window.vala:265
+#: src/baobab-window.vala:285
 msgid "Failed to show help"
 msgstr "無法顯示求助"
 
-#: src/baobab-window.vala:284
+#: src/baobab-window.vala:304
 msgid "Baobab"
 msgstr "Baobab"
 
-#: src/baobab-window.vala:287
+#: src/baobab-window.vala:307
 msgid "A graphical tool to analyze disk usage."
 msgstr "分析磁碟使用率的圖形化工具。"
 
-#: src/baobab-window.vala:292
+#: src/baobab-window.vala:312
 msgid "translator-credits"
 msgstr ""
 "如對翻譯有任何意見，請送一封電子郵件給\n"
@@ -256,46 +263,45 @@ msgstr ""
 "Abel Cheung <abel@oaka.org>, 2001-2004\n"
 "Ming-Yen Hsu <myhsu@cyberdude.com>, 1999"
 
-#: src/baobab-window.vala:361
+#: src/baobab-window.vala:381
 msgid "Failed to open file"
 msgstr "無法開啟檔案"
 
-#: src/baobab-window.vala:381
+#: src/baobab-window.vala:401
 msgid "Failed to move file to the trash"
 msgstr "無法將檔案移至回收筒"
 
-#: src/baobab-window.vala:485
-#, fuzzy
+#: src/baobab-window.vala:505
 msgid "Devices & Locations"
 msgstr "裝置與位置"
 
-#: src/baobab-window.vala:546
+#: src/baobab-window.vala:566
 #, c-format
-msgid "Could not scan folder \"%s\""
+msgid "Could not scan folder “%s”"
 msgstr "無法掃描資料夾「%s」"
 
-#: src/baobab-window.vala:549
+#: src/baobab-window.vala:569
 #, c-format
-msgid "Could not scan some of the folders contained in \"%s\""
+msgid "Could not scan some of the folders contained in “%s”"
 msgstr "無法掃描包含於資料夾「%s」的某些資料夾"
 
-#: src/baobab-window.vala:568
+#: src/baobab-window.vala:588
 msgid "Could not detect occupied disk sizes."
 msgstr "無法偵測到佔用的磁碟容量。"
 
-#: src/baobab-window.vala:568
+#: src/baobab-window.vala:588
 msgid "Apparent sizes are shown instead."
 msgstr "顯示表面容量來代替。"
 
 #. || is_virtual_filesystem ()
-#: src/baobab-window.vala:585 src/baobab-window.vala:591
+#: src/baobab-window.vala:605 src/baobab-window.vala:611
 #, c-format
-msgid "\"%s\" is not a valid folder"
-msgstr "“%s”不是有效的資料夾"
+msgid "“%s” is not a valid folder"
+msgstr "「%s」不是有效的資料夾"
 
-#: src/baobab-window.vala:586 src/baobab-window.vala:592
+#: src/baobab-window.vala:606 src/baobab-window.vala:612
 msgid "Could not analyze disk usage."
-msgstr "無法分析磁碟使用率"
+msgstr "無法分析磁碟使用率。"
 
 #: src/menus.ui:7
 msgid "_Help"

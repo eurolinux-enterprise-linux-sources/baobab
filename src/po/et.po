@@ -16,8 +16,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils MASTER\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=baobab\n"
-"POT-Creation-Date: 2016-11-07 17:00+0100\n"
+"product=baobab&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-08-06 14:51+0000\n"
 "PO-Revision-Date: 2014-08-06 21:44+0300\n"
 "Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
 "Language-Team: Estonian <>\n"
@@ -28,76 +28,51 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: Poedit 1.5.4\n"
 
-#: data/org.gnome.baobab.appdata.xml.in:6 data/org.gnome.baobab.desktop.in.in:3
-#: src/baobab-main-window.ui:44
+msgid ""
+"A simple application which can scan either specific folders (local or "
+"remote) or volumes and give a graphical representation including each "
+"directory size or percentage."
+msgstr ""
+"Lihtne rakendus, mis skaneerib kaustu (kohalikke või kaug-) või terveid "
+"partitsioone ning kuvab kataloogide suuruse graafiliselt või "
+"protsentuaalselt."
+
 msgid "Disk Usage Analyzer"
 msgstr "Kettakasutuse analüsaator"
 
-#: data/org.gnome.baobab.appdata.xml.in:7 data/org.gnome.baobab.desktop.in.in:4
 msgid "Check folder sizes and available disk space"
 msgstr "Kaustade suuruse ja saadaoleva kettaruumi kontroll"
 
-#: data/org.gnome.baobab.appdata.xml.in:9
-msgid ""
-"A simple application to keep your disk usage and available space under "
-"control."
-msgstr ""
-
-#: data/org.gnome.baobab.appdata.xml.in:12
-msgid ""
-"Disk Usage Analyzer can scan specific folders, storage devices and online "
-"accounts. It provides both a tree and a graphical representation showing the "
-"size of each folder, making it easy to identify where disk space is wasted."
-msgstr ""
-
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.baobab.desktop.in.in:6
 msgid "storage;space;cleanup;"
 msgstr "ruum;kettakasutus;andmed;puhastamine;puhastus;"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.baobab.desktop.in.in:10
-#, fuzzy
-msgid "baobab"
-msgstr "Baobab"
-
-#: data/org.gnome.baobab.gschema.xml.in:9
 msgid "Excluded partitions URIs"
 msgstr "Välistatud jaotiste URI-d"
 
-#: data/org.gnome.baobab.gschema.xml.in:10
 msgid "A list of URIs for partitions to be excluded from scanning."
 msgstr "Läbivaatusele mittekuuluvate jaotiste URI-de loetelu."
 
-#: data/org.gnome.baobab.gschema.xml.in:20
 msgid "Active Chart"
 msgstr "Aktiivne diagramm"
 
-#: data/org.gnome.baobab.gschema.xml.in:21
 msgid "Which type of chart should be displayed."
 msgstr "Kuvatava diagrammi liik."
 
-#: data/org.gnome.baobab.gschema.xml.in:25
 msgid "Window size"
 msgstr "Akna suurus"
 
-#: data/org.gnome.baobab.gschema.xml.in:26
 msgid "The initial size of the window"
 msgstr "Akna esialgne suurus"
 
-#: data/org.gnome.baobab.gschema.xml.in:30
 msgid "Window state"
 msgstr "Akna olek"
 
-#: data/org.gnome.baobab.gschema.xml.in:31
 msgid "The GdkWindowState of the window"
 msgstr "Akna GdkWindowState"
 
-#: src/baobab-application.vala:28
 msgid "Print version information and exit"
 msgstr "Versiooniandmete printimine ja väljumine"
 
-#: src/baobab-cellrenderers.vala:91
 #, c-format
 msgid "%d item"
 msgid_plural "%d items"
@@ -105,17 +80,14 @@ msgstr[0] "%d kirje"
 msgstr[1] "%d kirjet"
 
 #. Translators: when the last modified time is unknown
-#: src/baobab-cellrenderers.vala:101 src/baobab-location-list.vala:70
 msgid "Unknown"
 msgstr "Teadmata"
 
 #. Translators: when the last modified time is today
-#: src/baobab-cellrenderers.vala:110
 msgid "Today"
 msgstr "Täna"
 
 #. Translators: when the last modified time is "days" days ago
-#: src/baobab-cellrenderers.vala:114
 #, c-format
 msgid "%d day"
 msgid_plural "%d days"
@@ -123,7 +95,6 @@ msgstr[0] "%d päev"
 msgstr[1] "%d päeva"
 
 #. Translators: when the last modified time is "months" months ago
-#: src/baobab-cellrenderers.vala:118
 #, c-format
 msgid "%d month"
 msgid_plural "%d months"
@@ -131,125 +102,78 @@ msgstr[0] "%d kuu"
 msgstr[1] "%d kuud"
 
 #. Translators: when the last modified time is "years" years ago
-#: src/baobab-cellrenderers.vala:122
 #, c-format
 msgid "%d year"
 msgid_plural "%d years"
 msgstr[0] "%d aasta"
 msgstr[1] "%d aastat"
 
-#: src/baobab-location-list.ui:17
-#, fuzzy
-msgid "This Computer"
-msgstr "Arvuti"
-
-#: src/baobab-location-list.ui:47
-#, fuzzy
-msgid "Remote Locations"
-msgstr "Kohandatud asukoht"
-
-#: src/baobab-location-list.vala:58
-#, c-format
-msgid "%s Total"
-msgstr ""
-
-#: src/baobab-location-list.vala:61
-#, fuzzy, c-format
-msgid "%s Available"
-msgstr "Vaba"
-
-#. useful for some remote mounts where we don't know the
-#. size but do have a usage figure
-#: src/baobab-location-list.vala:75
-#, c-format
-msgid "%s Used"
-msgstr ""
-
-#: src/baobab-location.vala:72
 msgid "Home folder"
 msgstr "Kodukataloog"
 
-#: src/baobab-location.vala:108
 msgid "Computer"
 msgstr "Arvuti"
 
-#: src/baobab-main-window.ui:7
 msgid "Scan Folder…"
 msgstr "Kataloogi läbivaatus…"
 
-#: src/baobab-main-window.ui:20 src/menus.ui:25
+msgid "Scan Remote Folder…"
+msgstr "Võrgukataloogi läbivaatus…"
+
 msgid "_Open Folder"
 msgstr "_Ava kataloog"
 
-#: src/baobab-main-window.ui:29 src/menus.ui:29
 msgid "_Copy Path to Clipboard"
 msgstr "_Asukoha kopeerimine lõikepuhvrisse"
 
-#: src/baobab-main-window.ui:38 src/menus.ui:33
 msgid "Mo_ve to Trash"
 msgstr "Tõsta _prügikasti"
 
-#: src/baobab-main-window.ui:168
 msgid "Close"
 msgstr "Sulge"
 
-#: src/baobab-main-window.ui:224
 msgid "Folder"
 msgstr "Kataloog"
 
-#: src/baobab-main-window.ui:251
 msgid "Size"
 msgstr "Suurus"
 
-#: src/baobab-main-window.ui:271
 msgid "Contents"
 msgstr "Sisu"
 
-#: src/baobab-main-window.ui:289
 msgid "Modified"
 msgstr "Muudeti"
 
-#: src/baobab-main-window.ui:334
 msgid "Rings Chart"
 msgstr "Ringdiagramm"
 
-#: src/baobab-main-window.ui:346
 msgid "Treemap Chart"
 msgstr "Puudiagramm"
 
-#: src/baobab-window.vala:189
 msgid "Select Folder"
 msgstr "Kataloogi valimine"
 
-#: src/baobab-window.vala:191
 msgid "_Cancel"
 msgstr "_Loobu"
 
-#: src/baobab-window.vala:192
 msgid "_Open"
 msgstr "_Ava"
 
-#: src/baobab-window.vala:198
 msgid "Recursively analyze mount points"
 msgstr "Haakepunktide rekursiivne analüüs"
 
-#: src/baobab-window.vala:233
 msgid "Could not analyze volume."
 msgstr "Köidet pole võimalik analüüsida."
 
-#: src/baobab-window.vala:265
 msgid "Failed to show help"
 msgstr "Abi kuvamine nurjus"
 
-#: src/baobab-window.vala:284
 msgid "Baobab"
 msgstr "Baobab"
 
-#: src/baobab-window.vala:287
 msgid "A graphical tool to analyze disk usage."
 msgstr "Graafiline tööriist kettakasutuse analüüsimiseks."
 
-#: src/baobab-window.vala:292
 msgid "translator-credits"
 msgstr ""
 "Lauris Kaplinski <lauris ariman ee>, 1999.\n"
@@ -258,82 +182,54 @@ msgstr ""
 "Priit Laes <amd store20 com>, 2005.\n"
 "Mattias Põldaru <mahfiaz@gmail.com>, 2012."
 
-#: src/baobab-window.vala:361
 msgid "Failed to open file"
 msgstr "Faili avamine nurjus"
 
-#: src/baobab-window.vala:381
 msgid "Failed to move file to the trash"
 msgstr "Faili viskamine prügikasti nurjus"
 
-#: src/baobab-window.vala:485
-#, fuzzy
-msgid "Devices & Locations"
+msgid "Devices and locations"
 msgstr "Seadmed ja asukohad"
 
-#: src/baobab-window.vala:546
 #, c-format
 msgid "Could not scan folder \"%s\""
 msgstr "Kataloogi \"%s\" pole võimalik skannida"
 
-#: src/baobab-window.vala:549
 #, c-format
 msgid "Could not scan some of the folders contained in \"%s\""
 msgstr "Kataloogi \"%s\" või mõnd alamkataloogi pole võimalik skannida"
 
-#: src/baobab-window.vala:568
 msgid "Could not detect occupied disk sizes."
 msgstr "Hõivatud ketaste suuruseid polnud võimalik tuvastada."
 
-#: src/baobab-window.vala:568
 msgid "Apparent sizes are shown instead."
 msgstr "Kuvatakse hoopis näivaid suuruseid."
 
 #. || is_virtual_filesystem ()
-#: src/baobab-window.vala:585 src/baobab-window.vala:591
 #, c-format
 msgid "\"%s\" is not a valid folder"
 msgstr "\"%s\" ei ole korrektne kataloog"
 
-#: src/baobab-window.vala:586 src/baobab-window.vala:592
 msgid "Could not analyze disk usage."
 msgstr "Kettakasutust pole võimalik analüüsida."
 
-#: src/menus.ui:7
 msgid "_Help"
 msgstr "A_bi"
 
-#: src/menus.ui:12
 msgid "_About"
 msgstr "_Lähemalt"
 
-#: src/menus.ui:16
 msgid "_Quit"
 msgstr "_Lõpeta"
 
-#: src/menus.ui:39
 msgid "Go to _parent folder"
 msgstr "_Liigu ülemisse kataloogi"
 
-#: src/menus.ui:45
 msgid "Zoom _in"
 msgstr "_Suurenda"
 
-#: src/menus.ui:49
 msgid "Zoom _out"
 msgstr "_Vähenda"
-
-#~ msgid ""
-#~ "A simple application which can scan either specific folders (local or "
-#~ "remote) or volumes and give a graphical representation including each "
-#~ "directory size or percentage."
-#~ msgstr ""
-#~ "Lihtne rakendus, mis skaneerib kaustu (kohalikke või kaug-) või terveid "
-#~ "partitsioone ning kuvab kataloogide suuruse graafiliselt või "
-#~ "protsentuaalselt."
-
-#~ msgid "Scan Remote Folder…"
-#~ msgstr "Võrgukataloogi läbivaatus…"
 
 #~ msgid "- Disk Usage Analyzer"
 #~ msgstr "- Kettakasutuse analüsaator"
@@ -540,6 +436,12 @@ msgstr "_Vähenda"
 
 #~ msgid "Total Size"
 #~ msgstr "Kogusuurus"
+
+#~ msgid "Available"
+#~ msgstr "Vaba"
+
+#~ msgid "Custom Location"
+#~ msgstr "Kohandatud asukoht"
 
 #~ msgid "SSH"
 #~ msgstr "SSH"

@@ -6,548 +6,549 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils.head\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=baobab\n"
-"POT-Creation-Date: 2016-11-07 17:00+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:29-0400\n"
 "PO-Revision-Date: 2008-08-19 09:13-0800\n"
 "Last-Translator: Zabeeh Khan <zabeehkhan@gmail.com>\n"
 "Language-Team: Pashto <pathanisation@googlegroups.com>\n"
 "Language: ps\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Language: Pashto, Pushto\n"
 "X-Poedit-Country: AFGHANISTAN\n"
 
-#: data/org.gnome.baobab.appdata.xml.in:6 data/org.gnome.baobab.desktop.in.in:3
-#: src/baobab-main-window.ui:44
-msgid "Disk Usage Analyzer"
-msgstr "د ټيکلي کارونې شننونکی"
-
-#: data/org.gnome.baobab.appdata.xml.in:7 data/org.gnome.baobab.desktop.in.in:4
+#: ../data/baobab.desktop.in.in.h:1
 msgid "Check folder sizes and available disk space"
 msgstr "د پوښۍ کچونه او شته ټيکلی تشه وګورﺉ"
 
-#: data/org.gnome.baobab.appdata.xml.in:9
-msgid ""
-"A simple application to keep your disk usage and available space under "
-"control."
-msgstr ""
+#: ../data/baobab.desktop.in.in.h:2 ../data/baobab-main-window.ui.h:2
+msgid "Disk Usage Analyzer"
+msgstr "د ټيکلي کارونې شننونکی"
 
-#: data/org.gnome.baobab.appdata.xml.in:12
-msgid ""
-"Disk Usage Analyzer can scan specific folders, storage devices and online "
-"accounts. It provides both a tree and a graphical representation showing the "
-"size of each folder, making it easy to identify where disk space is wasted."
-msgstr ""
+#: ../data/baobab-preferences-dialog.ui.h:1
+msgid "Disk Usage Analyzer Preferences"
+msgstr "د ټيکلي کارونې شننونکي غوراوي"
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.baobab.desktop.in.in:6
-msgid "storage;space;cleanup;"
-msgstr ""
+#: ../data/baobab-preferences-dialog.ui.h:2
+msgid "Select _devices to include in filesystem scan:"
+msgstr "هغه _وزلې چې د دوتنه غونډال په ځېرنه کې يې ننويستل غواړﺉ وټاکئ:"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.baobab.desktop.in.in:10
-#, fuzzy
-msgid "baobab"
-msgstr "باوبېب"
+#: ../data/baobab-preferences-dialog.ui.h:3
+msgid "_Monitor changes to your home folder"
+msgstr "د خپلې کور پوښۍ بدلونونه ليدل_"
 
-#: data/org.gnome.baobab.gschema.xml.in:9
-msgid "Excluded partitions URIs"
-msgstr ""
-
-#: data/org.gnome.baobab.gschema.xml.in:10
+#: ../data/org.gnome.baobab.gschema.xml.in.h:1
 msgid "A list of URIs for partitions to be excluded from scanning."
 msgstr ""
 
-#: data/org.gnome.baobab.gschema.xml.in:20
+#: ../data/org.gnome.baobab.gschema.xml.in.h:2
 msgid "Active Chart"
 msgstr ""
 
-#: data/org.gnome.baobab.gschema.xml.in:21
+#: ../data/org.gnome.baobab.gschema.xml.in.h:3
+msgid "Excluded partitions URIs"
+msgstr ""
+
+#: ../data/org.gnome.baobab.gschema.xml.in.h:4
+#, fuzzy
+msgid "Monitor Home"
+msgstr "ليدانی_"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.h:5
+#, fuzzy
+msgid "Statusbar is Visible"
+msgstr "انکړ پټه ښکاري"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.h:6
+msgid "Toolbar is Visible"
+msgstr "توکپټه ښکاري"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.h:7
+msgid "Whether any change to the home directory should be monitored."
+msgstr ""
+
+#: ../data/org.gnome.baobab.gschema.xml.in.h:8
+msgid "Whether the status bar at the bottom of main window should be visible."
+msgstr ""
+
+#: ../data/org.gnome.baobab.gschema.xml.in.h:9
+msgid "Whether the toolbar should be visible in main window."
+msgstr ""
+
+#: ../data/org.gnome.baobab.gschema.xml.in.h:10
 #, fuzzy
 msgid "Which type of chart should be displayed."
 msgstr "که څنګپټه ښکارېدل پکار وي"
 
-#: data/org.gnome.baobab.gschema.xml.in:25
-#, fuzzy
-msgid "Window size"
-msgstr "وېنډوز ونډه"
+#: ../data/baobab-main-window.ui.h:1
+msgid "All_ocated Space"
+msgstr "ځا_نګړې تشه"
 
-#: data/org.gnome.baobab.gschema.xml.in:26
-msgid "The initial size of the window"
+#: ../data/baobab-main-window.ui.h:3
+msgid "Refresh"
+msgstr "تاندول"
+
+#: ../data/baobab-main-window.ui.h:4
+msgid "S_can Remote Folder..."
+msgstr "...لرې پوښۍ ځ_ېرل"
+
+#: ../data/baobab-main-window.ui.h:5
+msgid "Scan F_older..."
+msgstr "...پ_وښۍ ځېرل"
+
+#: ../data/baobab-main-window.ui.h:6
+msgid "Scan Filesystem"
+msgstr "دوتنه غونډال ځېرل"
+
+#: ../data/baobab-main-window.ui.h:7
+msgid "Scan Folder"
+msgstr "پوښۍ ځېرل"
+
+#: ../data/baobab-main-window.ui.h:8
+msgid "Scan Home"
+msgstr "کور ځېرل"
+
+#: ../data/baobab-main-window.ui.h:9
+msgid "Scan Remote Folder"
+msgstr "لرې پوښۍ ځېرل"
+
+#: ../data/baobab-main-window.ui.h:10
+msgid "Scan _Filesystem"
+msgstr "دوتنه _غونډال ځېرل"
+
+#: ../data/baobab-main-window.ui.h:11
+msgid "Scan _Home Folder"
+msgstr "کور _پوښۍ ځېرل"
+
+#: ../data/baobab-main-window.ui.h:12
+msgid "Scan a folder"
+msgstr "پوښۍ ځېرل"
+
+#: ../data/baobab-main-window.ui.h:13
+msgid "Scan a remote folder"
+msgstr "کوم لرې پوښۍ ځېرل"
+
+#: ../data/baobab-main-window.ui.h:14
+msgid "Scan filesystem"
+msgstr "دوتنه غونډال ځېرل"
+
+#: ../data/baobab-main-window.ui.h:15
+msgid "Scan home folder"
+msgstr "کور پوښۍ ځېرل"
+
+#: ../data/baobab-main-window.ui.h:16
+msgid "St_atusbar"
+msgstr "ان_کړپټه"
+
+#: ../data/baobab-main-window.ui.h:17
+msgid "Stop scanning"
+msgstr "ځېرنه تمول"
+
+#: ../data/baobab-main-window.ui.h:18
+msgid "_Analyzer"
+msgstr "شننونکی_"
+
+#: ../data/baobab-main-window.ui.h:19
+msgid "_Collapse All"
+msgstr "ټول وېجاړول_"
+
+#: ../data/baobab-main-window.ui.h:20
+msgid "_Contents"
+msgstr "منځپانګې_"
+
+#: ../data/baobab-main-window.ui.h:21
+msgid "_Edit"
+msgstr "سمون_"
+
+#: ../data/baobab-main-window.ui.h:22
+msgid "_Expand All"
+msgstr "ټول غځول_"
+
+#: ../data/baobab-main-window.ui.h:23
+msgid "_Help"
+msgstr "مرسته_"
+
+#: ../data/baobab-main-window.ui.h:24
+msgid "_Toolbar"
+msgstr "توکپټه_"
+
+#: ../data/baobab-main-window.ui.h:25
+msgid "_View"
+msgstr "کوت_"
+
+#: ../src/baobab.c:136 ../src/baobab.c:388
+msgid "Scanning..."
+msgstr "...ځېرل کيږي"
+
+#: ../src/baobab.c:182
+msgid "Total filesystem capacity:"
 msgstr ""
 
-#: data/org.gnome.baobab.gschema.xml.in:30
-#, fuzzy
-msgid "Window state"
-msgstr "وېنډوز ونډه"
+#: ../src/baobab.c:183
+msgid "used:"
+msgstr ":کارېدلی"
 
-#: data/org.gnome.baobab.gschema.xml.in:31
-msgid "The GdkWindowState of the window"
+#: ../src/baobab.c:184
+msgid "available:"
+msgstr ":شته"
+
+#. set statusbar, percentage and allocated/normal size
+#: ../src/baobab.c:273 ../src/baobab.c:330 ../src/callbacks.c:265
+msgid "Calculating percentage bars..."
+msgstr "سلنه پټې شمېرل کيږي..."
+
+#: ../src/baobab.c:284 ../src/baobab.c:1325 ../src/callbacks.c:269
+msgid "Ready"
+msgstr "چمتو دی"
+
+#: ../src/baobab.c:421
+msgid "Total filesystem capacity"
 msgstr ""
 
-#: src/baobab-application.vala:28
-msgid "Print version information and exit"
-msgstr ""
+#: ../src/baobab.c:443
+msgid "Total filesystem usage"
+msgstr "د دوتنه غونډال بشپړه کارونه"
 
-#: src/baobab-cellrenderers.vala:91
+#: ../src/baobab.c:484
+msgid "contains hardlinks for:"
+msgstr "لپاره کلکتړنه لري:"
+
+#: ../src/baobab.c:493
 #, fuzzy, c-format
-msgid "%d item"
-msgid_plural "%d items"
+msgid "%5d item"
+msgid_plural "%5d items"
 msgstr[0] "توکی % 5d"
 msgstr[1] "توکي % 5d"
 
-#. Translators: when the last modified time is unknown
-#: src/baobab-cellrenderers.vala:101 src/baobab-location-list.vala:70
-msgid "Unknown"
-msgstr ""
+#: ../src/baobab.c:620
+msgid "Could not initialize monitoring"
+msgstr "ليدنه نه شي پېلولی"
 
-#. Translators: when the last modified time is today
-#: src/baobab-cellrenderers.vala:110
-msgid "Today"
-msgstr ""
+#: ../src/baobab.c:621
+msgid "Changes to your home folder will not be monitored."
+msgstr "ستاسو د کور پوښۍ بدلونونه به ونه ليدل شي."
 
-#. Translators: when the last modified time is "days" days ago
-#: src/baobab-cellrenderers.vala:114
-#, c-format
-msgid "%d day"
-msgid_plural "%d days"
-msgstr[0] ""
-msgstr[1] ""
+#: ../src/baobab.c:945
+msgid "Move to parent folder"
+msgstr "پلرينې پوښۍ ته خوځول"
 
-#. Translators: when the last modified time is "months" months ago
-#: src/baobab-cellrenderers.vala:118
-#, c-format
-msgid "%d month"
-msgid_plural "%d months"
-msgstr[0] ""
-msgstr[1] ""
+#: ../src/baobab.c:949
+msgid "Zoom in"
+msgstr "لوډېرول"
 
-#. Translators: when the last modified time is "years" years ago
-#: src/baobab-cellrenderers.vala:122
-#, c-format
-msgid "%d year"
-msgid_plural "%d years"
-msgstr[0] ""
-msgstr[1] ""
+#: ../src/baobab.c:953
+msgid "Zoom out"
+msgstr "لوکمول"
 
-#: src/baobab-location-list.ui:17
-msgid "This Computer"
-msgstr ""
-
-#: src/baobab-location-list.ui:47
+#: ../src/baobab.c:957
 #, fuzzy
-msgid "Remote Locations"
-msgstr "دوديز ځای"
+msgid "Save screenshot"
+msgstr "پرده انځور ساتل"
 
-#: src/baobab-location-list.vala:58
-#, c-format
-msgid "%s Total"
+#: ../src/baobab.c:1143
+msgid "View as Rings Chart"
+msgstr "څرګندمن کتل Rings لکه"
+
+#: ../src/baobab.c:1145
+msgid "View as Treemap Chart"
+msgstr "څرګندمن کتل Treemap لکه"
+
+#: ../src/baobab.c:1250
+msgid "Show version"
 msgstr ""
 
-#: src/baobab-location-list.vala:61
-#, fuzzy, c-format
-msgid "%s Available"
+#: ../src/baobab.c:1251
+msgid "[DIRECTORY]"
+msgstr ""
+
+#: ../src/baobab.c:1281
+msgid "Too many arguments. Only one directory can be specified."
+msgstr ""
+
+#: ../src/baobab.c:1298
+msgid "Could not detect any mount point."
+msgstr "کوم درول ټکي ونه موندل شول."
+
+#: ../src/baobab.c:1300
+msgid "Without mount points disk usage cannot be analyzed."
+msgstr ""
+
+#: ../src/baobab-chart.c:205
+msgid "Maximum depth"
+msgstr ""
+
+#: ../src/baobab-chart.c:206
+msgid "The maximum depth drawn in the chart from the root"
+msgstr ""
+
+#: ../src/baobab-chart.c:215
+msgid "Chart model"
+msgstr "د څرګندوی بېلګه"
+
+#: ../src/baobab-chart.c:216
+msgid "Set the model of the chart"
+msgstr "د څرګندوی بېلګه ټاکل"
+
+#: ../src/baobab-chart.c:223
+msgid "Chart root node"
+msgstr ""
+
+#: ../src/baobab-chart.c:224
+msgid "Set the root node from the model"
+msgstr ""
+
+#: ../src/baobab-chart.c:1690
+msgid "Cannot create pixbuf image!"
+msgstr "انځور نه شي جوړولی! pixbuf"
+
+#. Popup the File chooser dialog
+#: ../src/baobab-chart.c:1700
+msgid "Save Snapshot"
+msgstr "سملاسي انځور ساتل"
+
+#: ../src/baobab-chart.c:1727
+msgid "_Image type:"
+msgstr ":انځور ډول_"
+
+#: ../src/baobab-prefs.c:172
+msgid "Scan"
+msgstr "ځېرل"
+
+#: ../src/baobab-prefs.c:179
+msgid "Device"
+msgstr "وزله"
+
+#: ../src/baobab-prefs.c:187
+msgid "Mount Point"
+msgstr "درول ټکی"
+
+#: ../src/baobab-prefs.c:195
+msgid "Filesystem Type"
+msgstr "د دوتنه غونډال ډول"
+
+#: ../src/baobab-prefs.c:203
+msgid "Total Size"
+msgstr "ټول کچ"
+
+#: ../src/baobab-prefs.c:212
+msgid "Available"
 msgstr "شته"
 
-#. useful for some remote mounts where we don't know the
-#. size but do have a usage figure
-#: src/baobab-location-list.vala:75
+#: ../src/baobab-remote-connect-dialog.c:77
 #, c-format
-msgid "%s Used"
+msgid "Cannot scan location \"%s\""
+msgstr "ځای نه شي ځېرلی \"%s\""
+
+#: ../src/baobab-remote-connect-dialog.c:175
+msgid "Custom Location"
+msgstr "دوديز ځای"
+
+#: ../src/baobab-remote-connect-dialog.c:177
+msgid "SSH"
+msgstr "SSH"
+
+#: ../src/baobab-remote-connect-dialog.c:180
+msgid "Public FTP"
+msgstr "FTP ټولګړی"
+
+#: ../src/baobab-remote-connect-dialog.c:182
+msgid "FTP (with login)"
+msgstr "(د ننوت سره) FTP"
+
+#: ../src/baobab-remote-connect-dialog.c:185
+msgid "Windows share"
+msgstr "وېنډوز ونډه"
+
+#: ../src/baobab-remote-connect-dialog.c:187
+msgid "WebDAV (HTTP)"
+msgstr "WebDAV (HTTP)"
+
+#: ../src/baobab-remote-connect-dialog.c:189
+msgid "Secure WebDAV (HTTPS)"
+msgstr "خوندي WebDAV (HTTPS)"
+
+#: ../src/baobab-remote-connect-dialog.c:249
+msgid "Cannot Connect to Server. You must enter a name for the server."
+msgstr "پالنګر سره نه شي نښلېدلی. ښايي چې تاسو د پالنګر لپاره يو نوم وليکئ."
+
+#: ../src/baobab-remote-connect-dialog.c:252
+msgid "Please enter a name and try again."
+msgstr "لورينه وکړئ يو نوم وليکﺉ او بيا هڅه وکړﺉ."
+
+#: ../src/baobab-remote-connect-dialog.c:441
+msgid "_Location (URI):"
+msgstr ":(URI) ځای_"
+
+#: ../src/baobab-remote-connect-dialog.c:463
+msgid "_Server:"
+msgstr ":پالنګر_"
+
+#: ../src/baobab-remote-connect-dialog.c:482
+msgid "Optional information:"
+msgstr ":غوراويزې خبرتياوې"
+
+#: ../src/baobab-remote-connect-dialog.c:494
+msgid "_Share:"
+msgstr ":ونډول_"
+
+#: ../src/baobab-remote-connect-dialog.c:515
+msgid "_Port:"
+msgstr ":درشل_"
+
+#: ../src/baobab-remote-connect-dialog.c:535
+msgid "_Folder:"
+msgstr ":پوښۍ_"
+
+#: ../src/baobab-remote-connect-dialog.c:555
+msgid "_User Name:"
+msgstr ":کارن نوم_"
+
+#: ../src/baobab-remote-connect-dialog.c:576
+msgid "_Domain Name:"
+msgstr ":د شپول نوم_"
+
+#: ../src/baobab-remote-connect-dialog.c:643
+msgid "Connect to Server"
+msgstr "پالنګر سره نښلېدل"
+
+#: ../src/baobab-remote-connect-dialog.c:659
+msgid "Service _type:"
+msgstr ":د پالنې _ډول"
+
+#: ../src/baobab-remote-connect-dialog.c:778
+msgid "_Scan"
+msgstr "ځېرل_"
+
+#: ../src/baobab-treeview.c:82
+msgid "Rescan your home folder?"
+msgstr "خپل کور پوښۍ بيا ځېرل غواړﺉ؟"
+
+#: ../src/baobab-treeview.c:83
+msgid ""
+"The content of your home folder has changed. Select rescan to update the "
+"disk usage details."
 msgstr ""
 
-#: src/baobab-location.vala:72
-#, fuzzy
-msgid "Home folder"
-msgstr "کور پوښۍ ځېرل"
+#: ../src/baobab-treeview.c:84
+msgid "_Rescan"
+msgstr "بياځېرل_"
 
-#: src/baobab-location.vala:108
-msgid "Computer"
-msgstr ""
-
-#: src/baobab-main-window.ui:7
-#, fuzzy
-msgid "Scan Folder…"
-msgstr "پوښۍ ځېرل"
-
-#: src/baobab-main-window.ui:20 src/menus.ui:25
-msgid "_Open Folder"
-msgstr "پوښۍ پرانيستل_"
-
-#: src/baobab-main-window.ui:29 src/menus.ui:29
-msgid "_Copy Path to Clipboard"
-msgstr ""
-
-#: src/baobab-main-window.ui:38 src/menus.ui:33
-msgid "Mo_ve to Trash"
-msgstr "خځ_لنۍ ته لېږل"
-
-#: src/baobab-main-window.ui:168
-msgid "Close"
-msgstr ""
-
-#: src/baobab-main-window.ui:224
+#: ../src/baobab-treeview.c:222
 msgid "Folder"
 msgstr "پوښۍ"
 
-#: src/baobab-main-window.ui:251
+#: ../src/baobab-treeview.c:244
+msgid "Usage"
+msgstr "کارونه"
+
+#: ../src/baobab-treeview.c:258
 msgid "Size"
 msgstr "کچ"
 
-#: src/baobab-main-window.ui:271
+#: ../src/baobab-treeview.c:274
 msgid "Contents"
 msgstr "منځپانګې"
 
-#: src/baobab-main-window.ui:289
-msgid "Modified"
-msgstr ""
-
-#: src/baobab-main-window.ui:334
-#, fuzzy
-msgid "Rings Chart"
-msgstr "څرګندمن کتل Rings لکه"
-
-#: src/baobab-main-window.ui:346
-#, fuzzy
-msgid "Treemap Chart"
-msgstr "څرګندمن کتل Treemap لکه"
-
-#: src/baobab-window.vala:189
+#: ../src/baobab-utils.c:72
 msgid "Select Folder"
 msgstr "پوښۍ ټاکل"
 
-#: src/baobab-window.vala:191
-msgid "_Cancel"
+#. add extra widget
+#: ../src/baobab-utils.c:84
+msgid "_Show hidden folders"
+msgstr "پټې پوښۍ ښودل_"
+
+#: ../src/baobab-utils.c:263
+msgid "Cannot check an excluded folder!"
 msgstr ""
 
-#: src/baobab-window.vala:192
-msgid "_Open"
-msgstr ""
+#: ../src/baobab-utils.c:287
+#, c-format
+msgid "\"%s\" is not a valid folder"
+msgstr "سمه پوښۍ نه ده \"%s\""
 
-#: src/baobab-window.vala:198
-msgid "Recursively analyze mount points"
-msgstr ""
-
-#: src/baobab-window.vala:233
-#, fuzzy
-msgid "Could not analyze volume."
+#: ../src/baobab-utils.c:290
+msgid "Could not analyze disk usage."
 msgstr "د ټيکلي کارونه نه شي شننولی."
 
-#: src/baobab-window.vala:265
-msgid "Failed to show help"
+#: ../src/baobab-utils.c:326
+msgid "_Open Folder"
+msgstr "پوښۍ پرانيستل_"
+
+#: ../src/baobab-utils.c:332
+msgid "Mo_ve to Trash"
+msgstr "خځ_لنۍ ته لېږل"
+
+#: ../src/baobab-utils.c:362
+#, c-format
+msgid "Could not open folder \"%s\""
+msgstr "پوښۍ نه شي پرانيستلی \"%s\""
+
+#: ../src/baobab-utils.c:365
+msgid "There is no installed viewer capable of displaying the folder."
 msgstr ""
 
-#: src/baobab-window.vala:284
+#: ../src/baobab-utils.c:433
+#, c-format
+msgid "Could not move \"%s\" to the Trash"
+msgstr "خځلنۍ ته نه شي لېږلی \"%s\""
+
+#: ../src/baobab-utils.c:441
+msgid "Could not move file to the Trash"
+msgstr "دوتنه خځلنۍ ته نه شي لېږلی"
+
+#: ../src/baobab-utils.c:443
+#, c-format
+msgid "Details: %s"
+msgstr "%s :خبرتياوې"
+
+#: ../src/baobab-utils.c:479
+msgid "There was an error displaying help."
+msgstr ".د مرستې په ښودلو کې ستونزه رامنځ ته شوه"
+
+#: ../src/callbacks.c:76
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+
+#: ../src/callbacks.c:81
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+
+#: ../src/callbacks.c:86
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+
+#: ../src/callbacks.c:101
 msgid "Baobab"
 msgstr "باوبېب"
 
-#: src/baobab-window.vala:287
+#: ../src/callbacks.c:102
 msgid "A graphical tool to analyze disk usage."
 msgstr "د ټيکلي د کارونې شننولو لپاره يو کښنيز توکی"
 
-#: src/baobab-window.vala:292
+#: ../src/callbacks.c:110
 msgid "translator-credits"
 msgstr ""
 "Zabeeh Khan <zabeehkhan@gmail.com>\n"
 "The Pathanisation Project <pathanisation@googlegroups.com>"
 
-#: src/baobab-window.vala:361
-#, fuzzy
-msgid "Failed to open file"
-msgstr "پلرينې پوښۍ ته خوځول"
-
-#: src/baobab-window.vala:381
-#, fuzzy
-msgid "Failed to move file to the trash"
-msgstr "دوتنه خځلنۍ ته نه شي لېږلی"
-
-#: src/baobab-window.vala:485
-msgid "Devices & Locations"
-msgstr ""
-
-#: src/baobab-window.vala:546
-#, fuzzy, c-format
-msgid "Could not scan folder \"%s\""
-msgstr "پوښۍ نه شي پرانيستلی \"%s\""
-
-#: src/baobab-window.vala:549
-#, fuzzy, c-format
-msgid "Could not scan some of the folders contained in \"%s\""
-msgstr "پوښۍ نه شي پرانيستلی \"%s\""
-
-#: src/baobab-window.vala:568
-#, fuzzy
-msgid "Could not detect occupied disk sizes."
-msgstr "کوم درول ټکي ونه موندل شول."
-
-#: src/baobab-window.vala:568
-msgid "Apparent sizes are shown instead."
-msgstr ""
-
-#. || is_virtual_filesystem ()
-#: src/baobab-window.vala:585 src/baobab-window.vala:591
-#, c-format
-msgid "\"%s\" is not a valid folder"
-msgstr "سمه پوښۍ نه ده \"%s\""
-
-#: src/baobab-window.vala:586 src/baobab-window.vala:592
-msgid "Could not analyze disk usage."
-msgstr "د ټيکلي کارونه نه شي شننولی."
-
-#: src/menus.ui:7
-msgid "_Help"
-msgstr "مرسته_"
-
-#: src/menus.ui:12
-msgid "_About"
-msgstr ""
-
-#: src/menus.ui:16
-msgid "_Quit"
-msgstr ""
-
-#: src/menus.ui:39
-#, fuzzy
-msgid "Go to _parent folder"
-msgstr "پلرينې پوښۍ ته خوځول"
-
-#: src/menus.ui:45
-#, fuzzy
-msgid "Zoom _in"
-msgstr "لوډېرول"
-
-#: src/menus.ui:49
-#, fuzzy
-msgid "Zoom _out"
-msgstr "لوکمول"
-
-#~ msgid "Disk Usage Analyzer Preferences"
-#~ msgstr "د ټيکلي کارونې شننونکي غوراوي"
-
-#~ msgid "Select _devices to include in filesystem scan:"
-#~ msgstr "هغه _وزلې چې د دوتنه غونډال په ځېرنه کې يې ننويستل غواړﺉ وټاکئ:"
-
-#~ msgid "_Monitor changes to your home folder"
-#~ msgstr "د خپلې کور پوښۍ بدلونونه ليدل_"
-
-#, fuzzy
-#~ msgid "Monitor Home"
-#~ msgstr "ليدانی_"
-
-#, fuzzy
-#~ msgid "Statusbar is Visible"
-#~ msgstr "انکړ پټه ښکاري"
-
-#~ msgid "Toolbar is Visible"
-#~ msgstr "توکپټه ښکاري"
-
-#~ msgid "All_ocated Space"
-#~ msgstr "ځا_نګړې تشه"
-
-#~ msgid "Refresh"
-#~ msgstr "تاندول"
-
-#~ msgid "S_can Remote Folder..."
-#~ msgstr "...لرې پوښۍ ځ_ېرل"
-
-#~ msgid "Scan F_older..."
-#~ msgstr "...پ_وښۍ ځېرل"
-
-#~ msgid "Scan Filesystem"
-#~ msgstr "دوتنه غونډال ځېرل"
-
-#~ msgid "Scan Home"
-#~ msgstr "کور ځېرل"
-
-#~ msgid "Scan Remote Folder"
-#~ msgstr "لرې پوښۍ ځېرل"
-
-#~ msgid "Scan _Filesystem"
-#~ msgstr "دوتنه _غونډال ځېرل"
-
-#~ msgid "Scan _Home Folder"
-#~ msgstr "کور _پوښۍ ځېرل"
-
-#~ msgid "Scan a folder"
-#~ msgstr "پوښۍ ځېرل"
-
-#~ msgid "Scan a remote folder"
-#~ msgstr "کوم لرې پوښۍ ځېرل"
-
-#~ msgid "Scan filesystem"
-#~ msgstr "دوتنه غونډال ځېرل"
-
-#~ msgid "St_atusbar"
-#~ msgstr "ان_کړپټه"
-
-#~ msgid "Stop scanning"
-#~ msgstr "ځېرنه تمول"
-
-#~ msgid "_Analyzer"
-#~ msgstr "شننونکی_"
-
-#~ msgid "_Collapse All"
-#~ msgstr "ټول وېجاړول_"
-
-#~ msgid "_Contents"
-#~ msgstr "منځپانګې_"
-
-#~ msgid "_Edit"
-#~ msgstr "سمون_"
-
-#~ msgid "_Expand All"
-#~ msgstr "ټول غځول_"
-
-#~ msgid "_Toolbar"
-#~ msgstr "توکپټه_"
-
-#~ msgid "_View"
-#~ msgstr "کوت_"
-
-#~ msgid "Scanning..."
-#~ msgstr "...ځېرل کيږي"
-
-#~ msgid "used:"
-#~ msgstr ":کارېدلی"
-
-#~ msgid "available:"
-#~ msgstr ":شته"
-
-#~ msgid "Calculating percentage bars..."
-#~ msgstr "سلنه پټې شمېرل کيږي..."
-
-#~ msgid "Ready"
-#~ msgstr "چمتو دی"
-
-#~ msgid "Total filesystem usage"
-#~ msgstr "د دوتنه غونډال بشپړه کارونه"
-
-#~ msgid "contains hardlinks for:"
-#~ msgstr "لپاره کلکتړنه لري:"
-
-#~ msgid "Could not initialize monitoring"
-#~ msgstr "ليدنه نه شي پېلولی"
-
-#~ msgid "Changes to your home folder will not be monitored."
-#~ msgstr "ستاسو د کور پوښۍ بدلونونه به ونه ليدل شي."
-
-#, fuzzy
-#~ msgid "Save screenshot"
-#~ msgstr "پرده انځور ساتل"
-
-#~ msgid "Chart model"
-#~ msgstr "د څرګندوی بېلګه"
-
-#~ msgid "Set the model of the chart"
-#~ msgstr "د څرګندوی بېلګه ټاکل"
-
-#~ msgid "Cannot create pixbuf image!"
-#~ msgstr "انځور نه شي جوړولی! pixbuf"
-
-#~ msgid "Save Snapshot"
-#~ msgstr "سملاسي انځور ساتل"
-
-#~ msgid "_Image type:"
-#~ msgstr ":انځور ډول_"
-
-#~ msgid "Scan"
-#~ msgstr "ځېرل"
-
-#~ msgid "Device"
-#~ msgstr "وزله"
-
-#~ msgid "Mount Point"
-#~ msgstr "درول ټکی"
-
-#~ msgid "Filesystem Type"
-#~ msgstr "د دوتنه غونډال ډول"
-
-#~ msgid "Total Size"
-#~ msgstr "ټول کچ"
-
-#~ msgid "Cannot scan location \"%s\""
-#~ msgstr "ځای نه شي ځېرلی \"%s\""
-
-#~ msgid "SSH"
-#~ msgstr "SSH"
-
-#~ msgid "Public FTP"
-#~ msgstr "FTP ټولګړی"
-
-#~ msgid "FTP (with login)"
-#~ msgstr "(د ننوت سره) FTP"
-
-#~ msgid "WebDAV (HTTP)"
-#~ msgstr "WebDAV (HTTP)"
-
-#~ msgid "Secure WebDAV (HTTPS)"
-#~ msgstr "خوندي WebDAV (HTTPS)"
-
-#~ msgid "Cannot Connect to Server. You must enter a name for the server."
-#~ msgstr "پالنګر سره نه شي نښلېدلی. ښايي چې تاسو د پالنګر لپاره يو نوم وليکئ."
-
-#~ msgid "Please enter a name and try again."
-#~ msgstr "لورينه وکړئ يو نوم وليکﺉ او بيا هڅه وکړﺉ."
-
-#~ msgid "_Location (URI):"
-#~ msgstr ":(URI) ځای_"
-
-#~ msgid "_Server:"
-#~ msgstr ":پالنګر_"
-
-#~ msgid "Optional information:"
-#~ msgstr ":غوراويزې خبرتياوې"
-
-#~ msgid "_Share:"
-#~ msgstr ":ونډول_"
-
-#~ msgid "_Port:"
-#~ msgstr ":درشل_"
-
-#~ msgid "_Folder:"
-#~ msgstr ":پوښۍ_"
-
-#~ msgid "_User Name:"
-#~ msgstr ":کارن نوم_"
-
-#~ msgid "_Domain Name:"
-#~ msgstr ":د شپول نوم_"
-
-#~ msgid "Connect to Server"
-#~ msgstr "پالنګر سره نښلېدل"
-
-#~ msgid "Service _type:"
-#~ msgstr ":د پالنې _ډول"
-
-#~ msgid "_Scan"
-#~ msgstr "ځېرل_"
-
-#~ msgid "Rescan your home folder?"
-#~ msgstr "خپل کور پوښۍ بيا ځېرل غواړﺉ؟"
-
-#~ msgid "_Rescan"
-#~ msgstr "بياځېرل_"
-
-#~ msgid "Usage"
-#~ msgstr "کارونه"
-
-#~ msgid "_Show hidden folders"
-#~ msgstr "پټې پوښۍ ښودل_"
-
-#~ msgid "Could not move \"%s\" to the Trash"
-#~ msgstr "خځلنۍ ته نه شي لېږلی \"%s\""
-
-#~ msgid "Details: %s"
-#~ msgstr "%s :خبرتياوې"
-
-#~ msgid "There was an error displaying help."
-#~ msgstr ".د مرستې په ښودلو کې ستونزه رامنځ ته شوه"
-
-#~ msgid "The document does not exist."
-#~ msgstr "لاسوند شتون نه لري."
-
-#~ msgid "The folder does not exist."
-#~ msgstr ".پوښۍ شتون نه لري"
+#: ../src/callbacks.c:208
+msgid "The document does not exist."
+msgstr "لاسوند شتون نه لري."
+
+#: ../src/callbacks.c:289
+msgid "The folder does not exist."
+msgstr ".پوښۍ شتون نه لري"

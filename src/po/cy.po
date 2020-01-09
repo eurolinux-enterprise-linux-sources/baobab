@@ -21,9 +21,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=baobab\n"
-"POT-Creation-Date: 2016-11-07 17:00+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-10-06 14:29-0400\n"
 "PO-Revision-Date: 2006-06-30 23:13-0000\n"
 "Last-Translator: Rhys Jones <rhys@sucs.org>\n"
 "Language-Team: Cymraeg <gnome-cy@lists.linux.org.uk>\n"
@@ -35,247 +34,575 @@ msgstr ""
 "11) ? 2 : 3;\n"
 "X-Poedit-Language: Welsh\n"
 
-#: data/org.gnome.baobab.appdata.xml.in:6 data/org.gnome.baobab.desktop.in.in:3
-#: src/baobab-main-window.ui:44
+#: ../data/baobab.desktop.in.in.h:1
+msgid "Check folder sizes and available disk space"
+msgstr ""
+
+#: ../data/baobab.desktop.in.in.h:2 ../data/baobab-main-window.ui.h:2
 #, fuzzy
 msgid "Disk Usage Analyzer"
 msgstr "Dadansoddydd Defnydd Disg"
 
-#: data/org.gnome.baobab.appdata.xml.in:7 data/org.gnome.baobab.desktop.in.in:4
-msgid "Check folder sizes and available disk space"
-msgstr ""
-
-#: data/org.gnome.baobab.appdata.xml.in:9
-msgid ""
-"A simple application to keep your disk usage and available space under "
-"control."
-msgstr ""
-
-#: data/org.gnome.baobab.appdata.xml.in:12
-msgid ""
-"Disk Usage Analyzer can scan specific folders, storage devices and online "
-"accounts. It provides both a tree and a graphical representation showing the "
-"size of each folder, making it easy to identify where disk space is wasted."
-msgstr ""
-
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.baobab.desktop.in.in:6
-msgid "storage;space;cleanup;"
-msgstr ""
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.baobab.desktop.in.in:10
+#: ../data/baobab-preferences-dialog.ui.h:1
 #, fuzzy
-msgid "baobab"
-msgstr "Baobab"
+msgid "Disk Usage Analyzer Preferences"
+msgstr "Hoffterau Dadansoddydd Defnydd Disg"
 
-#: data/org.gnome.baobab.gschema.xml.in:9
+#: ../data/baobab-preferences-dialog.ui.h:2
 #, fuzzy
-msgid "Excluded partitions URIs"
-msgstr "Ymraniadau wedi'u heithrio"
+msgid "Select _devices to include in filesystem scan:"
+msgstr "Dewis _dyfeisiau i'w cynnwys wrth sganio'r system:"
 
-#: data/org.gnome.baobab.gschema.xml.in:10
+#: ../data/baobab-preferences-dialog.ui.h:3
+msgid "_Monitor changes to your home folder"
+msgstr ""
+
+#: ../data/org.gnome.baobab.gschema.xml.in.h:1
 #, fuzzy
 msgid "A list of URIs for partitions to be excluded from scanning."
 msgstr "Rhestr o raniadau i'w heithrio o'r chwilio."
 
-#: data/org.gnome.baobab.gschema.xml.in:20
+#: ../data/org.gnome.baobab.gschema.xml.in.h:2
 msgid "Active Chart"
 msgstr ""
 
-#: data/org.gnome.baobab.gschema.xml.in:21
+#: ../data/org.gnome.baobab.gschema.xml.in.h:3
+#, fuzzy
+msgid "Excluded partitions URIs"
+msgstr "Ymraniadau wedi'u heithrio"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.h:4
+#, fuzzy
+msgid "Monitor Home"
+msgstr "_Arsylwi"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.h:5
+#, fuzzy
+msgid "Statusbar is Visible"
+msgstr "Bar Statws yn Weladwy"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.h:6
+msgid "Toolbar is Visible"
+msgstr "Bar Offer yn Weladwy"
+
+#: ../data/org.gnome.baobab.gschema.xml.in.h:7
+msgid "Whether any change to the home directory should be monitored."
+msgstr "A ddylid monitro unrhyw newid i'r cyfeiriadur cartref."
+
+#: ../data/org.gnome.baobab.gschema.xml.in.h:8
+msgid "Whether the status bar at the bottom of main window should be visible."
+msgstr "A ddylai'r bar statws ar waelod y brif ffenestr fod yn weladwy."
+
+#: ../data/org.gnome.baobab.gschema.xml.in.h:9
+msgid "Whether the toolbar should be visible in main window."
+msgstr "A ddylai'r bar offer fod yn weladwy yn y brif ffenestr."
+
+#: ../data/org.gnome.baobab.gschema.xml.in.h:10
 msgid "Which type of chart should be displayed."
 msgstr ""
 
-#: data/org.gnome.baobab.gschema.xml.in:25
+#: ../data/baobab-main-window.ui.h:1
 #, fuzzy
-msgid "Window size"
-msgstr "Rhaniad Windows"
+msgid "All_ocated Space"
+msgstr "_Gofod wedi'i ddyrannu"
 
-#: data/org.gnome.baobab.gschema.xml.in:26
-msgid "The initial size of the window"
+#: ../data/baobab-main-window.ui.h:3
+msgid "Refresh"
 msgstr ""
 
-#: data/org.gnome.baobab.gschema.xml.in:30
+#: ../data/baobab-main-window.ui.h:4
 #, fuzzy
-msgid "Window state"
-msgstr "Rhaniad Windows"
+msgid "S_can Remote Folder..."
+msgstr "Sganio _Plygell Bell..."
 
-#: data/org.gnome.baobab.gschema.xml.in:31
-msgid "The GdkWindowState of the window"
-msgstr ""
-
-#: src/baobab-application.vala:28
-msgid "Print version information and exit"
-msgstr ""
-
-#: src/baobab-cellrenderers.vala:91
-#, c-format
-msgid "%d item"
-msgid_plural "%d items"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-
-#. Translators: when the last modified time is unknown
-#: src/baobab-cellrenderers.vala:101 src/baobab-location-list.vala:70
-msgid "Unknown"
-msgstr ""
-
-#. Translators: when the last modified time is today
-#: src/baobab-cellrenderers.vala:110
-msgid "Today"
-msgstr ""
-
-#. Translators: when the last modified time is "days" days ago
-#: src/baobab-cellrenderers.vala:114
-#, c-format
-msgid "%d day"
-msgid_plural "%d days"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-
-#. Translators: when the last modified time is "months" months ago
-#: src/baobab-cellrenderers.vala:118
-#, c-format
-msgid "%d month"
-msgid_plural "%d months"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-
-#. Translators: when the last modified time is "years" years ago
-#: src/baobab-cellrenderers.vala:122
-#, c-format
-msgid "%d year"
-msgid_plural "%d years"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-
-#: src/baobab-location-list.ui:17
-msgid "This Computer"
-msgstr ""
-
-#: src/baobab-location-list.ui:47
+#: ../data/baobab-main-window.ui.h:5
 #, fuzzy
-msgid "Remote Locations"
-msgstr "Lleoliad Addasedig"
-
-#: src/baobab-location-list.vala:58
-#, c-format
-msgid "%s Total"
-msgstr ""
-
-#: src/baobab-location-list.vala:61
-#, fuzzy, c-format
-msgid "%s Available"
-msgstr "ar gael:"
-
-#. useful for some remote mounts where we don't know the
-#. size but do have a usage figure
-#: src/baobab-location-list.vala:75
-#, c-format
-msgid "%s Used"
-msgstr ""
-
-#: src/baobab-location.vala:72
-#, fuzzy
-msgid "Home folder"
-msgstr "Sganio plygell bell"
-
-#: src/baobab-location.vala:108
-msgid "Computer"
-msgstr ""
-
-#: src/baobab-main-window.ui:7
-#, fuzzy
-msgid "Scan Folder…"
+msgid "Scan F_older..."
 msgstr "Sganio Plygell"
 
-#: src/baobab-main-window.ui:20 src/menus.ui:25
+#: ../data/baobab-main-window.ui.h:6
 #, fuzzy
-msgid "_Open Folder"
-msgstr "A_gor Plygell"
+msgid "Scan Filesystem"
+msgstr "Sganio'r _System Ffeil"
 
-#: src/baobab-main-window.ui:29 src/menus.ui:29
-msgid "_Copy Path to Clipboard"
+#: ../data/baobab-main-window.ui.h:7
+msgid "Scan Folder"
+msgstr "Sganio Plygell"
+
+#: ../data/baobab-main-window.ui.h:8
+#, fuzzy
+msgid "Scan Home"
+msgstr "Sganio Plygell"
+
+#: ../data/baobab-main-window.ui.h:9
+#, fuzzy
+msgid "Scan Remote Folder"
+msgstr "Sganio _Plygell Bell..."
+
+#: ../data/baobab-main-window.ui.h:10
+msgid "Scan _Filesystem"
+msgstr "Sganio'r _System Ffeil"
+
+#: ../data/baobab-main-window.ui.h:11
+#, fuzzy
+msgid "Scan _Home Folder"
+msgstr "Sganio Plygell"
+
+#: ../data/baobab-main-window.ui.h:12
+#, fuzzy
+msgid "Scan a folder"
+msgstr "Sganio Plygell"
+
+#: ../data/baobab-main-window.ui.h:13
+msgid "Scan a remote folder"
+msgstr "Sganio plygell bell"
+
+#: ../data/baobab-main-window.ui.h:14
+#, fuzzy
+msgid "Scan filesystem"
+msgstr "Sganio'r _System Ffeil"
+
+#: ../data/baobab-main-window.ui.h:15
+#, fuzzy
+msgid "Scan home folder"
+msgstr "Sganio plygell bell"
+
+#: ../data/baobab-main-window.ui.h:16
+#, fuzzy
+msgid "St_atusbar"
+msgstr "_Bar Statws"
+
+#: ../data/baobab-main-window.ui.h:17
+msgid "Stop scanning"
+msgstr "Gorffen sagnio"
+
+#: ../data/baobab-main-window.ui.h:18
+#, fuzzy
+msgid "_Analyzer"
+msgstr "_Dadansoddydd"
+
+#: ../data/baobab-main-window.ui.h:19
+#, fuzzy
+msgid "_Collapse All"
+msgstr "Dymchwel _Popeth"
+
+#: ../data/baobab-main-window.ui.h:20
+msgid "_Contents"
+msgstr "_Cynnwys"
+
+#: ../data/baobab-main-window.ui.h:21
+msgid "_Edit"
+msgstr "_Golygu"
+
+#: ../data/baobab-main-window.ui.h:22
+msgid "_Expand All"
 msgstr ""
 
-#: src/baobab-main-window.ui:38 src/menus.ui:33
-msgid "Mo_ve to Trash"
-msgstr "_Symud i'r Sbwriel"
+#: ../data/baobab-main-window.ui.h:23
+msgid "_Help"
+msgstr "_Cymorth"
 
-#: src/baobab-main-window.ui:168
-msgid "Close"
+#: ../data/baobab-main-window.ui.h:24
+msgid "_Toolbar"
+msgstr "_Bar offer"
+
+#: ../data/baobab-main-window.ui.h:25
+msgid "_View"
+msgstr "_Golwg"
+
+#: ../src/baobab.c:136 ../src/baobab.c:388
+msgid "Scanning..."
+msgstr "Yn sganio..."
+
+#: ../src/baobab.c:182
+msgid "Total filesystem capacity:"
+msgstr "Uchafswm cynnwys y system ffeil:"
+
+#: ../src/baobab.c:183
+msgid "used:"
+msgstr "defnyddiwyd:"
+
+#: ../src/baobab.c:184
+msgid "available:"
+msgstr "ar gael:"
+
+#. set statusbar, percentage and allocated/normal size
+#: ../src/baobab.c:273 ../src/baobab.c:330 ../src/callbacks.c:265
+msgid "Calculating percentage bars..."
+msgstr "Cyfrif y barrau canran..."
+
+#: ../src/baobab.c:284 ../src/baobab.c:1325 ../src/callbacks.c:269
+msgid "Ready"
+msgstr "Barod"
+
+#: ../src/baobab.c:421
+#, fuzzy
+msgid "Total filesystem capacity"
+msgstr "Uchafswm cynnwys y system ffeil:"
+
+#: ../src/baobab.c:443
+#, fuzzy
+msgid "Total filesystem usage"
+msgstr "<i>Cyfanswm defnydd y system ffeil:</i>"
+
+#: ../src/baobab.c:484
+msgid "contains hardlinks for:"
+msgstr "cynnwys cysylltau caled ar gyfer:"
+
+#: ../src/baobab.c:493
+#, c-format
+msgid "%5d item"
+msgid_plural "%5d items"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: ../src/baobab.c:620
+#, fuzzy
+msgid "Could not initialize monitoring"
+msgstr "Methwyd ymgychwyn bonobo."
+
+#: ../src/baobab.c:621
+#, fuzzy
+msgid "Changes to your home folder will not be monitored."
+msgstr "A ddylid monitro unrhyw newid i'r cyfeiriadur cartref."
+
+#: ../src/baobab.c:945
+#, fuzzy
+msgid "Move to parent folder"
+msgstr "Cysylltu â Phlygell Bell"
+
+#: ../src/baobab.c:949
+msgid "Zoom in"
+msgstr "Chwyddo mewn"
+
+#: ../src/baobab.c:953
+msgid "Zoom out"
+msgstr "Chwyddo allan"
+
+#: ../src/baobab.c:957
+#, fuzzy
+msgid "Save screenshot"
+msgstr "Cadw Sgrînlun"
+
+#: ../src/baobab.c:1143
+msgid "View as Rings Chart"
 msgstr ""
 
-#: src/baobab-main-window.ui:224
+#: ../src/baobab.c:1145
+msgid "View as Treemap Chart"
+msgstr ""
+
+#: ../src/baobab.c:1250
+msgid "Show version"
+msgstr ""
+
+#: ../src/baobab.c:1251
+msgid "[DIRECTORY]"
+msgstr ""
+
+#: ../src/baobab.c:1281
+msgid "Too many arguments. Only one directory can be specified."
+msgstr ""
+
+#: ../src/baobab.c:1298
+#, fuzzy
+msgid "Could not detect any mount point."
+msgstr "Ni ddewisoch enw i'r ddogfen."
+
+#: ../src/baobab.c:1300
+msgid "Without mount points disk usage cannot be analyzed."
+msgstr ""
+
+#: ../src/baobab-chart.c:205
+msgid "Maximum depth"
+msgstr ""
+
+#: ../src/baobab-chart.c:206
+msgid "The maximum depth drawn in the chart from the root"
+msgstr ""
+
+#: ../src/baobab-chart.c:215
+#, fuzzy
+msgid "Chart model"
+msgstr "Côd Nod"
+
+#: ../src/baobab-chart.c:216
+msgid "Set the model of the chart"
+msgstr ""
+
+#: ../src/baobab-chart.c:223
+#, fuzzy
+msgid "Chart root node"
+msgstr "Côd Nod"
+
+#: ../src/baobab-chart.c:224
+msgid "Set the root node from the model"
+msgstr ""
+
+#: ../src/baobab-chart.c:1690
+msgid "Cannot create pixbuf image!"
+msgstr "Methu creu delwedd picsfap!"
+
+#. Popup the File chooser dialog
+#: ../src/baobab-chart.c:1700
+#, fuzzy
+msgid "Save Snapshot"
+msgstr "Cadw Sgrînlun"
+
+#: ../src/baobab-chart.c:1727
+#, fuzzy
+msgid "_Image type:"
+msgstr "Math delwedd:"
+
+#: ../src/baobab-prefs.c:172
+msgid "Scan"
+msgstr "Sganio"
+
+#: ../src/baobab-prefs.c:179
+msgid "Device"
+msgstr "Dyfais"
+
+#: ../src/baobab-prefs.c:187
+#, fuzzy
+msgid "Mount Point"
+msgstr "Pwynt gosod"
+
+#: ../src/baobab-prefs.c:195
+#, fuzzy
+msgid "Filesystem Type"
+msgstr "_Math system ffeiliau:"
+
+#: ../src/baobab-prefs.c:203
+msgid "Total Size"
+msgstr ""
+
+#: ../src/baobab-prefs.c:212
+#, fuzzy
+msgid "Available"
+msgstr "ar gael:"
+
+#: ../src/baobab-remote-connect-dialog.c:77
+#, fuzzy, c-format
+msgid "Cannot scan location \"%s\""
+msgstr "Methwyd Dangos Lleoliad"
+
+#: ../src/baobab-remote-connect-dialog.c:175
+msgid "Custom Location"
+msgstr "Lleoliad Addasedig"
+
+#: ../src/baobab-remote-connect-dialog.c:177
+msgid "SSH"
+msgstr "SSH"
+
+#: ../src/baobab-remote-connect-dialog.c:180
+msgid "Public FTP"
+msgstr "FTP cyhoeddus"
+
+#: ../src/baobab-remote-connect-dialog.c:182
+msgid "FTP (with login)"
+msgstr "FTP (angen mewngofnodi)"
+
+#: ../src/baobab-remote-connect-dialog.c:185
+msgid "Windows share"
+msgstr "Rhaniad Windows"
+
+#: ../src/baobab-remote-connect-dialog.c:187
+msgid "WebDAV (HTTP)"
+msgstr "WebDAV (HTTP)"
+
+#: ../src/baobab-remote-connect-dialog.c:189
+msgid "Secure WebDAV (HTTPS)"
+msgstr "WebDAV Diogel (HTTPS)"
+
+#: ../src/baobab-remote-connect-dialog.c:249
+#, fuzzy
+msgid "Cannot Connect to Server. You must enter a name for the server."
+msgstr "Rhaid i chi roi enw ar gyfer y gweinydd."
+
+#: ../src/baobab-remote-connect-dialog.c:252
+msgid "Please enter a name and try again."
+msgstr "Rhowch enw a cheisiwch eto."
+
+#: ../src/baobab-remote-connect-dialog.c:441
+msgid "_Location (URI):"
+msgstr "_Lleoliad (URI):"
+
+#: ../src/baobab-remote-connect-dialog.c:463
+msgid "_Server:"
+msgstr "_Gweinydd:"
+
+#: ../src/baobab-remote-connect-dialog.c:482
+msgid "Optional information:"
+msgstr "Gwybodaeth ddewisol:"
+
+#: ../src/baobab-remote-connect-dialog.c:494
+msgid "_Share:"
+msgstr "_Rhannu:"
+
+#: ../src/baobab-remote-connect-dialog.c:515
+msgid "_Port:"
+msgstr "_Porth:"
+
+#: ../src/baobab-remote-connect-dialog.c:535
+msgid "_Folder:"
+msgstr "_Plygell:"
+
+#: ../src/baobab-remote-connect-dialog.c:555
+msgid "_User Name:"
+msgstr "Enw _Defnyddiwr:"
+
+#: ../src/baobab-remote-connect-dialog.c:576
+msgid "_Domain Name:"
+msgstr "Enw _Parth:"
+
+#: ../src/baobab-remote-connect-dialog.c:643
+#, fuzzy
+msgid "Connect to Server"
+msgstr "Methu cysylltu â'r gweinydd"
+
+#: ../src/baobab-remote-connect-dialog.c:659
+msgid "Service _type:"
+msgstr "_Math gwasanaeth:"
+
+#: ../src/baobab-remote-connect-dialog.c:778
+#, fuzzy
+msgid "_Scan"
+msgstr "Sganio"
+
+#: ../src/baobab-treeview.c:82
+#, fuzzy
+msgid "Rescan your home folder?"
+msgstr "Sganio plygell bell"
+
+#: ../src/baobab-treeview.c:83
+#, fuzzy
+msgid ""
+"The content of your home folder has changed. Select rescan to update the "
+"disk usage details."
+msgstr ""
+"Mae cynnwys eich cyfeiriadur cartref wedi newid.\n"
+" Ydych chi am ail-sganio'r goeden i ddiweddaru manylion canghennau plygell?"
+
+#: ../src/baobab-treeview.c:84
+msgid "_Rescan"
+msgstr ""
+
+#: ../src/baobab-treeview.c:222
 msgid "Folder"
 msgstr "Plygell"
 
-#: src/baobab-main-window.ui:251
+#: ../src/baobab-treeview.c:244
+#, fuzzy
+msgid "Usage"
+msgstr "Neges"
+
+#: ../src/baobab-treeview.c:258
 msgid "Size"
 msgstr "Maint"
 
-#: src/baobab-main-window.ui:271
+#: ../src/baobab-treeview.c:274
 #, fuzzy
 msgid "Contents"
 msgstr "_Cynnwys"
 
-#: src/baobab-main-window.ui:289
-msgid "Modified"
-msgstr ""
-
-#: src/baobab-main-window.ui:334
-msgid "Rings Chart"
-msgstr ""
-
-#: src/baobab-main-window.ui:346
-msgid "Treemap Chart"
-msgstr ""
-
-#: src/baobab-window.vala:189
+#: ../src/baobab-utils.c:72
 #, fuzzy
 msgid "Select Folder"
 msgstr "Dewiswch Blygell"
 
-#: src/baobab-window.vala:191
-msgid "_Cancel"
-msgstr ""
-
-#: src/baobab-window.vala:192
-msgid "_Open"
-msgstr ""
-
-#: src/baobab-window.vala:198
-msgid "Recursively analyze mount points"
-msgstr ""
-
-#: src/baobab-window.vala:233
+#. add extra widget
+#: ../src/baobab-utils.c:84
 #, fuzzy
-msgid "Could not analyze volume."
+msgid "_Show hidden folders"
+msgstr "Dangos plygellau cudd"
+
+#: ../src/baobab-utils.c:263
+msgid "Cannot check an excluded folder!"
+msgstr ""
+
+#: ../src/baobab-utils.c:287
+#, fuzzy, c-format
+msgid "\"%s\" is not a valid folder"
+msgstr "Nid yw %s yn blygell ddilys"
+
+#: ../src/baobab-utils.c:290
+#, fuzzy
+msgid "Could not analyze disk usage."
 msgstr "Teclyn graffigol i ddadansoddi defnydd disg."
 
-#: src/baobab-window.vala:265
-msgid "Failed to show help"
+#: ../src/baobab-utils.c:326
+#, fuzzy
+msgid "_Open Folder"
+msgstr "A_gor Plygell"
+
+#: ../src/baobab-utils.c:332
+msgid "Mo_ve to Trash"
+msgstr "_Symud i'r Sbwriel"
+
+#: ../src/baobab-utils.c:362
+#, fuzzy, c-format
+msgid "Could not open folder \"%s\""
+msgstr "Methwyd agor y blygell \"%s\"."
+
+#: ../src/baobab-utils.c:365
+#, fuzzy
+msgid "There is no installed viewer capable of displaying the folder."
+msgstr "Nid oes unrhyw welydd gosodedig sy'n medru dangos y ddogfen."
+
+#: ../src/baobab-utils.c:433
+#, fuzzy, c-format
+msgid "Could not move \"%s\" to the Trash"
+msgstr "Methwyd symud \"%s\" i'r sbwriel."
+
+#: ../src/baobab-utils.c:441
+#, fuzzy
+msgid "Could not move file to the Trash"
+msgstr "Methwyd symud \"%s\" i'r sbwriel."
+
+#: ../src/baobab-utils.c:443
+#, c-format
+msgid "Details: %s"
 msgstr ""
 
-#: src/baobab-window.vala:284
+#: ../src/baobab-utils.c:479
+msgid "There was an error displaying help."
+msgstr "'Roedd yna wall wrth ddangos y cymorth."
+
+#: ../src/callbacks.c:76
+msgid ""
+"This program is free software; you can redistribute it and/or modify it "
+"under the terms of the GNU General Public License as published by the Free "
+"Software Foundation; either version 2 of the License, or (at your option) "
+"any later version."
+msgstr ""
+
+#: ../src/callbacks.c:81
+msgid ""
+"This program is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
+"more details."
+msgstr ""
+
+#: ../src/callbacks.c:86
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program; if not, write to the Free Software Foundation, Inc., 51 "
+"Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA"
+msgstr ""
+
+#: ../src/callbacks.c:101
 msgid "Baobab"
 msgstr "Baobab"
 
-#: src/baobab-window.vala:287
+#: ../src/callbacks.c:102
 #, fuzzy
 msgid "A graphical tool to analyze disk usage."
 msgstr "Teclyn graffigol i ddadansoddi defnydd disg."
 
-#: src/baobab-window.vala:292
+#: ../src/callbacks.c:110
 msgid "translator-credits"
 msgstr ""
 "Owain Green\n"
@@ -285,344 +612,10 @@ msgstr ""
 "Rhys Jones <rhys@sucs.org>\n"
 "Gareth Bowker <tgb@tgb.org.uk>"
 
-#: src/baobab-window.vala:361
-#, fuzzy
-msgid "Failed to open file"
-msgstr "Cysylltu â Phlygell Bell"
-
-#: src/baobab-window.vala:381
-#, fuzzy
-msgid "Failed to move file to the trash"
-msgstr "Methwyd symud \"%s\" i'r sbwriel."
-
-#: src/baobab-window.vala:485
-msgid "Devices & Locations"
-msgstr ""
-
-#: src/baobab-window.vala:546
-#, fuzzy, c-format
-msgid "Could not scan folder \"%s\""
-msgstr "Methwyd agor y blygell \"%s\"."
-
-#: src/baobab-window.vala:549
-#, fuzzy, c-format
-msgid "Could not scan some of the folders contained in \"%s\""
-msgstr "Methwyd agor y blygell \"%s\"."
-
-#: src/baobab-window.vala:568
-#, fuzzy
-msgid "Could not detect occupied disk sizes."
-msgstr "Ni ddewisoch enw i'r ddogfen."
-
-#: src/baobab-window.vala:568
-msgid "Apparent sizes are shown instead."
-msgstr ""
-
-#. || is_virtual_filesystem ()
-#: src/baobab-window.vala:585 src/baobab-window.vala:591
-#, fuzzy, c-format
-msgid "\"%s\" is not a valid folder"
-msgstr "Nid yw %s yn blygell ddilys"
-
-#: src/baobab-window.vala:586 src/baobab-window.vala:592
-#, fuzzy
-msgid "Could not analyze disk usage."
-msgstr "Teclyn graffigol i ddadansoddi defnydd disg."
-
-#: src/menus.ui:7
-msgid "_Help"
-msgstr "_Cymorth"
-
-#: src/menus.ui:12
-msgid "_About"
-msgstr ""
-
-#: src/menus.ui:16
-msgid "_Quit"
-msgstr ""
-
-#: src/menus.ui:39
-#, fuzzy
-msgid "Go to _parent folder"
-msgstr "Cysylltu â Phlygell Bell"
-
-#: src/menus.ui:45
-#, fuzzy
-msgid "Zoom _in"
-msgstr "Chwyddo mewn"
-
-#: src/menus.ui:49
-#, fuzzy
-msgid "Zoom _out"
-msgstr "Chwyddo allan"
-
-#, fuzzy
-#~ msgid "Disk Usage Analyzer Preferences"
-#~ msgstr "Hoffterau Dadansoddydd Defnydd Disg"
-
-#, fuzzy
-#~ msgid "Select _devices to include in filesystem scan:"
-#~ msgstr "Dewis _dyfeisiau i'w cynnwys wrth sganio'r system:"
-
-#, fuzzy
-#~ msgid "Monitor Home"
-#~ msgstr "_Arsylwi"
-
-#, fuzzy
-#~ msgid "Statusbar is Visible"
-#~ msgstr "Bar Statws yn Weladwy"
-
-#~ msgid "Toolbar is Visible"
-#~ msgstr "Bar Offer yn Weladwy"
-
-#~ msgid "Whether any change to the home directory should be monitored."
-#~ msgstr "A ddylid monitro unrhyw newid i'r cyfeiriadur cartref."
-
-#~ msgid ""
-#~ "Whether the status bar at the bottom of main window should be visible."
-#~ msgstr "A ddylai'r bar statws ar waelod y brif ffenestr fod yn weladwy."
-
-#~ msgid "Whether the toolbar should be visible in main window."
-#~ msgstr "A ddylai'r bar offer fod yn weladwy yn y brif ffenestr."
-
-#, fuzzy
-#~ msgid "All_ocated Space"
-#~ msgstr "_Gofod wedi'i ddyrannu"
-
-#, fuzzy
-#~ msgid "S_can Remote Folder..."
-#~ msgstr "Sganio _Plygell Bell..."
-
-#, fuzzy
-#~ msgid "Scan F_older..."
-#~ msgstr "Sganio Plygell"
-
-#, fuzzy
-#~ msgid "Scan Filesystem"
-#~ msgstr "Sganio'r _System Ffeil"
-
-#, fuzzy
-#~ msgid "Scan Home"
-#~ msgstr "Sganio Plygell"
-
-#, fuzzy
-#~ msgid "Scan Remote Folder"
-#~ msgstr "Sganio _Plygell Bell..."
-
-#~ msgid "Scan _Filesystem"
-#~ msgstr "Sganio'r _System Ffeil"
-
-#, fuzzy
-#~ msgid "Scan _Home Folder"
-#~ msgstr "Sganio Plygell"
-
-#, fuzzy
-#~ msgid "Scan a folder"
-#~ msgstr "Sganio Plygell"
-
-#~ msgid "Scan a remote folder"
-#~ msgstr "Sganio plygell bell"
-
-#, fuzzy
-#~ msgid "Scan filesystem"
-#~ msgstr "Sganio'r _System Ffeil"
-
-#, fuzzy
-#~ msgid "St_atusbar"
-#~ msgstr "_Bar Statws"
-
-#~ msgid "Stop scanning"
-#~ msgstr "Gorffen sagnio"
-
-#, fuzzy
-#~ msgid "_Analyzer"
-#~ msgstr "_Dadansoddydd"
-
-#, fuzzy
-#~ msgid "_Collapse All"
-#~ msgstr "Dymchwel _Popeth"
-
-#~ msgid "_Contents"
-#~ msgstr "_Cynnwys"
-
-#~ msgid "_Edit"
-#~ msgstr "_Golygu"
-
-#~ msgid "_Toolbar"
-#~ msgstr "_Bar offer"
-
-#~ msgid "_View"
-#~ msgstr "_Golwg"
-
-#~ msgid "Scanning..."
-#~ msgstr "Yn sganio..."
-
-#~ msgid "Total filesystem capacity:"
-#~ msgstr "Uchafswm cynnwys y system ffeil:"
-
-#~ msgid "used:"
-#~ msgstr "defnyddiwyd:"
-
-#~ msgid "available:"
-#~ msgstr "ar gael:"
-
-#~ msgid "Calculating percentage bars..."
-#~ msgstr "Cyfrif y barrau canran..."
-
-#~ msgid "Ready"
-#~ msgstr "Barod"
-
-#, fuzzy
-#~ msgid "Total filesystem capacity"
-#~ msgstr "Uchafswm cynnwys y system ffeil:"
-
-#, fuzzy
-#~ msgid "Total filesystem usage"
-#~ msgstr "<i>Cyfanswm defnydd y system ffeil:</i>"
-
-#~ msgid "contains hardlinks for:"
-#~ msgstr "cynnwys cysylltau caled ar gyfer:"
-
-#, fuzzy
-#~ msgid "Could not initialize monitoring"
-#~ msgstr "Methwyd ymgychwyn bonobo."
-
-#, fuzzy
-#~ msgid "Changes to your home folder will not be monitored."
-#~ msgstr "A ddylid monitro unrhyw newid i'r cyfeiriadur cartref."
-
-#, fuzzy
-#~ msgid "Save screenshot"
-#~ msgstr "Cadw Sgrînlun"
-
-#, fuzzy
-#~ msgid "Chart model"
-#~ msgstr "Côd Nod"
-
-#, fuzzy
-#~ msgid "Chart root node"
-#~ msgstr "Côd Nod"
-
-#~ msgid "Cannot create pixbuf image!"
-#~ msgstr "Methu creu delwedd picsfap!"
-
-#, fuzzy
-#~ msgid "Save Snapshot"
-#~ msgstr "Cadw Sgrînlun"
-
-#, fuzzy
-#~ msgid "_Image type:"
-#~ msgstr "Math delwedd:"
-
-#~ msgid "Scan"
-#~ msgstr "Sganio"
-
-#~ msgid "Device"
-#~ msgstr "Dyfais"
-
-#, fuzzy
-#~ msgid "Mount Point"
-#~ msgstr "Pwynt gosod"
-
-#, fuzzy
-#~ msgid "Filesystem Type"
-#~ msgstr "_Math system ffeiliau:"
-
-#, fuzzy
-#~ msgid "Cannot scan location \"%s\""
-#~ msgstr "Methwyd Dangos Lleoliad"
-
-#~ msgid "SSH"
-#~ msgstr "SSH"
-
-#~ msgid "Public FTP"
-#~ msgstr "FTP cyhoeddus"
-
-#~ msgid "FTP (with login)"
-#~ msgstr "FTP (angen mewngofnodi)"
-
-#~ msgid "WebDAV (HTTP)"
-#~ msgstr "WebDAV (HTTP)"
-
-#~ msgid "Secure WebDAV (HTTPS)"
-#~ msgstr "WebDAV Diogel (HTTPS)"
-
-#, fuzzy
-#~ msgid "Cannot Connect to Server. You must enter a name for the server."
-#~ msgstr "Rhaid i chi roi enw ar gyfer y gweinydd."
-
-#~ msgid "Please enter a name and try again."
-#~ msgstr "Rhowch enw a cheisiwch eto."
-
-#~ msgid "_Location (URI):"
-#~ msgstr "_Lleoliad (URI):"
-
-#~ msgid "_Server:"
-#~ msgstr "_Gweinydd:"
-
-#~ msgid "Optional information:"
-#~ msgstr "Gwybodaeth ddewisol:"
-
-#~ msgid "_Share:"
-#~ msgstr "_Rhannu:"
-
-#~ msgid "_Port:"
-#~ msgstr "_Porth:"
-
-#~ msgid "_Folder:"
-#~ msgstr "_Plygell:"
-
-#~ msgid "_User Name:"
-#~ msgstr "Enw _Defnyddiwr:"
-
-#~ msgid "_Domain Name:"
-#~ msgstr "Enw _Parth:"
-
-#, fuzzy
-#~ msgid "Connect to Server"
-#~ msgstr "Methu cysylltu â'r gweinydd"
-
-#~ msgid "Service _type:"
-#~ msgstr "_Math gwasanaeth:"
-
-#, fuzzy
-#~ msgid "_Scan"
-#~ msgstr "Sganio"
-
-#, fuzzy
-#~ msgid "Rescan your home folder?"
-#~ msgstr "Sganio plygell bell"
-
-#, fuzzy
-#~ msgid ""
-#~ "The content of your home folder has changed. Select rescan to update the "
-#~ "disk usage details."
-#~ msgstr ""
-#~ "Mae cynnwys eich cyfeiriadur cartref wedi newid.\n"
-#~ " Ydych chi am ail-sganio'r goeden i ddiweddaru manylion canghennau "
-#~ "plygell?"
-
-#, fuzzy
-#~ msgid "Usage"
-#~ msgstr "Neges"
-
-#, fuzzy
-#~ msgid "_Show hidden folders"
-#~ msgstr "Dangos plygellau cudd"
-
-#, fuzzy
-#~ msgid "There is no installed viewer capable of displaying the folder."
-#~ msgstr "Nid oes unrhyw welydd gosodedig sy'n medru dangos y ddogfen."
-
-#, fuzzy
-#~ msgid "Could not move \"%s\" to the Trash"
-#~ msgstr "Methwyd symud \"%s\" i'r sbwriel."
-
-#~ msgid "There was an error displaying help."
-#~ msgstr "'Roedd yna wall wrth ddangos y cymorth."
-
-#~ msgid "The document does not exist."
-#~ msgstr "Nid yw'r ddogfen yn bodoli."
-
-#~ msgid "The folder does not exist."
-#~ msgstr "Nid yw'r blygell yn bodoli."
+#: ../src/callbacks.c:208
+msgid "The document does not exist."
+msgstr "Nid yw'r ddogfen yn bodoli."
+
+#: ../src/callbacks.c:289
+msgid "The folder does not exist."
+msgstr "Nid yw'r blygell yn bodoli."

@@ -1,15 +1,16 @@
 # Vital Khilko <dojlid@mova.org>, 2003.
 # Ales Nyakhaychyk <nab@mail.by>, 2003, 2004.
 # Ihar Hrachyshka <ihar.hrachyshka@gmail.com>, 2011, 2012, 2013.
+# Yuras Shumovich <ihar.hrachyshka@gmail.com>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: baobab.master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=baobab\n"
-"POT-Creation-Date: 2016-11-07 17:00+0100\n"
-"PO-Revision-Date: 2012-09-07 19:10+0300\n"
-"Last-Translator: Ihar Hrachyshka <ihar.hrachyshka@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
+"product=baobab&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-02-28 18:49+0000\n"
+"PO-Revision-Date: 2017-04-18 19:04+0300\n"
+"Last-Translator: Yuras Shumovich <shumovichy@gmail.com>\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
@@ -17,6 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.8.11\n"
 
 #: data/org.gnome.baobab.appdata.xml.in:6 data/org.gnome.baobab.desktop.in.in:3
 #: src/baobab-main-window.ui:44
@@ -31,7 +33,7 @@ msgstr "Праверка памеру папак і выкарыстання д�
 msgid ""
 "A simple application to keep your disk usage and available space under "
 "control."
-msgstr ""
+msgstr "Простая праграма для кантролю выкарыстання дыска і вольнай прасторы."
 
 #: data/org.gnome.baobab.appdata.xml.in:12
 msgid ""
@@ -39,6 +41,13 @@ msgid ""
 "accounts. It provides both a tree and a graphical representation showing the "
 "size of each folder, making it easy to identify where disk space is wasted."
 msgstr ""
+"Аналізатар дыскавай прасторы даследуе вызначаныя папкі, прыстасаванні-"
+"сховішча і сеціўныя конты і паказвае памер кожнай папкі ў выглядзе дрэва ці "
+"выявы. Такім чынам вельмі лёгка вызначыць, куды дзелася дыскавая прастора."
+
+#: data/org.gnome.baobab.appdata.xml.in:34
+msgid "The GNOME Project"
+msgstr "Праект GNOME"
 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.baobab.desktop.in.in:6
@@ -47,9 +56,9 @@ msgstr "сховішча;дыск;прастора;ачыстка;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/org.gnome.baobab.desktop.in.in:10
-#, fuzzy
+#| msgid "Baobab"
 msgid "baobab"
-msgstr "Baobab"
+msgstr "baobab"
 
 #: data/org.gnome.baobab.gschema.xml.in:9
 msgid "Excluded partitions URIs"
@@ -108,61 +117,60 @@ msgstr "Сёння"
 #. Translators: when the last modified time is "days" days ago
 #: src/baobab-cellrenderers.vala:114
 #, c-format
-msgid "%d day"
-msgid_plural "%d days"
-msgstr[0] "%d дзень"
-msgstr[1] "%d дні"
-msgstr[2] "%d дзён"
+msgid "%lu day"
+msgid_plural "%lu days"
+msgstr[0] "%lu дзень"
+msgstr[1] "%lu дні"
+msgstr[2] "%lu дзён"
 
 #. Translators: when the last modified time is "months" months ago
 #: src/baobab-cellrenderers.vala:118
 #, c-format
-msgid "%d month"
-msgid_plural "%d months"
-msgstr[0] "%d месяц"
-msgstr[1] "%d месяцы"
-msgstr[2] "%d месяцаў"
+msgid "%lu month"
+msgid_plural "%lu months"
+msgstr[0] "%lu месяц"
+msgstr[1] "%lu месяцы"
+msgstr[2] "%lu месяцаў"
 
 #. Translators: when the last modified time is "years" years ago
 #: src/baobab-cellrenderers.vala:122
 #, c-format
-msgid "%d year"
-msgid_plural "%d years"
-msgstr[0] "%d год"
-msgstr[1] "%d гады"
-msgstr[2] "%d гадоў"
+msgid "%lu year"
+msgid_plural "%lu years"
+msgstr[0] "%lu год"
+msgstr[1] "%lu гады"
+msgstr[2] "%lu гадоў"
 
 #: src/baobab-location-list.ui:17
-#, fuzzy
 msgid "This Computer"
-msgstr "Камп'ютар"
+msgstr "Гэты камп'ютар"
 
 #: src/baobab-location-list.ui:47
 msgid "Remote Locations"
-msgstr ""
+msgstr "Аддаленыя месцазнаходжанні"
 
 #: src/baobab-location-list.vala:58
 #, c-format
 msgid "%s Total"
-msgstr ""
+msgstr "%s усяго"
 
 #: src/baobab-location-list.vala:61
 #, c-format
 msgid "%s Available"
-msgstr ""
+msgstr "%s вольна"
 
 #. useful for some remote mounts where we don't know the
 #. size but do have a usage figure
 #: src/baobab-location-list.vala:75
 #, c-format
 msgid "%s Used"
-msgstr ""
+msgstr "%s выкарыстана"
 
-#: src/baobab-location.vala:72
+#: src/baobab-location.vala:73
 msgid "Home folder"
 msgstr "Дамашняя папка"
 
-#: src/baobab-location.vala:108
+#: src/baobab-location.vala:109
 msgid "Computer"
 msgstr "Камп'ютар"
 
@@ -247,7 +255,8 @@ msgid "translator-credits"
 msgstr ""
 "Vital Khilko <dojlid@mova.org>\n"
 "Ales Nyakhaychyk <nab@mail.by>\n"
-"Ihar Hrachyshka <ihar.hrachyshka@gmail.com>"
+"Ihar Hrachyshka <ihar.hrachyshka@gmail.com>\n"
+"Юрась Шумовіч <shumovichy@gmail.com>"
 
 #: src/baobab-window.vala:361
 msgid "Failed to open file"
@@ -258,19 +267,18 @@ msgid "Failed to move file to the trash"
 msgstr "Не ўдалося выкінуць файл у сметніцу"
 
 #: src/baobab-window.vala:485
-#, fuzzy
 msgid "Devices & Locations"
-msgstr "Прыстасаванні і месцапалажэнні"
+msgstr "Прыстасаванні і месцазнаходжанні"
 
 #: src/baobab-window.vala:546
-#, fuzzy, c-format
-msgid "Could not scan folder \"%s\""
-msgstr "Не ўдалося даследаваць дыскавы том."
+#, c-format
+msgid "Could not scan folder “%s”"
+msgstr "Не ўдалося даследаваць папку \"%s\""
 
 #: src/baobab-window.vala:549
-#, fuzzy, c-format
-msgid "Could not scan some of the folders contained in \"%s\""
-msgstr "Не ўдалося даследаваць папку \"%s\" ці некаторыя з яе падпапак."
+#, c-format
+msgid "Could not scan some of the folders contained in “%s”"
+msgstr "Не ўдалося даследаваць некаторыя папкі з \"%s\""
 
 #: src/baobab-window.vala:568
 msgid "Could not detect occupied disk sizes."
@@ -283,7 +291,7 @@ msgstr "Замест гэтага паказаны прыблізны памер
 #. || is_virtual_filesystem ()
 #: src/baobab-window.vala:585 src/baobab-window.vala:591
 #, c-format
-msgid "\"%s\" is not a valid folder"
+msgid "“%s” is not a valid folder"
 msgstr "\"%s\" не з'яўляецца папкай"
 
 #: src/baobab-window.vala:586 src/baobab-window.vala:592
@@ -303,9 +311,8 @@ msgid "_Quit"
 msgstr "_Выйсці"
 
 #: src/menus.ui:39
-#, fuzzy
 msgid "Go to _parent folder"
-msgstr "_Перамясціць у бацькоўскую папку"
+msgstr "_Перайсці ў бацькоўскую папку"
 
 #: src/menus.ui:45
 msgid "Zoom _in"

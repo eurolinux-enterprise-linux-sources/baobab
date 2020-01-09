@@ -43,6 +43,7 @@ namespace Baobab {
 
         public bool is_main_volume { get; private set; default = false; }
         public bool is_remote { get; private set; default = false; }
+        public bool is_recent { get; private set; default = false; }
 
         public Scanner? scanner { get; private set; }
 
@@ -95,6 +96,10 @@ namespace Baobab {
         public Location.from_mount (Mount mount_) {
             mount = mount_;
             fill_from_mount ();
+
+            var uri_scheme = Uri.parse_scheme (file.get_uri ());
+            string[] remote_schemes = { "sftp", "ssh" };
+            is_remote = (uri_scheme in remote_schemes);
         }
 
         public Location.for_main_volume () {
@@ -120,6 +125,7 @@ namespace Baobab {
 
         public Location.for_recent_info (Gtk.RecentInfo recent_info) {
             is_volume = false; // we assume recent locations are just folders
+            is_recent = true;
             file = File.new_for_uri (recent_info.get_uri ());
             name = recent_info.get_display_name ();
             icon = recent_info.get_gicon ();
@@ -194,7 +200,11 @@ namespace Baobab {
             }
         }
 
-        void get_fs_usage () {
+        public void get_fs_usage () {
+            if (file == null) {
+                return;
+            }
+
             size = null;
             used = null;
             reserved = null;

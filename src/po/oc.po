@@ -8,9 +8,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-utils HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=baobab\n"
-"POT-Creation-Date: 2016-11-07 17:00+0100\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=baobab&"
+"keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2016-08-13 00:15+0000\n"
 "PO-Revision-Date: 2016-10-13 07:57+0200\n"
 "Last-Translator: Cédric VALMARY <cvalmary@yahoo.fr>\n"
 "Language-Team: Tot en òc (totenoc.eu)\n"
@@ -51,6 +51,7 @@ msgstr "emmagazinatge;espaci disc;netejatge;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/org.gnome.baobab.desktop.in.in:10
+#| msgid "Baobab"
 msgid "baobab"
 msgstr "baobab"
 
@@ -132,6 +133,7 @@ msgstr[0] "%d an"
 msgstr[1] "%d ans"
 
 #: src/baobab-location-list.ui:17
+#| msgid "Computer"
 msgid "This Computer"
 msgstr "Aqueste ordenador"
 
@@ -253,6 +255,7 @@ msgid "Failed to move file to the trash"
 msgstr "Impossible de desplaçar lo fichièr cap a l'escobilhièr"
 
 #: src/baobab-window.vala:485
+#| msgid "Devices and locations"
 msgid "Devices & Locations"
 msgstr "Periferics & Emplaçaments"
 

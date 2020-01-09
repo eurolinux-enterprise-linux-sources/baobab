@@ -1,19 +1,24 @@
 %global gtk3_version 3.19.1
 
 Name:           baobab
-Version:        3.22.1
-Release:        1%{?dist}
+Version:        3.28.0
+Release:        2%{?dist}
 Summary:        A graphical directory tree analyzer
 
 License:        GPLv2+ and GFDL
 URL:            https://wiki.gnome.org/Apps/Baobab
-Source0:        https://download.gnome.org/sources/baobab/3.22/%{name}-%{version}.tar.xz
+Source0:        https://download.gnome.org/sources/baobab/3.28/%{name}-%{version}.tar.xz
+
+Patch0:         build-Fix-setting-GNOMELOCALEDIR.patch
+Patch1:         build-Install-also-24x24-icons.patch
+Patch2:         build-Fix-gschema-translations.patch
 
 BuildRequires:  pkgconfig(gtk+-3.0) >= %{gtk3_version}
 BuildRequires:  /usr/bin/appstream-util
 BuildRequires:  desktop-file-utils
 BuildRequires:  gettext
 BuildRequires:  itstool
+BuildRequires:  meson
 BuildRequires:  vala
 
 Requires: gtk3%{?_isa} >= %{gtk3_version}
@@ -30,21 +35,24 @@ any change made to your home folder as far as any mounted/unmounted device.
 
 %prep
 %setup -q
+%patch0 -p1 -b .build-Fix-setting-GNOMELOCALEDIR
+%patch1 -p1 -b .build-Install-also-24x24-icons
+%patch2 -p1 -b .build-Fix-gschema-translations
 
 
 %build
-%configure
-make %{?_smp_mflags}
+%meson
+%meson_build
 
 
 %install
-%make_install
+%meson_install
 
 %find_lang %{name} --with-gnome
 
 
 %check
-appstream-util validate-relax --nonet %{buildroot}/%{_datadir}/appdata/org.gnome.baobab.appdata.xml
+appstream-util validate-relax --nonet %{buildroot}/%{_datadir}/metainfo/org.gnome.baobab.appdata.xml
 desktop-file-validate %{buildroot}/%{_datadir}/applications/org.gnome.baobab.desktop
 
 
@@ -69,16 +77,26 @@ gtk-update-icon-cache %{_datadir}/icons/hicolor >&/dev/null || :
 %doc AUTHORS NEWS README
 %license COPYING COPYING.docs
 %{_bindir}/baobab
-%{_datadir}/appdata/org.gnome.baobab.appdata.xml
 %{_datadir}/applications/org.gnome.baobab.desktop
 %{_datadir}/dbus-1/services/org.gnome.baobab.service
 %{_datadir}/icons/hicolor/*/apps/baobab.png
-%{_datadir}/icons/hicolor/scalable/apps/baobab-symbolic.svg
+%{_datadir}/icons/hicolor/symbolic/apps/baobab-symbolic.svg
 %{_datadir}/glib-2.0/schemas/org.gnome.baobab.gschema.xml
+%{_datadir}/metainfo/org.gnome.baobab.appdata.xml
 %{_mandir}/man1/baobab.1*
 
 
 %changelog
+* Fri Jun 22 2018 Ondrej Holy <oholy@redhat.com> - 3.28.0-2
+- Install also 24x24 icons
+- Fix gschema translations
+- Resolves: #1567161
+
+* Mon Mar 12 2018 Kalev Lember <klember@redhat.com> - 3.28.0-1
+- Update to 3.28.0
+- Fix setting GNOMELOCALEDIR
+- Resolves: #1567161
+
 * Thu Feb 16 2017 Ondrej Holy <oholy@redhat.com> - 3.22.1-1
 - Update to 3.22.1
 - Resolves: #1386818

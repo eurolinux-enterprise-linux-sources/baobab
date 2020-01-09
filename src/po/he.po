@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: gnome-utils.HEAD.he\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=baobab\n"
-"POT-Creation-Date: 2016-11-07 17:00+0100\n"
+"POT-Creation-Date: 2016-08-14 17:19+0300\n"
 "PO-Revision-Date: 2016-08-14 17:32+0300\n"
 "Last-Translator: Yosef Or Boczko <yoseforb@gnome.org>\n"
 "Language-Team: עברית <>\n"
@@ -56,12 +56,10 @@ msgstr ""
 "הוא מספק תצוגה עץ ותצוגה חזותית להצגת הגודל של כל תיקייה, מה שמקל זיהוי "
 "בזבוז של מקום בכונן."
 
-#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.baobab.desktop.in.in:6
 msgid "storage;space;cleanup;"
 msgstr "אחסון;מקום;שטח;נפח;ניקוי;"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/org.gnome.baobab.desktop.in.in:10
 msgid "baobab"
 msgstr "baobab"
@@ -110,17 +108,14 @@ msgstr[0] "פריט אחד"
 msgstr[1] "%d פריטים"
 msgstr[2] "2 פריטים"
 
-#. Translators: when the last modified time is unknown
 #: src/baobab-cellrenderers.vala:101 src/baobab-location-list.vala:70
 msgid "Unknown"
 msgstr "בלתי ידוע"
 
-#. Translators: when the last modified time is today
 #: src/baobab-cellrenderers.vala:110
 msgid "Today"
 msgstr "היום"
 
-#. Translators: when the last modified time is "days" days ago
 #: src/baobab-cellrenderers.vala:114
 #, c-format
 msgid "%d day"
@@ -129,7 +124,6 @@ msgstr[0] "יום אחד"
 msgstr[1] "%d ימים"
 msgstr[2] "יומיים"
 
-#. Translators: when the last modified time is "months" months ago
 #: src/baobab-cellrenderers.vala:118
 #, c-format
 msgid "%d month"
@@ -138,7 +132,6 @@ msgstr[0] "חודש אחד"
 msgstr[1] "%d חודשים"
 msgstr[2] "חודשיים"
 
-#. Translators: when the last modified time is "years" years ago
 #: src/baobab-cellrenderers.vala:122
 #, c-format
 msgid "%d year"
@@ -165,8 +158,6 @@ msgstr "‏%s סך הכל"
 msgid "%s Available"
 msgstr "‏%s זמין"
 
-#. useful for some remote mounts where we don't know the
-#. size but do have a usage figure
 #: src/baobab-location-list.vala:75
 #, c-format
 msgid "%s Used"
@@ -299,7 +290,6 @@ msgstr "לא ניתן לזהות את החלקים התפוסים של הכונ�
 msgid "Apparent sizes are shown instead."
 msgstr "הגדלים הנראים לעין מוצגים במקום."
 
-#. || is_virtual_filesystem ()
 #: src/baobab-window.vala:585 src/baobab-window.vala:591
 #, c-format
 msgid "\"%s\" is not a valid folder"

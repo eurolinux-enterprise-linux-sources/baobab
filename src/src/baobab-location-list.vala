@@ -39,23 +39,32 @@ namespace Baobab {
 
         public LocationRow (Location l) {
             location = l;
+            update ();
+        }
 
+        public void update () {
+            location.get_fs_usage ();
             image.gicon = location.icon;
 
             var escaped = GLib.Markup.escape_text (location.name, -1);
             name_label.label = "<b>%s</b>".printf (escaped);
 
-            escaped = location.file != null ? GLib.Markup.escape_text (location.file.get_parse_name (), -1) : "";
-            path_label.label = escaped;
+            path_label.hide();
+            if (location.file != null) {
+                path_label.label = GLib.Markup.escape_text (location.file.get_parse_name (), -1);
+                path_label.show();
+            }
 
             // assume for local mounts the end of the mount path is the
             // relevant information, and for remote mounts the beginning is
             // more important
             path_label.ellipsize = location.is_remote ? Pango.EllipsizeMode.END : Pango.EllipsizeMode.START;
 
+            total_size_label.hide();
             if (location.is_volume || location.is_main_volume) {
                 if (location.size != null) {
                     total_size_label.label = _("%s Total").printf (format_size (location.size));
+                    total_size_label.show();
 
                     if (location.used != null) {
                         available_label.label = _("%s Available").printf (format_size (location.size - location.used));
@@ -73,6 +82,8 @@ namespace Baobab {
                     // useful for some remote mounts where we don't know the
                     // size but do have a usage figure
                     available_label.label = _("%s Used").printf (format_size (location.used));
+                } else if (location.mount == null && location.volume.can_mount ()) {
+                    available_label.label = _("Unmounted");
                 }
             }
         }
@@ -111,7 +122,17 @@ namespace Baobab {
             remote_list_box.set_header_func (update_header);
             remote_list_box.row_activated.connect (row_activated);
 
+            Timeout.add_seconds(3, (() => {
+                update_existing ();
+                return Source.CONTINUE;
+            }));
+
             populate ();
+        }
+
+        void update_existing () {
+            local_list_box.foreach ((widget) => { ((LocationRow)widget).update (); });
+            remote_list_box.foreach ((widget) => { ((LocationRow)widget).update (); });
         }
 
         bool already_present (File file) {
@@ -187,6 +208,12 @@ namespace Baobab {
                 mount_added (mount);
             }
 
+            populate_recent ();
+
+            update ();
+        }
+
+        void populate_recent () {
             Gtk.RecentManager recent_manager = Gtk.RecentManager.get_default ();
             List<Gtk.RecentInfo> recent_items = recent_manager.get_items ();
 
@@ -213,8 +240,6 @@ namespace Baobab {
             foreach (var info in recent_items) {
                 locations.append (new Location.for_recent_info (info));
             }
-
-            update ();
         }
 
         void update_header (Gtk.ListBoxRow row, Gtk.ListBoxRow? before_row) {
@@ -257,12 +282,6 @@ namespace Baobab {
                 return;
             }
 
-            if (!already_present (location.file)) {
-                locations.append (location);
-            }
-
-            update ();
-
             // Add to recent files
             Gtk.RecentData data = Gtk.RecentData ();
             data.display_name = null;
@@ -275,6 +294,19 @@ namespace Baobab {
             groups[1] = null;
             data.groups = groups;
             Gtk.RecentManager.get_default ().add_full (location.file.get_uri (), data);
+
+            // Reload recent locations
+            unowned List<Location> iter = locations;
+            while (iter != null) {
+                unowned List<Location> next = iter.next;
+                if (iter.data.is_recent) {
+                    locations.remove_link (iter);
+                }
+                iter = next;
+            }
+            populate_recent ();
+
+            update ();
         }
     }
 }
